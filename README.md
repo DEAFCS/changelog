@@ -22,10 +22,15 @@ Team history on profiles and team pages, a new Changelog page, a new search, and
 - **Profiles:** Choose EU or SA from a dropdown in settings or on your profile. Staff approve the change.
 - **Notifications:** Your notifications, friends and My Matches appear sooner when a page opens.
 - **Performance:** The Teams page, league seasons, tournament bracket previews and the utility library stay quick when many people view them at once.
+- **Matches:** The scoreboard keeps players in ADR order in every view, rows move smoothly when their positions change, and stat numbers roll like an odometer.
+- **Teams:** The team page tabs are one full-width bar under the team header, with the active tab highlighted, and it stays on screen while you scroll.
+- **Leaderboards:** K/D, HS% and rating boards filtered by source or role load much faster.
 
 ### Fixed
 
 - **Matches:** Stream and demo startup progress now shows the workshop map download in the right order.
 - **Matchmaking:** When a mode is closed, a ready check that fails no longer puts you back in its queue or starts a new one.
+- **Highlights:** A clip you make private leaves the public Highlights and Watch lists right away.
+- **Teams:** Team cards show a space before "vs" in the Next and Last rows.
 
 Older days are in [entries](entries).

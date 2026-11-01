@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-01",
-      "revision": 5,
+      "revision": 6,
       "title": "Patch Notes | November 1, 2026",
       "summary": "Team history on profiles and team pages, a new Changelog page, a new search, and matchmaking by region.",
       "sections": {
@@ -53,6 +53,18 @@
           {
             "area": "Performance",
             "text": "The Teams page, league seasons, tournament bracket previews and the utility library stay quick when many people view them at once."
+          },
+          {
+            "area": "Matches",
+            "text": "The scoreboard keeps players in ADR order in every view, rows move smoothly when their positions change, and stat numbers roll like an odometer."
+          },
+          {
+            "area": "Teams",
+            "text": "The team page tabs are one full-width bar under the team header, with the active tab highlighted, and it stays on screen while you scroll."
+          },
+          {
+            "area": "Leaderboards",
+            "text": "K/D, HS% and rating boards filtered by source or role load much faster."
           }
         ],
         "fixed": [
@@ -63,6 +75,14 @@
           {
             "area": "Matchmaking",
             "text": "When a mode is closed, a ready check that fails no longer puts you back in its queue or starts a new one."
+          },
+          {
+            "area": "Highlights",
+            "text": "A clip you make private leaves the public Highlights and Watch lists right away."
+          },
+          {
+            "area": "Teams",
+            "text": "Team cards show a space before \"vs\" in the Next and Last rows."
           }
         ]
       }

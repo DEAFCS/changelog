@@ -1,6 +1,6 @@
 {
   "2026-11-01": {
-    "revision": 5,
+    "revision": 6,
     "items": {
       "3a42a9f193a6": {
         "type": "new",
@@ -92,6 +92,41 @@
         "text": "When a mode is closed, a ready check that fails no longer puts you back in its queue or starts a new one.",
         "status": "published",
         "source": "release:49943b40693b32ac"
+      },
+      "863731fcebc3": {
+        "type": "fixed",
+        "area": "Highlights",
+        "text": "A clip you make private leaves the public Highlights and Watch lists right away.",
+        "status": "published",
+        "source": "release:0425d795af0ebc4d"
+      },
+      "c9fd0d1574b6": {
+        "type": "fixed",
+        "area": "Teams",
+        "text": "Team cards show a space before \"vs\" in the Next and Last rows.",
+        "status": "published",
+        "source": "release:0425d795af0ebc4d"
+      },
+      "8515c0bb5967": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "The scoreboard keeps players in ADR order in every view, rows move smoothly when their positions change, and stat numbers roll like an odometer.",
+        "status": "published",
+        "source": "release:0425d795af0ebc4d"
+      },
+      "393f73b8e203": {
+        "type": "improved",
+        "area": "Teams",
+        "text": "The team page tabs are one full-width bar under the team header, with the active tab highlighted, and it stays on screen while you scroll.",
+        "status": "published",
+        "source": "release:0425d795af0ebc4d"
+      },
+      "f86793cca68c": {
+        "type": "improved",
+        "area": "Leaderboards",
+        "text": "K/D, HS% and rating boards filtered by source or role load much faster.",
+        "status": "published",
+        "source": "release:0425d795af0ebc4d"
       }
     }
   }

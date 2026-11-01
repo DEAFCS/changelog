@@ -3,11 +3,13 @@
     {
       "month": "2026-11",
       "days": 1,
-      "hash": "327b9bfc79cb74af"
+      "hash": "d93b69376a9f87ca"
     }
   ],
   "areas": [
     "Changelog",
+    "Highlights",
+    "Leaderboards",
     "Matches",
     "Matchmaking",
     "Notifications",
@@ -18,7 +20,7 @@
   ],
   "latest": {
     "date": "2026-11-01",
-    "revision": 5
+    "revision": 6
   },
   "monitoredOn": "2026-11-01"
 }
