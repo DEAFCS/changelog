@@ -59,23 +59,28 @@ jobs:
 
       # Builds the new state on top of the newest main. If main moved while it
       # ran, it starts again from the new main, so nothing is overwritten.
+      # Held notes and flagged releases go to issues in a private repository
+      # (scripts/review.mjs), never to this public log. They stay queued in
+      # state/review.json until their issue exists, so a missing or expired
+      # REVIEW_TOKEN loses nothing; the run fails once so GitHub emails it.
       - name: Check production and publish
         env:
           GH_READ_TOKEN: ${{ secrets.GH_READ_TOKEN }}
           CHANGELOG_BLOCKLIST: ${{ secrets.CHANGELOG_BLOCKLIST }}
           WEB_VERSION_URL: ${{ vars.WEB_VERSION_URL }}
           API_VERSION_URL: ${{ vars.API_VERSION_URL }}
+          REVIEW_TOKEN: ${{ secrets.REVIEW_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          export REVIEW_FILE="$RUNNER_TEMP/changelog-review.json"
+          export RUN_URL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             git reset --hard origin/main
-            rm -f "$REVIEW_FILE"
             status=0
             node scripts/production.mjs || status=$?
             node scripts/publish.mjs || status=$?
+            node scripts/review.mjs || status=$?
             git add -A entries feed state releases README.md
             if [ "$DRY_RUN" = "true" ]; then
               echo "Dry run, nothing committed. It would change:"
@@ -94,18 +99,3 @@ jobs:
           done
           exit 1
 
-      # Held notes and flagged releases go to an issue in a private repository,
-      # never to this public log. Skipped if no review token is configured.
-      - name: Open a private review issue
-        if: always() && env.DRY_RUN != 'true'
-        env:
-          GH_TOKEN: ${{ secrets.REVIEW_TOKEN }}
-        run: |
-          file="$RUNNER_TEMP/changelog-review.json"
-          if [ ! -f "$file" ] || [ -z "$GH_TOKEN" ]; then exit 0; fi
-          RUN_URL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" \
-            node scripts/review.mjs "$file" "$RUNNER_TEMP/review.md"
-          gh issue create --repo DEAFCS/Private-Issues \
-            --title "Changelog review $(date -u +%Y-%m-%d)" \
-            --body-file "$RUNNER_TEMP/review.md" > /dev/null
-          echo "Review issue opened in the private repository."

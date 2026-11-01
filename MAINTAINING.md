@@ -37,6 +37,34 @@ A release can also be recorded by hand right after it passes verification (`scri
    The title becomes the note as it is, with only a capital letter and a full stop added.
 3. **Everything else that isn't a test, chore or docs change is held.** That includes other scopes, free-form titles and anything the leak gate catches (links, hashes, code names, infrastructure words, names, em dashes). Held notes are never published. With a `REVIEW_TOKEN`, they are listed in a "Changelog review" issue in the private `DEAFCS/Private-Issues`. The public repository only stores how many were held.
 
+## Commit messages for WEB and API releases
+
+Every commit that changes something players can see gets one line per change, after the commit body:
+
+```
+Changelog-New: Search: Press Ctrl+K to find pages, players, help and settings.
+Changelog-Improved: Matches: The scoreboard loads faster.
+Changelog-Fixed: Tournaments: Check-in no longer closes early.
+```
+
+- Format: `Changelog-<New|Improved|Fixed>: <Area>: <text>`. The area is a short player-facing name (Teams, Matches, Matchmaking, Search, Profiles, ...), not a code scope.
+- Text: one short sentence for players, in DEAFCS style: what changed for them, no internals, no staff-only details, no links, hashes, names or em dashes.
+- A commit with nothing for players (tests, refactors, staff tools, infrastructure) gets `Changelog: skip`.
+- Merges and squashes: the lines can also go in the pull request description.
+- Without these lines, a `feat`/`fix`/`perf`/`ux` title with a player-facing scope still becomes a note. Everything else is held (below).
+
+## Held notes
+
+A held note is never published on its own, and never lost:
+
+- **Queue.** When a release with held notes is processed, `state/review.json` records it in the same commit: its ID, its commit ranges and its held count. It never stores the held text, because this repository is public. Flagged releases are queued the same way.
+- **Issues.** In the same run, `scripts/review.mjs` recalculates the held notes from those ranges and opens one "Changelog review: release <ID> (<date>)" issue per release in the private `DEAFCS/Private-Issues`. It needs `REVIEW_TOKEN` (fine-grained, only that repository, Issues: Read and write). The issue number is stored in the queue.
+- **No duplicates.** An existing issue with the same title is reused, so a retried or failed run never opens a second one.
+- **Missing or expired token.** The entries stay queued. The run fails once (GitHub emails it), then only warns until the token works again or another release is queued. With a working token, the next run opens every missing issue, however old the release is.
+- **Recovery by hand**, on your own computer only (it prints held text): `GH_READ_TOKEN=<read token> node scripts/review.mjs --show <release ID>`.
+
+To publish a held change, add a bullet to that day's entry with GitHub's editor (below), then close the issue. The workflow keeps the bullet and never adds it twice.
+
 ## Correcting an entry
 
 Use GitHub's editor: an administrator can click **Edit** next to a day on deafcs.net/changelog, or open `entries/<year>/<date>.md` on GitHub and click the pencil. Edit, then **Commit changes** to main. Anders and Theft can both do this.

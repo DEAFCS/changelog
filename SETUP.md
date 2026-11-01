@@ -96,7 +96,7 @@ Never put it in a file, a chat, a commit or an issue. GitHub hides secrets in wo
 
 **Renewing:** create a new token the same way before the old one expires, and save it under the same secret name. When it has expired, every run fails with "GH_READ_TOKEN can't read the commits of …", and GitHub emails it.
 
-Optional, later: `REVIEW_TOKEN` (fine-grained, only `DEAFCS/Private-Issues`, Issues: Read and write) for the private review issue, and `CHANGELOG_BLOCKLIST`.
+Recommended: `REVIEW_TOKEN` (fine-grained, only `DEAFCS/Private-Issues`, Issues: Read and write) for the private review issues. Without it, held notes wait in `state/review.json` and the run fails once to tell you (MAINTAINING.md, Held notes). Optional: `CHANGELOG_BLOCKLIST`.
 
 A GitHub App owned by DEAFCS (Contents: read, installed on the two repositories) would avoid a personal token and its expiry, but needs an app, a private key secret and a workflow step to mint tokens. It's worth considering later, not needed now.
 

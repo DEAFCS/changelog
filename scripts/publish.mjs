@@ -53,12 +53,17 @@ export async function publish(dir, { github, blocked = [] } = {}) {
   const state = loadState(dir);
   syncAll(dir, state.days);
   const report = { processed: [], skipped: [], flagged: [], failed: null, added: 0, held: 0, review: [] };
+  // A flagged release waits for a person; the review issue says why.
+  const queueFlagged = (file, reason) => {
+    state.review.releases[`flagged:${file}`] ??= { flagged: reason, issue: null };
+  };
 
   for (const { file, record } of readPending(dir)) {
     const problem = validateRecord(record);
     if (problem) {
       flag(dir, file, record, problem);
       report.flagged.push({ file, reason: problem });
+      queueFlagged(file, problem);
       continue;
     }
     if (state.releases.processed[record.id]) {
@@ -85,6 +90,7 @@ export async function publish(dir, { github, blocked = [] } = {}) {
     if (missing) {
       flag(dir, file, record, missing);
       report.flagged.push({ file, reason: missing });
+      queueFlagged(file, missing);
       continue;
     }
 
@@ -101,6 +107,7 @@ export async function publish(dir, { github, blocked = [] } = {}) {
       if (error instanceof NotAheadError) {
         flag(dir, file, record, error.message);
         report.flagged.push({ file, reason: error.message });
+        queueFlagged(file, error.message);
         continue;
       }
       // Stop here: later releases build on this one's range, so they wait too.
@@ -138,7 +145,16 @@ export async function publish(dir, { github, blocked = [] } = {}) {
     report.processed.push({ id: record.id, date, added: fresh.length });
     report.added += fresh.length;
     report.held += notes.review.length;
+    // Held notes stay recoverable: the queue keeps the commit ranges they came
+    // from, and scripts/review.mjs recalculates them for the private issue.
     if (notes.review.length > 0) {
+      state.review.releases[record.id] = {
+        date,
+        verifiedAt: record.verifiedAt,
+        ranges,
+        held: notes.review.length,
+        issue: null,
+      };
       report.review.push({ release: record.id, date, items: notes.review });
     }
   }
@@ -189,15 +205,6 @@ if (import.meta.main) {
   }
   console.log(`Added ${report.added}, held for review ${report.held}`);
 
-  // The held notes can describe private or sensitive changes, so they never
-  // reach the public logs or the repository: they go to a file the workflow
-  // turns into an issue in a private repository.
-  if (process.env.REVIEW_FILE && (report.review.length > 0 || report.flagged.length > 0)) {
-    fs.writeFileSync(
-      process.env.REVIEW_FILE,
-      `${JSON.stringify({ held: report.review, flagged: report.flagged }, null, 2)}\n`,
-    );
-  }
   if (report.failed) {
     console.log(`Failed on release ${report.failed.id}; it stays pending and is retried on the next run.`);
     process.exitCode = 1;

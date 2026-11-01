@@ -96,6 +96,40 @@ test("two releases recorded at the same moment both reach main", () => {
   assert.equal(fs.readdirSync(path.join(check, "releases/pending")).length, 2);
 });
 
+test("review issues are made in the same run and commit as the publication", () => {
+  // review.mjs runs after publish.mjs on the same checkout, before the commit,
+  // so the queue and the issues it records land with the release.
+  const publish = workflow.indexOf("node scripts/publish.mjs || status=$?");
+  const review = workflow.indexOf("node scripts/review.mjs || status=$?");
+  assert.ok(publish > 0 && review > publish && review < workflow.indexOf("git add -A"));
+  assert.match(workflow, /\n\s+REVIEW_TOKEN: \$\{\{ secrets\.REVIEW_TOKEN \}\}\n/);
+  // No separate step that could skip, or throw away a temporary review file.
+  assert.doesNotMatch(workflow, /REVIEW_FILE|gh issue create|Open a private review issue/);
+});
+
+test("a failing review never stops the publication from being committed", () => {
+  // The step runs with bash -e: every script records its status instead of
+  // stopping the step, and the commit and push come after all of them.
+  for (const script of ["production", "publish", "review"]) {
+    assert.match(workflow, new RegExp(`\\n\\s+node scripts/${script}\\.mjs \\|\\| status=\\$\\?\\n`));
+  }
+  const review = workflow.indexOf("node scripts/review.mjs");
+  assert.ok(review < workflow.indexOf('git commit -m "Publish verified releases"'));
+  assert.ok(review < workflow.indexOf("git push origin HEAD:main"));
+});
+
+test("a dispatched run can't publish while CHANGELOG_ENABLED isn't true", () => {
+  // The VPS dispatcher sends dry_run=false; DRY_RUN is still true unless the
+  // variable is "true", and a dry run exits before committing.
+  const formula = workflow.match(/DRY_RUN: \$\{\{ (.+) \}\}/)[1];
+  const dryRun = (input, enabled) => input === true || enabled !== "true";
+  assert.equal(formula, "inputs.dry_run == true || vars.CHANGELOG_ENABLED != 'true'");
+  assert.equal(dryRun(false, undefined), true);
+  assert.equal(dryRun(false, "false"), true);
+  assert.equal(dryRun(false, "true"), false);
+  assert.equal(dryRun(true, "true"), true);
+});
+
 test("no AI service, API key or package install is used", () => {
   const pkg = JSON.parse(fs.readFileSync(new URL("../package.json", import.meta.url), "utf8"));
   assert.equal(pkg.dependencies, undefined);
@@ -117,7 +151,6 @@ test("automatic runs stay off until enabled, and a run by hand is a dry run by d
   // The dry run leaves before anything is committed or pushed.
   const dry = workflow.indexOf('if [ "$DRY_RUN" = "true" ]; then');
   assert.ok(dry > 0 && dry < workflow.indexOf("git commit") && dry < workflow.indexOf("git push"));
-  assert.match(workflow, /Open a private review issue\n\s+if: always\(\) && env\.DRY_RUN != 'true'/);
   // While publishing is off, every run is a dry run, even with the box unticked.
   assert.match(
     workflow,
