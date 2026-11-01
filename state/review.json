@@ -28,6 +28,20 @@
       "held": 1,
       "issue": 3,
       "issuedAt": "2026-11-01T13:51:13Z"
+    },
+    "8acc437e0454eea3": {
+      "date": "2026-11-01",
+      "verifiedAt": "2026-11-01T16:11:12Z",
+      "ranges": [
+        {
+          "side": "web",
+          "from": "53e45af516467a6ca93cc65d9702d3d967c646e9",
+          "to": "0af446042c07eaea019a95bf80babd78652cc15e"
+        }
+      ],
+      "held": 2,
+      "issue": 4,
+      "issuedAt": "2026-11-01T16:21:15Z"
     }
   }
 }
