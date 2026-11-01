@@ -14,6 +14,20 @@
       "held": 2,
       "issue": 2,
       "issuedAt": "2026-11-01T12:47:01Z"
+    },
+    "4741b7b34ce53701": {
+      "date": "2026-11-01",
+      "verifiedAt": "2026-11-01T13:51:10Z",
+      "ranges": [
+        {
+          "side": "web",
+          "from": "1fd77027fb3be589559db0eea30b327f3171a63e",
+          "to": "2f160969944f70fed24c6e99f9c393a27d910db2"
+        }
+      ],
+      "held": 1,
+      "issue": 3,
+      "issuedAt": "2026-11-01T13:51:13Z"
     }
   }
 }
