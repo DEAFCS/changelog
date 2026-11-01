@@ -1,6 +1,6 @@
 {
   "2026-11-01": {
-    "revision": 3,
+    "revision": 4,
     "items": {
       "3a42a9f193a6": {
         "type": "new",
@@ -78,6 +78,13 @@
         "text": "Stream and demo startup progress now shows the workshop map download in the right order.",
         "status": "published",
         "source": "release:7d0262c0b8a75f96"
+      },
+      "486b0c283922": {
+        "type": "improved",
+        "area": "Performance",
+        "text": "The Teams page, league seasons, tournament bracket previews and the utility library stay quick when many people view them at once.",
+        "status": "published",
+        "source": "release:95c89059fab82baa"
       }
     }
   }

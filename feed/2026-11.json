@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-01",
-      "revision": 3,
+      "revision": 4,
       "title": "Patch Notes | November 1, 2026",
       "summary": "Team history on profiles and team pages, a new Changelog page, a new search, and matchmaking by region.",
       "sections": {
@@ -49,6 +49,10 @@
           {
             "area": "Notifications",
             "text": "Your notifications, friends and My Matches appear sooner when a page opens."
+          },
+          {
+            "area": "Performance",
+            "text": "The Teams page, league seasons, tournament bracket previews and the utility library stay quick when many people view them at once."
           }
         ],
         "fixed": [

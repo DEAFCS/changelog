@@ -21,6 +21,7 @@ Team history on profiles and team pages, a new Changelog page, a new search, and
 - **Matchmaking:** If a mode closes while you are in its queue, you leave the queue and get a message.
 - **Profiles:** Choose EU or SA from a dropdown in settings or on your profile. Staff approve the change.
 - **Notifications:** Your notifications, friends and My Matches appear sooner when a page opens.
+- **Performance:** The Teams page, league seasons, tournament bracket previews and the utility library stay quick when many people view them at once.
 
 ### Fixed
 

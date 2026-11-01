@@ -3,7 +3,7 @@
     {
       "month": "2026-11",
       "days": 1,
-      "hash": "f2b0ac5980a3ee3f"
+      "hash": "c4502d824ed76483"
     }
   ],
   "areas": [
@@ -11,13 +11,14 @@
     "Matches",
     "Matchmaking",
     "Notifications",
+    "Performance",
     "Profiles",
     "Search",
     "Teams"
   ],
   "latest": {
     "date": "2026-11-01",
-    "revision": 3
+    "revision": 4
   },
   "monitoredOn": "2026-11-01"
 }
