@@ -26,5 +26,6 @@ Team history on profiles and team pages, a new Changelog page, a new search, and
 ### Fixed
 
 - **Matches:** Stream and demo startup progress now shows the workshop map download in the right order.
+- **Matchmaking:** When a mode is closed, a ready check that fails no longer puts you back in its queue or starts a new one.
 
 Older days are in [entries](entries).

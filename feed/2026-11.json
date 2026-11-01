@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-01",
-      "revision": 4,
+      "revision": 5,
       "title": "Patch Notes | November 1, 2026",
       "summary": "Team history on profiles and team pages, a new Changelog page, a new search, and matchmaking by region.",
       "sections": {
@@ -59,6 +59,10 @@
           {
             "area": "Matches",
             "text": "Stream and demo startup progress now shows the workshop map download in the right order."
+          },
+          {
+            "area": "Matchmaking",
+            "text": "When a mode is closed, a ready check that fails no longer puts you back in its queue or starts a new one."
           }
         ]
       }

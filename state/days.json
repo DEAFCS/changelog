@@ -1,6 +1,6 @@
 {
   "2026-11-01": {
-    "revision": 4,
+    "revision": 5,
     "items": {
       "3a42a9f193a6": {
         "type": "new",
@@ -85,6 +85,13 @@
         "text": "The Teams page, league seasons, tournament bracket previews and the utility library stay quick when many people view them at once.",
         "status": "published",
         "source": "release:95c89059fab82baa"
+      },
+      "5fb8edf2e80b": {
+        "type": "fixed",
+        "area": "Matchmaking",
+        "text": "When a mode is closed, a ready check that fails no longer puts you back in its queue or starts a new one.",
+        "status": "published",
+        "source": "release:49943b40693b32ac"
       }
     }
   }
