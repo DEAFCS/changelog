@@ -3,10 +3,11 @@
     {
       "month": "2026-11",
       "days": 1,
-      "hash": "d93b69376a9f87ca"
+      "hash": "be4196ece7fe057e"
     }
   ],
   "areas": [
+    "Accounts",
     "Changelog",
     "Highlights",
     "Leaderboards",
@@ -16,11 +17,13 @@
     "Performance",
     "Profiles",
     "Search",
+    "Seasons",
+    "Steam",
     "Teams"
   ],
   "latest": {
     "date": "2026-11-01",
-    "revision": 6
+    "revision": 7
   },
   "monitoredOn": "2026-11-01"
 }

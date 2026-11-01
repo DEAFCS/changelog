@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-01",
-      "revision": 6,
+      "revision": 7,
       "title": "Patch Notes | November 1, 2026",
       "summary": "Team history on profiles and team pages, a new Changelog page, a new search, and matchmaking by region.",
       "sections": {
@@ -83,6 +83,22 @@
           {
             "area": "Teams",
             "text": "Team cards show a space before \"vs\" in the Next and Last rows."
+          },
+          {
+            "area": "Accounts",
+            "text": "After your role changes, the site picks up your new permissions right away without a reload."
+          },
+          {
+            "area": "Matches",
+            "text": "A late duplicate status from a game server no longer ends the next map early or loses a map's result."
+          },
+          {
+            "area": "Steam",
+            "text": "Steam messages that Steam delays or rate-limits are retried instead of lost, and are never sent twice."
+          },
+          {
+            "area": "Seasons",
+            "text": "Rebuilding a season's ratings now keeps its tournament matches, so season ELO stays correct."
           }
         ]
       }

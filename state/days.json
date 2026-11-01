@@ -1,6 +1,6 @@
 {
   "2026-11-01": {
-    "revision": 6,
+    "revision": 7,
     "items": {
       "3a42a9f193a6": {
         "type": "new",
@@ -127,6 +127,34 @@
         "text": "K/D, HS% and rating boards filtered by source or role load much faster.",
         "status": "published",
         "source": "release:0425d795af0ebc4d"
+      },
+      "39e86cf1e1b4": {
+        "type": "fixed",
+        "area": "Accounts",
+        "text": "After your role changes, the site picks up your new permissions right away without a reload.",
+        "status": "published",
+        "source": "release:7c962697715c3464"
+      },
+      "32b7ac45473d": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "A late duplicate status from a game server no longer ends the next map early or loses a map's result.",
+        "status": "published",
+        "source": "release:7c962697715c3464"
+      },
+      "b6d18a5c3c0e": {
+        "type": "fixed",
+        "area": "Steam",
+        "text": "Steam messages that Steam delays or rate-limits are retried instead of lost, and are never sent twice.",
+        "status": "published",
+        "source": "release:7c962697715c3464"
+      },
+      "e18a7d528797": {
+        "type": "fixed",
+        "area": "Seasons",
+        "text": "Rebuilding a season's ratings now keeps its tournament matches, so season ELO stays correct.",
+        "status": "published",
+        "source": "release:7c962697715c3464"
       }
     }
   }
