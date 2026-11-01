@@ -47,7 +47,7 @@ test("the workflow can only write this repository, one run at a time, on top of 
   for (const line of workflow.split("\n").filter((entry) => entry.includes("${{"))) {
     assert.match(
       line.trim(),
-      /^([A-Z_]+: \$\{\{ (secrets|vars)\.[A-Z_]+ \}\}|DRY_RUN: \$\{\{ inputs\.dry_run \}\})$/,
+      /^([A-Z_]+: \$\{\{ (secrets|vars)\.[A-Z_]+ \}\}|DRY_RUN: \$\{\{ inputs\.dry_run == true \|\| vars\.CHANGELOG_ENABLED != 'true' \}\})$/,
       line.trim(),
     );
   }
@@ -117,5 +117,10 @@ test("automatic runs stay off until enabled, and a run by hand is a dry run by d
   // The dry run leaves before anything is committed or pushed.
   const dry = workflow.indexOf('if [ "$DRY_RUN" = "true" ]; then');
   assert.ok(dry > 0 && dry < workflow.indexOf("git commit") && dry < workflow.indexOf("git push"));
-  assert.match(workflow, /Open a private review issue\n\s+if: always\(\) && inputs\.dry_run != true/);
+  assert.match(workflow, /Open a private review issue\n\s+if: always\(\) && env\.DRY_RUN != 'true'/);
+  // While publishing is off, every run is a dry run, even with the box unticked.
+  assert.match(
+    workflow,
+    /env:\n\s+DRY_RUN: \$\{\{ inputs\.dry_run == true \|\| vars\.CHANGELOG_ENABLED != 'true' \}\}/,
+  );
 });

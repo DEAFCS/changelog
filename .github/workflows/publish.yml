@@ -44,6 +44,10 @@ jobs:
     if: github.ref == 'refs/heads/main' && (vars.CHANGELOG_ENABLED == 'true' || github.event_name == 'workflow_dispatch')
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    # A dry run when asked for, and always while CHANGELOG_ENABLED isn't
+    # "true": unticking "dry run" by hand can't publish during setup.
+    env:
+      DRY_RUN: ${{ inputs.dry_run == true || vars.CHANGELOG_ENABLED != 'true' }}
     steps:
       - uses: actions/checkout@v7
 
@@ -61,7 +65,6 @@ jobs:
           CHANGELOG_BLOCKLIST: ${{ secrets.CHANGELOG_BLOCKLIST }}
           WEB_VERSION_URL: ${{ vars.WEB_VERSION_URL }}
           API_VERSION_URL: ${{ vars.API_VERSION_URL }}
-          DRY_RUN: ${{ inputs.dry_run }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -94,7 +97,7 @@ jobs:
       # Held notes and flagged releases go to an issue in a private repository,
       # never to this public log. Skipped if no review token is configured.
       - name: Open a private review issue
-        if: always() && inputs.dry_run != true
+        if: always() && env.DRY_RUN != 'true'
         env:
           GH_TOKEN: ${{ secrets.REVIEW_TOKEN }}
         run: |

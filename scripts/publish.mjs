@@ -157,10 +157,24 @@ export async function publish(dir, { github, blocked = [] } = {}) {
 }
 
 if (import.meta.main) {
-  const { githubClient } = await import("./sources.mjs");
+  const { checkAccess, githubClient } = await import("./sources.mjs");
   const { blocklist } = await import("./redact.mjs");
+  const github = githubClient();
+
+  // A credential problem stops here, before any release is looked at, so it
+  // is reported as one, not as releases flagged for review.
+  const denied = await checkAccess(github);
+  if (denied.length > 0) {
+    for (const problem of denied) {
+      console.log(problem);
+    }
+    console.log("Nothing processed. Fix GH_READ_TOKEN (see SETUP.md, step 3) and run again.");
+    process.exit(1);
+  }
+  console.log("GH_READ_TOKEN can read deafcs-web and api-deafcs.");
+
   const report = await publish(".", {
-    github: githubClient(),
+    github,
     blocked: blocklist(process.env.CHANGELOG_BLOCKLIST),
   });
 

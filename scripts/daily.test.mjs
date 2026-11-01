@@ -540,3 +540,24 @@ test("sameFeature needs the same area, the same type and two feature words in co
   // Generic words alone don't make two notes the same.
   assert.equal(sameFeature(note("new", "Matches", "Players see the new page"), note("new", "Matches", "Players see their new stats page")), false);
 });
+
+test("the read token is checked first: missing, expired or without access to a repository", async () => {
+  const { checkAccess } = await import("./sources.mjs");
+  assert.deepEqual(await checkAccess(async () => [], ""), ["GH_READ_TOKEN is not set"]);
+  assert.deepEqual(await checkAccess(async () => [], "token"), []);
+
+  const onlyWeb = async (url) => {
+    if (url.includes("/api-deafcs/")) {
+      throw new Error("GitHub request failed with status 404");
+    }
+    return [];
+  };
+  assert.deepEqual(await checkAccess(onlyWeb, "token"), [
+    "GH_READ_TOKEN can't read the commits of DEAFCS/api-deafcs (status 404)",
+  ]);
+
+  const expired = async () => {
+    throw new Error("GitHub request failed with status 401");
+  };
+  assert.equal((await checkAccess(expired, "token")).length, 2);
+});

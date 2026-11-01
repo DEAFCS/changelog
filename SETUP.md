@@ -69,15 +69,50 @@ Check afterwards:
 
 ## 3. The read-only credential
 
-**Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token** (by Anders):
+The workflow's own token can only touch `DEAFCS/changelog`, and the GitHub apps already installed in DEAFCS (Claude, ChatGPT Codex connector) have write access to every repository, with keys held by those services, so neither can be used. The simplest secure option is one fine-grained token that can only read the two repositories.
 
-- Name `DEAFCS changelog read`, Resource owner **DEAFCS**, expiration up to one year (set a reminder to renew).
-- Repository access: **Only select repositories** → `deafcs-web`, `api-deafcs`.
-- Repository permissions: **Contents: Read-only**. Metadata: Read-only is added automatically. Nothing else.
-- If the organisation requires approval for fine-grained tokens, approve it under DEAFCS → Settings → Personal access tokens → Pending requests.
-- Save it in `DEAFCS/changelog` as the Actions secret **`GH_READ_TOKEN`**. Never in a file, chat or log.
+What the workflow does with it: compare two commits and list commits (**Contents: read**). Looking up the pull request behind a commit is optional; without Pull requests access the commit messages are used. Nothing is written with it.
 
-Optional: `REVIEW_TOKEN` (fine-grained, only `DEAFCS/Private-Issues`, Issues: Read and write) for the private review issue, and `CHANGELOG_BLOCKLIST`.
+**Create it** (Anders, in the browser): github.com → profile picture → **Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token**.
+
+| Field | Value |
+| --- | --- |
+| Token name | `DEAFCS changelog read` |
+| Description | `Read-only: lets DEAFCS/changelog read WEB/API commit messages` |
+| Resource owner | **DEAFCS** |
+| Expiration | the longest the organisation allows, up to 1 year. Put the date in a calendar. |
+| Repository access | **Only select repositories** → `DEAFCS/deafcs-web`, `DEAFCS/api-deafcs` |
+| Repository permissions | **Contents: Read-only**. Metadata: Read-only is added automatically. Leave everything else "No access". |
+| Organization and account permissions | none |
+
+Then **Generate token**. If the organisation requires approval, approve it under DEAFCS → **Settings → Personal access tokens → Pending requests** (Anders is an owner).
+
+**Store it** straight away, without saving it anywhere else:
+
+- Browser: `DEAFCS/changelog` → **Settings → Secrets and variables → Actions → Secrets → New repository secret**, name **`GH_READ_TOKEN`**, paste, **Add secret**.
+- Or in a terminal: `gh secret set GH_READ_TOKEN -R DEAFCS/changelog`, then paste when asked. The value isn't shown or kept in the shell history.
+
+Never put it in a file, a chat, a commit or an issue. GitHub hides secrets in workflow logs, and the workflow never prints it. If it ever leaks: delete the token on the same settings page and create a new one.
+
+**Renewing:** create a new token the same way before the old one expires, and save it under the same secret name. When it has expired, every run fails with "GH_READ_TOKEN can't read the commits of …", and GitHub emails it.
+
+Optional, later: `REVIEW_TOKEN` (fine-grained, only `DEAFCS/Private-Issues`, Issues: Read and write) for the private review issue, and `CHANGELOG_BLOCKLIST`.
+
+A GitHub App owned by DEAFCS (Contents: read, installed on the two repositories) would avoid a personal token and its expiry, but needs an app, a private key secret and a workflow step to mint tokens. It's worth considering later, not needed now.
+
+## 3b. Test the token safely (nothing can be published)
+
+While `CHANGELOG_ENABLED` is unset, every run is a dry run: the workflow forces it, even if "dry run" is unticked. A dry run never commits, pushes or opens an issue.
+
+1. [ ] Leave `CHANGELOG_ENABLED` unset and save `GH_READ_TOKEN`.
+2. [ ] **Actions → Changelog → Run workflow** on `main`.
+3. [ ] The run should show, in order:
+   - the 55 tests passing;
+   - "Production check: … no answer from the version endpoint" for WEB and API (expected until the release with the version endpoints);
+   - **"GH_READ_TOKEN can read deafcs-web and api-deafcs."**;
+   - "Dry run, nothing committed."
+4. [ ] Check afterwards: `DEAFCS/changelog` still has the same latest commit, `entries/` is still empty, and no issue was opened.
+5. [ ] To see a failure: if the token is wrong, the run fails with "GH_READ_TOKEN can't read the commits of DEAFCS/<repository> (status …)" and "Nothing processed". Production is never touched.
 
 ## 4. Test safely before automatic publication
 

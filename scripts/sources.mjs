@@ -32,6 +32,26 @@ export function githubClient(token = process.env.GH_READ_TOKEN, fetcher = fetch)
   };
 }
 
+// Can the read token see the commits of both private repositories? Checked
+// before anything else, so a missing, expired or wrongly scoped token fails
+// the run with a clear message, instead of every release looking like a
+// commit GitHub doesn't know. Needs Contents: read, nothing more.
+export async function checkAccess(github, token = process.env.GH_READ_TOKEN) {
+  if (!token) {
+    return ["GH_READ_TOKEN is not set"];
+  }
+  const problems = [];
+  for (const { repo } of Object.values(SIDES)) {
+    try {
+      await github(`/repos/${ORG}/${repo}/commits?per_page=1`);
+    } catch (error) {
+      const status = error.message.match(/status (\d+)/)?.[1] ?? "unknown";
+      problems.push(`GH_READ_TOKEN can't read the commits of ${ORG}/${repo} (status ${status})`);
+    }
+  }
+  return problems;
+}
+
 function isBot(user) {
   return user?.type === "Bot" || user?.login?.endsWith("[bot]");
 }
