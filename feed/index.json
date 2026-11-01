@@ -3,18 +3,20 @@
     {
       "month": "2026-11",
       "days": 1,
-      "hash": "480964639b68e4db"
+      "hash": "af19bd7a293f3513"
     }
   ],
   "areas": [
     "Changelog",
     "Matchmaking",
+    "Notifications",
     "Profiles",
+    "Search",
     "Teams"
   ],
   "latest": {
     "date": "2026-11-01",
-    "revision": 1
+    "revision": 2
   },
   "monitoredOn": "2026-11-01"
 }

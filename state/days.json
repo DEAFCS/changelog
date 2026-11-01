@@ -1,6 +1,6 @@
 {
   "2026-11-01": {
-    "revision": 1,
+    "revision": 2,
     "items": {
       "3a42a9f193a6": {
         "type": "new",
@@ -55,6 +55,20 @@
         "type": "improved",
         "area": "Profiles",
         "text": "Choose EU or SA from a dropdown in settings or on your profile. Staff approve the change.",
+        "status": "published",
+        "source": "manual"
+      },
+      "b109b1cd6dcc": {
+        "type": "new",
+        "area": "Search",
+        "text": "Press Ctrl+K (Cmd+K on Mac) or use Search in the left menu to find pages, players, FAQ answers and your settings.",
+        "status": "published",
+        "source": "manual"
+      },
+      "2768db97a410": {
+        "type": "improved",
+        "area": "Notifications",
+        "text": "Your notifications, friends and My Matches appear sooner when a page opens.",
         "status": "published",
         "source": "manual"
       }

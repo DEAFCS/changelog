@@ -3,9 +3,9 @@
   "days": [
     {
       "date": "2026-11-01",
-      "revision": 1,
+      "revision": 2,
       "title": "Patch Notes | November 1, 2026",
-      "summary": "Team history on profiles and team pages, a new Changelog page, and matchmaking by region.",
+      "summary": "Team history on profiles and team pages, a new Changelog page, a new search, and matchmaking by region.",
       "sections": {
         "new": [
           {
@@ -27,6 +27,10 @@
           {
             "area": "Matchmaking",
             "text": "EU and SA are now separate region groups, and the Play page counts the queue for your region group."
+          },
+          {
+            "area": "Search",
+            "text": "Press Ctrl+K (Cmd+K on Mac) or use Search in the left menu to find pages, players, FAQ answers and your settings."
           }
         ],
         "improved": [
@@ -41,6 +45,10 @@
           {
             "area": "Profiles",
             "text": "Choose EU or SA from a dropdown in settings or on your profile. Staff approve the change."
+          },
+          {
+            "area": "Notifications",
+            "text": "Your notifications, friends and My Matches appear sooner when a page opens."
           }
         ],
         "fixed": []
