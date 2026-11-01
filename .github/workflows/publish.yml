@@ -1,0 +1,108 @@
+# Keeps the DEAFCS changelog in step with production. No AI, no paid service.
+#
+# Every 10 minutes it asks deafcs.net which WEB and API commits are live
+# (scripts/production.mjs). A new commit that has stayed live for 10 minutes
+# is a verified release: it is recorded and published into the day's entry.
+# It also runs when a release is recorded by hand (releases/pending), when an
+# entry is corrected on GitHub (entries), and by hand. A commit, a branch, a
+# merged pull request or a built image on its own never publishes anything.
+#
+# This repository is public, and so are these logs: they show release IDs and
+# counts only.
+name: Changelog
+
+on:
+  push:
+    branches: [main]
+    paths: ["releases/pending/**", "entries/**"]
+  # Minutes 3, 13, ... 53: off the full hour, when GitHub delays or drops
+  # scheduled runs most.
+  schedule:
+    - cron: "3-59/10 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Show what would be published without committing anything.
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+# One run at a time. A run that waits here still checks production and
+# processes everything pending, so a newer run replacing an older waiting
+# one loses nothing.
+concurrency:
+  group: changelog
+  cancel-in-progress: false
+
+jobs:
+  changelog:
+    # Automatic runs only once the repository variable CHANGELOG_ENABLED is
+    # "true". A run started by hand always works (a dry run by default), so
+    # the setup can be tested before anything is published.
+    if: github.ref == 'refs/heads/main' && (vars.CHANGELOG_ENABLED == 'true' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+
+      - run: npm test
+
+      # Builds the new state on top of the newest main. If main moved while it
+      # ran, it starts again from the new main, so nothing is overwritten.
+      - name: Check production and publish
+        env:
+          GH_READ_TOKEN: ${{ secrets.GH_READ_TOKEN }}
+          CHANGELOG_BLOCKLIST: ${{ secrets.CHANGELOG_BLOCKLIST }}
+          WEB_VERSION_URL: ${{ vars.WEB_VERSION_URL }}
+          API_VERSION_URL: ${{ vars.API_VERSION_URL }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          export REVIEW_FILE="$RUNNER_TEMP/changelog-review.json"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            rm -f "$REVIEW_FILE"
+            status=0
+            node scripts/production.mjs || status=$?
+            node scripts/publish.mjs || status=$?
+            git add -A entries feed state releases README.md
+            if [ "$DRY_RUN" = "true" ]; then
+              echo "Dry run, nothing committed. It would change:"
+              git diff --cached --stat
+              git diff --cached -- entries
+              exit $status
+            fi
+            if git diff --cached --quiet; then
+              exit $status
+            fi
+            git commit -m "Publish verified releases"
+            if git push origin HEAD:main; then
+              exit $status
+            fi
+            echo "main moved during the run, starting again ($attempt)"
+          done
+          exit 1
+
+      # Held notes and flagged releases go to an issue in a private repository,
+      # never to this public log. Skipped if no review token is configured.
+      - name: Open a private review issue
+        if: always() && inputs.dry_run != true
+        env:
+          GH_TOKEN: ${{ secrets.REVIEW_TOKEN }}
+        run: |
+          file="$RUNNER_TEMP/changelog-review.json"
+          if [ ! -f "$file" ] || [ -z "$GH_TOKEN" ]; then exit 0; fi
+          RUN_URL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" \
+            node scripts/review.mjs "$file" "$RUNNER_TEMP/review.md"
+          gh issue create --repo DEAFCS/Private-Issues \
+            --title "Changelog review $(date -u +%Y-%m-%d)" \
+            --body-file "$RUNNER_TEMP/review.md" > /dev/null
+          echo "Review issue opened in the private repository."

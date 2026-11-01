@@ -1,0 +1,12 @@
+{
+  "name": "deafcs-changelog",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test scripts/*.test.mjs",
+    "check-production": "node scripts/production.mjs",
+    "publish-releases": "node scripts/publish.mjs",
+    "record-release": "node scripts/record-release.mjs",
+    "rebuild": "node scripts/feed.mjs"
+  }
+}
