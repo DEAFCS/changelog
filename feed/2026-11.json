@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-01",
-      "revision": 2,
+      "revision": 3,
       "title": "Patch Notes | November 1, 2026",
       "summary": "Team history on profiles and team pages, a new Changelog page, a new search, and matchmaking by region.",
       "sections": {
@@ -51,7 +51,12 @@
             "text": "Your notifications, friends and My Matches appear sooner when a page opens."
           }
         ],
-        "fixed": []
+        "fixed": [
+          {
+            "area": "Matches",
+            "text": "Stream and demo startup progress now shows the workshop map download in the right order."
+          }
+        ]
       }
     }
   ]

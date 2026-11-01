@@ -22,4 +22,8 @@ Team history on profiles and team pages, a new Changelog page, a new search, and
 - **Profiles:** Choose EU or SA from a dropdown in settings or on your profile. Staff approve the change.
 - **Notifications:** Your notifications, friends and My Matches appear sooner when a page opens.
 
+### Fixed
+
+- **Matches:** Stream and demo startup progress now shows the workshop map download in the right order.
+
 Older days are in [entries](entries).

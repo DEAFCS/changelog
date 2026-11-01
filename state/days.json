@@ -1,6 +1,6 @@
 {
   "2026-11-01": {
-    "revision": 2,
+    "revision": 3,
     "items": {
       "3a42a9f193a6": {
         "type": "new",
@@ -71,6 +71,13 @@
         "text": "Your notifications, friends and My Matches appear sooner when a page opens.",
         "status": "published",
         "source": "manual"
+      },
+      "47f623659684": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "Stream and demo startup progress now shows the workshop map download in the right order.",
+        "status": "published",
+        "source": "release:7d0262c0b8a75f96"
       }
     }
   }
