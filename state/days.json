@@ -1,6 +1,6 @@
 {
   "2026-11-01": {
-    "revision": 7,
+    "revision": 8,
     "items": {
       "3a42a9f193a6": {
         "type": "new",
@@ -155,6 +155,34 @@
         "text": "Rebuilding a season's ratings now keeps its tournament matches, so season ELO stays correct.",
         "status": "published",
         "source": "release:7c962697715c3464"
+      },
+      "fc8c1c15ce22": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "Report a Player opens 5 minutes after the match ends, and the match page shows the time left.",
+        "status": "published",
+        "source": "release:70993637861c6cab"
+      },
+      "10269adda867": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "Player names show correctly when choosing who to report.",
+        "status": "published",
+        "source": "release:70993637861c6cab"
+      },
+      "4c5a336bdec6": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "Report details no longer show an empty profile row.",
+        "status": "published",
+        "source": "release:70993637861c6cab"
+      },
+      "b976ba6888c5": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "Report a Player opens 5 minutes after the match ends, without waiting for the stats.",
+        "status": "published",
+        "source": "release:70993637861c6cab"
       }
     }
   }

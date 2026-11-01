@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-01",
-      "revision": 7,
+      "revision": 8,
       "title": "Patch Notes | November 1, 2026",
       "summary": "Team history on profiles and team pages, a new Changelog page, a new search, and matchmaking by region.",
       "sections": {
@@ -65,6 +65,10 @@
           {
             "area": "Leaderboards",
             "text": "K/D, HS% and rating boards filtered by source or role load much faster."
+          },
+          {
+            "area": "Matches",
+            "text": "Report details no longer show an empty profile row."
           }
         ],
         "fixed": [
@@ -99,6 +103,18 @@
           {
             "area": "Seasons",
             "text": "Rebuilding a season's ratings now keeps its tournament matches, so season ELO stays correct."
+          },
+          {
+            "area": "Matches",
+            "text": "Report a Player opens 5 minutes after the match ends, and the match page shows the time left."
+          },
+          {
+            "area": "Matches",
+            "text": "Player names show correctly when choosing who to report."
+          },
+          {
+            "area": "Matches",
+            "text": "Report a Player opens 5 minutes after the match ends, without waiting for the stats."
           }
         ]
       }
