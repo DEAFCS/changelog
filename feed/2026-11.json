@@ -1,0 +1,50 @@
+{
+  "month": "2026-11",
+  "days": [
+    {
+      "date": "2026-11-01",
+      "revision": 1,
+      "title": "Patch Notes | November 1, 2026",
+      "summary": "Team history on profiles and team pages, a new Changelog page, and matchmaking by region.",
+      "sections": {
+        "new": [
+          {
+            "area": "Teams",
+            "text": "Player profiles now show current and previous teams, with available membership history."
+          },
+          {
+            "area": "Teams",
+            "text": "Team pages show a roster history of current and former members."
+          },
+          {
+            "area": "Teams",
+            "text": "The team activity feed shows when players join, rejoin, leave or are removed."
+          },
+          {
+            "area": "Changelog",
+            "text": "A new Changelog page under Info shows patch notes by day, with search, filters and a dot for new changes."
+          },
+          {
+            "area": "Matchmaking",
+            "text": "EU and SA are now separate region groups, and the Play page counts the queue for your region group."
+          }
+        ],
+        "improved": [
+          {
+            "area": "Matchmaking",
+            "text": "Each region group can open or close matchmaking modes on its own, and the Play page shows what is open in your region."
+          },
+          {
+            "area": "Matchmaking",
+            "text": "If a mode closes while you are in its queue, you leave the queue and get a message."
+          },
+          {
+            "area": "Profiles",
+            "text": "Choose EU or SA from a dropdown in settings or on your profile. Staff approve the change."
+          }
+        ],
+        "fixed": []
+      }
+    }
+  ]
+}

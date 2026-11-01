@@ -1,6 +1,20 @@
 {
-  "months": [],
-  "areas": [],
-  "latest": null,
-  "monitoredOn": null
+  "months": [
+    {
+      "month": "2026-11",
+      "days": 1,
+      "hash": "480964639b68e4db"
+    }
+  ],
+  "areas": [
+    "Changelog",
+    "Matchmaking",
+    "Profiles",
+    "Teams"
+  ],
+  "latest": {
+    "date": "2026-11-01",
+    "revision": 1
+  },
+  "monitoredOn": "2026-11-01"
 }

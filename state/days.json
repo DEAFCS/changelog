@@ -1,1 +1,63 @@
-{}
+{
+  "2026-11-01": {
+    "revision": 1,
+    "items": {
+      "3a42a9f193a6": {
+        "type": "new",
+        "area": "Teams",
+        "text": "Player profiles now show current and previous teams, with available membership history.",
+        "status": "published",
+        "source": "manual"
+      },
+      "f7b49f6c8463": {
+        "type": "new",
+        "area": "Teams",
+        "text": "Team pages show a roster history of current and former members.",
+        "status": "published",
+        "source": "manual"
+      },
+      "89596e81fe19": {
+        "type": "new",
+        "area": "Teams",
+        "text": "The team activity feed shows when players join, rejoin, leave or are removed.",
+        "status": "published",
+        "source": "manual"
+      },
+      "f9c4d41045fc": {
+        "type": "new",
+        "area": "Changelog",
+        "text": "A new Changelog page under Info shows patch notes by day, with search, filters and a dot for new changes.",
+        "status": "published",
+        "source": "manual"
+      },
+      "d8ca01b3772f": {
+        "type": "new",
+        "area": "Matchmaking",
+        "text": "EU and SA are now separate region groups, and the Play page counts the queue for your region group.",
+        "status": "published",
+        "source": "manual"
+      },
+      "f3268a5378e2": {
+        "type": "improved",
+        "area": "Matchmaking",
+        "text": "Each region group can open or close matchmaking modes on its own, and the Play page shows what is open in your region.",
+        "status": "published",
+        "source": "manual"
+      },
+      "19f5fcb4b846": {
+        "type": "improved",
+        "area": "Matchmaking",
+        "text": "If a mode closes while you are in its queue, you leave the queue and get a message.",
+        "status": "published",
+        "source": "manual"
+      },
+      "ae58f44b7546": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "Choose EU or SA from a dropdown in settings or on your profile. Staff approve the change.",
+        "status": "published",
+        "source": "manual"
+      }
+    }
+  }
+}
