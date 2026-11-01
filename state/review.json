@@ -1,0 +1,19 @@
+{
+  "alerted": null,
+  "releases": {
+    "5364f886b0c0de0f": {
+      "date": "2026-11-01",
+      "verifiedAt": "2026-11-01T12:40:20Z",
+      "ranges": [
+        {
+          "side": "web",
+          "from": "5dc9040eb8cf9703f962e9d5e4991e92a57c3d07",
+          "to": "1fd77027fb3be589559db0eea30b327f3171a63e"
+        }
+      ],
+      "held": 2,
+      "issue": 2,
+      "issuedAt": "2026-11-01T12:47:01Z"
+    }
+  }
+}
