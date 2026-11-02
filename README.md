@@ -2,6 +2,16 @@
 
 DEAFCS patch notes: new features, improvements and fixes, newest first. They also appear on the DEAFCS Changelog page (Info, then Changelog).
 
+## Patch Notes | November 2, 2026
+
+### Improved
+
+- **Matches:** Match pages open faster, and the scoreboard keeps players in a steady ADR order during live matches.
+
+### Fixed
+
+- **Support:** Older player reports show the reported player's profile link again.
+
 ## Patch Notes | November 1, 2026
 
 Team history on profiles and team pages, a new Changelog page, a new search, and matchmaking by region.

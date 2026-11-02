@@ -185,5 +185,24 @@
         "source": "release:70993637861c6cab"
       }
     }
+  },
+  "2026-11-02": {
+    "revision": 1,
+    "items": {
+      "061bb7cadaae": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "Match pages open faster, and the scoreboard keeps players in a steady ADR order during live matches.",
+        "status": "published",
+        "source": "release:a9271505cd40395e"
+      },
+      "713aa4000bf3": {
+        "type": "fixed",
+        "area": "Support",
+        "text": "Older player reports show the reported player's profile link again.",
+        "status": "published",
+        "source": "release:a9271505cd40395e"
+      }
+    }
   }
 }

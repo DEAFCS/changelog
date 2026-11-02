@@ -2,6 +2,27 @@
   "month": "2026-11",
   "days": [
     {
+      "date": "2026-11-02",
+      "revision": 1,
+      "title": "Patch Notes | November 2, 2026",
+      "summary": "",
+      "sections": {
+        "new": [],
+        "improved": [
+          {
+            "area": "Matches",
+            "text": "Match pages open faster, and the scoreboard keeps players in a steady ADR order during live matches."
+          }
+        ],
+        "fixed": [
+          {
+            "area": "Support",
+            "text": "Older player reports show the reported player's profile link again."
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-01",
       "revision": 8,
       "title": "Patch Notes | November 1, 2026",

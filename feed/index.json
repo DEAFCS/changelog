@@ -2,8 +2,8 @@
   "months": [
     {
       "month": "2026-11",
-      "days": 1,
-      "hash": "469311602fbccc84"
+      "days": 2,
+      "hash": "8ccee461952f8beb"
     }
   ],
   "areas": [
@@ -19,11 +19,12 @@
     "Search",
     "Seasons",
     "Steam",
+    "Support",
     "Teams"
   ],
   "latest": {
-    "date": "2026-11-01",
-    "revision": 8
+    "date": "2026-11-02",
+    "revision": 1
   },
   "monitoredOn": "2026-11-02"
 }
