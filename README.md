@@ -11,6 +11,9 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 ### Fixed
 
 - **Support:** Older player reports show the reported player's profile link again.
+- **Profiles:** Team kills, suicides and assists on teammates no longer count toward your kills, assists and weapon stats.
+- **Leaderboards:** Kill and K/D boards no longer count team kills or suicides as kills.
+- **Tournaments:** Stats tabs and the standings tiebreaker count kills and deaths the same way as everywhere else.
 
 ## Patch Notes | November 1, 2026
 

@@ -187,7 +187,7 @@
     }
   },
   "2026-11-02": {
-    "revision": 1,
+    "revision": 2,
     "items": {
       "061bb7cadaae": {
         "type": "improved",
@@ -202,6 +202,27 @@
         "text": "Older player reports show the reported player's profile link again.",
         "status": "published",
         "source": "release:a9271505cd40395e"
+      },
+      "e9ef02e1768e": {
+        "type": "fixed",
+        "area": "Profiles",
+        "text": "Team kills, suicides and assists on teammates no longer count toward your kills, assists and weapon stats.",
+        "status": "published",
+        "source": "release:ee057db1312db5bc"
+      },
+      "2ba40de71f38": {
+        "type": "fixed",
+        "area": "Leaderboards",
+        "text": "Kill and K/D boards no longer count team kills or suicides as kills.",
+        "status": "published",
+        "source": "release:ee057db1312db5bc"
+      },
+      "e5d2e718ce43": {
+        "type": "fixed",
+        "area": "Tournaments",
+        "text": "Stats tabs and the standings tiebreaker count kills and deaths the same way as everywhere else.",
+        "status": "published",
+        "source": "release:ee057db1312db5bc"
       }
     }
   }

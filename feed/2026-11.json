@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-02",
-      "revision": 1,
+      "revision": 2,
       "title": "Patch Notes | November 2, 2026",
       "summary": "",
       "sections": {
@@ -18,6 +18,18 @@
           {
             "area": "Support",
             "text": "Older player reports show the reported player's profile link again."
+          },
+          {
+            "area": "Profiles",
+            "text": "Team kills, suicides and assists on teammates no longer count toward your kills, assists and weapon stats."
+          },
+          {
+            "area": "Leaderboards",
+            "text": "Kill and K/D boards no longer count team kills or suicides as kills."
+          },
+          {
+            "area": "Tournaments",
+            "text": "Stats tabs and the standings tiebreaker count kills and deaths the same way as everywhere else."
           }
         ]
       }
