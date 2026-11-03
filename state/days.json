@@ -225,5 +225,115 @@
         "source": "release:ee057db1312db5bc"
       }
     }
+  },
+  "2026-11-03": {
+    "revision": 2,
+    "items": {
+      "8a287f311e15": {
+        "type": "new",
+        "area": "Matches",
+        "text": "Report a player straight from their row on the scoreboard.",
+        "status": "removed",
+        "source": "release:708ef30511fbf03c"
+      },
+      "b094395dc281": {
+        "type": "new",
+        "area": "Matches",
+        "text": "The scoreboard and staff chat log show each player's CS2 teammate color.",
+        "status": "removed",
+        "source": "release:708ef30511fbf03c"
+      },
+      "efd2d89585f2": {
+        "type": "new",
+        "area": "Tournaments",
+        "text": "Organizers can turn ELO off for a tournament in its settings before the first match starts.",
+        "status": "removed",
+        "source": "release:708ef30511fbf03c"
+      },
+      "6008d6d300fd": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "Report a player from the \"...\" menu next to their name on the scoreboard.",
+        "status": "removed",
+        "source": "release:708ef30511fbf03c"
+      },
+      "2a00a1b885d0": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "Call for Support now explains where to report a player instead.",
+        "status": "removed",
+        "source": "release:708ef30511fbf03c"
+      },
+      "1d5f627e6589": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "Report a player in a popup on the match page, with a reason, map and round.",
+        "status": "removed",
+        "source": "release:708ef30511fbf03c"
+      },
+      "26f4c4d674d5": {
+        "type": "improved",
+        "area": "Support",
+        "text": "Players are reported only from the scoreboard on the match page, with a reason from the list.",
+        "status": "removed",
+        "source": "release:708ef30511fbf03c"
+      },
+      "149220ad0ccb": {
+        "type": "improved",
+        "area": "Support",
+        "text": "The Contact page shows with pictures how to call support in a match and how to report a player.",
+        "status": "published",
+        "source": "release:708ef30511fbf03c"
+      },
+      "5a4fc3c84d08": {
+        "type": "new",
+        "area": "Tournaments",
+        "text": "Organizers can run a tournament without ELO, set before the first match starts.",
+        "status": "removed",
+        "source": "release:708ef30511fbf03c"
+      },
+      "e0d2b3cb104c": {
+        "type": "new",
+        "area": "Matches",
+        "text": "Report a player from their row on the scoreboard or the \"...\" menu next to their name, in a popup with a reason, the map and the round.",
+        "status": "published",
+        "source": "manual"
+      },
+      "0645fd9fdc29": {
+        "type": "new",
+        "area": "Matches",
+        "text": "The scoreboard shows each player's CS2 teammate color.",
+        "status": "published",
+        "source": "manual"
+      },
+      "e1d08c779ad0": {
+        "type": "new",
+        "area": "Tournaments",
+        "text": "Organizers can turn ELO off for a tournament in its settings, before the first match starts.",
+        "status": "published",
+        "source": "manual"
+      },
+      "7df3e5a2b6ae": {
+        "type": "new",
+        "area": "Practice",
+        "text": "Verified players can open Public Servers in the Practice section, and each server card can show its own picture.",
+        "status": "published",
+        "source": "manual"
+      },
+      "5780f0dacfa7": {
+        "type": "improved",
+        "area": "Support",
+        "text": "Call for Support now explains where to report a player instead.",
+        "status": "published",
+        "source": "manual"
+      },
+      "23ea12233f93": {
+        "type": "fixed",
+        "area": "Matchmaking",
+        "text": "Regions with only public servers (Deathmatch, Retake) no longer show up in matchmaking, so you can't queue where no match server can start.",
+        "status": "published",
+        "source": "manual"
+      }
+    }
   }
 }
