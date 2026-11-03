@@ -3,7 +3,7 @@
     {
       "month": "2026-11",
       "days": 3,
-      "hash": "f3fff73c75637019"
+      "hash": "d33cfc4e3c644ccf"
     }
   ],
   "areas": [
@@ -19,6 +19,7 @@
     "Profiles",
     "Search",
     "Seasons",
+    "Servers",
     "Steam",
     "Support",
     "Teams",
@@ -26,7 +27,7 @@
   ],
   "latest": {
     "date": "2026-11-03",
-    "revision": 3
+    "revision": 4
   },
   "monitoredOn": "2026-11-03"
 }

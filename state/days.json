@@ -227,7 +227,7 @@
     }
   },
   "2026-11-03": {
-    "revision": 3,
+    "revision": 4,
     "items": {
       "8a287f311e15": {
         "type": "new",
@@ -340,6 +340,83 @@
         "text": "Each day's patch notes are grouped by section, with a New, Improved or Fixed tag on every change.",
         "status": "published",
         "source": "release:7a407feae67562b9"
+      },
+      "419621377f8b": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "Match logs, system logs and RCON command suggestions show player names and plugin text as plain text.",
+        "status": "published",
+        "source": "release:3906b7790d6ec3b1"
+      },
+      "30d3792d6086": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "Match page highlight clips load with less work for the site.",
+        "status": "published",
+        "source": "release:3906b7790d6ec3b1"
+      },
+      "e750d5be9837": {
+        "type": "improved",
+        "area": "Servers",
+        "text": "The Public Servers page and the Play page's server card load with less work for the site.",
+        "status": "published",
+        "source": "release:3906b7790d6ec3b1"
+      },
+      "6a6a255898c9": {
+        "type": "fixed",
+        "area": "Tournaments",
+        "text": "Removing a category from a tournament works again.",
+        "status": "published",
+        "source": "release:3906b7790d6ec3b1"
+      },
+      "3557fb8efe89": {
+        "type": "fixed",
+        "area": "Tournaments",
+        "text": "Free-agent-only tournaments offer \"Join as a free agent\" instead of \"Register\" on their cards.",
+        "status": "published",
+        "source": "release:3906b7790d6ec3b1"
+      },
+      "c2005cd467d6": {
+        "type": "improved",
+        "area": "Leaderboards",
+        "text": "Leaderboards show fades and buttons on edges with more columns to scroll to.",
+        "status": "published",
+        "source": "release:3906b7790d6ec3b1"
+      },
+      "2fd6e4198df8": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "Player profiles load with less work for the site and show changes made elsewhere on your next visit.",
+        "status": "published",
+        "source": "release:3906b7790d6ec3b1"
+      },
+      "2288eff89b34": {
+        "type": "new",
+        "area": "Highlights",
+        "text": "Share on a clip opens Copy link and Download, and a clip's owner and staff can delete it right from the tile.",
+        "status": "published",
+        "source": "release:3906b7790d6ec3b1"
+      },
+      "558def02e51f": {
+        "type": "fixed",
+        "area": "Highlights",
+        "text": "A deleted clip leaves every list and playlist without a reload.",
+        "status": "published",
+        "source": "release:3906b7790d6ec3b1"
+      },
+      "cb73890b986a": {
+        "type": "fixed",
+        "area": "Highlights",
+        "text": "Deleting the first clip of a match group shows the next clip right away instead of the deleted one.",
+        "status": "published",
+        "source": "release:3906b7790d6ec3b1"
+      },
+      "66ec808a758d": {
+        "type": "fixed",
+        "area": "Highlights",
+        "text": "Only a clip's creator and staff can change or delete it, and only its creator can rename it.",
+        "status": "published",
+        "source": "release:3906b7790d6ec3b1"
       }
     }
   }
