@@ -15,6 +15,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 
 - **Support:** The Contact page shows with pictures how to call support in a match and how to report a player.
 - **Support:** Call for Support now explains where to report a player instead.
+- **Changelog:** Each day's patch notes are grouped by section, with a New, Improved or Fixed tag on every change.
 
 ### Fixed
 

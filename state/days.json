@@ -227,7 +227,7 @@
     }
   },
   "2026-11-03": {
-    "revision": 2,
+    "revision": 3,
     "items": {
       "8a287f311e15": {
         "type": "new",
@@ -333,6 +333,13 @@
         "text": "Regions with only public servers (Deathmatch, Retake) no longer show up in matchmaking, so you can't queue where no match server can start.",
         "status": "published",
         "source": "manual"
+      },
+      "0bfdff8123fe": {
+        "type": "improved",
+        "area": "Changelog",
+        "text": "Each day's patch notes are grouped by section, with a New, Improved or Fixed tag on every change.",
+        "status": "published",
+        "source": "release:7a407feae67562b9"
       }
     }
   }

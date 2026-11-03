@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-03",
-      "revision": 2,
+      "revision": 3,
       "title": "Patch Notes | November 3, 2026",
       "summary": "",
       "sections": {
@@ -33,6 +33,10 @@
           {
             "area": "Support",
             "text": "Call for Support now explains where to report a player instead."
+          },
+          {
+            "area": "Changelog",
+            "text": "Each day's patch notes are grouped by section, with a New, Improved or Fixed tag on every change."
           }
         ],
         "fixed": [
