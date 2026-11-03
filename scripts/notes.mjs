@@ -72,6 +72,24 @@ export const PLAYER_SCOPES = {
   changelog: "Changelog",
 };
 
+// Game-server scopes: what happens in a match or on a practice server. Only
+// game-server commits use them, so WEB and API titles read as before.
+export const GAME_SERVER_SCOPES = {
+  match: "Matches",
+  matches: "Matches",
+  leaver: "Matches",
+  surrender: "Matches",
+  forfeit: "Matches",
+  timeout: "Matches",
+  warmup: "Matches",
+  restore: "Matches",
+  disconnect: "Matches",
+  tournament: "Tournaments",
+  practice: "Practice",
+  pracc: "Practice",
+  "utility-sw": "Utility",
+};
+
 const TITLE = /^(feat|fix|perf|ux)\(([a-z0-9-]+)\)!?:\s+(.+)$/i;
 
 // Words that make a title not clearly safe for players to read.
@@ -79,13 +97,13 @@ const HOLD_WORDS =
   /\b(admin\w*|staff|moderat\w*|auth\w*|log ?(in|out)|sign[- ]?(in|out)|sessions?|security|secure|exploit\w*|vulnerab\w*|cheat\w*|bans?|banned|sanction\w*|reports?|reporting|abuse|private|internal|demo|wip|temp\w*|test\w*|debug\w*|revert\w*|rollbacks?|hotfix|workaround|server[- ]side|sockets?|cache\w*|queue workers?|metadata|schema|endpoint\w*|webhooks?|cron|jobs?|env\w*|config\w*|deploy\w*)\b/i;
 
 // The note a commit title gives, or why it doesn't give one.
-export function titleNote(title) {
+export function titleNote(title, side = "web") {
   const match = title.trim().match(TITLE);
   if (!match) {
     return { held: "title is not feat/fix/perf/ux(scope): ..." };
   }
   const [, kind, scope, subject] = match;
-  const area = PLAYER_SCOPES[scope.toLowerCase()];
+  const area = (side === "gameserver" ? GAME_SERVER_SCOPES : PLAYER_SCOPES)[scope.toLowerCase()];
   if (!area) {
     return { held: `scope "${scope}" is not on the player-facing list` };
   }
@@ -126,6 +144,8 @@ export function sameFeature(a, b) {
   return [...featureWords(a.text)].filter((word) => right.has(word)).length >= 2;
 }
 
+const LABELS = { web: "WEB", api: "API", gameserver: "GAME SERVER" };
+
 export async function notesFor(changes, { blocked = [] } = {}) {
   const candidates = [];
   const titled = [];
@@ -142,20 +162,21 @@ export async function notesFor(changes, { blocked = [] } = {}) {
     if (!eligible(change)) {
       continue;
     }
-    const { item, held } = titleNote(change.title);
+    const { item, held } = titleNote(change.title, change.side);
     if (item) {
       titled.push({ ...item, side: change.side });
     } else {
-      review.push({ reason: held, note: `${change.side.toUpperCase()} ${change.kind}: ${change.title.trim()}` });
+      review.push({ reason: held, note: `${LABELS[change.side] ?? change.side.toUpperCase()} ${change.kind}: ${change.title.trim()}` });
     }
   }
 
-  // One feature often has a WEB and an API commit with different titles.
-  // Players see the WEB side, so an API title note is dropped when a WEB title
-  // note in the same release clearly describes the same feature. Changelog
-  // lines are never dropped here: their author chose them.
+  // One feature often has a WEB and an API (or game-server) commit with
+  // different titles. Players see the WEB side, so an API or game-server
+  // title note is dropped when a WEB title note in the same release clearly
+  // describes the same feature. Changelog lines are never dropped here: their
+  // author chose them.
   for (const item of titled) {
-    const twin = item.side === "api" && titled.find((other) => other.side === "web" && sameFeature(other, item));
+    const twin = item.side !== "web" && titled.find((other) => other.side === "web" && sameFeature(other, item));
     if (twin) {
       review.push({ reason: "same feature as a WEB note", note: renderItem(item) });
     } else {

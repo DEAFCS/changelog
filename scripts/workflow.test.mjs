@@ -39,7 +39,8 @@ test("publication starts only from the production check, a recorded release, a h
 });
 
 test("the workflow can only write this repository, one run at a time, on top of the newest main", () => {
-  assert.match(workflow, /^permissions:\n {2}contents: write\n\n/m);
+  // packages: read only lets game-server tracking read image digests.
+  assert.match(workflow, /^permissions:\n {2}contents: write\n {2}packages: read\n\n/m);
   assert.match(workflow, /group: changelog\n\s+cancel-in-progress: false/);
   assert.match(workflow, /git reset --hard origin\/main/);
   assert.match(workflow, /git push origin HEAD:main/);

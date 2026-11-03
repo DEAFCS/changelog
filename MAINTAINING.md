@@ -104,3 +104,13 @@ The commit starts the workflow, which notices the change and rebuilds the feed. 
 - GitHub pauses scheduled workflows in a public repository after 60 days without commits. Releases keep it active; after a long quiet spell, re-enable it on the Actions tab.
 
 This repository is public, and so are its workflow logs. They show release IDs and counts only.
+
+## Game servers (off until `CHANGELOG_GAME_SERVER` = `true`)
+
+- **What counts:** the images new match and practice servers start from, as the API's `/system/version` reports them (`gameServer.server`, `gameServer.practice`). An image counts only when its digest is the image of a DEAFCS/game-server release (`sw-v0.0.N` = `ghcr.io/deafcs/game-server-sw:v0.0.N`, `css-v0.0.N` = `game-server-css`); the release tag names the commit. A pushed commit, a built image or a release that production doesn't run is never published. The same 10 minutes apply.
+- **Match and practice on different releases:** the newer one counts. Its range covers the older one, so nothing is published twice when the other catches up.
+- **Notes:** the same rules as WEB and API (Changelog lines first, then titles). In-match scopes (`match`, `leaver`, `surrender`, `forfeit`, `timeout`, `warmup`, `restore`, `disconnect`, `tournament`, `practice`, `pracc`, `utility-sw`) read as player notes for game-server commits only; `swiftly`, `ci` and the like are held or skipped. A game-server title note that says the same as a WEB note in the release is dropped.
+- **An image that isn't a release** (built by hand): the run fails once, then only warns; nothing is recorded until production runs a release again. A registry or GitHub hiccup is retried quietly and reported once after 30 minutes. Neither touches WEB or API tracking or the monitoring date.
+- `state/game-server-images.json` remembers which digest is which release, so the registry is asked once per new image. Never edit it by hand.
+- `state/releases.json` `lastDeployed.gameserver` is where the next range starts. Without it a game-server release is flagged, not guessed.
+- **Needs:** `GH_READ_TOKEN` with Contents: read on `game-server` too; the `game-server-sw` (and `game-server-css`) package settings must give `DEAFCS/changelog` Read access (Package settings → Manage Actions access), so the workflow's own token can read digests (`packages: read`). No new secret.

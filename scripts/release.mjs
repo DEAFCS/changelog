@@ -10,20 +10,27 @@ const DIGEST = /^sha256:[0-9a-f]{64}$/;
 
 // Immutable: the commits that went live. The same release recorded twice
 // (by the check and by hand) gets the same ID and is processed once.
-export function releaseId({ web, api }) {
+// The game servers join the ID only when the release has them, so every
+// WEB/API release keeps the ID it always had.
+export const SIDES = ["web", "api", "gameserver"];
+
+export function releaseId({ web, api, gameserver }) {
   return createHash("sha256")
-    .update(`web=${web?.to ?? "-"};api=${api?.to ?? "-"}`)
+    .update(`web=${web?.to ?? "-"};api=${api?.to ?? "-"}${gameserver ? `;gameserver=${gameserver.to}` : ""}`)
     .digest("hex")
     .slice(0, 16);
 }
 
-export function makeRecord({ web = null, api = null, verifiedAt }) {
+export function makeRecord({ web = null, api = null, gameserver = null, verifiedAt }) {
   const record = { version: 2, verified: true, verifiedAt };
   if (web) {
     record.web = web;
   }
   if (api) {
     record.api = api;
+  }
+  if (gameserver) {
+    record.gameserver = gameserver;
   }
   record.id = releaseId(record);
   return record;
@@ -45,9 +52,9 @@ export function validateRecord(record) {
   ) {
     return "verifiedAt is not a timestamp with a time zone";
   }
-  const sides = ["web", "api"].filter((side) => record[side]);
+  const sides = SIDES.filter((side) => record[side]);
   if (sides.length === 0) {
-    return "no WEB or API release in it";
+    return "no WEB, API or game-server release in it";
   }
   for (const side of sides) {
     const { to, image, from } = record[side];

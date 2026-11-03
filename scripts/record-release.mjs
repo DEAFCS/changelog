@@ -5,7 +5,7 @@
 // clone of DEAFCS/changelog, only after the release has passed verification.
 //
 //   node scripts/record-release.mjs --verified \
-//     --web-to <full commit> --api-to <full commit> \
+//     --web-to <full commit> --api-to <full commit> [--gameserver-to <full commit>] \
 //     [--web-image sha256:<digest>] [--api-image sha256:<digest>] \
 //     [--verified-at 2026-10-31T13:24:27Z] [--web-from <commit>] [--api-from <commit>] [--no-push]
 //
@@ -36,6 +36,7 @@ export function parseArgs(argv) {
     verifiedAt: value("verified-at") ?? new Date().toISOString().replace(/\.\d{3}Z$/, "Z"),
     web: side("web"),
     api: side("api"),
+    ...(side("gameserver") ? { gameserver: side("gameserver") } : {}),
   };
 }
 
@@ -82,5 +83,5 @@ if (import.meta.main) {
   if (args.push) {
     pushRecord(".", record, file);
   }
-  console.log(`Recorded release ${record.id} (${[record.web && "WEB", record.api && "API"].filter(Boolean).join(" + ")}).`);
+  console.log(`Recorded release ${record.id} (${[record.web && "WEB", record.api && "API", record.gameserver && "game servers"].filter(Boolean).join(" + ")}).`);
 }

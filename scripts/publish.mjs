@@ -11,7 +11,7 @@ import path from "node:path";
 import { appendItems, copenhagenDate, dayTitle, dedupe, entryPath } from "./entry.mjs";
 import { writeFeed, writeReadme } from "./feed.mjs";
 import { notesFor } from "./notes.mjs";
-import { validateRecord } from "./release.mjs";
+import { SIDES, validateRecord } from "./release.mjs";
 import { collect, NotAheadError } from "./sources.mjs";
 import { loadState, saveState, syncAll } from "./state.mjs";
 
@@ -74,7 +74,7 @@ export async function publish(dir, { github, blocked = [] } = {}) {
 
     const ranges = [];
     let missing = null;
-    for (const side of ["web", "api"]) {
+    for (const side of SIDES) {
       if (!record[side]) {
         continue;
       }
@@ -133,10 +133,11 @@ export async function publish(dir, { github, blocked = [] } = {}) {
       verifiedAt: record.verifiedAt,
       web: record.web?.to ?? null,
       api: record.api?.to ?? null,
+      ...(record.gameserver ? { gameserver: record.gameserver.to } : {}),
       added: fresh.length,
       held: notes.review.length,
     };
-    for (const side of ["web", "api"]) {
+    for (const side of SIDES) {
       if (record[side]) {
         state.releases.lastDeployed[side] = record[side].to;
       }
@@ -179,7 +180,8 @@ if (import.meta.main) {
 
   // A credential problem stops here, before any release is looked at, so it
   // is reported as one, not as releases flagged for review.
-  const denied = await checkAccess(github);
+  const { gameServerEnabled } = await import("./gameserver.mjs");
+  const denied = await checkAccess(github, undefined, ["web", "api", ...(gameServerEnabled() ? ["gameserver"] : [])]);
   if (denied.length > 0) {
     for (const problem of denied) {
       console.log(problem);
@@ -187,7 +189,7 @@ if (import.meta.main) {
     console.log("Nothing processed. Fix GH_READ_TOKEN (see SETUP.md, step 3) and run again.");
     process.exit(1);
   }
-  console.log("GH_READ_TOKEN can read deafcs-web and api-deafcs.");
+  console.log(`GH_READ_TOKEN can read deafcs-web and api-deafcs${gameServerEnabled() ? " and game-server" : ""}.`);
 
   const report = await publish(".", {
     github,

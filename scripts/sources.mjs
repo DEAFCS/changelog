@@ -7,6 +7,8 @@ export const ORG = "DEAFCS";
 export const SIDES = {
   web: { repo: "deafcs-web", area: "the DEAFCS website" },
   api: { repo: "api-deafcs", area: "the DEAFCS website (server side)" },
+  // Only with CHANGELOG_GAME_SERVER on (scripts/gameserver.mjs).
+  gameserver: { repo: "game-server", area: "the DEAFCS game servers" },
 };
 
 const SKIP_LABELS = ["no-changelog", "internal"];
@@ -32,16 +34,16 @@ export function githubClient(token = process.env.GH_READ_TOKEN, fetcher = fetch)
   };
 }
 
-// Can the read token see the commits of both private repositories? Checked
+// Can the read token see the commits of the private repositories? Checked
 // before anything else, so a missing, expired or wrongly scoped token fails
 // the run with a clear message, instead of every release looking like a
 // commit GitHub doesn't know. Needs Contents: read, nothing more.
-export async function checkAccess(github, token = process.env.GH_READ_TOKEN) {
+export async function checkAccess(github, token = process.env.GH_READ_TOKEN, sides = ["web", "api"]) {
   if (!token) {
     return ["GH_READ_TOKEN is not set"];
   }
   const problems = [];
-  for (const { repo } of Object.values(SIDES)) {
+  for (const { repo } of sides.map((side) => SIDES[side])) {
     try {
       await github(`/repos/${ORG}/${repo}/commits?per_page=1`);
     } catch (error) {

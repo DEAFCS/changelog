@@ -12,6 +12,11 @@
 //
 // state/production.json remembers, per side, the commit last seen and since
 // when.
+//
+// With CHANGELOG_GAME_SERVER on, the game servers are a third side: the API's
+// version answer also names the images new match and practice servers start
+// from, and scripts/gameserver.mjs turns them into a DEAFCS/game-server commit.
+// Without it, or with an API that doesn't name them, only WEB and API count.
 import fs from "node:fs";
 import path from "node:path";
 import { makeRecord } from "./release.mjs";
@@ -34,13 +39,14 @@ const SHA = /^[0-9a-f]{40}$/;
 export function observe(state, seen, now) {
   const next = { ...state };
   const problems = [];
-  for (const side of ["web", "api"]) {
-    const { answered, commit } = seen[side] ?? { answered: false };
+  for (const side of sidesOf(seen)) {
+    const { answered, commit, problem } = seen[side] ?? { answered: false };
     if (!answered || !SHA.test(commit ?? "")) {
       problems.push(
-        answered
-          ? `${side}: production doesn't report a full commit (${commit === null ? "none" : `"${String(commit).slice(0, 20)}"`})`
-          : `${side}: no answer from the version endpoint`,
+        problem ??
+          (answered
+            ? `${side}: production doesn't report a full commit (${commit === null ? "none" : `"${String(commit).slice(0, 20)}"`})`
+            : `${side}: no answer from the version endpoint`),
       );
       // unusableSince: when this side stopped giving a usable answer, so a
       // long outage can fail the run (see outages below).
@@ -59,19 +65,25 @@ export function observe(state, seen, now) {
   // a run whose push didn't land never counts. Once a day it changes, so the
   // workflow commits at least daily, which keeps GitHub from pausing the
   // schedule after 60 days without activity.
+  // The game servers don't count here: the monitoring date is about WEB and API.
   const today = now.toISOString().slice(0, 10);
-  if (problems.length === 0 && next.checkedOn !== today) {
+  if (!problems.some((problem) => !problem.startsWith("gameserver:")) && next.checkedOn !== today) {
     next.checkedOn = today;
   }
   return { state: next, problems };
+}
+
+// WEB and API always; the game servers only in a check that reported them.
+export function sidesOf(seen) {
+  return ["web", "api", ...(seen.gameserver ? ["gameserver"] : [])];
 }
 
 export const OUTAGE_MINUTES = 30;
 
 // Sides that have given no usable answer for OUTAGE_MINUTES or longer. A
 // short blip is retried quietly; a long one fails the run, so GitHub emails it.
-export function outages(state, now, minutes = OUTAGE_MINUTES) {
-  return ["web", "api"].filter((side) => {
+export function outages(state, now, minutes = OUTAGE_MINUTES, sides = ["web", "api"]) {
+  return sides.filter((side) => {
     const since = Date.parse(state[side]?.unusableSince ?? "");
     return !Number.isNaN(since) && now.getTime() - since >= minutes * 60_000;
   });
@@ -82,7 +94,9 @@ export function outages(state, now, minutes = OUTAGE_MINUTES) {
 // ones already emailed, so the run fails once when they start or change, then
 // only logs them until they clear (like the review queue, scripts/review.mjs).
 export function alerting(state, problems, down) {
-  const noCommit = problems.filter((problem) => problem.includes("doesn't report a full commit"));
+  // A game-server image that isn't a release counts like a build without its
+  // commit: nothing can be recorded until someone looks.
+  const noCommit = problems.filter((problem) => /doesn't report a full commit|^gameserver: the \w+ image/.test(problem));
   // A side without its commit counts as an outage too; that's one problem.
   const current = [
     ...noCommit,
@@ -104,7 +118,7 @@ export function alerting(state, problems, down) {
 export function decide(state, lastDeployed, answered, now, stableMinutes = STABLE_MINUTES) {
   const sides = {};
   let verifiedAt = null;
-  for (const side of ["web", "api"]) {
+  for (const side of ["web", "api", "gameserver"]) {
     const seen = state[side];
     if (!answered.includes(side) || !seen?.since || seen.commit === lastDeployed[side]) {
       continue;
@@ -126,7 +140,7 @@ export function decide(state, lastDeployed, answered, now, stableMinutes = STABL
   return makeRecord({ ...sides, verifiedAt: verifiedAt.toISOString().replace(/\.\d{3}Z$/, "Z") });
 }
 
-async function readCommit(url, fetcher) {
+async function readVersion(url, fetcher) {
   if (!url) {
     return { answered: false };
   }
@@ -136,22 +150,34 @@ async function readCommit(url, fetcher) {
       return { answered: false };
     }
     const body = await response.json();
-    return { answered: true, commit: typeof body?.commit === "string" ? body.commit.trim().toLowerCase() : null };
+    return { answered: true, commit: typeof body?.commit === "string" ? body.commit.trim().toLowerCase() : null, body };
   } catch {
     return { answered: false };
   }
 }
 
-export async function checkProduction(dir, { urls, fetcher = fetch, now = new Date() } = {}) {
+// gameServer: (reported) => side answer or null, from scripts/gameserver.mjs;
+// left out, the game servers aren't checked at all.
+export async function checkProduction(dir, { urls, fetcher = fetch, now = new Date(), gameServer = null } = {}) {
   const file = path.join(dir, PRODUCTION);
   const state = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, "utf8")) : {};
   const releases = JSON.parse(fs.readFileSync(path.join(dir, "state/releases.json"), "utf8"));
 
-  const seen = { web: await readCommit(urls.web, fetcher), api: await readCommit(urls.api, fetcher) };
+  const web = await readVersion(urls.web, fetcher);
+  const api = await readVersion(urls.api, fetcher);
+  const seen = { web: { answered: web.answered, commit: web.commit }, api: { answered: api.answered, commit: api.commit } };
+  if (gameServer) {
+    // Tracked, but the API says nothing about game servers: keep counting
+    // from the last answer instead of calling it an outage.
+    const side = api.answered ? await gameServer(api.body?.gameServer) : { answered: false };
+    if (side) {
+      seen.gameserver = side;
+    }
+  }
   const observed = observe(state, seen, now);
-  const answered = ["web", "api"].filter((side) => seen[side].answered && SHA.test(seen[side].commit ?? ""));
+  const answered = sidesOf(seen).filter((side) => seen[side].answered && SHA.test(seen[side].commit ?? ""));
   const record = decide(observed.state, releases.lastDeployed, answered, now);
-  const down = outages(observed.state, now);
+  const down = outages(observed.state, now, OUTAGE_MINUTES, sidesOf(seen));
   const alerted = alerting(observed.state, observed.problems, down);
 
   if (JSON.stringify(alerted.state) !== JSON.stringify(state)) {
@@ -167,8 +193,12 @@ export async function checkProduction(dir, { urls, fetcher = fetch, now = new Da
 }
 
 if (import.meta.main) {
+  const { gameServerEnabled, registryClient, resolveGameServer } = await import("./gameserver.mjs");
+  const { githubClient } = await import("./sources.mjs");
+  const tools = { github: githubClient(), registry: registryClient() };
   const { record, problems, outages: down, alert, reported } = await checkProduction(".", {
     urls: { web: process.env.WEB_VERSION_URL, api: process.env.API_VERSION_URL },
+    gameServer: gameServerEnabled() ? (reported) => resolveGameServer(".", reported, tools) : null,
   });
   for (const problem of problems) {
     console.log(`Production check: ${problem}`);
