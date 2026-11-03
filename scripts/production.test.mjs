@@ -181,6 +181,25 @@ test("an image built without its commit is reported, never recorded", async () =
   assert.deepEqual(pending(dir), []);
 });
 
+test("a build without its commit emails once, not every 10 minutes, and again after it clears", async () => {
+  const dir = repo();
+  const check = (api, minute) => checkProduction(dir, { urls, fetcher: site({ web: sha("a"), api }), now: at(minute) });
+  assert.equal((await check(null, 0)).alert, true);
+  for (const minute of [10, 20, 30, 40]) {
+    const { alert, reported } = await check(null, minute);
+    assert.equal(alert, false, `minute ${minute}`);
+    assert.ok(reported.includes("api: production doesn't report a full commit (none)"));
+  }
+  // After 30 minutes it is also an outage, but still the same problem.
+  assert.deepEqual((await check(null, 40)).outages, ["api"]);
+  // A side that stops answering at all is a new problem: one more email.
+  assert.equal((await check(new Error("down"), 45)).alert, true);
+  const cleared = await check(sha("b"), 50);
+  assert.deepEqual([cleared.alert, cleared.reported], [false, []]);
+  assert.equal(JSON.parse(fs.readFileSync(path.join(dir, "state/production.json"), "utf8")).alerted, undefined);
+  assert.equal((await check(null, 60)).alert, true);
+});
+
 test("an endpoint without a usable answer for 30 minutes fails the run; a short blip doesn't", async () => {
   const dir = repo();
   await checkProduction(dir, { urls, fetcher: site({ web: sha("a"), api: sha("b") }), now: at(0) });

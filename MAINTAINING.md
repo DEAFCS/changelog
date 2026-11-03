@@ -80,7 +80,8 @@ The commit starts the workflow, which notices the change and rebuilds the feed. 
 
 - `releases/flagged/<file>`: a release that couldn't be trusted, with the reason. Fix the record (add the full commit as `"to"`, or a missing `"from"`), move it back to `releases/pending/` and commit. Or delete it to skip that release.
 - If GitHub fails, that release and every later one stay pending and the run fails. The next run, 10 minutes later, tries again. Production is never touched.
-- If production reports no commit (an image built without `DEAFCS_COMMIT`), nothing can be recorded and the run fails, so GitHub emails the failure. A version endpoint that doesn't answer (a short outage) is just tried again.
+- If production reports no commit (an image built without `DEAFCS_COMMIT`), nothing can be recorded and the run fails, so GitHub emails the failure. A version endpoint that doesn't answer (a short outage) is just tried again; after 30 minutes the run fails too.
+- One email per problem: the run fails when a problem starts or changes, then only warns until it clears (`alerted` in `state/production.json`). A dry run only warns. Nothing is lost while a problem lasts: the last published commits stay in `state/releases.json`, so the first release after the fix covers everything since.
 
 ## What the production check can and can't prove
 

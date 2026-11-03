@@ -73,6 +73,27 @@ export function outages(state, now, minutes = OUTAGE_MINUTES) {
   });
 }
 
+// The problems worth an email: a side that answers without a full commit,
+// and a side without a usable answer for OUTAGE_MINUTES. alerted keeps the
+// ones already emailed, so the run fails once when they start or change, then
+// only logs them until they clear (like the review queue, scripts/review.mjs).
+export function alerting(state, problems, down) {
+  const noCommit = problems.filter((problem) => problem.includes("doesn't report a full commit"));
+  // A side without its commit counts as an outage too; that's one problem.
+  const current = [
+    ...noCommit,
+    ...down
+      .filter((side) => !noCommit.some((problem) => problem.startsWith(`${side}:`)))
+      .map((side) => `${side}: no usable answer for ${OUTAGE_MINUTES}+ minutes`),
+  ].sort();
+  if (current.length === 0) {
+    const { alerted, ...rest } = state;
+    return { state: rest, alert: false };
+  }
+  const alert = JSON.stringify(current) !== JSON.stringify(state.alerted ?? []);
+  return { state: { ...state, alerted: current }, alert };
+}
+
 // A release when a side settled on a commit that isn't published yet. Only
 // sides that answered in this check count, so a site that is down never
 // "settles".
@@ -124,35 +145,40 @@ export async function checkProduction(dir, { urls, fetcher = fetch, now = new Da
   const observed = observe(state, seen, now);
   const answered = ["web", "api"].filter((side) => seen[side].answered && SHA.test(seen[side].commit ?? ""));
   const record = decide(observed.state, releases.lastDeployed, answered, now);
+  const down = outages(observed.state, now);
+  const alerted = alerting(observed.state, observed.problems, down);
 
-  if (JSON.stringify(observed.state) !== JSON.stringify(state)) {
+  if (JSON.stringify(alerted.state) !== JSON.stringify(state)) {
     fs.mkdirSync(path.dirname(file), { recursive: true });
-    fs.writeFileSync(file, `${JSON.stringify(observed.state, null, 2)}\n`);
+    fs.writeFileSync(file, `${JSON.stringify(alerted.state, null, 2)}\n`);
   }
   if (record) {
     const pending = path.join(dir, "releases", "pending", `${record.id}.json`);
     fs.mkdirSync(path.dirname(pending), { recursive: true });
     fs.writeFileSync(pending, `${JSON.stringify(record, null, 2)}\n`);
   }
-  return { record, problems: observed.problems, outages: outages(observed.state, now) };
+  return { record, problems: observed.problems, outages: down, alert: alerted.alert, reported: alerted.state.alerted ?? [] };
 }
 
 if (import.meta.main) {
-  const { record, problems, outages: down } = await checkProduction(".", {
+  const { record, problems, outages: down, alert, reported } = await checkProduction(".", {
     urls: { web: process.env.WEB_VERSION_URL, api: process.env.API_VERSION_URL },
   });
   for (const problem of problems) {
     console.log(`Production check: ${problem}`);
   }
   console.log(record ? `Recorded release ${record.id}` : "No new verified release");
-  // Fail loudly, so GitHub emails it, when a side answers without a full
-  // commit (built without it), or has given no usable answer for
-  // OUTAGE_MINUTES. A shorter blip is retried quietly next run.
-  if (problems.some((problem) => problem.includes("doesn't report a full commit"))) {
-    process.exitCode = 2;
-  }
   if (down.length > 0) {
     console.log(`Production check: no usable answer for ${OUTAGE_MINUTES}+ minutes from ${down.join(" and ")}`);
+  }
+  // Fail loudly, so GitHub emails it, when a side starts answering without a
+  // full commit (built without it) or has given no usable answer for
+  // OUTAGE_MINUTES. Later runs with the same problem only warn. A dry run
+  // saves no state, so it only warns: the first real run emails instead.
+  if (alert && process.env.DRY_RUN !== "true") {
+    console.log("::error::Production check: a new problem; later runs only warn until it clears.");
     process.exitCode = 2;
+  } else if (reported.length > 0) {
+    console.log(`::warning::Production check: ${reported.length} problem(s) reported before, not emailed again until they clear.`);
   }
 }
