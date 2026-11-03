@@ -59,7 +59,8 @@
         }
       ],
       "held": 4,
-      "issue": null
+      "issue": 5,
+      "issuedAt": "2026-11-03T18:21:15Z"
     }
   }
 }
