@@ -2,6 +2,15 @@
 
 DEAFCS patch notes: new features, improvements and fixes, newest first. They also appear on the DEAFCS Changelog page (Info, then Changelog).
 
+## Patch Notes | November 4, 2026
+
+### Improved
+
+- **Navigation:** The left sidebar has clearer groups, with Community, Updates and Info sections.
+- **Navigation:** The Info section stays open or closed after a page reload, like the other sections.
+- **Rules:** General, Matchmaking and Tournament Rules are now one Rules page with three tabs.
+- **Navigation:** The Info section is shorter, and the collapsed sidebar shows it as one icon with a menu.
+
 ## Patch Notes | November 3, 2026
 
 ### New

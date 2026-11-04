@@ -2,8 +2,8 @@
   "months": [
     {
       "month": "2026-11",
-      "days": 3,
-      "hash": "d33cfc4e3c644ccf"
+      "days": 4,
+      "hash": "75c1dc134dd139df"
     }
   ],
   "areas": [
@@ -13,10 +13,12 @@
     "Leaderboards",
     "Matches",
     "Matchmaking",
+    "Navigation",
     "Notifications",
     "Performance",
     "Practice",
     "Profiles",
+    "Rules",
     "Search",
     "Seasons",
     "Servers",
@@ -26,8 +28,8 @@
     "Tournaments"
   ],
   "latest": {
-    "date": "2026-11-03",
-    "revision": 4
+    "date": "2026-11-04",
+    "revision": 1
   },
   "monitoredOn": "2026-11-04"
 }

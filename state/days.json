@@ -419,5 +419,38 @@
         "source": "release:3906b7790d6ec3b1"
       }
     }
+  },
+  "2026-11-04": {
+    "revision": 1,
+    "items": {
+      "09781fa42df3": {
+        "type": "improved",
+        "area": "Navigation",
+        "text": "The left sidebar has clearer groups, with Community, Updates and Info sections.",
+        "status": "published",
+        "source": "release:51ea3690c74962cb"
+      },
+      "c432a18b5b20": {
+        "type": "improved",
+        "area": "Navigation",
+        "text": "The Info section stays open or closed after a page reload, like the other sections.",
+        "status": "published",
+        "source": "release:51ea3690c74962cb"
+      },
+      "0cc10e89691c": {
+        "type": "improved",
+        "area": "Rules",
+        "text": "General, Matchmaking and Tournament Rules are now one Rules page with three tabs.",
+        "status": "published",
+        "source": "release:51ea3690c74962cb"
+      },
+      "150dcaa26833": {
+        "type": "improved",
+        "area": "Navigation",
+        "text": "The Info section is shorter, and the collapsed sidebar shows it as one icon with a menu.",
+        "status": "published",
+        "source": "release:51ea3690c74962cb"
+      }
+    }
   }
 }
