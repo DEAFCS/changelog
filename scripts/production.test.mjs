@@ -52,6 +52,57 @@ test("a new commit counts as released only after 10 minutes live", async () => {
   assert.deepEqual(pending(dir), [`${record.id}.json`]);
 });
 
+test("the check that ends the window counts up to 30 seconds early, never earlier", async () => {
+  const answers = { web: sha("c"), api: sha("b") };
+  const seenAt = async (dir, minute) => (await checkProduction(dir, { urls, fetcher: site(answers), now: at(minute) })).record;
+
+  // 30.001 seconds before the end: too early, and nothing is written.
+  const early = repo();
+  await seenAt(early, 0);
+  assert.equal(await seenAt(early, 10 - 30.001 / 60), null);
+  assert.deepEqual(pending(early), []);
+
+  // Exactly 30 seconds before the end: counted, verified at the check itself.
+  const edge = repo();
+  await seenAt(edge, 0);
+  const record = await seenAt(edge, 9.5);
+  assert.deepEqual(record.web, { to: sha("c") });
+  assert.equal(record.verifiedAt, "2026-10-31T15:09:30Z");
+});
+
+test("a check a moment before the end of the window no longer waits 10 more minutes", async () => {
+  // The AIM Rules release: first seen 21:31:12.041, next check 21:41:12.000.
+  const dir = repo();
+  const answers = { web: sha("c"), api: sha("b") };
+  const check = (now) => checkProduction(dir, { urls, fetcher: site(answers), now: new Date(now) });
+  assert.equal((await check("2026-11-04T21:31:12.041Z")).record, null);
+  const { record } = await check("2026-11-04T21:41:12.000Z");
+  assert.deepEqual(record.web, { to: sha("c") });
+  // Never a time after the check that verified it.
+  assert.equal(record.verifiedAt, "2026-11-04T21:41:12Z");
+});
+
+test("a late check still dates the release at the end of the window, and two sides at the later one", async () => {
+  const dir = repo();
+  await checkProduction(dir, { urls, fetcher: site({ web: sha("c"), api: sha("b") }), now: at(0) });
+  await checkProduction(dir, { urls, fetcher: site({ web: sha("c"), api: sha("d") }), now: at(3) });
+  const { record } = await checkProduction(dir, { urls, fetcher: site({ web: sha("c"), api: sha("d") }), now: at(12.75) });
+  assert.deepEqual([record.web, record.api], [{ to: sha("c") }, { to: sha("d") }]);
+  // WEB's window ended at 15:10; API's ends at 15:13, 15 seconds after this check.
+  assert.equal(record.verifiedAt, "2026-10-31T15:12:45Z");
+});
+
+test("the tolerance doesn't help a release that was replaced or missed a check", async () => {
+  const dir = repo();
+  await checkProduction(dir, { urls, fetcher: site({ web: sha("c"), api: sha("b") }), now: at(0) });
+  await checkProduction(dir, { urls, fetcher: site({ web: 503, api: sha("b") }), now: at(5) });
+  const restarted = await checkProduction(dir, { urls, fetcher: site({ web: sha("c"), api: sha("b") }), now: at(9.9) });
+  assert.equal(restarted.record, null);
+  const replaced = await checkProduction(dir, { urls, fetcher: site({ web: sha("d"), api: sha("b") }), now: at(19.8) });
+  assert.equal(replaced.record, null);
+  assert.deepEqual(pending(dir), []);
+});
+
 test("a release replaced or rolled back inside the window is never recorded", async () => {
   const dir = repo();
   await checkProduction(dir, { urls, fetcher: site({ web: sha("c"), api: sha("b") }), now: at(0) });

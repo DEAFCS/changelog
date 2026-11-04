@@ -85,7 +85,7 @@ The commit starts the workflow, which notices the change and rebuilds the feed. 
 
 ## What the production check can and can't prove
 
-- **It proves:** deafcs.net served this commit in every check for at least 10 minutes. Kubernetes only sends traffic to pods that pass their readiness checks, so the release was up, healthy and not rolled back in that time.
+- **It proves:** deafcs.net served this commit in every check for at least 10 minutes, less at most 30 seconds: checks run 10 minutes apart, so the last one can land a moment before the window ends, and counting it saves a whole extra 10 minutes. Kubernetes only sends traffic to pods that pass their readiness checks, so the release was up, healthy and not rolled back in that time.
 - **It doesn't prove** that the release's own checks (routes, bundle markers, logs) passed. For Anders's releases, Claude records the release by hand after that verification. For Theft's releases, the 10 stable minutes are the verification.
 - **Two releases within 10 minutes:** the first never counts on its own, but nothing is lost. The second one's range starts at the last published commit, so it includes the first release's commits. If the second release is a rollback, the first one's changes are no longer live and are rightly not published.
 - **A release between two checks** (live less than 10 minutes, then replaced) is covered the same way by the next release that stays.

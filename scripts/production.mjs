@@ -17,6 +17,10 @@ import path from "node:path";
 import { makeRecord } from "./release.mjs";
 
 export const STABLE_MINUTES = 10;
+// Checks run 10 minutes apart, so the check that ends the window lands within
+// a second of its end, and by chance just before it. Counting it anyway saves a
+// whole extra 10 minutes. A commit is still seen in every check of the window.
+export const EARLY_SECONDS = 30;
 export const PRODUCTION = "state/production.json";
 const SHA = /^[0-9a-f]{40}$/;
 
@@ -106,12 +110,14 @@ export function decide(state, lastDeployed, answered, now, stableMinutes = STABL
       continue;
     }
     const stableAt = new Date(Date.parse(seen.since) + stableMinutes * 60_000);
-    if (Number.isNaN(stableAt.getTime()) || stableAt > now) {
+    if (Number.isNaN(stableAt.getTime()) || stableAt.getTime() - EARLY_SECONDS * 1000 > now.getTime()) {
       continue;
     }
     sides[side] = { to: seen.commit };
-    if (!verifiedAt || stableAt > verifiedAt) {
-      verifiedAt = stableAt;
+    // Counted early, the release is verified now, never in the future.
+    const verified = stableAt > now ? now : stableAt;
+    if (!verifiedAt || verified > verifiedAt) {
+      verifiedAt = verified;
     }
   }
   if (Object.keys(sides).length === 0) {
