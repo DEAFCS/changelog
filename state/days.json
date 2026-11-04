@@ -421,7 +421,7 @@
     }
   },
   "2026-11-04": {
-    "revision": 1,
+    "revision": 2,
     "items": {
       "09781fa42df3": {
         "type": "improved",
@@ -450,6 +450,13 @@
         "text": "The Info section is shorter, and the collapsed sidebar shows it as one icon with a menu.",
         "status": "published",
         "source": "release:51ea3690c74962cb"
+      },
+      "68f08866b211": {
+        "type": "new",
+        "area": "Tournaments",
+        "text": "Organizers can turn on AIM Rules for a Duel tournament: 3 second freeze time, free Kevlar, no buy time and a 3 second delay between rounds.",
+        "status": "published",
+        "source": "release:1c751b8404c60bdc"
       }
     }
   }

@@ -3,11 +3,16 @@
   "days": [
     {
       "date": "2026-11-04",
-      "revision": 1,
+      "revision": 2,
       "title": "Patch Notes | November 4, 2026",
       "summary": "",
       "sections": {
-        "new": [],
+        "new": [
+          {
+            "area": "Tournaments",
+            "text": "Organizers can turn on AIM Rules for a Duel tournament: 3 second freeze time, free Kevlar, no buy time and a 3 second delay between rounds."
+          }
+        ],
         "improved": [
           {
             "area": "Navigation",

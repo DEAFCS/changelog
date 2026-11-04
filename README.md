@@ -4,6 +4,10 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 
 ## Patch Notes | November 4, 2026
 
+### New
+
+- **Tournaments:** Organizers can turn on AIM Rules for a Duel tournament: 3 second freeze time, free Kevlar, no buy time and a 3 second delay between rounds.
+
 ### Improved
 
 - **Navigation:** The left sidebar has clearer groups, with Community, Updates and Info sections.
