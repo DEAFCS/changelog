@@ -520,5 +520,115 @@
         "source": "release:472f3b2aeb0a6b99"
       }
     }
+  },
+  "2026-11-06": {
+    "revision": 1,
+    "items": {
+      "421db861484c": {
+        "type": "improved",
+        "area": "Tournaments",
+        "text": "Cancelling a tournament or resetting it to Setup now asks for confirmation first.",
+        "status": "published",
+        "source": "release:d9ca544fd5cd017a"
+      },
+      "0863fffd2339": {
+        "type": "fixed",
+        "area": "Tournaments",
+        "text": "The bracket shows the right best-of for the Grand Final.",
+        "status": "published",
+        "source": "release:d9ca544fd5cd017a"
+      },
+      "c04528071747": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "Organizers can cancel a match that already has a demo.",
+        "status": "published",
+        "source": "release:d9ca544fd5cd017a"
+      },
+      "65928848bb17": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "Canceled matches no longer count toward player statistics or leaderboards.",
+        "status": "published",
+        "source": "release:d9ca544fd5cd017a"
+      },
+      "91706cc33b4d": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "A canceled match keeps its played maps, rounds and stats, even before its demo arrives.",
+        "status": "published",
+        "source": "release:d9ca544fd5cd017a"
+      },
+      "5600e98df2af": {
+        "type": "fixed",
+        "area": "Tournaments",
+        "text": "Changing an earlier result no longer swaps the teams of a canceled match that was already played.",
+        "status": "published",
+        "source": "release:d9ca544fd5cd017a"
+      },
+      "0851476f5443": {
+        "type": "fixed",
+        "area": "Tournaments",
+        "text": "A tournament can no longer be cancelled or deleted while its matches are being played.",
+        "status": "published",
+        "source": "release:d9ca544fd5cd017a"
+      },
+      "d41ce9881ee2": {
+        "type": "fixed",
+        "area": "Tournaments",
+        "text": "A tournament with rated matches can no longer be deleted, which protects player ELO history.",
+        "status": "published",
+        "source": "release:d9ca544fd5cd017a"
+      },
+      "f53de1b937c8": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "A match started again right after a cancel keeps its server.",
+        "status": "published",
+        "source": "release:d9ca544fd5cd017a"
+      },
+      "0233bfa52e74": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "A canceled match that is started again replays the unfinished map from warmup and keeps its finished maps.",
+        "status": "published",
+        "source": "release:d9ca544fd5cd017a"
+      },
+      "4b24659b931a": {
+        "type": "fixed",
+        "area": "Tournaments",
+        "text": "A tournament with played matches can no longer be reset to Setup.",
+        "status": "published",
+        "source": "release:d9ca544fd5cd017a"
+      },
+      "3c0c204bc691": {
+        "type": "fixed",
+        "area": "Tournaments",
+        "text": "Organizers can recover an unfinished series without awarding a win, and resetting a match keeps its finished maps.",
+        "status": "published",
+        "source": "release:d9ca544fd5cd017a"
+      },
+      "9800d6a7568d": {
+        "type": "fixed",
+        "area": "Tournaments",
+        "text": "Correcting the winner of a final now finishes the tournament again.",
+        "status": "published",
+        "source": "release:d9ca544fd5cd017a"
+      },
+      "c7d665ec1489": {
+        "type": "improved",
+        "area": "Tournaments",
+        "text": "Results that changed player ELO must have their ELO voided before they can be changed.",
+        "status": "published",
+        "source": "release:d9ca544fd5cd017a"
+      },
+      "345b27a073aa": {
+        "type": "fixed",
+        "area": "Tournaments",
+        "text": "The Grand Final uses its own best-of and map advantage at any bracket size.",
+        "status": "published",
+        "source": "release:d9ca544fd5cd017a"
+      }
+    }
   }
 }

@@ -2,6 +2,79 @@
   "month": "2026-11",
   "days": [
     {
+      "date": "2026-11-06",
+      "revision": 1,
+      "title": "Patch Notes | November 6, 2026",
+      "summary": "",
+      "sections": {
+        "new": [],
+        "improved": [
+          {
+            "area": "Tournaments",
+            "text": "Cancelling a tournament or resetting it to Setup now asks for confirmation first."
+          },
+          {
+            "area": "Tournaments",
+            "text": "Results that changed player ELO must have their ELO voided before they can be changed."
+          }
+        ],
+        "fixed": [
+          {
+            "area": "Tournaments",
+            "text": "The bracket shows the right best-of for the Grand Final."
+          },
+          {
+            "area": "Matches",
+            "text": "Organizers can cancel a match that already has a demo."
+          },
+          {
+            "area": "Matches",
+            "text": "Canceled matches no longer count toward player statistics or leaderboards."
+          },
+          {
+            "area": "Matches",
+            "text": "A canceled match keeps its played maps, rounds and stats, even before its demo arrives."
+          },
+          {
+            "area": "Tournaments",
+            "text": "Changing an earlier result no longer swaps the teams of a canceled match that was already played."
+          },
+          {
+            "area": "Tournaments",
+            "text": "A tournament can no longer be cancelled or deleted while its matches are being played."
+          },
+          {
+            "area": "Tournaments",
+            "text": "A tournament with rated matches can no longer be deleted, which protects player ELO history."
+          },
+          {
+            "area": "Matches",
+            "text": "A match started again right after a cancel keeps its server."
+          },
+          {
+            "area": "Matches",
+            "text": "A canceled match that is started again replays the unfinished map from warmup and keeps its finished maps."
+          },
+          {
+            "area": "Tournaments",
+            "text": "A tournament with played matches can no longer be reset to Setup."
+          },
+          {
+            "area": "Tournaments",
+            "text": "Organizers can recover an unfinished series without awarding a win, and resetting a match keeps its finished maps."
+          },
+          {
+            "area": "Tournaments",
+            "text": "Correcting the winner of a final now finishes the tournament again."
+          },
+          {
+            "area": "Tournaments",
+            "text": "The Grand Final uses its own best-of and map advantage at any bracket size."
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-05",
       "revision": 1,
       "title": "Patch Notes | November 5, 2026",
