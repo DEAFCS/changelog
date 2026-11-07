@@ -5,7 +5,8 @@
 // clone of DEAFCS/changelog, only after the release has passed verification.
 //
 //   node scripts/record-release.mjs --verified \
-//     --web-to <full commit> --api-to <full commit> [--gameserver-to <full commit>] \
+//     --web-to <full commit> --api-to <full commit> \
+//     [--gameserver-to|--streamer-to|--demoparser-to <full commit>] [--<side>-from <commit>] \
 //     [--web-image sha256:<digest>] [--api-image sha256:<digest>] \
 //     [--verified-at 2026-10-31T13:24:27Z] [--web-from <commit>] [--api-from <commit>] [--no-push]
 //
@@ -14,7 +15,7 @@
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
-import { makeRecord, validateRecord } from "./release.mjs";
+import { COMPONENT_SIDES, makeRecord, validateRecord } from "./release.mjs";
 
 export function parseArgs(argv) {
   const value = (name) => {
@@ -36,7 +37,7 @@ export function parseArgs(argv) {
     verifiedAt: value("verified-at") ?? new Date().toISOString().replace(/\.\d{3}Z$/, "Z"),
     web: side("web"),
     api: side("api"),
-    ...(side("gameserver") ? { gameserver: side("gameserver") } : {}),
+    ...Object.fromEntries(COMPONENT_SIDES.filter((name) => side(name)).map((name) => [name, side(name)])),
   };
 }
 
@@ -83,5 +84,5 @@ if (import.meta.main) {
   if (args.push) {
     pushRecord(".", record, file);
   }
-  console.log(`Recorded release ${record.id} (${[record.web && "WEB", record.api && "API", record.gameserver && "game servers"].filter(Boolean).join(" + ")}).`);
+  console.log(`Recorded release ${record.id} (${["web", "api", ...COMPONENT_SIDES].filter((name) => record[name]).join(" + ")}).`);
 }

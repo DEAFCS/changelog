@@ -28,7 +28,8 @@ on:
 
 permissions:
   contents: write
-  # Game-server tracking reads image digests from ghcr.io (scripts/gameserver.mjs).
+  # Component tracking reads image digests and labels from ghcr.io
+  # (scripts/gameserver.mjs, scripts/components.mjs).
   packages: read
 
 # One run at a time. A run that waits here still checks production and
@@ -72,8 +73,9 @@ jobs:
           WEB_VERSION_URL: ${{ vars.WEB_VERSION_URL }}
           API_VERSION_URL: ${{ vars.API_VERSION_URL }}
           REVIEW_TOKEN: ${{ secrets.REVIEW_TOKEN }}
-          # Game servers are tracked only when this repository variable is "true".
-          CHANGELOG_GAME_SERVER: ${{ vars.CHANGELOG_GAME_SERVER }}
+          # Components (gameserver, streamer, demoparser) are tracked only when
+          # this repository variable names them, comma-separated. Unset: none.
+          CHANGELOG_COMPONENTS: ${{ vars.CHANGELOG_COMPONENTS }}
           REGISTRY_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"

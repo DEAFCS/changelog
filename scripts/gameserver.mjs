@@ -1,6 +1,6 @@
 // Game-server releases: which DEAFCS/game-server commit production's match and
 // practice servers start from. Off unless the repository variable
-// CHANGELOG_GAME_SERVER is "true".
+// CHANGELOG_COMPONENTS names "gameserver".
 //
 // The API's GET /system/version reports the images new servers start from:
 //   { "commit": "...", "gameServer": { "server": "<image>", "practice": "<image>" } }
@@ -33,8 +33,12 @@ export const RUNTIMES = {
 const DIGEST = /^sha256:[0-9a-f]{64}$/;
 const SHA = /^[0-9a-f]{40}$/;
 
+// On when CHANGELOG_COMPONENTS names "gameserver" (scripts/components.mjs).
 export function gameServerEnabled(env = process.env) {
-  return env.CHANGELOG_GAME_SERVER === "true";
+  return String(env.CHANGELOG_COMPONENTS ?? "")
+    .split(",")
+    .map((name) => name.trim().toLowerCase())
+    .includes("gameserver");
 }
 
 // "ghcr.io/deafcs/game-server-sw@sha256:..." or "...:v0.0.73" or ":latest".

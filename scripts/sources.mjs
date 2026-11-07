@@ -7,8 +7,10 @@ export const ORG = "DEAFCS";
 export const SIDES = {
   web: { repo: "deafcs-web", area: "the DEAFCS website" },
   api: { repo: "api-deafcs", area: "the DEAFCS website (server side)" },
-  // Only with CHANGELOG_GAME_SERVER on (scripts/gameserver.mjs).
+  // Components: read only for releases that have them (scripts/components.mjs).
   gameserver: { repo: "game-server", area: "the DEAFCS game servers" },
+  streamer: { repo: "game-streamer", area: "DEAFCS streams and highlight clips" },
+  demoparser: { repo: "demo-parser", area: "DEAFCS demo processing" },
 };
 
 const SKIP_LABELS = ["no-changelog", "internal"];
@@ -71,7 +73,11 @@ async function pullsOf(github, repo, sha) {
   }
 }
 
-export async function collect({ side, from, to }, github) {
+// overrides: { "<full commit>": ["Changelog-Fixed: ...", ...] | "skip" } for this
+// side (scripts/overrides.mjs). An override replaces the commit's own message
+// body, for commits pushed without Changelog lines (upstream cherry-picks).
+// It only ever applies to a commit inside the released range.
+export async function collect({ side, from, to }, github, overrides = {}) {
   const { repo } = SIDES[side];
   const commits = [];
   for (let page = 1; ; page++) {
@@ -103,6 +109,13 @@ export async function collect({ side, from, to }, github) {
   const seen = new Set();
   for (const commit of commits) {
     if (commit.parents.length > 1 || isBot(commit.author)) {
+      continue;
+    }
+    const override = Object.hasOwn(overrides, commit.sha) ? overrides[commit.sha] : undefined;
+    if (override !== undefined) {
+      const [title] = (commit.commit.message ?? "").split("\n");
+      const body = override === "skip" ? "Changelog: skip" : override.join("\n");
+      items.push({ side, kind: "commit", title, body, labels: [] });
       continue;
     }
     const pulls = await pullsOf(github, repo, commit.sha);

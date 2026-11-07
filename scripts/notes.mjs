@@ -90,6 +90,28 @@ export const GAME_SERVER_SCOPES = {
   "utility-sw": "Utility",
 };
 
+// Streamer scopes: what players see in a live stream or a highlight clip.
+// Upstream 5Stack titles ("bug: ...", "feature: ...") never match the title
+// rule, so an upstream cherry-pick needs a Changelog line or an override.
+export const STREAMER_SCOPES = {
+  stream: "Streams",
+  streams: "Streams",
+  live: "Streams",
+  clips: "Highlights",
+  highlights: "Highlights",
+  watch: "Watch",
+};
+
+// Title scopes per side. The demo parser has none on purpose: its titles are
+// technical, so only Changelog lines (or overrides) publish its changes.
+export const SCOPES_BY_SIDE = {
+  web: PLAYER_SCOPES,
+  api: PLAYER_SCOPES,
+  gameserver: GAME_SERVER_SCOPES,
+  streamer: STREAMER_SCOPES,
+  demoparser: {},
+};
+
 const TITLE = /^(feat|fix|perf|ux)\(([a-z0-9-]+)\)!?:\s+(.+)$/i;
 
 // Words that make a title not clearly safe for players to read.
@@ -103,7 +125,8 @@ export function titleNote(title, side = "web") {
     return { held: "title is not feat/fix/perf/ux(scope): ..." };
   }
   const [, kind, scope, subject] = match;
-  const area = (side === "gameserver" ? GAME_SERVER_SCOPES : PLAYER_SCOPES)[scope.toLowerCase()];
+  const scopes = SCOPES_BY_SIDE[side] ?? {};
+  const area = Object.hasOwn(scopes, scope.toLowerCase()) ? scopes[scope.toLowerCase()] : undefined;
   if (!area) {
     return { held: `scope "${scope}" is not on the player-facing list` };
   }
@@ -144,7 +167,7 @@ export function sameFeature(a, b) {
   return [...featureWords(a.text)].filter((word) => right.has(word)).length >= 2;
 }
 
-const LABELS = { web: "WEB", api: "API", gameserver: "GAME SERVER" };
+const LABELS = { web: "WEB", api: "API", gameserver: "GAME SERVER", streamer: "STREAMER", demoparser: "DEMO PARSER" };
 
 export async function notesFor(changes, { blocked = [] } = {}) {
   const candidates = [];

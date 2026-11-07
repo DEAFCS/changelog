@@ -20,6 +20,7 @@
 // Recovery on your own computer, never in CI (prints held text):
 //   GH_READ_TOKEN=... node scripts/review.mjs --show <release ID>
 import { notesFor } from "./notes.mjs";
+import { readOverrides } from "./overrides.mjs";
 import { collect } from "./sources.mjs";
 import { loadState, saveState } from "./state.mjs";
 
@@ -28,11 +29,12 @@ export const REVIEW_REPO = process.env.REVIEW_REPO || "DEAFCS/Private-Issues";
 export const issueTitle = (key, entry) =>
   entry.flagged ? `Changelog review: flagged ${key.slice("flagged:".length)}` : `Changelog review: release ${key} (${entry.date})`;
 
-// The held notes of one queued release, recalculated from its commit ranges.
-export async function heldNotes(entry, github, blocked = []) {
+// The held notes of one queued release, recalculated from its commit ranges
+// with the same overrides publishing used.
+export async function heldNotes(entry, github, blocked = [], overrides = {}) {
   const changes = [];
   for (const range of entry.ranges ?? []) {
-    changes.push(...(await collect(range, github)));
+    changes.push(...(await collect(range, github, overrides[range.side])));
   }
   return (await notesFor(changes, { blocked })).review;
 }
@@ -121,7 +123,7 @@ export async function syncReview(dir, { github, issues = null, blocked = [], dry
             entry.issue = existing.get(title);
             report.reused.push({ key, issue: entry.issue });
           } else if (!dryRun) {
-            const held = entry.flagged ? [] : await heldNotes(entry, github, blocked);
+            const held = entry.flagged ? [] : await heldNotes(entry, github, blocked, readOverrides(dir, blocked));
             entry.issue = await issues.create(title, reviewBody(key, entry, held, runUrl));
             report.issued.push({ key, issue: entry.issue });
           } else {
@@ -171,7 +173,7 @@ if (import.meta.main) {
       console.log(`No review entry ${key} in state/review.json.`);
       process.exit(1);
     }
-    const held = entry.flagged ? [] : await heldNotes(entry, githubClient(), blocked);
+    const held = entry.flagged ? [] : await heldNotes(entry, githubClient(), blocked, readOverrides(".", blocked));
     process.stdout.write(reviewBody(key, entry, held));
     process.exit(0);
   }

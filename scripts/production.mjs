@@ -13,13 +13,15 @@
 // state/production.json remembers, per side, the commit last seen and since
 // when.
 //
-// With CHANGELOG_GAME_SERVER on, the game servers are a third side: the API's
-// version answer also names the images new match and practice servers start
-// from, and scripts/gameserver.mjs turns them into a DEAFCS/game-server commit.
-// Without it, or with an API that doesn't name them, only WEB and API count.
+// Components (game servers, streamer, demo parser; scripts/components.mjs) are
+// more sides, each only while CHANGELOG_COMPONENTS names it: the API's version
+// answer names the images production uses, and gameserver.mjs or
+// components.mjs turns each into the commit it was built from. Without them,
+// or with an API that doesn't name them, only WEB and API count.
 import fs from "node:fs";
 import path from "node:path";
-import { makeRecord } from "./release.mjs";
+import { REPORTED } from "./components.mjs";
+import { COMPONENT_SIDES, makeRecord, SIDES } from "./release.mjs";
 
 export const STABLE_MINUTES = 10;
 // Checks run 10 minutes apart, so the check that ends the window lands within
@@ -65,17 +67,18 @@ export function observe(state, seen, now) {
   // a run whose push didn't land never counts. Once a day it changes, so the
   // workflow commits at least daily, which keeps GitHub from pausing the
   // schedule after 60 days without activity.
-  // The game servers don't count here: the monitoring date is about WEB and API.
+  // Components don't count here: the monitoring date is about WEB and API.
   const today = now.toISOString().slice(0, 10);
-  if (!problems.some((problem) => !problem.startsWith("gameserver:")) && next.checkedOn !== today) {
+  const aboutWebOrApi = (problem) => !COMPONENT_SIDES.some((side) => problem.startsWith(`${side}:`));
+  if (!problems.some(aboutWebOrApi) && next.checkedOn !== today) {
     next.checkedOn = today;
   }
   return { state: next, problems };
 }
 
-// WEB and API always; the game servers only in a check that reported them.
+// WEB and API always; a component only in a check that reported it.
 export function sidesOf(seen) {
-  return ["web", "api", ...(seen.gameserver ? ["gameserver"] : [])];
+  return ["web", "api", ...COMPONENT_SIDES.filter((side) => seen[side])];
 }
 
 export const OUTAGE_MINUTES = 30;
@@ -94,9 +97,12 @@ export function outages(state, now, minutes = OUTAGE_MINUTES, sides = ["web", "a
 // ones already emailed, so the run fails once when they start or change, then
 // only logs them until they clear (like the review queue, scripts/review.mjs).
 export function alerting(state, problems, down) {
-  // A game-server image that isn't a release counts like a build without its
-  // commit: nothing can be recorded until someone looks.
-  const noCommit = problems.filter((problem) => /doesn't report a full commit|^gameserver: the \w+ image/.test(problem));
+  // A component image that can't be traced to a commit (not a release, no
+  // label, not on GitHub) counts like a build without its commit: nothing can
+  // be recorded until someone looks.
+  const noCommit = problems.filter((problem) =>
+    /doesn't report a full commit|^(gameserver|streamer|demoparser): the /.test(problem),
+  );
   // A side without its commit counts as an outage too; that's one problem.
   const current = [
     ...noCommit,
@@ -118,7 +124,7 @@ export function alerting(state, problems, down) {
 export function decide(state, lastDeployed, answered, now, stableMinutes = STABLE_MINUTES) {
   const sides = {};
   let verifiedAt = null;
-  for (const side of ["web", "api", "gameserver"]) {
+  for (const side of SIDES) {
     const seen = state[side];
     if (!answered.includes(side) || !seen?.since || seen.commit === lastDeployed[side]) {
       continue;
@@ -156,9 +162,13 @@ async function readVersion(url, fetcher) {
   }
 }
 
-// gameServer: (reported) => side answer or null, from scripts/gameserver.mjs;
-// left out, the game servers aren't checked at all.
-export async function checkProduction(dir, { urls, fetcher = fetch, now = new Date(), gameServer = null } = {}) {
+// components: { <side>: (reported) => side answer or null } for the enabled
+// components (gameserver.mjs, components.mjs); gameServer is the same for the
+// game servers alone. A component left out isn't checked at all.
+export async function checkProduction(
+  dir,
+  { urls, fetcher = fetch, now = new Date(), gameServer = null, components = {} } = {},
+) {
   const file = path.join(dir, PRODUCTION);
   const state = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, "utf8")) : {};
   const releases = JSON.parse(fs.readFileSync(path.join(dir, "state/releases.json"), "utf8"));
@@ -166,12 +176,16 @@ export async function checkProduction(dir, { urls, fetcher = fetch, now = new Da
   const web = await readVersion(urls.web, fetcher);
   const api = await readVersion(urls.api, fetcher);
   const seen = { web: { answered: web.answered, commit: web.commit }, api: { answered: api.answered, commit: api.commit } };
-  if (gameServer) {
-    // Tracked, but the API says nothing about game servers: keep counting
-    // from the last answer instead of calling it an outage.
-    const side = api.answered ? await gameServer(api.body?.gameServer) : { answered: false };
-    if (side) {
-      seen.gameserver = side;
+  const resolvers = { ...components, ...(gameServer ? { gameserver: gameServer } : {}) };
+  for (const side of COMPONENT_SIDES) {
+    if (!resolvers[side]) {
+      continue;
+    }
+    // Tracked, but the API says nothing about it: keep counting from the last
+    // answer instead of calling it an outage.
+    const answer = api.answered ? await resolvers[side](api.body?.[REPORTED[side]]) : { answered: false };
+    if (answer) {
+      seen[side] = answer;
     }
   }
   const observed = observe(state, seen, now);
@@ -193,12 +207,20 @@ export async function checkProduction(dir, { urls, fetcher = fetch, now = new Da
 }
 
 if (import.meta.main) {
-  const { gameServerEnabled, registryClient, resolveGameServer } = await import("./gameserver.mjs");
+  const { registryClient, resolveGameServer } = await import("./gameserver.mjs");
+  const { enabledComponents, labelClient, resolveLabelled } = await import("./components.mjs");
   const { githubClient } = await import("./sources.mjs");
-  const tools = { github: githubClient(), registry: registryClient() };
+  const tools = { github: githubClient(), registry: registryClient(), labels: labelClient() };
+  const components = {};
+  for (const side of enabledComponents()) {
+    components[side] =
+      side === "gameserver"
+        ? (reported) => resolveGameServer(".", reported, tools)
+        : (reported) => resolveLabelled(".", side, reported, tools);
+  }
   const { record, problems, outages: down, alert, reported } = await checkProduction(".", {
     urls: { web: process.env.WEB_VERSION_URL, api: process.env.API_VERSION_URL },
-    gameServer: gameServerEnabled() ? (reported) => resolveGameServer(".", reported, tools) : null,
+    components,
   });
   for (const problem of problems) {
     console.log(`Production check: ${problem}`);

@@ -1,0 +1,15 @@
+{
+  "streamer": {
+    "7a0c5cd73ccc831872396b113aca3f4aa4e71572": [
+      "Changelog-Fixed: Streams: Audio stays in sync with the picture on long live streams."
+    ],
+    "bebab764e4fcaba8f1ab4a71a601d0413d188534": [
+      "Changelog-Improved: Streams: Live streams stay closer to real time when they fall behind."
+    ],
+    "eb4bb81be89f2b965333978d7811f19f672b408c": [
+      "Changelog-Fixed: Highlights: A clip's thumbnail is now saved before the clip is finished, so fewer clips appear without one."
+    ],
+    "16c740bb492c189b83437e21f35a419630639cb4": "skip",
+    "491fc1a661217fd66f5faa1c78ae6470f009b2a6": "skip"
+  }
+}

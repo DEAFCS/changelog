@@ -11,7 +11,8 @@ import path from "node:path";
 import { appendItems, copenhagenDate, dayTitle, dedupe, entryPath } from "./entry.mjs";
 import { writeFeed, writeReadme } from "./feed.mjs";
 import { notesFor } from "./notes.mjs";
-import { SIDES, validateRecord } from "./release.mjs";
+import { readOverrides } from "./overrides.mjs";
+import { COMPONENT_SIDES, SIDES, validateRecord } from "./release.mjs";
 import { collect, NotAheadError } from "./sources.mjs";
 import { loadState, saveState, syncAll } from "./state.mjs";
 
@@ -50,6 +51,8 @@ function flag(dir, file, record, reason) {
 }
 
 export async function publish(dir, { github, blocked = [] } = {}) {
+  // A broken overrides file throws here, before anything is written.
+  const overrides = readOverrides(dir, blocked);
   const state = loadState(dir);
   syncAll(dir, state.days);
   const report = { processed: [], skipped: [], flagged: [], failed: null, added: 0, held: 0, review: [] };
@@ -100,7 +103,7 @@ export async function publish(dir, { github, blocked = [] } = {}) {
     try {
       const changes = [];
       for (const range of ranges) {
-        changes.push(...(await collect(range, github)));
+        changes.push(...(await collect(range, github, overrides[range.side])));
       }
       notes = await notesFor(changes, { blocked });
     } catch (error) {
@@ -133,7 +136,7 @@ export async function publish(dir, { github, blocked = [] } = {}) {
       verifiedAt: record.verifiedAt,
       web: record.web?.to ?? null,
       api: record.api?.to ?? null,
-      ...(record.gameserver ? { gameserver: record.gameserver.to } : {}),
+      ...Object.fromEntries(COMPONENT_SIDES.filter((side) => record[side]).map((side) => [side, record[side].to])),
       added: fresh.length,
       held: notes.review.length,
     };
@@ -174,14 +177,18 @@ export async function publish(dir, { github, blocked = [] } = {}) {
 }
 
 if (import.meta.main) {
-  const { checkAccess, githubClient } = await import("./sources.mjs");
+  const { checkAccess, githubClient, SIDES: SOURCES } = await import("./sources.mjs");
   const { blocklist } = await import("./redact.mjs");
   const github = githubClient();
 
   // A credential problem stops here, before any release is looked at, so it
   // is reported as one, not as releases flagged for review.
-  const { gameServerEnabled } = await import("./gameserver.mjs");
-  const denied = await checkAccess(github, undefined, ["web", "api", ...(gameServerEnabled() ? ["gameserver"] : [])]);
+  // WEB and API, every enabled component, and any component a pending release
+  // has (a release recorded by hand works while detection is still off).
+  const { enabledComponents } = await import("./components.mjs");
+  const pendingSides = readPending(".").flatMap(({ record }) => COMPONENT_SIDES.filter((side) => record?.[side]));
+  const sides = ["web", "api", ...COMPONENT_SIDES.filter((side) => enabledComponents().includes(side) || pendingSides.includes(side))];
+  const denied = await checkAccess(github, undefined, sides);
   if (denied.length > 0) {
     for (const problem of denied) {
       console.log(problem);
@@ -189,7 +196,7 @@ if (import.meta.main) {
     console.log("Nothing processed. Fix GH_READ_TOKEN (see SETUP.md, step 3) and run again.");
     process.exit(1);
   }
-  console.log(`GH_READ_TOKEN can read deafcs-web and api-deafcs${gameServerEnabled() ? " and game-server" : ""}.`);
+  console.log(`GH_READ_TOKEN can read ${sides.map((side) => SOURCES[side].repo).join(", ")}.`);
 
   const report = await publish(".", {
     github,

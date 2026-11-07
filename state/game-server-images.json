@@ -1,17 +1,27 @@
 {
-  "ghcr.io/deafcs/game-server-sw@sha256:eb8a8f0d22bbbd640ace761f526abf9a1665182afe425f58ebb2f4d5c02b9d81": {
-    "release": "sw-v0.0.71",
-    "commit": "3b68d8fc5abc962e096e77826211c7e39e981182",
-    "publishedAt": "2026-10-23T22:27:00Z"
+  "ghcr.io/deafcs/game-server-sw@sha256:23cda829f5035ab9a0e0dac244bcf71be87dbe932acb301b5116b94d67e7df12": {
+    "release": "sw-v0.0.74",
+    "commit": "ba8f360a39119f3e9dead988fdb2676cca2e1666",
+    "publishedAt": "2026-11-06T12:04:22Z"
   },
   "ghcr.io/deafcs/game-server-sw@sha256:2884ddb884e5d717f4457e891af9210ead9e797a16bd3640bc32cce5f5c0a855": {
     "release": "sw-v0.0.72",
     "commit": "4f609ce26c0fae787a5f4ada296ad12a71fb9e65",
     "publishedAt": "2026-11-02T16:02:57Z"
   },
+  "ghcr.io/deafcs/game-server-sw@sha256:84de60ffe3c5c1eaae5b9eae439060c4a265536f75064ccfab68911e6541969b": {
+    "release": "sw-v0.0.75",
+    "commit": "6305e33a502b20a5aa737e5aaaa215ecc6fe782b",
+    "publishedAt": "2026-11-07T14:33:23Z"
+  },
   "ghcr.io/deafcs/game-server-sw@sha256:cad62f218027e1452815a09b7bffe948d9a181f5254a5569d0ec4e9fdd186b33": {
     "release": "sw-v0.0.73",
     "commit": "9f66f25fdf4d533f013f51022b30f4371f77e149",
     "publishedAt": "2026-11-03T13:21:33Z"
+  },
+  "ghcr.io/deafcs/game-server-sw@sha256:eb8a8f0d22bbbd640ace761f526abf9a1665182afe425f58ebb2f4d5c02b9d81": {
+    "release": "sw-v0.0.71",
+    "commit": "3b68d8fc5abc962e096e77826211c7e39e981182",
+    "publishedAt": "2026-10-23T22:27:00Z"
   }
 }

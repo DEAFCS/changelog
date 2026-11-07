@@ -105,12 +105,29 @@ The commit starts the workflow, which notices the change and rebuilds the feed. 
 
 This repository is public, and so are its workflow logs. They show release IDs and counts only.
 
-## Game servers (off until `CHANGELOG_GAME_SERVER` = `true`)
+## Game servers, streamer and demo parser (off until `CHANGELOG_COMPONENTS` names them)
 
-- **What counts:** the images new match and practice servers start from, as the API's `/system/version` reports them (`gameServer.server`, `gameServer.practice`). An image counts only when its digest is the image of a DEAFCS/game-server release (`sw-v0.0.N` = `ghcr.io/deafcs/game-server-sw:v0.0.N`, `css-v0.0.N` = `game-server-css`); the release tag names the commit. A pushed commit, a built image or a release that production doesn't run is never published. The same 10 minutes apply.
+Repository variable `CHANGELOG_COMPONENTS` turns each component on separately, comma-separated: `gameserver`, `streamer`, `demoparser`. Unset or empty means none, and every run does exactly what it did before. 5stack-panel is never a source: its commits are infrastructure pins.
+
+- **What counts:** only what production reports, through the API's `/system/version`:
+  - `gameServer.server` and `gameServer.practice`: the images new match and practice servers start from. An image counts only when its digest is the image of a DEAFCS/game-server release (`sw-v0.0.N` = `ghcr.io/deafcs/game-server-sw:v0.0.N`, `css-v0.0.N` = `game-server-css`); the release tag names the commit.
+  - `streamer`: the image live streams and highlight renders start from (`ghcr.io/deafcs/game-streamer`).
+  - `demoParser`: the image the running demo-parser pods use (`ghcr.io/deafcs/demo-parser`).
+  For the streamer and the demo parser the commit is the image's `org.opencontainers.image.revision` label, read from ghcr.io by digest, and only once that commit exists on GitHub. Only images pinned by digest count. A pushed commit or a built image is never published. The same 10 stable minutes apply.
+- **Releases:** components that settle in the same check are one release with WEB and API. A component joins the release ID only when the release has it, so every WEB/API release keeps its ID.
 - **Match and practice on different releases:** the newer one counts. Its range covers the older one, so nothing is published twice when the other catches up.
-- **Notes:** the same rules as WEB and API (Changelog lines first, then titles). In-match scopes (`match`, `leaver`, `surrender`, `forfeit`, `timeout`, `warmup`, `restore`, `disconnect`, `tournament`, `practice`, `pracc`, `utility-sw`) read as player notes for game-server commits only; `swiftly`, `ci` and the like are held or skipped. A game-server title note that says the same as a WEB note in the release is dropped.
-- **An image that isn't a release** (built by hand): the run fails once, then only warns; nothing is recorded until production runs a release again. A registry or GitHub hiccup is retried quietly and reported once after 30 minutes. Neither touches WEB or API tracking or the monitoring date.
-- `state/game-server-images.json` remembers which digest is which release, so the registry is asked once per new image. Never edit it by hand.
-- `state/releases.json` `lastDeployed.gameserver` is where the next range starts. Without it a game-server release is flagged, not guessed.
-- **Needs:** `GH_READ_TOKEN` with Contents: read on `game-server` too; the `game-server-sw` (and `game-server-css`) package settings must give `DEAFCS/changelog` Read access (Package settings → Manage Actions access), so the workflow's own token can read digests (`packages: read`). No new secret.
+- **Notes:** the same rules as WEB and API: Changelog lines first, then titles with a scope from that component's list, everything else held for private review. `Changelog: skip` works the same.
+  - Game server: in-match scopes (`match`, `leaver`, `surrender`, `forfeit`, `timeout`, `warmup`, `restore`, `disconnect`, `tournament`, `practice`, `pracc`, `utility-sw`).
+  - Streamer: `stream`, `streams`, `live`, `clips`, `highlights`, `watch`.
+  - Demo parser: none. Its titles are technical, so only Changelog lines publish.
+  - Upstream 5Stack titles (`bug: ...`, `feature: ...`) never publish by themselves.
+  - A component title note that says the same as a WEB note in the release is dropped. For one feature across repositories, give the Changelog line to the repository players see and `Changelog: skip` to the others.
+- **Commits pushed without Changelog lines** (upstream cherry-picks): add their lines to `notes/overrides.json` under the component, keyed by the full commit, or `"skip"`. An override is used only while a release's own commit range is read, so it never publishes early. `npm test` checks every line against the same filter as the notes.
+- **An image that can't be traced to a commit** (built by hand, no label, commit not pushed): the run fails once, then only warns; nothing is recorded for that component until it can be. A registry or GitHub hiccup is retried quietly and reported once after 30 minutes. Neither touches WEB or API tracking or the monitoring date.
+- `state/game-server-images.json` and `state/component-images.json` remember which digest is which commit, so the registry is asked once per new image. Never edit them by hand.
+- `state/releases.json` `lastDeployed.<component>` is where the next range starts. Set it once before turning a component on; without it a release is flagged, not guessed.
+- **Recording by hand:** `node scripts/record-release.mjs --verified --streamer-from <commit> --streamer-to <commit> --verified-at <time> --no-push` (also `--gameserver-…`, `--demoparser-…`) works while detection is off. The run checks that `GH_READ_TOKEN` can read that repository first.
+- **Needs:**
+  - `GH_READ_TOKEN` with Contents: read on `game-server`, `game-streamer` and `demo-parser` too.
+  - Each package (`game-server-sw`, `game-server-css`, `game-streamer`, `demo-parser`) must give `DEAFCS/changelog` Read access (Package settings → Manage Actions access), so the workflow's own token can read digests and labels (`packages: read`). No new secret.
+  - An API whose `/system/version` reports the fields above.
