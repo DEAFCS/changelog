@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-07",
-      "revision": 2,
+      "revision": 3,
       "title": "Patch Notes | November 7, 2026",
       "summary": "",
       "sections": {
@@ -15,6 +15,18 @@
           {
             "area": "Awards",
             "text": "You get a notification when you receive a season medal."
+          },
+          {
+            "area": "Utility",
+            "text": "Lineups you save on your practice server now appear right away in a This Server group at the top of Mine, numbered in save order."
+          },
+          {
+            "area": "Matches",
+            "text": "A Utility tab shows every grenade on CT and T maps, checked against the common lineups, with Watch and Save."
+          },
+          {
+            "area": "Utility",
+            "text": "Lineups with saved bots show a badge on the map, and each bot's spot when you open the lineup."
           }
         ],
         "improved": [
@@ -31,6 +43,10 @@
           {
             "area": "Leaderboards",
             "text": "A player's Awards rank now matches their place on the board."
+          },
+          {
+            "area": "Utility",
+            "text": "Refreshing the page no longer loses your place in a friend's practice server."
           }
         ]
       }

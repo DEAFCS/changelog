@@ -702,7 +702,7 @@
     }
   },
   "2026-11-07": {
-    "revision": 2,
+    "revision": 3,
     "items": {
       "4177bc80fd8c": {
         "type": "improved",
@@ -752,6 +752,34 @@
         "text": "You get a notification when you receive a season medal.",
         "status": "published",
         "source": "manual"
+      },
+      "73faffb319ca": {
+        "type": "fixed",
+        "area": "Utility",
+        "text": "Refreshing the page no longer loses your place in a friend's practice server.",
+        "status": "published",
+        "source": "release:616c50500ddcf2a0"
+      },
+      "e3c406a4f6e5": {
+        "type": "new",
+        "area": "Utility",
+        "text": "Lineups you save on your practice server now appear right away in a This Server group at the top of Mine, numbered in save order.",
+        "status": "published",
+        "source": "release:616c50500ddcf2a0"
+      },
+      "0f623e14623b": {
+        "type": "new",
+        "area": "Matches",
+        "text": "A Utility tab shows every grenade on CT and T maps, checked against the common lineups, with Watch and Save.",
+        "status": "published",
+        "source": "release:616c50500ddcf2a0"
+      },
+      "9c95c29fcc17": {
+        "type": "new",
+        "area": "Utility",
+        "text": "Lineups with saved bots show a badge on the map, and each bot's spot when you open the lineup.",
+        "status": "published",
+        "source": "release:616c50500ddcf2a0"
       }
     }
   }
