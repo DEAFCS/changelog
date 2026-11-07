@@ -2,12 +2,13 @@
   "months": [
     {
       "month": "2026-11",
-      "days": 6,
-      "hash": "76dfd5e568102340"
+      "days": 7,
+      "hash": "81c7b7f0e5b6c2d5"
     }
   ],
   "areas": [
     "Accounts",
+    "Awards",
     "Changelog",
     "ELO",
     "Highlights",
@@ -29,8 +30,8 @@
     "Tournaments"
   ],
   "latest": {
-    "date": "2026-11-06",
-    "revision": 2
+    "date": "2026-11-07",
+    "revision": 1
   },
   "monitoredOn": "2026-11-07"
 }

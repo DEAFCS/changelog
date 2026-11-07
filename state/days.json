@@ -700,5 +700,52 @@
         "source": "release:612f9f192a060426"
       }
     }
+  },
+  "2026-11-07": {
+    "revision": 1,
+    "items": {
+      "4177bc80fd8c": {
+        "type": "improved",
+        "area": "Leaderboards",
+        "text": "The Awards board now ranks players by Gold, then Silver, Bronze, MVP and Special.",
+        "status": "published",
+        "source": "release:92ccbc9a13e7093e"
+      },
+      "0631c64ebf9b": {
+        "type": "improved",
+        "area": "Leaderboards",
+        "text": "Stat tables can now be sorted with the keyboard and announce their sort order to screen readers.",
+        "status": "published",
+        "source": "release:92ccbc9a13e7093e"
+      },
+      "d0a927cf64d6": {
+        "type": "new",
+        "area": "Profiles",
+        "text": "Season awards show their season and game mode.",
+        "status": "published",
+        "source": "release:92ccbc9a13e7093e"
+      },
+      "ebe13407f116": {
+        "type": "fixed",
+        "area": "Leaderboards",
+        "text": "A player's Awards rank now matches their place on the board.",
+        "status": "published",
+        "source": "release:92ccbc9a13e7093e"
+      },
+      "4e89e5afa34f": {
+        "type": "new",
+        "area": "Leaderboards",
+        "text": "Season Gold, Silver and Bronze medals now count on the Awards board.",
+        "status": "published",
+        "source": "release:92ccbc9a13e7093e"
+      },
+      "018c7398dbcc": {
+        "type": "new",
+        "area": "Awards",
+        "text": "Players are notified when they receive a season medal, and when one is revoked.",
+        "status": "published",
+        "source": "release:92ccbc9a13e7093e"
+      }
+    }
   }
 }

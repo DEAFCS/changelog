@@ -2,6 +2,44 @@
   "month": "2026-11",
   "days": [
     {
+      "date": "2026-11-07",
+      "revision": 1,
+      "title": "Patch Notes | November 7, 2026",
+      "summary": "",
+      "sections": {
+        "new": [
+          {
+            "area": "Profiles",
+            "text": "Season awards show their season and game mode."
+          },
+          {
+            "area": "Leaderboards",
+            "text": "Season Gold, Silver and Bronze medals now count on the Awards board."
+          },
+          {
+            "area": "Awards",
+            "text": "Players are notified when they receive a season medal, and when one is revoked."
+          }
+        ],
+        "improved": [
+          {
+            "area": "Leaderboards",
+            "text": "The Awards board now ranks players by Gold, then Silver, Bronze, MVP and Special."
+          },
+          {
+            "area": "Leaderboards",
+            "text": "Stat tables can now be sorted with the keyboard and announce their sort order to screen readers."
+          }
+        ],
+        "fixed": [
+          {
+            "area": "Leaderboards",
+            "text": "A player's Awards rank now matches their place on the board."
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-06",
       "revision": 2,
       "title": "Patch Notes | November 6, 2026",

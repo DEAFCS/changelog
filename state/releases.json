@@ -1,7 +1,7 @@
 {
   "lastDeployed": {
-    "web": "bb7becf35c18b4fdbdc4c357be7ab2b4393e7c90",
-    "api": "c6db502a97e27a4040ea7ef7b30fac5373f7f39f"
+    "web": "e5e1b3c6a827cbaa4d3193c504c544769e05b527",
+    "api": "da4675de3572b32f826ffd8a422e238837bb1c1e"
   },
   "processed": {
     "5364f886b0c0de0f": {
@@ -186,6 +186,14 @@
       "web": "bb7becf35c18b4fdbdc4c357be7ab2b4393e7c90",
       "api": "c6db502a97e27a4040ea7ef7b30fac5373f7f39f",
       "added": 10,
+      "held": 0
+    },
+    "92ccbc9a13e7093e": {
+      "date": "2026-11-07",
+      "verifiedAt": "2026-11-07T13:31:11Z",
+      "web": "e5e1b3c6a827cbaa4d3193c504c544769e05b527",
+      "api": "da4675de3572b32f826ffd8a422e238837bb1c1e",
+      "added": 6,
       "held": 0
     }
   }
