@@ -197,6 +197,12 @@ if (import.meta.main) {
     process.exit(1);
   }
   console.log(`GH_READ_TOKEN can read ${sides.map((side) => SOURCES[side].repo).join(", ")}.`);
+  // Readiness only: can the token read the components that are still off?
+  // Logged, never fatal, so turning one on later can be checked in advance.
+  for (const side of COMPONENT_SIDES.filter((name) => !sides.includes(name))) {
+    const ready = (await checkAccess(github, undefined, [side])).length === 0;
+    console.log(`GH_READ_TOKEN can also read ${SOURCES[side].repo} (component off): ${ready ? "yes" : "no"}`);
+  }
 
   const report = await publish(".", {
     github,
