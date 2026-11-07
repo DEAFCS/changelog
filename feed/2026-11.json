@@ -3,11 +3,16 @@
   "days": [
     {
       "date": "2026-11-06",
-      "revision": 1,
+      "revision": 2,
       "title": "Patch Notes | November 6, 2026",
       "summary": "",
       "sections": {
-        "new": [],
+        "new": [
+          {
+            "area": "Matchmaking",
+            "text": "DEAFCS Pro is a scheduled solo 5v5 queue with Captain Pick for top-ranked players."
+          }
+        ],
         "improved": [
           {
             "area": "Tournaments",
@@ -16,6 +21,26 @@
           {
             "area": "Tournaments",
             "text": "Results that changed player ELO must have their ELO voided before they can be changed."
+          },
+          {
+            "area": "Matchmaking",
+            "text": "Each mode shows its map pool when you hover or tap its info icon."
+          },
+          {
+            "area": "Matchmaking",
+            "text": "The Play page shows Competitive, Wingman and Duel in a cleaner layout on every screen size."
+          },
+          {
+            "area": "Matches",
+            "text": "Maps a Grand Final did not need are muted and marked Not needed."
+          },
+          {
+            "area": "Tournaments",
+            "text": "Administrators can delete a tournament with rated matches without voiding ELO first."
+          },
+          {
+            "area": "Tournaments",
+            "text": "Organizers can reset or change a match winner without voiding ELO first."
           }
         ],
         "fixed": [
@@ -70,6 +95,22 @@
           {
             "area": "Tournaments",
             "text": "The Grand Final uses its own best-of and map advantage at any bracket size."
+          },
+          {
+            "area": "Matches",
+            "text": "The match page shows the upper bracket team's Grand Final map advantage."
+          },
+          {
+            "area": "Matches",
+            "text": "A finished Grand Final shows the full series score, including the upper bracket advantage."
+          },
+          {
+            "area": "Tournaments",
+            "text": "The bracket and match lists show a Grand Final's full series score, including the upper bracket advantage."
+          },
+          {
+            "area": "Matches",
+            "text": "Setting a map winner in a Grand Final counts the upper bracket team's map advantage."
           }
         ]
       }

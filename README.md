@@ -4,10 +4,19 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 
 ## Patch Notes | November 6, 2026
 
+### New
+
+- **Matchmaking:** DEAFCS Pro is a scheduled solo 5v5 queue with Captain Pick for top-ranked players.
+
 ### Improved
 
 - **Tournaments:** Cancelling a tournament or resetting it to Setup now asks for confirmation first.
 - **Tournaments:** Results that changed player ELO must have their ELO voided before they can be changed.
+- **Matchmaking:** Each mode shows its map pool when you hover or tap its info icon.
+- **Matchmaking:** The Play page shows Competitive, Wingman and Duel in a cleaner layout on every screen size.
+- **Matches:** Maps a Grand Final did not need are muted and marked Not needed.
+- **Tournaments:** Administrators can delete a tournament with rated matches without voiding ELO first.
+- **Tournaments:** Organizers can reset or change a match winner without voiding ELO first.
 
 ### Fixed
 
@@ -24,6 +33,10 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Tournaments:** Organizers can recover an unfinished series without awarding a win, and resetting a match keeps its finished maps.
 - **Tournaments:** Correcting the winner of a final now finishes the tournament again.
 - **Tournaments:** The Grand Final uses its own best-of and map advantage at any bracket size.
+- **Matches:** The match page shows the upper bracket team's Grand Final map advantage.
+- **Matches:** A finished Grand Final shows the full series score, including the upper bracket advantage.
+- **Tournaments:** The bracket and match lists show a Grand Final's full series score, including the upper bracket advantage.
+- **Matches:** Setting a map winner in a Grand Final counts the upper bracket team's map advantage.
 
 ## Patch Notes | November 5, 2026
 

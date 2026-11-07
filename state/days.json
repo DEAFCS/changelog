@@ -522,7 +522,7 @@
     }
   },
   "2026-11-06": {
-    "revision": 1,
+    "revision": 2,
     "items": {
       "421db861484c": {
         "type": "improved",
@@ -628,6 +628,76 @@
         "text": "The Grand Final uses its own best-of and map advantage at any bracket size.",
         "status": "published",
         "source": "release:d9ca544fd5cd017a"
+      },
+      "333b17ab2aee": {
+        "type": "improved",
+        "area": "Matchmaking",
+        "text": "Each mode shows its map pool when you hover or tap its info icon.",
+        "status": "published",
+        "source": "release:612f9f192a060426"
+      },
+      "6e93cbb56da3": {
+        "type": "improved",
+        "area": "Matchmaking",
+        "text": "The Play page shows Competitive, Wingman and Duel in a cleaner layout on every screen size.",
+        "status": "published",
+        "source": "release:612f9f192a060426"
+      },
+      "8f73193cd9b7": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "The match page shows the upper bracket team's Grand Final map advantage.",
+        "status": "published",
+        "source": "release:612f9f192a060426"
+      },
+      "5193156b4818": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "A finished Grand Final shows the full series score, including the upper bracket advantage.",
+        "status": "published",
+        "source": "release:612f9f192a060426"
+      },
+      "d23dc68e4e87": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "Maps a Grand Final did not need are muted and marked Not needed.",
+        "status": "published",
+        "source": "release:612f9f192a060426"
+      },
+      "100d40e3ca2c": {
+        "type": "fixed",
+        "area": "Tournaments",
+        "text": "The bracket and match lists show a Grand Final's full series score, including the upper bracket advantage.",
+        "status": "published",
+        "source": "release:612f9f192a060426"
+      },
+      "45c85933a812": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "Setting a map winner in a Grand Final counts the upper bracket team's map advantage.",
+        "status": "published",
+        "source": "release:612f9f192a060426"
+      },
+      "1a22f8db4b89": {
+        "type": "new",
+        "area": "Matchmaking",
+        "text": "DEAFCS Pro is a scheduled solo 5v5 queue with Captain Pick for top-ranked players.",
+        "status": "published",
+        "source": "release:612f9f192a060426"
+      },
+      "bdff2109e4cc": {
+        "type": "improved",
+        "area": "Tournaments",
+        "text": "Administrators can delete a tournament with rated matches without voiding ELO first.",
+        "status": "published",
+        "source": "release:612f9f192a060426"
+      },
+      "b6546e684688": {
+        "type": "improved",
+        "area": "Tournaments",
+        "text": "Organizers can reset or change a match winner without voiding ELO first.",
+        "status": "published",
+        "source": "release:612f9f192a060426"
       }
     }
   }
