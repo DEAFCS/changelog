@@ -702,7 +702,7 @@
     }
   },
   "2026-11-07": {
-    "revision": 3,
+    "revision": 4,
     "items": {
       "4177bc80fd8c": {
         "type": "improved",
@@ -780,6 +780,27 @@
         "text": "Lineups with saved bots show a badge on the map, and each bot's spot when you open the lineup.",
         "status": "published",
         "source": "release:616c50500ddcf2a0"
+      },
+      "ba7d7b39440b": {
+        "type": "fixed",
+        "area": "Streams",
+        "text": "Audio stays in sync with the picture on long live streams.",
+        "status": "published",
+        "source": "release:dacf8165fa7fd8a1"
+      },
+      "4251e90f2db1": {
+        "type": "improved",
+        "area": "Streams",
+        "text": "Live streams stay closer to real time when they fall behind.",
+        "status": "published",
+        "source": "release:dacf8165fa7fd8a1"
+      },
+      "27c3b916cbea": {
+        "type": "fixed",
+        "area": "Highlights",
+        "text": "A clip's thumbnail is now saved before the clip is finished, so fewer clips appear without one.",
+        "status": "published",
+        "source": "release:dacf8165fa7fd8a1"
       }
     }
   }

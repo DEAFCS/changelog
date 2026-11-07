@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-07",
-      "revision": 3,
+      "revision": 4,
       "title": "Patch Notes | November 7, 2026",
       "summary": "",
       "sections": {
@@ -37,6 +37,10 @@
           {
             "area": "Leaderboards",
             "text": "Stat tables can now be sorted with the keyboard and announce their sort order to screen readers."
+          },
+          {
+            "area": "Streams",
+            "text": "Live streams stay closer to real time when they fall behind."
           }
         ],
         "fixed": [
@@ -47,6 +51,14 @@
           {
             "area": "Utility",
             "text": "Refreshing the page no longer loses your place in a friend's practice server."
+          },
+          {
+            "area": "Streams",
+            "text": "Audio stays in sync with the picture on long live streams."
+          },
+          {
+            "area": "Highlights",
+            "text": "A clip's thumbnail is now saved before the clip is finished, so fewer clips appear without one."
           }
         ]
       }

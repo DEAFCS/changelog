@@ -16,11 +16,14 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 
 - **Leaderboards:** The Awards board now ranks players by Gold, then Silver, Bronze, MVP and Special.
 - **Leaderboards:** Stat tables can now be sorted with the keyboard and announce their sort order to screen readers.
+- **Streams:** Live streams stay closer to real time when they fall behind.
 
 ### Fixed
 
 - **Leaderboards:** A player's Awards rank now matches their place on the board.
 - **Utility:** Refreshing the page no longer loses your place in a friend's practice server.
+- **Streams:** Audio stays in sync with the picture on long live streams.
+- **Highlights:** A clip's thumbnail is now saved before the clip is finished, so fewer clips appear without one.
 
 ## Patch Notes | November 6, 2026
 
