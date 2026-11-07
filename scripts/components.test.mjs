@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
@@ -16,7 +17,7 @@ import { OVERRIDES, readOverrides, validateOverrides } from "./overrides.mjs";
 import { checkProduction } from "./production.mjs";
 import { publish } from "./publish.mjs";
 import { parseArgs } from "./record-release.mjs";
-import { makeRecord, releaseId, validateRecord } from "./release.mjs";
+import { COMPONENT_SIDES, makeRecord, releaseId, SIDES, validateRecord } from "./release.mjs";
 import { collect } from "./sources.mjs";
 
 const sha = (char) => char.repeat(40);
@@ -29,14 +30,39 @@ const ROOT = path.join(import.meta.dirname, "..");
 
 // --- release IDs -------------------------------------------------------------
 
-test("every published WEB/API release keeps its ID", () => {
+// Rebuilds each processed release from the sides it recorded: WEB/API
+// releases from web/api, component releases (like the streamer release of
+// 2026-11-07) with their component sides too.
+test("every published release keeps its ID", () => {
   const { processed } = JSON.parse(fs.readFileSync(path.join(ROOT, "state/releases.json"), "utf8"));
   const ids = Object.entries(processed);
   assert.ok(ids.length > 20);
   for (const [id, entry] of ids) {
-    const record = { ...(entry.web ? { web: { to: entry.web } } : {}), ...(entry.api ? { api: { to: entry.api } } : {}) };
+    const record = Object.fromEntries(SIDES.filter((side) => entry[side]).map((side) => [side, { to: entry[side] }]));
     assert.equal(releaseId(record), id, `release ${id}`);
   }
+});
+
+test("WEB/API-only releases keep the ID they had before components existed", () => {
+  const { processed } = JSON.parse(fs.readFileSync(path.join(ROOT, "state/releases.json"), "utf8"));
+  const webApi = Object.entries(processed).filter(([, entry]) => !COMPONENT_SIDES.some((side) => entry[side]));
+  assert.ok(webApi.length > 20);
+  for (const [id, entry] of webApi) {
+    const legacy = createHash("sha256").update(`web=${entry.web ?? "-"};api=${entry.api ?? "-"}`).digest("hex").slice(0, 16);
+    assert.equal(legacy, id, `release ${id}`);
+  }
+});
+
+test("the streamer release of 2026-11-07 keeps its ID and stays streamer-only", () => {
+  const { processed, lastDeployed } = JSON.parse(fs.readFileSync(path.join(ROOT, "state/releases.json"), "utf8"));
+  const entry = processed.dacf8165fa7fd8a1;
+  const streamer = "a34f3c1727e2e3ebcba2ea1d5945c5b4f7470a72";
+  assert.deepEqual(
+    { web: entry.web, api: entry.api, streamer: entry.streamer, date: entry.date, added: entry.added, held: entry.held },
+    { web: null, api: null, streamer, date: "2026-11-07", added: 3, held: 0 },
+  );
+  assert.equal(releaseId({ streamer: { to: streamer } }), "dacf8165fa7fd8a1");
+  assert.equal(lastDeployed.streamer, streamer);
 });
 
 test("a component joins the ID only when the release has it, in a fixed order", () => {
