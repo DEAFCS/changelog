@@ -7,8 +7,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 ### New
 
 - **Profiles:** Season awards show their season and game mode.
-- **Leaderboards:** Season Gold, Silver and Bronze medals now count on the Awards board.
-- **Awards:** Players are notified when they receive a season medal, and when one is revoked.
+- **Awards:** You get a notification when you receive a season medal.
 
 ### Improved
 
@@ -28,7 +27,6 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 ### Improved
 
 - **Tournaments:** Cancelling a tournament or resetting it to Setup now asks for confirmation first.
-- **Tournaments:** Results that changed player ELO must have their ELO voided before they can be changed.
 - **Matchmaking:** Each mode shows its map pool when you hover or tap its info icon.
 - **Matchmaking:** The Play page shows Competitive, Wingman and Duel in a cleaner layout on every screen size.
 - **Matches:** Maps a Grand Final did not need are muted and marked Not needed.
@@ -37,13 +35,11 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 
 ### Fixed
 
-- **Tournaments:** The bracket shows the right best-of for the Grand Final.
 - **Matches:** Organizers can cancel a match that already has a demo.
 - **Matches:** Canceled matches no longer count toward player statistics or leaderboards.
 - **Matches:** A canceled match keeps its played maps, rounds and stats, even before its demo arrives.
 - **Tournaments:** Changing an earlier result no longer swaps the teams of a canceled match that was already played.
 - **Tournaments:** A tournament can no longer be cancelled or deleted while its matches are being played.
-- **Tournaments:** A tournament with rated matches can no longer be deleted, which protects player ELO history.
 - **Matches:** A match started again right after a cancel keeps its server.
 - **Matches:** A canceled match that is started again replays the unfinished map from warmup and keeps its finished maps.
 - **Tournaments:** A tournament with played matches can no longer be reset to Setup.
@@ -51,7 +47,6 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Tournaments:** Correcting the winner of a final now finishes the tournament again.
 - **Tournaments:** The Grand Final uses its own best-of and map advantage at any bracket size.
 - **Matches:** The match page shows the upper bracket team's Grand Final map advantage.
-- **Matches:** A finished Grand Final shows the full series score, including the upper bracket advantage.
 - **Tournaments:** The bracket and match lists show a Grand Final's full series score, including the upper bracket advantage.
 - **Matches:** Setting a map winner in a Grand Final counts the upper bracket team's map advantage.
 
@@ -164,6 +159,5 @@ Team history on profiles and team pages, a new Changelog page, a new search, and
 - **Seasons:** Rebuilding a season's ratings now keeps its tournament matches, so season ELO stays correct.
 - **Matches:** Report a Player opens 5 minutes after the match ends, and the match page shows the time left.
 - **Matches:** Player names show correctly when choosing who to report.
-- **Matches:** Report a Player opens 5 minutes after the match ends, without waiting for the stats.
 
 Older days are in [entries](entries).

@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-07",
-      "revision": 1,
+      "revision": 2,
       "title": "Patch Notes | November 7, 2026",
       "summary": "",
       "sections": {
@@ -13,12 +13,8 @@
             "text": "Season awards show their season and game mode."
           },
           {
-            "area": "Leaderboards",
-            "text": "Season Gold, Silver and Bronze medals now count on the Awards board."
-          },
-          {
             "area": "Awards",
-            "text": "Players are notified when they receive a season medal, and when one is revoked."
+            "text": "You get a notification when you receive a season medal."
           }
         ],
         "improved": [
@@ -57,10 +53,6 @@
             "text": "Cancelling a tournament or resetting it to Setup now asks for confirmation first."
           },
           {
-            "area": "Tournaments",
-            "text": "Results that changed player ELO must have their ELO voided before they can be changed."
-          },
-          {
             "area": "Matchmaking",
             "text": "Each mode shows its map pool when you hover or tap its info icon."
           },
@@ -83,10 +75,6 @@
         ],
         "fixed": [
           {
-            "area": "Tournaments",
-            "text": "The bracket shows the right best-of for the Grand Final."
-          },
-          {
             "area": "Matches",
             "text": "Organizers can cancel a match that already has a demo."
           },
@@ -105,10 +93,6 @@
           {
             "area": "Tournaments",
             "text": "A tournament can no longer be cancelled or deleted while its matches are being played."
-          },
-          {
-            "area": "Tournaments",
-            "text": "A tournament with rated matches can no longer be deleted, which protects player ELO history."
           },
           {
             "area": "Matches",
@@ -137,10 +121,6 @@
           {
             "area": "Matches",
             "text": "The match page shows the upper bracket team's Grand Final map advantage."
-          },
-          {
-            "area": "Matches",
-            "text": "A finished Grand Final shows the full series score, including the upper bracket advantage."
           },
           {
             "area": "Tournaments",
@@ -464,10 +444,6 @@
           {
             "area": "Matches",
             "text": "Player names show correctly when choosing who to report."
-          },
-          {
-            "area": "Matches",
-            "text": "Report a Player opens 5 minutes after the match ends, without waiting for the stats."
           }
         ]
       }

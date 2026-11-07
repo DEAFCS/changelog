@@ -181,7 +181,7 @@
         "type": "fixed",
         "area": "Matches",
         "text": "Report a Player opens 5 minutes after the match ends, without waiting for the stats.",
-        "status": "published",
+        "status": "removed",
         "source": "release:70993637861c6cab"
       }
     }
@@ -535,7 +535,7 @@
         "type": "fixed",
         "area": "Tournaments",
         "text": "The bracket shows the right best-of for the Grand Final.",
-        "status": "published",
+        "status": "removed",
         "source": "release:d9ca544fd5cd017a"
       },
       "c04528071747": {
@@ -577,7 +577,7 @@
         "type": "fixed",
         "area": "Tournaments",
         "text": "A tournament with rated matches can no longer be deleted, which protects player ELO history.",
-        "status": "published",
+        "status": "removed",
         "source": "release:d9ca544fd5cd017a"
       },
       "f53de1b937c8": {
@@ -619,7 +619,7 @@
         "type": "improved",
         "area": "Tournaments",
         "text": "Results that changed player ELO must have their ELO voided before they can be changed.",
-        "status": "published",
+        "status": "removed",
         "source": "release:d9ca544fd5cd017a"
       },
       "345b27a073aa": {
@@ -654,7 +654,7 @@
         "type": "fixed",
         "area": "Matches",
         "text": "A finished Grand Final shows the full series score, including the upper bracket advantage.",
-        "status": "published",
+        "status": "removed",
         "source": "release:612f9f192a060426"
       },
       "d23dc68e4e87": {
@@ -702,7 +702,7 @@
     }
   },
   "2026-11-07": {
-    "revision": 1,
+    "revision": 2,
     "items": {
       "4177bc80fd8c": {
         "type": "improved",
@@ -736,15 +736,22 @@
         "type": "new",
         "area": "Leaderboards",
         "text": "Season Gold, Silver and Bronze medals now count on the Awards board.",
-        "status": "published",
+        "status": "removed",
         "source": "release:92ccbc9a13e7093e"
       },
       "018c7398dbcc": {
         "type": "new",
         "area": "Awards",
         "text": "Players are notified when they receive a season medal, and when one is revoked.",
-        "status": "published",
+        "status": "removed",
         "source": "release:92ccbc9a13e7093e"
+      },
+      "b380e68feef6": {
+        "type": "new",
+        "area": "Awards",
+        "text": "You get a notification when you receive a season medal.",
+        "status": "published",
+        "source": "manual"
       }
     }
   }
