@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-08",
-      "revision": 1,
+      "revision": 2,
       "title": "Patch Notes | November 8, 2026",
       "summary": "",
       "sections": {
@@ -13,7 +13,16 @@
             "text": "Teams can pick a country, shown as a flag beside the team name on team pages, match pages and tournament team lists."
           }
         ],
-        "improved": [],
+        "improved": [
+          {
+            "area": "Matches",
+            "text": "Restart Map now warns that recorded rounds will be set aside."
+          },
+          {
+            "area": "Matches",
+            "text": "Only staff can restore rounds or restart a map from the match page."
+          }
+        ],
         "fixed": [
           {
             "area": "Teams",
@@ -26,6 +35,10 @@
           {
             "area": "Teams",
             "text": "The Save button in the team editor is fully visible again on every screen size."
+          },
+          {
+            "area": "Matches",
+            "text": "Restoring a round no longer counts kills and damage from the interrupted round twice."
           }
         ]
       }

@@ -805,7 +805,7 @@
     }
   },
   "2026-11-08": {
-    "revision": 1,
+    "revision": 2,
     "items": {
       "6d2369f6016b": {
         "type": "fixed",
@@ -834,6 +834,27 @@
         "text": "The Save button in the team editor is fully visible again on every screen size.",
         "status": "published",
         "source": "release:d3d8d90ced1ec1b5"
+      },
+      "fb88f3c58049": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "Restart Map now warns that recorded rounds will be set aside.",
+        "status": "published",
+        "source": "release:78dcf0b644c10a8d"
+      },
+      "e08f90f97e35": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "Restoring a round no longer counts kills and damage from the interrupted round twice.",
+        "status": "published",
+        "source": "release:78dcf0b644c10a8d"
+      },
+      "fb69a6a08ec0": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "Only staff can restore rounds or restart a map from the match page.",
+        "status": "published",
+        "source": "release:78dcf0b644c10a8d"
       }
     }
   }
