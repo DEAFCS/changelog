@@ -43,6 +43,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Tournaments:** a tournament that ends before its final has no podium instead of a wrong one, and a final won by a bye gets the right medals.
 - **Matches:** a match whose maps all end level now ends as a tie instead of staying live.
 - **Tournaments:** The Round Restart Delay organizers choose now applies in matches.
+- **Tournaments:** Opening registration for an invite-only tournament no longer notifies every player.
 
 ## Patch Notes | November 7, 2026
 

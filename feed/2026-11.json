@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-08",
-      "revision": 3,
+      "revision": 4,
       "title": "Patch Notes | November 8, 2026",
       "summary": "",
       "sections": {
@@ -135,6 +135,10 @@
           {
             "area": "Tournaments",
             "text": "The Round Restart Delay organizers choose now applies in matches."
+          },
+          {
+            "area": "Tournaments",
+            "text": "Opening registration for an invite-only tournament no longer notifies every player."
           }
         ]
       }

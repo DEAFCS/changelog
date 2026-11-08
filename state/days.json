@@ -805,7 +805,7 @@
     }
   },
   "2026-11-08": {
-    "revision": 3,
+    "revision": 4,
     "items": {
       "6d2369f6016b": {
         "type": "fixed",
@@ -1023,6 +1023,13 @@
         "text": "The Round Restart Delay organizers choose now applies in matches.",
         "status": "published",
         "source": "release:3fe7f851d492a761"
+      },
+      "b5a85f7e8660": {
+        "type": "fixed",
+        "area": "Tournaments",
+        "text": "Opening registration for an invite-only tournament no longer notifies every player.",
+        "status": "published",
+        "source": "release:20ea777ab7cdb92b"
       }
     }
   }
