@@ -805,7 +805,7 @@
     }
   },
   "2026-11-08": {
-    "revision": 5,
+    "revision": 6,
     "items": {
       "6d2369f6016b": {
         "type": "fixed",
@@ -1044,6 +1044,69 @@
         "text": "The Teams tab count now matches the teams shown after check-in, and seeds no longer appear twice.",
         "status": "published",
         "source": "release:b0627508e5b34711"
+      },
+      "2815cce356c5": {
+        "type": "improved",
+        "area": "Tournaments",
+        "text": "The tournament chat no longer shows a webcam room button.",
+        "status": "published",
+        "source": "release:32375a6d135b1039"
+      },
+      "0f281e8b4ff8": {
+        "type": "improved",
+        "area": "Matchmaking",
+        "text": "DEAFCS Pro starts searching right away, without an extra language popup.",
+        "status": "published",
+        "source": "release:32375a6d135b1039"
+      },
+      "f56409c42f1f": {
+        "type": "fixed",
+        "area": "Profiles",
+        "text": "Open Twitch Widget goes to the new widget address.",
+        "status": "published",
+        "source": "release:32375a6d135b1039"
+      },
+      "7e4dc479648c": {
+        "type": "improved",
+        "area": "Settings",
+        "text": "Webhook addresses are hidden until you press the eye icon.",
+        "status": "published",
+        "source": "release:32375a6d135b1039"
+      },
+      "ce9a9244eb03": {
+        "type": "improved",
+        "area": "Site",
+        "text": "Times older than an hour show the exact date and time, including in notifications.",
+        "status": "published",
+        "source": "release:32375a6d135b1039"
+      },
+      "afaaa3328f4a": {
+        "type": "fixed",
+        "area": "Site",
+        "text": "Opening the left sidebar no longer cuts off labels or pushes buttons outside it.",
+        "status": "published",
+        "source": "release:32375a6d135b1039"
+      },
+      "20eb5e211f7f": {
+        "type": "new",
+        "area": "Search",
+        "text": "Global search finds teams as well as players.",
+        "status": "published",
+        "source": "release:32375a6d135b1039"
+      },
+      "18a417c40080": {
+        "type": "improved",
+        "area": "Matchmaking",
+        "text": "The DEAFCS Pro popup simply says \"Only English language\".",
+        "status": "published",
+        "source": "release:32375a6d135b1039"
+      },
+      "640543df7142": {
+        "type": "improved",
+        "area": "Site",
+        "text": "Opening and closing the left sidebar is smoother, also with the chat open.",
+        "status": "published",
+        "source": "release:32375a6d135b1039"
       }
     }
   }

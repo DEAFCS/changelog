@@ -11,6 +11,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Tournaments:** Organizers can set Freeze Time next to Round Restart Delay.
 - **Tournaments:** organizers can seed a tournament by team ELO instead of at random.
 - **Tournaments:** organizers choose whether check-in needs an admin review; without it the bracket is drawn automatically from the teams that checked in.
+- **Search:** Global search finds teams as well as players.
 
 ### Improved
 
@@ -26,6 +27,12 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Tournaments:** a tournament with too few eligible teams after check-in now waits for its organizers instead of being cancelled, and admins are told.
 - **Tournaments:** deleting a tournament first shows its played matches, demos, clips, rated matches and awards, and needs them confirmed.
 - **Tournaments:** The bracket's Fit button now switches between fitting the bracket and 100% zoom.
+- **Tournaments:** The tournament chat no longer shows a webcam room button.
+- **Matchmaking:** DEAFCS Pro starts searching right away, without an extra language popup.
+- **Settings:** Webhook addresses are hidden until you press the eye icon.
+- **Site:** Times older than an hour show the exact date and time, including in notifications.
+- **Matchmaking:** The DEAFCS Pro popup simply says "Only English language".
+- **Site:** Opening and closing the left sidebar is smoother, also with the chat open.
 
 ### Fixed
 
@@ -46,6 +53,8 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Tournaments:** The Round Restart Delay organizers choose now applies in matches.
 - **Tournaments:** Opening registration for an invite-only tournament no longer notifies every player.
 - **Tournaments:** The Teams tab count now matches the teams shown after check-in, and seeds no longer appear twice.
+- **Profiles:** Open Twitch Widget goes to the new widget address.
+- **Site:** Opening the left sidebar no longer cuts off labels or pushes buttons outside it.
 
 ## Patch Notes | November 7, 2026
 

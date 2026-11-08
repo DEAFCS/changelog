@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-08",
-      "revision": 5,
+      "revision": 6,
       "title": "Patch Notes | November 8, 2026",
       "summary": "",
       "sections": {
@@ -27,6 +27,10 @@
           {
             "area": "Tournaments",
             "text": "organizers choose whether check-in needs an admin review; without it the bracket is drawn automatically from the teams that checked in."
+          },
+          {
+            "area": "Search",
+            "text": "Global search finds teams as well as players."
           }
         ],
         "improved": [
@@ -77,6 +81,30 @@
           {
             "area": "Tournaments",
             "text": "The bracket's Fit button now switches between fitting the bracket and 100% zoom."
+          },
+          {
+            "area": "Tournaments",
+            "text": "The tournament chat no longer shows a webcam room button."
+          },
+          {
+            "area": "Matchmaking",
+            "text": "DEAFCS Pro starts searching right away, without an extra language popup."
+          },
+          {
+            "area": "Settings",
+            "text": "Webhook addresses are hidden until you press the eye icon."
+          },
+          {
+            "area": "Site",
+            "text": "Times older than an hour show the exact date and time, including in notifications."
+          },
+          {
+            "area": "Matchmaking",
+            "text": "The DEAFCS Pro popup simply says \"Only English language\"."
+          },
+          {
+            "area": "Site",
+            "text": "Opening and closing the left sidebar is smoother, also with the chat open."
           }
         ],
         "fixed": [
@@ -147,6 +175,14 @@
           {
             "area": "Tournaments",
             "text": "The Teams tab count now matches the teams shown after check-in, and seeds no longer appear twice."
+          },
+          {
+            "area": "Profiles",
+            "text": "Open Twitch Widget goes to the new widget address."
+          },
+          {
+            "area": "Site",
+            "text": "Opening the left sidebar no longer cuts off labels or pushes buttons outside it."
           }
         ]
       }
