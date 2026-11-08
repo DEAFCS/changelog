@@ -805,7 +805,7 @@
     }
   },
   "2026-11-08": {
-    "revision": 2,
+    "revision": 3,
     "items": {
       "6d2369f6016b": {
         "type": "fixed",
@@ -855,6 +855,174 @@
         "text": "Only staff can restore rounds or restart a map from the match page.",
         "status": "published",
         "source": "release:78dcf0b644c10a8d"
+      },
+      "3e86107fc988": {
+        "type": "fixed",
+        "area": "Tournaments",
+        "text": "stages always play the tournament's map pool, and match type and map pool lock once the bracket is drawn.",
+        "status": "published",
+        "source": "release:3fe7f851d492a761"
+      },
+      "b753178a1156": {
+        "type": "fixed",
+        "area": "Teams",
+        "text": "the Team Owner picker shows the player's flag and name, and Save stays visible in the Team Editor.",
+        "status": "published",
+        "source": "release:3fe7f851d492a761"
+      },
+      "fe1064f836e6": {
+        "type": "fixed",
+        "area": "Tournaments",
+        "text": "a stage with its own settings now keeps the tournament's camera, auto-cancel and server settings, and a refused save no longer saves half of the tournament settings.",
+        "status": "published",
+        "source": "release:3fe7f851d492a761"
+      },
+      "0a6c23f49834": {
+        "type": "fixed",
+        "area": "Tournaments",
+        "text": "the Check-in Review page shows its headings and labels instead of raw text keys.",
+        "status": "published",
+        "source": "release:3fe7f851d492a761"
+      },
+      "3b75f5583f48": {
+        "type": "new",
+        "area": "Tournaments",
+        "text": "organizers can choose Random or By ELO seeding and whether check-in needs an admin review.",
+        "status": "published",
+        "source": "release:3fe7f851d492a761"
+      },
+      "b53ce0d91360": {
+        "type": "improved",
+        "area": "Tournaments",
+        "text": "the Teams tab shows each team's seed and, before the draw, its projected seed and first opponent.",
+        "status": "published",
+        "source": "release:3fe7f851d492a761"
+      },
+      "c582bc2136ec": {
+        "type": "improved",
+        "area": "Tournaments",
+        "text": "seed numbers stay with teams across the bracket, standings and match page, and hovering a team highlights its route.",
+        "status": "published",
+        "source": "release:3fe7f851d492a761"
+      },
+      "7f9384aed649": {
+        "type": "improved",
+        "area": "Tournaments",
+        "text": "Check-in Review explains when a tournament is held for too few teams and what the organizer can do.",
+        "status": "published",
+        "source": "release:3fe7f851d492a761"
+      },
+      "64c12cc5ce96": {
+        "type": "improved",
+        "area": "Tournaments",
+        "text": "when several tournaments are live, each gets its own tab on the Tournaments page.",
+        "status": "published",
+        "source": "release:3fe7f851d492a761"
+      },
+      "3c66b5906ccf": {
+        "type": "improved",
+        "area": "Tournaments",
+        "text": "during check-in the panel shows how many teams have checked in, with a link to the Teams tab.",
+        "status": "published",
+        "source": "release:3fe7f851d492a761"
+      },
+      "fdddef23464c": {
+        "type": "fixed",
+        "area": "Tournaments",
+        "text": "Check-in Review shows the full date and time each team registered.",
+        "status": "published",
+        "source": "release:3fe7f851d492a761"
+      },
+      "841970bd6f4d": {
+        "type": "improved",
+        "area": "Tournaments",
+        "text": "deleting a tournament first shows its played matches, demos, clips, rated matches and awards, and asks you to confirm.",
+        "status": "published",
+        "source": "release:3fe7f851d492a761"
+      },
+      "a04bbdfda4b2": {
+        "type": "fixed",
+        "area": "Tournaments",
+        "text": "Registration counts on tournament cards now show the players actually on each team.",
+        "status": "published",
+        "source": "release:3fe7f851d492a761"
+      },
+      "573f0e6924ea": {
+        "type": "new",
+        "area": "Tournaments",
+        "text": "Organizers can set Freeze Time next to Round Restart Delay.",
+        "status": "published",
+        "source": "release:3fe7f851d492a761"
+      },
+      "77123a136d01": {
+        "type": "improved",
+        "area": "Tournaments",
+        "text": "AIM Rules is replaced by the Freeze Time and Round Restart Delay settings.",
+        "status": "published",
+        "source": "release:3fe7f851d492a761"
+      },
+      "68dc7a881506": {
+        "type": "fixed",
+        "area": "Tournaments",
+        "text": "a tournament's map pool now always reaches its stages and matches, and it can't change once the bracket is drawn.",
+        "status": "published",
+        "source": "release:3fe7f851d492a761"
+      },
+      "1f004c26c784": {
+        "type": "fixed",
+        "area": "Tournaments",
+        "text": "an expired tournament match is no longer always awarded to the first team; it goes against the team that didn't show up, or to an admin.",
+        "status": "published",
+        "source": "release:3fe7f851d492a761"
+      },
+      "f043be92b8c7": {
+        "type": "fixed",
+        "area": "Tournaments",
+        "text": "a tournament that ends before its final has no podium instead of a wrong one, and a final won by a bye gets the right medals.",
+        "status": "published",
+        "source": "release:3fe7f851d492a761"
+      },
+      "5367b640d960": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "a match whose maps all end level now ends as a tie instead of staying live.",
+        "status": "published",
+        "source": "release:3fe7f851d492a761"
+      },
+      "1ce776c8c88a": {
+        "type": "new",
+        "area": "Tournaments",
+        "text": "organizers can seed a tournament by team ELO instead of at random.",
+        "status": "published",
+        "source": "release:3fe7f851d492a761"
+      },
+      "5b6ba50a3531": {
+        "type": "new",
+        "area": "Tournaments",
+        "text": "organizers choose whether check-in needs an admin review; without it the bracket is drawn automatically from the teams that checked in.",
+        "status": "published",
+        "source": "release:3fe7f851d492a761"
+      },
+      "70a4fe695fab": {
+        "type": "improved",
+        "area": "Tournaments",
+        "text": "a tournament with too few eligible teams after check-in now waits for its organizers instead of being cancelled, and admins are told.",
+        "status": "published",
+        "source": "release:3fe7f851d492a761"
+      },
+      "631f35332f68": {
+        "type": "improved",
+        "area": "Tournaments",
+        "text": "deleting a tournament first shows its played matches, demos, clips, rated matches and awards, and needs them confirmed.",
+        "status": "published",
+        "source": "release:3fe7f851d492a761"
+      },
+      "622faa7748f4": {
+        "type": "fixed",
+        "area": "Tournaments",
+        "text": "The Round Restart Delay organizers choose now applies in matches.",
+        "status": "published",
+        "source": "release:3fe7f851d492a761"
       }
     }
   }
