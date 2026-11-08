@@ -2,6 +2,35 @@
   "month": "2026-11",
   "days": [
     {
+      "date": "2026-11-08",
+      "revision": 1,
+      "title": "Patch Notes | November 8, 2026",
+      "summary": "",
+      "sections": {
+        "new": [
+          {
+            "area": "Teams",
+            "text": "Teams can pick a country, shown as a flag beside the team name on team pages, match pages and tournament team lists."
+          }
+        ],
+        "improved": [],
+        "fixed": [
+          {
+            "area": "Teams",
+            "text": "Only the team owner can hand over a team, and the owner can no longer be removed or demoted by others."
+          },
+          {
+            "area": "Profiles",
+            "text": "The match filters on player profiles fit on one line on more screen sizes."
+          },
+          {
+            "area": "Teams",
+            "text": "The Save button in the team editor is fully visible again on every screen size."
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-07",
       "revision": 4,
       "title": "Patch Notes | November 7, 2026",

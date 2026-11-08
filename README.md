@@ -2,6 +2,18 @@
 
 DEAFCS patch notes: new features, improvements and fixes, newest first. They also appear on the DEAFCS Changelog page (Info, then Changelog).
 
+## Patch Notes | November 8, 2026
+
+### New
+
+- **Teams:** Teams can pick a country, shown as a flag beside the team name on team pages, match pages and tournament team lists.
+
+### Fixed
+
+- **Teams:** Only the team owner can hand over a team, and the owner can no longer be removed or demoted by others.
+- **Profiles:** The match filters on player profiles fit on one line on more screen sizes.
+- **Teams:** The Save button in the team editor is fully visible again on every screen size.
+
 ## Patch Notes | November 7, 2026
 
 ### New

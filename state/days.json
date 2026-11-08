@@ -803,5 +803,38 @@
         "source": "release:dacf8165fa7fd8a1"
       }
     }
+  },
+  "2026-11-08": {
+    "revision": 1,
+    "items": {
+      "6d2369f6016b": {
+        "type": "fixed",
+        "area": "Teams",
+        "text": "Only the team owner can hand over a team, and the owner can no longer be removed or demoted by others.",
+        "status": "published",
+        "source": "release:d3d8d90ced1ec1b5"
+      },
+      "d2a7afa0eb73": {
+        "type": "new",
+        "area": "Teams",
+        "text": "Teams can pick a country, shown as a flag beside the team name on team pages, match pages and tournament team lists.",
+        "status": "published",
+        "source": "release:d3d8d90ced1ec1b5"
+      },
+      "683171ad75cd": {
+        "type": "fixed",
+        "area": "Profiles",
+        "text": "The match filters on player profiles fit on one line on more screen sizes.",
+        "status": "published",
+        "source": "release:d3d8d90ced1ec1b5"
+      },
+      "7b71d4a13c54": {
+        "type": "fixed",
+        "area": "Teams",
+        "text": "The Save button in the team editor is fully visible again on every screen size.",
+        "status": "published",
+        "source": "release:d3d8d90ced1ec1b5"
+      }
+    }
   }
 }
