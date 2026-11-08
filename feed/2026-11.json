@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-08",
-      "revision": 4,
+      "revision": 5,
       "title": "Patch Notes | November 8, 2026",
       "summary": "",
       "sections": {
@@ -73,6 +73,10 @@
           {
             "area": "Tournaments",
             "text": "deleting a tournament first shows its played matches, demos, clips, rated matches and awards, and needs them confirmed."
+          },
+          {
+            "area": "Tournaments",
+            "text": "The bracket's Fit button now switches between fitting the bracket and 100% zoom."
           }
         ],
         "fixed": [
@@ -139,6 +143,10 @@
           {
             "area": "Tournaments",
             "text": "Opening registration for an invite-only tournament no longer notifies every player."
+          },
+          {
+            "area": "Tournaments",
+            "text": "The Teams tab count now matches the teams shown after check-in, and seeds no longer appear twice."
           }
         ]
       }

@@ -805,7 +805,7 @@
     }
   },
   "2026-11-08": {
-    "revision": 4,
+    "revision": 5,
     "items": {
       "6d2369f6016b": {
         "type": "fixed",
@@ -1030,6 +1030,20 @@
         "text": "Opening registration for an invite-only tournament no longer notifies every player.",
         "status": "published",
         "source": "release:20ea777ab7cdb92b"
+      },
+      "b908eb5e54a9": {
+        "type": "improved",
+        "area": "Tournaments",
+        "text": "The bracket's Fit button now switches between fitting the bracket and 100% zoom.",
+        "status": "published",
+        "source": "release:b0627508e5b34711"
+      },
+      "92fc4c47a1e7": {
+        "type": "fixed",
+        "area": "Tournaments",
+        "text": "The Teams tab count now matches the teams shown after check-in, and seeds no longer appear twice.",
+        "status": "published",
+        "source": "release:b0627508e5b34711"
       }
     }
   }

@@ -25,6 +25,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Tournaments:** AIM Rules is replaced by the Freeze Time and Round Restart Delay settings.
 - **Tournaments:** a tournament with too few eligible teams after check-in now waits for its organizers instead of being cancelled, and admins are told.
 - **Tournaments:** deleting a tournament first shows its played matches, demos, clips, rated matches and awards, and needs them confirmed.
+- **Tournaments:** The bracket's Fit button now switches between fitting the bracket and 100% zoom.
 
 ### Fixed
 
@@ -44,6 +45,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Matches:** a match whose maps all end level now ends as a tie instead of staying live.
 - **Tournaments:** The Round Restart Delay organizers choose now applies in matches.
 - **Tournaments:** Opening registration for an invite-only tournament no longer notifies every player.
+- **Tournaments:** The Teams tab count now matches the teams shown after check-in, and seeds no longer appear twice.
 
 ## Patch Notes | November 7, 2026
 
