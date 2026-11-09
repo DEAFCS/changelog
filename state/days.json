@@ -1233,5 +1233,66 @@
         "source": "release:ca36ce75f6720697"
       }
     }
+  },
+  "2026-11-10": {
+    "revision": 1,
+    "items": {
+      "bf12186f41bb": {
+        "type": "improved",
+        "area": "News",
+        "text": "Community Polls are now at the top of the News page.",
+        "status": "published",
+        "source": "release:c61941a2d703707a"
+      },
+      "9ac3497e09bd": {
+        "type": "improved",
+        "area": "Watch",
+        "text": "players live on Twitch are now shown on the Watch page.",
+        "status": "published",
+        "source": "release:c61941a2d703707a"
+      },
+      "e4fd35d99eae": {
+        "type": "new",
+        "area": "Leaderboard",
+        "text": "click a player to see their ranks and stats beside the board, with Player of the Month shown by default.",
+        "status": "published",
+        "source": "release:c61941a2d703707a"
+      },
+      "e73f5b7e75d0": {
+        "type": "improved",
+        "area": "Changelog",
+        "text": "patch notes are grouped into fewer, clearer sections.",
+        "status": "published",
+        "source": "release:c61941a2d703707a"
+      },
+      "ac73e80029b6": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "when you are signed in, DEAFCS opens on your profile stats.",
+        "status": "published",
+        "source": "release:c61941a2d703707a"
+      },
+      "fdb575d6a714": {
+        "type": "improved",
+        "area": "Leaderboards",
+        "text": "the Last 7 Days records are now on the Leaderboard, under Player of the Month.",
+        "status": "published",
+        "source": "release:c61941a2d703707a"
+      },
+      "86698218d8f5": {
+        "type": "improved",
+        "area": "Matchmaking",
+        "text": "Your Schedule on Play now shows your later matches, solo and free-agent sign-ups, and a Show more button.",
+        "status": "published",
+        "source": "release:c61941a2d703707a"
+      },
+      "f131d33c2b2e": {
+        "type": "fixed",
+        "area": "Matchmaking",
+        "text": "Your Schedule on Play now shows your tournament check-in status instead of always saying Registered.",
+        "status": "published",
+        "source": "release:c61941a2d703707a"
+      }
+    }
   }
 }

@@ -2,8 +2,8 @@
   "months": [
     {
       "month": "2026-11",
-      "days": 9,
-      "hash": "82342d640fdce071"
+      "days": 10,
+      "hash": "515afbeb62961dd9"
     }
   ],
   "areas": [
@@ -20,6 +20,7 @@
     "Matches",
     "Matchmaking",
     "Navigation",
+    "News",
     "Notifications",
     "Performance",
     "Practice",
@@ -36,11 +37,12 @@
     "Support",
     "Teams",
     "Tournaments",
-    "Utility"
+    "Utility",
+    "Watch"
   ],
   "latest": {
-    "date": "2026-11-09",
-    "revision": 3
+    "date": "2026-11-10",
+    "revision": 1
   },
   "monitoredOn": "2026-11-09"
 }

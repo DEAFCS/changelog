@@ -2,6 +2,25 @@
 
 DEAFCS patch notes: new features, improvements and fixes, newest first. They also appear on the DEAFCS Changelog page (Info, then Changelog).
 
+## Patch Notes | November 10, 2026
+
+### New
+
+- **Leaderboard:** click a player to see their ranks and stats beside the board, with Player of the Month shown by default.
+
+### Improved
+
+- **News:** Community Polls are now at the top of the News page.
+- **Watch:** players live on Twitch are now shown on the Watch page.
+- **Changelog:** patch notes are grouped into fewer, clearer sections.
+- **Profiles:** when you are signed in, DEAFCS opens on your profile stats.
+- **Leaderboards:** the Last 7 Days records are now on the Leaderboard, under Player of the Month.
+- **Matchmaking:** Your Schedule on Play now shows your later matches, solo and free-agent sign-ups, and a Show more button.
+
+### Fixed
+
+- **Matchmaking:** Your Schedule on Play now shows your tournament check-in status instead of always saying Registered.
+
 ## Patch Notes | November 9, 2026
 
 ### New

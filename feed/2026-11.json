@@ -2,6 +2,52 @@
   "month": "2026-11",
   "days": [
     {
+      "date": "2026-11-10",
+      "revision": 1,
+      "title": "Patch Notes | November 10, 2026",
+      "summary": "",
+      "sections": {
+        "new": [
+          {
+            "area": "Leaderboard",
+            "text": "click a player to see their ranks and stats beside the board, with Player of the Month shown by default."
+          }
+        ],
+        "improved": [
+          {
+            "area": "News",
+            "text": "Community Polls are now at the top of the News page."
+          },
+          {
+            "area": "Watch",
+            "text": "players live on Twitch are now shown on the Watch page."
+          },
+          {
+            "area": "Changelog",
+            "text": "patch notes are grouped into fewer, clearer sections."
+          },
+          {
+            "area": "Profiles",
+            "text": "when you are signed in, DEAFCS opens on your profile stats."
+          },
+          {
+            "area": "Leaderboards",
+            "text": "the Last 7 Days records are now on the Leaderboard, under Player of the Month."
+          },
+          {
+            "area": "Matchmaking",
+            "text": "Your Schedule on Play now shows your later matches, solo and free-agent sign-ups, and a Show more button."
+          }
+        ],
+        "fixed": [
+          {
+            "area": "Matchmaking",
+            "text": "Your Schedule on Play now shows your tournament check-in status instead of always saying Registered."
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-09",
       "revision": 3,
       "title": "Patch Notes | November 9, 2026",
