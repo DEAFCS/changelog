@@ -1111,7 +1111,7 @@
     }
   },
   "2026-11-09": {
-    "revision": 1,
+    "revision": 2,
     "items": {
       "5b43bd82e848": {
         "type": "new",
@@ -1140,6 +1140,41 @@
         "text": "A new answer explains how your stats are worked out and links to the Stats Guide.",
         "status": "published",
         "source": "release:fc005cb65b698495"
+      },
+      "5e5e3cd3784f": {
+        "type": "fixed",
+        "area": "Navigation",
+        "text": "The page you are on is now clearly highlighted in the menu.",
+        "status": "published",
+        "source": "release:6a7a8867a2df916a"
+      },
+      "e05e7e0d8ac6": {
+        "type": "improved",
+        "area": "Matchmaking",
+        "text": "The Create Lobby button is smaller and rounder.",
+        "status": "published",
+        "source": "release:6a7a8867a2df916a"
+      },
+      "6c66fdcfd85c": {
+        "type": "fixed",
+        "area": "Profiles",
+        "text": "Very active players now see all of their recent matches in their stats.",
+        "status": "published",
+        "source": "release:6a7a8867a2df916a"
+      },
+      "7e7d86045b7b": {
+        "type": "new",
+        "area": "Matchmaking",
+        "text": "In Captain Pick, hovering a player shows their last 30 matches and ratings.",
+        "status": "published",
+        "source": "release:6a7a8867a2df916a"
+      },
+      "5536f3fc5b63": {
+        "type": "fixed",
+        "area": "Search",
+        "text": "Player search finds offline and online players when Online is off.",
+        "status": "published",
+        "source": "release:6a7a8867a2df916a"
       }
     }
   }

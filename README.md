@@ -8,11 +8,19 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 
 - **Leaderboard:** The Leaderboard has an Award Catalog tab with every award and who holds it.
 - **FAQ:** A new answer explains how your stats are worked out and links to the Stats Guide.
+- **Matchmaking:** In Captain Pick, hovering a player shows their last 30 matches and ratings.
 
 ### Improved
 
 - **Site:** The left menu is cleaner, with compact rows, a bigger logo and an unread count on News.
 - **Matchmaking:** The party in the top bar is a compact pill with your party size, privacy and a member menu.
+- **Matchmaking:** The Create Lobby button is smaller and rounder.
+
+### Fixed
+
+- **Navigation:** The page you are on is now clearly highlighted in the menu.
+- **Profiles:** Very active players now see all of their recent matches in their stats.
+- **Search:** Player search finds offline and online players when Online is off.
 
 ## Patch Notes | November 8, 2026
 

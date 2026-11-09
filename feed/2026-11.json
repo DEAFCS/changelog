@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-09",
-      "revision": 1,
+      "revision": 2,
       "title": "Patch Notes | November 9, 2026",
       "summary": "",
       "sections": {
@@ -15,6 +15,10 @@
           {
             "area": "FAQ",
             "text": "A new answer explains how your stats are worked out and links to the Stats Guide."
+          },
+          {
+            "area": "Matchmaking",
+            "text": "In Captain Pick, hovering a player shows their last 30 matches and ratings."
           }
         ],
         "improved": [
@@ -25,9 +29,26 @@
           {
             "area": "Matchmaking",
             "text": "The party in the top bar is a compact pill with your party size, privacy and a member menu."
+          },
+          {
+            "area": "Matchmaking",
+            "text": "The Create Lobby button is smaller and rounder."
           }
         ],
-        "fixed": []
+        "fixed": [
+          {
+            "area": "Navigation",
+            "text": "The page you are on is now clearly highlighted in the menu."
+          },
+          {
+            "area": "Profiles",
+            "text": "Very active players now see all of their recent matches in their stats."
+          },
+          {
+            "area": "Search",
+            "text": "Player search finds offline and online players when Online is off."
+          }
+        ]
       }
     },
     {
