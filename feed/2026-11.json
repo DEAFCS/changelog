@@ -2,6 +2,35 @@
   "month": "2026-11",
   "days": [
     {
+      "date": "2026-11-09",
+      "revision": 1,
+      "title": "Patch Notes | November 9, 2026",
+      "summary": "",
+      "sections": {
+        "new": [
+          {
+            "area": "Leaderboard",
+            "text": "The Leaderboard has an Award Catalog tab with every award and who holds it."
+          },
+          {
+            "area": "FAQ",
+            "text": "A new answer explains how your stats are worked out and links to the Stats Guide."
+          }
+        ],
+        "improved": [
+          {
+            "area": "Site",
+            "text": "The left menu is cleaner, with compact rows, a bigger logo and an unread count on News."
+          },
+          {
+            "area": "Matchmaking",
+            "text": "The party in the top bar is a compact pill with your party size, privacy and a member menu."
+          }
+        ],
+        "fixed": []
+      }
+    },
+    {
       "date": "2026-11-08",
       "revision": 6,
       "title": "Patch Notes | November 8, 2026",

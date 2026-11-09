@@ -2,6 +2,18 @@
 
 DEAFCS patch notes: new features, improvements and fixes, newest first. They also appear on the DEAFCS Changelog page (Info, then Changelog).
 
+## Patch Notes | November 9, 2026
+
+### New
+
+- **Leaderboard:** The Leaderboard has an Award Catalog tab with every award and who holds it.
+- **FAQ:** A new answer explains how your stats are worked out and links to the Stats Guide.
+
+### Improved
+
+- **Site:** The left menu is cleaner, with compact rows, a bigger logo and an unread count on News.
+- **Matchmaking:** The party in the top bar is a compact pill with your party size, privacy and a member menu.
+
 ## Patch Notes | November 8, 2026
 
 ### New

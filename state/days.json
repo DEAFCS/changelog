@@ -1109,5 +1109,38 @@
         "source": "release:32375a6d135b1039"
       }
     }
+  },
+  "2026-11-09": {
+    "revision": 1,
+    "items": {
+      "5b43bd82e848": {
+        "type": "new",
+        "area": "Leaderboard",
+        "text": "The Leaderboard has an Award Catalog tab with every award and who holds it.",
+        "status": "published",
+        "source": "release:fc005cb65b698495"
+      },
+      "67cda890c00f": {
+        "type": "improved",
+        "area": "Site",
+        "text": "The left menu is cleaner, with compact rows, a bigger logo and an unread count on News.",
+        "status": "published",
+        "source": "release:fc005cb65b698495"
+      },
+      "6e844d232226": {
+        "type": "improved",
+        "area": "Matchmaking",
+        "text": "The party in the top bar is a compact pill with your party size, privacy and a member menu.",
+        "status": "published",
+        "source": "release:fc005cb65b698495"
+      },
+      "ce2816edb646": {
+        "type": "new",
+        "area": "FAQ",
+        "text": "A new answer explains how your stats are worked out and links to the Stats Guide.",
+        "status": "published",
+        "source": "release:fc005cb65b698495"
+      }
+    }
   }
 }

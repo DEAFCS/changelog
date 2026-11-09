@@ -2,8 +2,8 @@
   "months": [
     {
       "month": "2026-11",
-      "days": 8,
-      "hash": "31341742cd3e59cf"
+      "days": 9,
+      "hash": "ba77b99eea9a5b09"
     }
   ],
   "areas": [
@@ -11,7 +11,9 @@
     "Awards",
     "Changelog",
     "ELO",
+    "FAQ",
     "Highlights",
+    "Leaderboard",
     "Leaderboards",
     "Matches",
     "Matchmaking",
@@ -34,8 +36,8 @@
     "Utility"
   ],
   "latest": {
-    "date": "2026-11-08",
-    "revision": 6
+    "date": "2026-11-09",
+    "revision": 1
   },
   "monitoredOn": "2026-11-09"
 }
