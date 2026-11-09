@@ -9,18 +9,26 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Leaderboard:** The Leaderboard has an Award Catalog tab with every award and who holds it.
 - **FAQ:** A new answer explains how your stats are worked out and links to the Stats Guide.
 - **Matchmaking:** In Captain Pick, hovering a player shows their last 30 matches and ratings.
+- **Public Servers:** the menu shows how many players are on the public servers.
+- **Leaderboard:** a Min. matches slider hides players with too few matches from the stats boards.
 
 ### Improved
 
 - **Site:** The left menu is cleaner, with compact rows, a bigger logo and an unread count on News.
 - **Matchmaking:** The party in the top bar is a compact pill with your party size, privacy and a member menu.
 - **Matchmaking:** The Create Lobby button is smaller and rounder.
+- **Profiles:** Steam game-ban details are now only visible to administrators.
 
 ### Fixed
 
 - **Navigation:** The page you are on is now clearly highlighted in the menu.
 - **Profiles:** Very active players now see all of their recent matches in their stats.
 - **Search:** Player search finds offline and online players when Online is off.
+- **Matches:** DEAFCS Pro matches now show the Pro badge in match lists and on profiles.
+- **Matchmaking:** the webcam button in Your Squad now matches the other buttons.
+- **Chat:** returning to a DEAFCS tab left open in the background no longer reloads every chat.
+- **Matches:** the match page no longer jumps down when the map veto appears.
+- **General:** pages no longer jump sideways as they finish loading.
 
 ## Patch Notes | November 8, 2026
 

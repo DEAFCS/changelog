@@ -3,15 +3,17 @@
     {
       "month": "2026-11",
       "days": 9,
-      "hash": "4016d44965fab0d3"
+      "hash": "82342d640fdce071"
     }
   ],
   "areas": [
     "Accounts",
     "Awards",
     "Changelog",
+    "Chat",
     "ELO",
     "FAQ",
+    "General",
     "Highlights",
     "Leaderboard",
     "Leaderboards",
@@ -22,6 +24,7 @@
     "Performance",
     "Practice",
     "Profiles",
+    "Public Servers",
     "Rules",
     "Search",
     "Seasons",
@@ -37,7 +40,7 @@
   ],
   "latest": {
     "date": "2026-11-09",
-    "revision": 2
+    "revision": 3
   },
   "monitoredOn": "2026-11-09"
 }

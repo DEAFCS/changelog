@@ -1111,7 +1111,7 @@
     }
   },
   "2026-11-09": {
-    "revision": 2,
+    "revision": 3,
     "items": {
       "5b43bd82e848": {
         "type": "new",
@@ -1175,6 +1175,62 @@
         "text": "Player search finds offline and online players when Online is off.",
         "status": "published",
         "source": "release:6a7a8867a2df916a"
+      },
+      "01565587d341": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "DEAFCS Pro matches now show the Pro badge in match lists and on profiles.",
+        "status": "published",
+        "source": "release:ca36ce75f6720697"
+      },
+      "3f4a0cd437de": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "Steam game-ban details are now only visible to administrators.",
+        "status": "published",
+        "source": "release:ca36ce75f6720697"
+      },
+      "8d0cf7d8bf5c": {
+        "type": "fixed",
+        "area": "Matchmaking",
+        "text": "the webcam button in Your Squad now matches the other buttons.",
+        "status": "published",
+        "source": "release:ca36ce75f6720697"
+      },
+      "a2846aa7be7e": {
+        "type": "new",
+        "area": "Public Servers",
+        "text": "the menu shows how many players are on the public servers.",
+        "status": "published",
+        "source": "release:ca36ce75f6720697"
+      },
+      "fa9e5615dc82": {
+        "type": "new",
+        "area": "Leaderboard",
+        "text": "a Min. matches slider hides players with too few matches from the stats boards.",
+        "status": "published",
+        "source": "release:ca36ce75f6720697"
+      },
+      "50bf8b9d07d7": {
+        "type": "fixed",
+        "area": "Chat",
+        "text": "returning to a DEAFCS tab left open in the background no longer reloads every chat.",
+        "status": "published",
+        "source": "release:ca36ce75f6720697"
+      },
+      "cf95bb9843dc": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "the match page no longer jumps down when the map veto appears.",
+        "status": "published",
+        "source": "release:ca36ce75f6720697"
+      },
+      "3b21f6637565": {
+        "type": "fixed",
+        "area": "General",
+        "text": "pages no longer jump sideways as they finish loading.",
+        "status": "published",
+        "source": "release:ca36ce75f6720697"
       }
     }
   }
