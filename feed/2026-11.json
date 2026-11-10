@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-10",
-      "revision": 2,
+      "revision": 3,
       "title": "Patch Notes | November 10, 2026",
       "summary": "",
       "sections": {
@@ -23,6 +23,10 @@
           {
             "area": "Tournaments",
             "text": "organizers can add a Twitch channel, shown as a Twitch button on the tournament page once it starts."
+          },
+          {
+            "area": "News",
+            "text": "new articles can be announced automatically in the DEAFCS Discord."
           }
         ],
         "improved": [
@@ -53,6 +57,18 @@
           {
             "area": "Profiles",
             "text": "Twitch channels are now linked by signing in with Twitch, so only the real owner can add one."
+          },
+          {
+            "area": "Profiles",
+            "text": "the stream delay notice before linking Twitch is now shorter and easier to read."
+          },
+          {
+            "area": "Servers",
+            "text": "public servers are shown as compact rows with a map picture, mode, Full status and player count, on the Public Servers page and on Play."
+          },
+          {
+            "area": "Profiles",
+            "text": "warnings now expire after 21 days. Old warnings stay in the history."
           }
         ],
         "fixed": [

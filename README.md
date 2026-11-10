@@ -10,6 +10,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Support:** you can paste a screenshot with Ctrl+V when writing a support request or reply.
 - **Teams:** teams can choose Europe as their country.
 - **Tournaments:** organizers can add a Twitch channel, shown as a Twitch button on the tournament page once it starts.
+- **News:** new articles can be announced automatically in the DEAFCS Discord.
 
 ### Improved
 
@@ -20,6 +21,9 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Leaderboards:** the Last 7 Days records are now on the Leaderboard, under Player of the Month.
 - **Matchmaking:** Your Schedule on Play now shows your later matches, solo and free-agent sign-ups, and a Show more button.
 - **Profiles:** Twitch channels are now linked by signing in with Twitch, so only the real owner can add one.
+- **Profiles:** the stream delay notice before linking Twitch is now shorter and easier to read.
+- **Servers:** public servers are shown as compact rows with a map picture, mode, Full status and player count, on the Public Servers page and on Play.
+- **Profiles:** warnings now expire after 21 days. Old warnings stay in the history.
 
 ### Fixed
 
