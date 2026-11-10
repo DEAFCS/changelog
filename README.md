@@ -7,6 +7,9 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 ### New
 
 - **Leaderboard:** click a player to see their ranks and stats beside the board, with Player of the Month shown by default.
+- **Support:** you can paste a screenshot with Ctrl+V when writing a support request or reply.
+- **Teams:** teams can choose Europe as their country.
+- **Tournaments:** organizers can add a Twitch channel, shown as a Twitch button on the tournament page once it starts.
 
 ### Improved
 
@@ -16,10 +19,12 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Profiles:** when you are signed in, DEAFCS opens on your profile stats.
 - **Leaderboards:** the Last 7 Days records are now on the Leaderboard, under Player of the Month.
 - **Matchmaking:** Your Schedule on Play now shows your later matches, solo and free-agent sign-ups, and a Show more button.
+- **Profiles:** Twitch channels are now linked by signing in with Twitch, so only the real owner can add one.
 
 ### Fixed
 
 - **Matchmaking:** Your Schedule on Play now shows your tournament check-in status instead of always saying Registered.
+- **Watch:** sections on the Watch and Play pages are separated by a thin line again.
 
 ## Patch Notes | November 9, 2026
 

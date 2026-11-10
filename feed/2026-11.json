@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-10",
-      "revision": 1,
+      "revision": 2,
       "title": "Patch Notes | November 10, 2026",
       "summary": "",
       "sections": {
@@ -11,6 +11,18 @@
           {
             "area": "Leaderboard",
             "text": "click a player to see their ranks and stats beside the board, with Player of the Month shown by default."
+          },
+          {
+            "area": "Support",
+            "text": "you can paste a screenshot with Ctrl+V when writing a support request or reply."
+          },
+          {
+            "area": "Teams",
+            "text": "teams can choose Europe as their country."
+          },
+          {
+            "area": "Tournaments",
+            "text": "organizers can add a Twitch channel, shown as a Twitch button on the tournament page once it starts."
           }
         ],
         "improved": [
@@ -37,12 +49,20 @@
           {
             "area": "Matchmaking",
             "text": "Your Schedule on Play now shows your later matches, solo and free-agent sign-ups, and a Show more button."
+          },
+          {
+            "area": "Profiles",
+            "text": "Twitch channels are now linked by signing in with Twitch, so only the real owner can add one."
           }
         ],
         "fixed": [
           {
             "area": "Matchmaking",
             "text": "Your Schedule on Play now shows your tournament check-in status instead of always saying Registered."
+          },
+          {
+            "area": "Watch",
+            "text": "sections on the Watch and Play pages are separated by a thin line again."
           }
         ]
       }

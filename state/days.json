@@ -1235,7 +1235,7 @@
     }
   },
   "2026-11-10": {
-    "revision": 1,
+    "revision": 2,
     "items": {
       "bf12186f41bb": {
         "type": "improved",
@@ -1292,6 +1292,41 @@
         "text": "Your Schedule on Play now shows your tournament check-in status instead of always saying Registered.",
         "status": "published",
         "source": "release:c61941a2d703707a"
+      },
+      "3d9d40837d56": {
+        "type": "fixed",
+        "area": "Watch",
+        "text": "sections on the Watch and Play pages are separated by a thin line again.",
+        "status": "published",
+        "source": "release:9731bc7017d1c6aa"
+      },
+      "fafe824943d7": {
+        "type": "new",
+        "area": "Support",
+        "text": "you can paste a screenshot with Ctrl+V when writing a support request or reply.",
+        "status": "published",
+        "source": "release:9731bc7017d1c6aa"
+      },
+      "0f939d65be61": {
+        "type": "new",
+        "area": "Teams",
+        "text": "teams can choose Europe as their country.",
+        "status": "published",
+        "source": "release:9731bc7017d1c6aa"
+      },
+      "2d66c682f3f5": {
+        "type": "new",
+        "area": "Tournaments",
+        "text": "organizers can add a Twitch channel, shown as a Twitch button on the tournament page once it starts.",
+        "status": "published",
+        "source": "release:9731bc7017d1c6aa"
+      },
+      "f8bf1fb169df": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "Twitch channels are now linked by signing in with Twitch, so only the real owner can add one.",
+        "status": "published",
+        "source": "release:9731bc7017d1c6aa"
       }
     }
   }
