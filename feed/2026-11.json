@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-10",
-      "revision": 4,
+      "revision": 5,
       "title": "Patch Notes | November 10, 2026",
       "summary": "",
       "sections": {
@@ -31,6 +31,10 @@
           {
             "area": "Servers",
             "text": "a Connect button joins a public server in one click, on the Public Servers page and on Play."
+          },
+          {
+            "area": "Matches",
+            "text": "staff can show a Twitch channel as the match's main broadcast or as a Twitch button in the match bar."
           }
         ],
         "improved": [
@@ -81,6 +85,14 @@
           {
             "area": "Servers",
             "text": "Connect explains how to join with the CS2 console if the game does not open, with a Copy button."
+          },
+          {
+            "area": "Watch",
+            "text": "live match cards count each stream once."
+          },
+          {
+            "area": "Watch",
+            "text": "players streaming their live DEAFCS match show on Watch whatever they stream."
           }
         ],
         "fixed": [
@@ -91,6 +103,10 @@
           {
             "area": "Watch",
             "text": "sections on the Watch and Play pages are separated by a thin line again."
+          },
+          {
+            "area": "Streams",
+            "text": "only administrators get direct GOTV access; streamers and tournament organizers broadcast delayed TV within their matches."
           }
         ]
       }

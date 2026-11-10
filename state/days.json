@@ -1235,7 +1235,7 @@
     }
   },
   "2026-11-10": {
-    "revision": 4,
+    "revision": 5,
     "items": {
       "bf12186f41bb": {
         "type": "improved",
@@ -1376,6 +1376,34 @@
         "text": "Connect explains how to join with the CS2 console if the game does not open, with a Copy button.",
         "status": "published",
         "source": "release:04a283ef34e092ca"
+      },
+      "9ce9b71ac2df": {
+        "type": "new",
+        "area": "Matches",
+        "text": "staff can show a Twitch channel as the match's main broadcast or as a Twitch button in the match bar.",
+        "status": "published",
+        "source": "release:8344d650c1017b24"
+      },
+      "6f47b6add10f": {
+        "type": "improved",
+        "area": "Watch",
+        "text": "live match cards count each stream once.",
+        "status": "published",
+        "source": "release:8344d650c1017b24"
+      },
+      "e1e8c2b7c803": {
+        "type": "improved",
+        "area": "Watch",
+        "text": "players streaming their live DEAFCS match show on Watch whatever they stream.",
+        "status": "published",
+        "source": "release:8344d650c1017b24"
+      },
+      "f7330f7c889d": {
+        "type": "fixed",
+        "area": "Streams",
+        "text": "only administrators get direct GOTV access; streamers and tournament organizers broadcast delayed TV within their matches.",
+        "status": "published",
+        "source": "release:8344d650c1017b24"
       }
     }
   }

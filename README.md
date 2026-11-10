@@ -12,6 +12,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Tournaments:** organizers can add a Twitch channel, shown as a Twitch button on the tournament page once it starts.
 - **News:** new articles can be announced automatically in the DEAFCS Discord.
 - **Servers:** a Connect button joins a public server in one click, on the Public Servers page and on Play.
+- **Matches:** staff can show a Twitch channel as the match's main broadcast or as a Twitch button in the match bar.
 
 ### Improved
 
@@ -27,11 +28,14 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Profiles:** warnings now expire after 21 days. Old warnings stay in the history.
 - **Servers:** the Public Servers page is back to the large server cards, sorted by players.
 - **Servers:** Connect explains how to join with the CS2 console if the game does not open, with a Copy button.
+- **Watch:** live match cards count each stream once.
+- **Watch:** players streaming their live DEAFCS match show on Watch whatever they stream.
 
 ### Fixed
 
 - **Matchmaking:** Your Schedule on Play now shows your tournament check-in status instead of always saying Registered.
 - **Watch:** sections on the Watch and Play pages are separated by a thin line again.
+- **Streams:** only administrators get direct GOTV access; streamers and tournament organizers broadcast delayed TV within their matches.
 
 ## Patch Notes | November 9, 2026
 
