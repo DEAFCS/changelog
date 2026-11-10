@@ -1235,7 +1235,7 @@
     }
   },
   "2026-11-10": {
-    "revision": 3,
+    "revision": 4,
     "items": {
       "bf12186f41bb": {
         "type": "improved",
@@ -1355,6 +1355,27 @@
         "text": "new articles can be announced automatically in the DEAFCS Discord.",
         "status": "published",
         "source": "release:50c6430fe8b81c7a"
+      },
+      "4c060e361d6a": {
+        "type": "improved",
+        "area": "Servers",
+        "text": "the Public Servers page is back to the large server cards, sorted by players.",
+        "status": "published",
+        "source": "release:04a283ef34e092ca"
+      },
+      "d16f1447146c": {
+        "type": "new",
+        "area": "Servers",
+        "text": "a Connect button joins a public server in one click, on the Public Servers page and on Play.",
+        "status": "published",
+        "source": "release:04a283ef34e092ca"
+      },
+      "3f5c1820f537": {
+        "type": "improved",
+        "area": "Servers",
+        "text": "Connect explains how to join with the CS2 console if the game does not open, with a Copy button.",
+        "status": "published",
+        "source": "release:04a283ef34e092ca"
       }
     }
   }

@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-10",
-      "revision": 3,
+      "revision": 4,
       "title": "Patch Notes | November 10, 2026",
       "summary": "",
       "sections": {
@@ -27,6 +27,10 @@
           {
             "area": "News",
             "text": "new articles can be announced automatically in the DEAFCS Discord."
+          },
+          {
+            "area": "Servers",
+            "text": "a Connect button joins a public server in one click, on the Public Servers page and on Play."
           }
         ],
         "improved": [
@@ -69,6 +73,14 @@
           {
             "area": "Profiles",
             "text": "warnings now expire after 21 days. Old warnings stay in the history."
+          },
+          {
+            "area": "Servers",
+            "text": "the Public Servers page is back to the large server cards, sorted by players."
+          },
+          {
+            "area": "Servers",
+            "text": "Connect explains how to join with the CS2 console if the game does not open, with a Copy button."
           }
         ],
         "fixed": [

@@ -3,7 +3,7 @@
     {
       "month": "2026-11",
       "days": 10,
-      "hash": "284f9259230e677b"
+      "hash": "b4e2168ed5498d8a"
     }
   ],
   "areas": [
@@ -42,7 +42,7 @@
   ],
   "latest": {
     "date": "2026-11-10",
-    "revision": 3
+    "revision": 4
   },
   "monitoredOn": "2026-11-10"
 }
