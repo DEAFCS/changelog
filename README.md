@@ -12,11 +12,13 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 
 - **Matches:** Extra stream links are now buttons with the platform icon in the match bar.
 - **Matches:** Players and coaches can watch their match's delayed TV broadcast and Twitch main broadcast.
+- **Matches:** Watch now updates matches, streams and viewer counts by itself, no refresh needed.
 
 ### Fixed
 
 - **Matches:** The GOTV delay can no longer be changed by non-admins while a match is running.
 - **Matches:** The live stream scoreboard shows workshop maps by their name, such as Mini Dust 2, instead of a number.
+- **Servers:** Connect on Public Servers now opens CS2 straight away, without the connection guide.
 
 ## Patch Notes | November 10, 2026
 

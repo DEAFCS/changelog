@@ -1408,7 +1408,7 @@
     }
   },
   "2026-11-11": {
-    "revision": 2,
+    "revision": 3,
     "items": {
       "41c9c52268d7": {
         "type": "improved",
@@ -1444,6 +1444,20 @@
         "text": "The live stream scoreboard shows workshop maps by their name, such as Mini Dust 2, instead of a number.",
         "status": "published",
         "source": "release:42292e4e4a8c51b4"
+      },
+      "040d03c85005": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "Watch now updates matches, streams and viewer counts by itself, no refresh needed.",
+        "status": "published",
+        "source": "release:f83722064fdd392d"
+      },
+      "ee536587782b": {
+        "type": "fixed",
+        "area": "Servers",
+        "text": "Connect on Public Servers now opens CS2 straight away, without the connection guide.",
+        "status": "published",
+        "source": "release:f83722064fdd392d"
       }
     }
   }

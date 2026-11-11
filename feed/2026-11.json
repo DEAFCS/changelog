@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-11",
-      "revision": 2,
+      "revision": 3,
       "title": "Patch Notes | November 11, 2026",
       "summary": "",
       "sections": {
@@ -21,6 +21,10 @@
           {
             "area": "Matches",
             "text": "Players and coaches can watch their match's delayed TV broadcast and Twitch main broadcast."
+          },
+          {
+            "area": "Matches",
+            "text": "Watch now updates matches, streams and viewer counts by itself, no refresh needed."
           }
         ],
         "fixed": [
@@ -31,6 +35,10 @@
           {
             "area": "Matches",
             "text": "The live stream scoreboard shows workshop maps by their name, such as Mini Dust 2, instead of a number."
+          },
+          {
+            "area": "Servers",
+            "text": "Connect on Public Servers now opens CS2 straight away, without the connection guide."
           }
         ]
       }
