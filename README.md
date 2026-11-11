@@ -16,6 +16,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 ### Fixed
 
 - **Matches:** The GOTV delay can no longer be changed by non-admins while a match is running.
+- **Matches:** The live stream scoreboard shows workshop maps by their name, such as Mini Dust 2, instead of a number.
 
 ## Patch Notes | November 10, 2026
 

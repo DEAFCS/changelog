@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-11",
-      "revision": 1,
+      "revision": 2,
       "title": "Patch Notes | November 11, 2026",
       "summary": "",
       "sections": {
@@ -27,6 +27,10 @@
           {
             "area": "Matches",
             "text": "The GOTV delay can no longer be changed by non-admins while a match is running."
+          },
+          {
+            "area": "Matches",
+            "text": "The live stream scoreboard shows workshop maps by their name, such as Mini Dust 2, instead of a number."
           }
         ]
       }

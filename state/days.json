@@ -1408,7 +1408,7 @@
     }
   },
   "2026-11-11": {
-    "revision": 1,
+    "revision": 2,
     "items": {
       "41c9c52268d7": {
         "type": "improved",
@@ -1437,6 +1437,13 @@
         "text": "The GOTV delay can no longer be changed by non-admins while a match is running.",
         "status": "published",
         "source": "release:ab753ac627135e01"
+      },
+      "b113c123590f": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "The live stream scoreboard shows workshop maps by their name, such as Mini Dust 2, instead of a number.",
+        "status": "published",
+        "source": "release:42292e4e4a8c51b4"
       }
     }
   }
