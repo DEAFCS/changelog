@@ -1408,7 +1408,7 @@
     }
   },
   "2026-11-11": {
-    "revision": 3,
+    "revision": 4,
     "items": {
       "41c9c52268d7": {
         "type": "improved",
@@ -1458,6 +1458,13 @@
         "text": "Connect on Public Servers now opens CS2 straight away, without the connection guide.",
         "status": "published",
         "source": "release:f83722064fdd392d"
+      },
+      "5fa72c4974ba": {
+        "type": "fixed",
+        "area": "Servers",
+        "text": "Connect on Public Servers now only opens CS2; copying the address stays on the Copy button.",
+        "status": "published",
+        "source": "release:fdfe4c03e14d83a5"
       }
     }
   }

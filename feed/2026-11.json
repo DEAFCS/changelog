@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-11",
-      "revision": 3,
+      "revision": 4,
       "title": "Patch Notes | November 11, 2026",
       "summary": "",
       "sections": {
@@ -39,6 +39,10 @@
           {
             "area": "Servers",
             "text": "Connect on Public Servers now opens CS2 straight away, without the connection guide."
+          },
+          {
+            "area": "Servers",
+            "text": "Connect on Public Servers now only opens CS2; copying the address stays on the Copy button."
           }
         ]
       }

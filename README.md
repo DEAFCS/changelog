@@ -19,6 +19,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Matches:** The GOTV delay can no longer be changed by non-admins while a match is running.
 - **Matches:** The live stream scoreboard shows workshop maps by their name, such as Mini Dust 2, instead of a number.
 - **Servers:** Connect on Public Servers now opens CS2 straight away, without the connection guide.
+- **Servers:** Connect on Public Servers now only opens CS2; copying the address stays on the Copy button.
 
 ## Patch Notes | November 10, 2026
 
