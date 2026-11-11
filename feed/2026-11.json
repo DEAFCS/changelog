@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-11",
-      "revision": 4,
+      "revision": 5,
       "title": "Patch Notes | November 11, 2026",
       "summary": "",
       "sections": {
@@ -25,6 +25,10 @@
           {
             "area": "Matches",
             "text": "Watch now updates matches, streams and viewer counts by itself, no refresh needed."
+          },
+          {
+            "area": "Matches",
+            "text": "Player Twitch streams now show as POV links in the match bar, and the big video area is only used for the official broadcast."
           }
         ],
         "fixed": [

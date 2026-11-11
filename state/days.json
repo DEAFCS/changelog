@@ -1408,7 +1408,7 @@
     }
   },
   "2026-11-11": {
-    "revision": 4,
+    "revision": 5,
     "items": {
       "41c9c52268d7": {
         "type": "improved",
@@ -1465,6 +1465,13 @@
         "text": "Connect on Public Servers now only opens CS2; copying the address stays on the Copy button.",
         "status": "published",
         "source": "release:fdfe4c03e14d83a5"
+      },
+      "0bfe2d1ae251": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "Player Twitch streams now show as POV links in the match bar, and the big video area is only used for the official broadcast.",
+        "status": "published",
+        "source": "release:2f239d6e6cfcfdce"
       }
     }
   }
