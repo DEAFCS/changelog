@@ -2,6 +2,36 @@
   "month": "2026-11",
   "days": [
     {
+      "date": "2026-11-11",
+      "revision": 1,
+      "title": "Patch Notes | November 11, 2026",
+      "summary": "",
+      "sections": {
+        "new": [
+          {
+            "area": "Matches",
+            "text": "Watch lists live main broadcasts first, with both teams."
+          }
+        ],
+        "improved": [
+          {
+            "area": "Matches",
+            "text": "Extra stream links are now buttons with the platform icon in the match bar."
+          },
+          {
+            "area": "Matches",
+            "text": "Players and coaches can watch their match's delayed TV broadcast and Twitch main broadcast."
+          }
+        ],
+        "fixed": [
+          {
+            "area": "Matches",
+            "text": "The GOTV delay can no longer be changed by non-admins while a match is running."
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-10",
       "revision": 5,
       "title": "Patch Notes | November 10, 2026",

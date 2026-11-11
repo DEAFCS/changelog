@@ -2,6 +2,21 @@
 
 DEAFCS patch notes: new features, improvements and fixes, newest first. They also appear on the DEAFCS Changelog page (Info, then Changelog).
 
+## Patch Notes | November 11, 2026
+
+### New
+
+- **Matches:** Watch lists live main broadcasts first, with both teams.
+
+### Improved
+
+- **Matches:** Extra stream links are now buttons with the platform icon in the match bar.
+- **Matches:** Players and coaches can watch their match's delayed TV broadcast and Twitch main broadcast.
+
+### Fixed
+
+- **Matches:** The GOTV delay can no longer be changed by non-admins while a match is running.
+
 ## Patch Notes | November 10, 2026
 
 ### New

@@ -1406,5 +1406,38 @@
         "source": "release:8344d650c1017b24"
       }
     }
+  },
+  "2026-11-11": {
+    "revision": 1,
+    "items": {
+      "41c9c52268d7": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "Extra stream links are now buttons with the platform icon in the match bar.",
+        "status": "published",
+        "source": "release:ab753ac627135e01"
+      },
+      "ba3973514457": {
+        "type": "new",
+        "area": "Matches",
+        "text": "Watch lists live main broadcasts first, with both teams.",
+        "status": "published",
+        "source": "release:ab753ac627135e01"
+      },
+      "b286f45b49c9": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "Players and coaches can watch their match's delayed TV broadcast and Twitch main broadcast.",
+        "status": "published",
+        "source": "release:ab753ac627135e01"
+      },
+      "83126f7810ed": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "The GOTV delay can no longer be changed by non-admins while a match is running.",
+        "status": "published",
+        "source": "release:ab753ac627135e01"
+      }
+    }
   }
 }
