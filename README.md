@@ -9,6 +9,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Leaderboard:** Player of the Month, Last 7 Days and the selected player now sit in a sidebar on the right, and the board keeps its full width.
 - **Leaderboard:** A selected player's rank on every board shows right away, without an extra click.
 - **Leaderboard:** The Role filter is gone from leaderboards; roles still show on profiles and match pages.
+- **Leaderboard:** A player's rank on every board shows almost at once, and the rank bars grow in when they load.
 
 ### Fixed
 

@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-12",
-      "revision": 2,
+      "revision": 3,
       "title": "Patch Notes | November 12, 2026",
       "summary": "",
       "sections": {
@@ -20,6 +20,10 @@
           {
             "area": "Leaderboard",
             "text": "The Role filter is gone from leaderboards; roles still show on profiles and match pages."
+          },
+          {
+            "area": "Leaderboard",
+            "text": "A player's rank on every board shows almost at once, and the rank bars grow in when they load."
           }
         ],
         "fixed": [

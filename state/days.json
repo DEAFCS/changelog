@@ -1476,7 +1476,7 @@
     }
   },
   "2026-11-12": {
-    "revision": 2,
+    "revision": 3,
     "items": {
       "fea997176f0f": {
         "type": "fixed",
@@ -1505,6 +1505,13 @@
         "text": "The Role filter is gone from leaderboards; roles still show on profiles and match pages.",
         "status": "published",
         "source": "release:b7f3bd8b808ef2d6"
+      },
+      "b2d1e60c81b8": {
+        "type": "improved",
+        "area": "Leaderboard",
+        "text": "A player's rank on every board shows almost at once, and the rank bars grow in when they load.",
+        "status": "published",
+        "source": "release:bb773b21c04e8e6e"
       }
     }
   }
