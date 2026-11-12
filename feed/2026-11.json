@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-12",
-      "revision": 6,
+      "revision": 7,
       "title": "Patch Notes | November 12, 2026",
       "summary": "",
       "sections": {
@@ -40,6 +40,10 @@
           {
             "area": "Matches",
             "text": "Match pages load their round history faster."
+          },
+          {
+            "area": "Leaderboard",
+            "text": "Switching between categories is smooth, without the board blanking or loading twice."
           }
         ],
         "fixed": [

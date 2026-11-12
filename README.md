@@ -14,6 +14,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Matchmaking:** Changing your region between EU and SA now asks you to confirm first.
 - **Matches:** Pages with many stats, like match pages and the leaderboard, open faster.
 - **Matches:** Match pages load their round history faster.
+- **Leaderboard:** Switching between categories is smooth, without the board blanking or loading twice.
 
 ### Fixed
 

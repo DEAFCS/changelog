@@ -1476,7 +1476,7 @@
     }
   },
   "2026-11-12": {
-    "revision": 6,
+    "revision": 7,
     "items": {
       "fea997176f0f": {
         "type": "fixed",
@@ -1575,6 +1575,13 @@
         "text": "Buy types now use the money a team started the round with.",
         "status": "published",
         "source": "release:16e433147ef73053"
+      },
+      "f159c9563c72": {
+        "type": "improved",
+        "area": "Leaderboard",
+        "text": "Switching between categories is smooth, without the board blanking or loading twice.",
+        "status": "published",
+        "source": "release:b8c1e2d390f96030"
       }
     }
   }
