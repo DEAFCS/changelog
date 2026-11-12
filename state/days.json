@@ -1474,5 +1474,17 @@
         "source": "release:2f239d6e6cfcfdce"
       }
     }
+  },
+  "2026-11-12": {
+    "revision": 1,
+    "items": {
+      "fea997176f0f": {
+        "type": "fixed",
+        "area": "Seasons",
+        "text": "A season whose medals were awarded keeps its dates, and a season with rated matches can't be deleted by mistake.",
+        "status": "published",
+        "source": "release:2e165611c30423f1"
+      }
+    }
   }
 }

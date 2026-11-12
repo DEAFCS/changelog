@@ -2,6 +2,12 @@
 
 DEAFCS patch notes: new features, improvements and fixes, newest first. They also appear on the DEAFCS Changelog page (Info, then Changelog).
 
+## Patch Notes | November 12, 2026
+
+### Fixed
+
+- **Seasons:** A season whose medals were awarded keeps its dates, and a season with rated matches can't be deleted by mistake.
+
 ## Patch Notes | November 11, 2026
 
 ### New
