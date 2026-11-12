@@ -1476,7 +1476,7 @@
     }
   },
   "2026-11-12": {
-    "revision": 5,
+    "revision": 6,
     "items": {
       "fea997176f0f": {
         "type": "fixed",
@@ -1568,6 +1568,13 @@
         "text": "In a best-of-3 or best-of-5, the Utility tab now shows the map you picked.",
         "status": "published",
         "source": "release:af35000b171ebcb9"
+      },
+      "61180ed26e8b": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "Buy types now use the money a team started the round with.",
+        "status": "published",
+        "source": "release:16e433147ef73053"
       }
     }
   }

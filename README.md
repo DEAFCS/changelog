@@ -22,6 +22,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Leaderboard:** Tied players now show the same rank in the side panel as on the leaderboard.
 - **Matches:** In a best-of-3 or best-of-5, picking a map in a player's stats now shows that map's numbers instead of the whole series.
 - **Matches:** In a best-of-3 or best-of-5, the Utility tab now shows the map you picked.
+- **Matches:** Buy types now use the money a team started the round with.
 
 ## Patch Notes | November 11, 2026
 
