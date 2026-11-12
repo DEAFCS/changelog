@@ -3,12 +3,25 @@
   "days": [
     {
       "date": "2026-11-12",
-      "revision": 1,
+      "revision": 2,
       "title": "Patch Notes | November 12, 2026",
       "summary": "",
       "sections": {
         "new": [],
-        "improved": [],
+        "improved": [
+          {
+            "area": "Leaderboard",
+            "text": "Player of the Month, Last 7 Days and the selected player now sit in a sidebar on the right, and the board keeps its full width."
+          },
+          {
+            "area": "Leaderboard",
+            "text": "A selected player's rank on every board shows right away, without an extra click."
+          },
+          {
+            "area": "Leaderboard",
+            "text": "The Role filter is gone from leaderboards; roles still show on profiles and match pages."
+          }
+        ],
         "fixed": [
           {
             "area": "Seasons",

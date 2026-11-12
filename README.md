@@ -4,6 +4,12 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 
 ## Patch Notes | November 12, 2026
 
+### Improved
+
+- **Leaderboard:** Player of the Month, Last 7 Days and the selected player now sit in a sidebar on the right, and the board keeps its full width.
+- **Leaderboard:** A selected player's rank on every board shows right away, without an extra click.
+- **Leaderboard:** The Role filter is gone from leaderboards; roles still show on profiles and match pages.
+
 ### Fixed
 
 - **Seasons:** A season whose medals were awarded keeps its dates, and a season with rated matches can't be deleted by mistake.
