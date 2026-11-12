@@ -1476,7 +1476,7 @@
     }
   },
   "2026-11-12": {
-    "revision": 3,
+    "revision": 4,
     "items": {
       "fea997176f0f": {
         "type": "fixed",
@@ -1512,6 +1512,27 @@
         "text": "A player's rank on every board shows almost at once, and the rank bars grow in when they load.",
         "status": "published",
         "source": "release:bb773b21c04e8e6e"
+      },
+      "f80e7b05c74c": {
+        "type": "fixed",
+        "area": "Leaderboard",
+        "text": "A player's rank on every board now follows the Min. matches filter, so it matches the leaderboard.",
+        "status": "published",
+        "source": "release:26d0c3e3385630e0"
+      },
+      "179e115206d2": {
+        "type": "improved",
+        "area": "Leaderboard",
+        "text": "Switching between players in the side panel now animates smoothly.",
+        "status": "published",
+        "source": "release:26d0c3e3385630e0"
+      },
+      "83ee2c8b2547": {
+        "type": "fixed",
+        "area": "Leaderboard",
+        "text": "Tied players now show the same rank in the side panel as on the leaderboard.",
+        "status": "published",
+        "source": "release:26d0c3e3385630e0"
       }
     }
   }
