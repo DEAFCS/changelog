@@ -1584,5 +1584,17 @@
         "source": "release:b8c1e2d390f96030"
       }
     }
+  },
+  "2026-11-13": {
+    "revision": 1,
+    "items": {
+      "fe1262bb3ec0": {
+        "type": "improved",
+        "area": "Leaderboard",
+        "text": "Podium and table numbers roll smoothly when you switch category or filters.",
+        "status": "published",
+        "source": "release:b18e0d17c2bb9c3a"
+      }
+    }
   }
 }

@@ -2,6 +2,12 @@
 
 DEAFCS patch notes: new features, improvements and fixes, newest first. They also appear on the DEAFCS Changelog page (Info, then Changelog).
 
+## Patch Notes | November 13, 2026
+
+### Improved
+
+- **Leaderboard:** Podium and table numbers roll smoothly when you switch category or filters.
+
 ## Patch Notes | November 12, 2026
 
 ### Improved
