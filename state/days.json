@@ -1476,7 +1476,7 @@
     }
   },
   "2026-11-12": {
-    "revision": 4,
+    "revision": 5,
     "items": {
       "fea997176f0f": {
         "type": "fixed",
@@ -1533,6 +1533,41 @@
         "text": "Tied players now show the same rank in the side panel as on the leaderboard.",
         "status": "published",
         "source": "release:26d0c3e3385630e0"
+      },
+      "2b8998d4651e": {
+        "type": "improved",
+        "area": "Matchmaking",
+        "text": "Changing your region between EU and SA now asks you to confirm first.",
+        "status": "published",
+        "source": "release:af35000b171ebcb9"
+      },
+      "befceec06123": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "Pages with many stats, like match pages and the leaderboard, open faster.",
+        "status": "published",
+        "source": "release:af35000b171ebcb9"
+      },
+      "1833d36b67a4": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "In a best-of-3 or best-of-5, picking a map in a player's stats now shows that map's numbers instead of the whole series.",
+        "status": "published",
+        "source": "release:af35000b171ebcb9"
+      },
+      "68303ad33556": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "Match pages load their round history faster.",
+        "status": "published",
+        "source": "release:af35000b171ebcb9"
+      },
+      "9a645294bd6b": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "In a best-of-3 or best-of-5, the Utility tab now shows the map you picked.",
+        "status": "published",
+        "source": "release:af35000b171ebcb9"
       }
     }
   }

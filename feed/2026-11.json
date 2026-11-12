@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-12",
-      "revision": 4,
+      "revision": 5,
       "title": "Patch Notes | November 12, 2026",
       "summary": "",
       "sections": {
@@ -28,6 +28,18 @@
           {
             "area": "Leaderboard",
             "text": "Switching between players in the side panel now animates smoothly."
+          },
+          {
+            "area": "Matchmaking",
+            "text": "Changing your region between EU and SA now asks you to confirm first."
+          },
+          {
+            "area": "Matches",
+            "text": "Pages with many stats, like match pages and the leaderboard, open faster."
+          },
+          {
+            "area": "Matches",
+            "text": "Match pages load their round history faster."
           }
         ],
         "fixed": [
@@ -42,6 +54,14 @@
           {
             "area": "Leaderboard",
             "text": "Tied players now show the same rank in the side panel as on the leaderboard."
+          },
+          {
+            "area": "Matches",
+            "text": "In a best-of-3 or best-of-5, picking a map in a player's stats now shows that map's numbers instead of the whole series."
+          },
+          {
+            "area": "Matches",
+            "text": "In a best-of-3 or best-of-5, the Utility tab now shows the map you picked."
           }
         ]
       }
