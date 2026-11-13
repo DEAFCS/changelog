@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-13",
-      "revision": 14,
+      "revision": 15,
       "title": "Patch Notes | November 13, 2026",
       "summary": "",
       "sections": {
@@ -117,6 +117,18 @@
           {
             "area": "Profiles",
             "text": "The Sanctions button now sits between Message and Friend and matches the other header buttons."
+          },
+          {
+            "area": "Profiles",
+            "text": "Honors now show at the bottom of the profile card instead of in a separate box."
+          },
+          {
+            "area": "Profiles",
+            "text": "The info bar and the action buttons in the profile header now line up at the same height."
+          },
+          {
+            "area": "Profiles",
+            "text": "The filters button beside the profile tabs now matches the height of the tabs."
           }
         ],
         "fixed": [

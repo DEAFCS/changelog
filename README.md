@@ -36,6 +36,9 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Profiles:** The player's role and full team name are back in the info bar, right after the Steam link.
 - **Profiles:** Awards now show as a compact Honors row under the profile header, with every award one click away.
 - **Profiles:** The Sanctions button now sits between Message and Friend and matches the other header buttons.
+- **Profiles:** Honors now show at the bottom of the profile card instead of in a separate box.
+- **Profiles:** The info bar and the action buttons in the profile header now line up at the same height.
+- **Profiles:** The filters button beside the profile tabs now matches the height of the tabs.
 
 ### Fixed
 

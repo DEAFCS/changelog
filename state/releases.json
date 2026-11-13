@@ -1,6 +1,6 @@
 {
   "lastDeployed": {
-    "web": "26466c0c18573d99b6f2a7dc2b64416229c26dc8",
+    "web": "73464ba56b772bfe8c731be08e23a5696912fb76",
     "api": "1e0d6bce668da064c613833621aad4ea76c1f51e",
     "streamer": "a34f3c1727e2e3ebcba2ea1d5945c5b4f7470a72"
   },
@@ -580,6 +580,14 @@
       "web": "26466c0c18573d99b6f2a7dc2b64416229c26dc8",
       "api": null,
       "added": 4,
+      "held": 0
+    },
+    "17f525fb86d7e32d": {
+      "date": "2026-11-13",
+      "verifiedAt": "2026-11-13T21:01:11Z",
+      "web": "73464ba56b772bfe8c731be08e23a5696912fb76",
+      "api": null,
+      "added": 3,
       "held": 0
     }
   }
