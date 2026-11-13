@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-13",
-      "revision": 1,
+      "revision": 2,
       "title": "Patch Notes | November 13, 2026",
       "summary": "",
       "sections": {
@@ -14,7 +14,12 @@
             "text": "Podium and table numbers roll smoothly when you switch category or filters."
           }
         ],
-        "fixed": []
+        "fixed": [
+          {
+            "area": "Leaderboard",
+            "text": "Large pages (100 players) no longer lag when switching category."
+          }
+        ]
       }
     },
     {

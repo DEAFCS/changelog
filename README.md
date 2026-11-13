@@ -8,6 +8,10 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 
 - **Leaderboard:** Podium and table numbers roll smoothly when you switch category or filters.
 
+### Fixed
+
+- **Leaderboard:** Large pages (100 players) no longer lag when switching category.
+
 ## Patch Notes | November 12, 2026
 
 ### Improved
