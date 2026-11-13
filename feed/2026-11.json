@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-13",
-      "revision": 3,
+      "revision": 4,
       "title": "Patch Notes | November 13, 2026",
       "summary": "",
       "sections": {
@@ -12,6 +12,10 @@
           {
             "area": "Leaderboard",
             "text": "Podium and table numbers roll smoothly when you switch category or filters."
+          },
+          {
+            "area": "Search",
+            "text": "Ctrl+K shows teams first, with an exact tag match at the top."
           }
         ],
         "fixed": [
@@ -22,6 +26,14 @@
           {
             "area": "Matches",
             "text": "T and CT stats such as ADR now count every round played on that side, not only rounds with a kill or death."
+          },
+          {
+            "area": "Servers",
+            "text": "Connect on a public server now joins it instead of only opening CS2."
+          },
+          {
+            "area": "Matchmaking",
+            "text": "a party can only queue when every member meets the queue's role requirement."
           }
         ]
       }

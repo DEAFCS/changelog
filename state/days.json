@@ -1586,7 +1586,7 @@
     }
   },
   "2026-11-13": {
-    "revision": 3,
+    "revision": 4,
     "items": {
       "fe1262bb3ec0": {
         "type": "improved",
@@ -1608,6 +1608,27 @@
         "text": "T and CT stats such as ADR now count every round played on that side, not only rounds with a kill or death.",
         "status": "published",
         "source": "release:269c3f40e08abc4e"
+      },
+      "18c0812de6ee": {
+        "type": "fixed",
+        "area": "Servers",
+        "text": "Connect on a public server now joins it instead of only opening CS2.",
+        "status": "published",
+        "source": "release:868cab7fb9ae0394"
+      },
+      "25e809949b2c": {
+        "type": "improved",
+        "area": "Search",
+        "text": "Ctrl+K shows teams first, with an exact tag match at the top.",
+        "status": "published",
+        "source": "release:868cab7fb9ae0394"
+      },
+      "c2410f0f9c37": {
+        "type": "fixed",
+        "area": "Matchmaking",
+        "text": "a party can only queue when every member meets the queue's role requirement.",
+        "status": "published",
+        "source": "release:868cab7fb9ae0394"
       }
     }
   }
