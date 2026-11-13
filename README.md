@@ -36,6 +36,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Profiles:** Map totals on a profile no longer count cancelled matches.
 - **Profiles:** The match list waits to load before saying a player has no matches.
 - **Teams:** A Grand Final result in the team activity shows the series score with the upper bracket's map head start.
+- **Teams:** Only the team owner, team Admins and members with the Invite role can invite players to a team.
 
 ## Patch Notes | November 12, 2026
 

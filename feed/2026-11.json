@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-13",
-      "revision": 10,
+      "revision": 11,
       "title": "Patch Notes | November 13, 2026",
       "summary": "",
       "sections": {
@@ -107,6 +107,10 @@
           {
             "area": "Teams",
             "text": "A Grand Final result in the team activity shows the series score with the upper bracket's map head start."
+          },
+          {
+            "area": "Teams",
+            "text": "Only the team owner, team Admins and members with the Invite role can invite players to a team."
           }
         ]
       }

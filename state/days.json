@@ -1586,7 +1586,7 @@
     }
   },
   "2026-11-13": {
-    "revision": 10,
+    "revision": 11,
     "items": {
       "fe1262bb3ec0": {
         "type": "improved",
@@ -1755,6 +1755,13 @@
         "text": "Share a team's page with the new Share button.",
         "status": "published",
         "source": "release:24cef4d64395c14a"
+      },
+      "4a31af790075": {
+        "type": "fixed",
+        "area": "Teams",
+        "text": "Only the team owner, team Admins and members with the Invite role can invite players to a team.",
+        "status": "published",
+        "source": "release:a31fa4cf83c4e5e2"
       }
     }
   }
