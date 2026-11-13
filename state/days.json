@@ -1586,7 +1586,7 @@
     }
   },
   "2026-11-13": {
-    "revision": 8,
+    "revision": 9,
     "items": {
       "fe1262bb3ec0": {
         "type": "improved",
@@ -1692,6 +1692,13 @@
         "text": "The match list waits to load before saying a player has no matches.",
         "status": "published",
         "source": "release:90424c5a58cc8dc9"
+      },
+      "2dcdc23033ee": {
+        "type": "new",
+        "area": "Leaderboards",
+        "text": "ADR and KPR boards can show T side or CT side only.",
+        "status": "published",
+        "source": "release:a6cc0d34ac5a4663"
       }
     }
   }

@@ -3,11 +3,16 @@
   "days": [
     {
       "date": "2026-11-13",
-      "revision": 8,
+      "revision": 9,
       "title": "Patch Notes | November 13, 2026",
       "summary": "",
       "sections": {
-        "new": [],
+        "new": [
+          {
+            "area": "Leaderboards",
+            "text": "ADR and KPR boards can show T side or CT side only."
+          }
+        ],
         "improved": [
           {
             "area": "Leaderboard",

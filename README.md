@@ -4,6 +4,10 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 
 ## Patch Notes | November 13, 2026
 
+### New
+
+- **Leaderboards:** ADR and KPR boards can show T side or CT side only.
+
 ### Improved
 
 - **Leaderboard:** Podium and table numbers roll smoothly when you switch category or filters.
