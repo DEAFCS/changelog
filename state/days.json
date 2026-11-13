@@ -1586,7 +1586,7 @@
     }
   },
   "2026-11-13": {
-    "revision": 12,
+    "revision": 13,
     "items": {
       "fe1262bb3ec0": {
         "type": "improved",
@@ -1811,6 +1811,13 @@
         "text": "Recent matches has a quick DEAFCS/External switch, and match rows show the date and time on the left.",
         "status": "published",
         "source": "release:9fb2ef957ea24841"
+      },
+      "950c418593bc": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "Clutch results in rounds with kills in the same moment match the original calculation again.",
+        "status": "published",
+        "source": "release:ee94b45ab03fa792"
       }
     }
   }

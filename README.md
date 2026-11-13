@@ -44,6 +44,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Profiles:** The match list waits to load before saying a player has no matches.
 - **Teams:** A Grand Final result in the team activity shows the series score with the upper bracket's map head start.
 - **Teams:** Only the team owner, team Admins and members with the Invite role can invite players to a team.
+- **Matches:** Clutch results in rounds with kills in the same moment match the original calculation again.
 
 ## Patch Notes | November 12, 2026
 

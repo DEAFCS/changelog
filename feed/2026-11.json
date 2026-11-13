@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-13",
-      "revision": 12,
+      "revision": 13,
       "title": "Patch Notes | November 13, 2026",
       "summary": "",
       "sections": {
@@ -139,6 +139,10 @@
           {
             "area": "Teams",
             "text": "Only the team owner, team Admins and members with the Invite role can invite players to a team."
+          },
+          {
+            "area": "Matches",
+            "text": "Clutch results in rounds with kills in the same moment match the original calculation again."
           }
         ]
       }
