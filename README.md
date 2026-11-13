@@ -11,6 +11,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 ### Fixed
 
 - **Leaderboard:** Large pages (100 players) no longer lag when switching category.
+- **Matches:** T and CT stats such as ADR now count every round played on that side, not only rounds with a kill or death.
 
 ## Patch Notes | November 12, 2026
 

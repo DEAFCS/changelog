@@ -1586,7 +1586,7 @@
     }
   },
   "2026-11-13": {
-    "revision": 2,
+    "revision": 3,
     "items": {
       "fe1262bb3ec0": {
         "type": "improved",
@@ -1601,6 +1601,13 @@
         "text": "Large pages (100 players) no longer lag when switching category.",
         "status": "published",
         "source": "release:ff6d001c1b9709dd"
+      },
+      "5258ed4efd80": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "T and CT stats such as ADR now count every round played on that side, not only rounds with a kill or death.",
+        "status": "published",
+        "source": "release:269c3f40e08abc4e"
       }
     }
   }
