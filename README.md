@@ -8,6 +8,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 
 - **Leaderboard:** Podium and table numbers roll smoothly when you switch category or filters.
 - **Search:** Ctrl+K shows teams first, with an exact tag match at the top.
+- **Alerts:** long alert messages wrap on phones and keep their line breaks.
 
 ### Fixed
 
@@ -15,6 +16,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Matches:** T and CT stats such as ADR now count every round played on that side, not only rounds with a kill or death.
 - **Servers:** Connect on a public server now joins it instead of only opening CS2.
 - **Matchmaking:** a party can only queue when every member meets the queue's role requirement.
+- **Alerts:** a system alert you dismissed shows again when staff put it back up.
 
 ## Patch Notes | November 12, 2026
 

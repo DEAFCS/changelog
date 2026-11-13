@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-13",
-      "revision": 4,
+      "revision": 5,
       "title": "Patch Notes | November 13, 2026",
       "summary": "",
       "sections": {
@@ -16,6 +16,10 @@
           {
             "area": "Search",
             "text": "Ctrl+K shows teams first, with an exact tag match at the top."
+          },
+          {
+            "area": "Alerts",
+            "text": "long alert messages wrap on phones and keep their line breaks."
           }
         ],
         "fixed": [
@@ -34,6 +38,10 @@
           {
             "area": "Matchmaking",
             "text": "a party can only queue when every member meets the queue's role requirement."
+          },
+          {
+            "area": "Alerts",
+            "text": "a system alert you dismissed shows again when staff put it back up."
           }
         ]
       }

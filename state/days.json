@@ -1586,7 +1586,7 @@
     }
   },
   "2026-11-13": {
-    "revision": 4,
+    "revision": 5,
     "items": {
       "fe1262bb3ec0": {
         "type": "improved",
@@ -1629,6 +1629,20 @@
         "text": "a party can only queue when every member meets the queue's role requirement.",
         "status": "published",
         "source": "release:868cab7fb9ae0394"
+      },
+      "68f489fb9e18": {
+        "type": "fixed",
+        "area": "Alerts",
+        "text": "a system alert you dismissed shows again when staff put it back up.",
+        "status": "published",
+        "source": "release:385753b900a67070"
+      },
+      "1a1daed7b506": {
+        "type": "improved",
+        "area": "Alerts",
+        "text": "long alert messages wrap on phones and keep their line breaks.",
+        "status": "published",
+        "source": "release:385753b900a67070"
       }
     }
   }
