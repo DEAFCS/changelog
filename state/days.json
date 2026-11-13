@@ -1586,7 +1586,7 @@
     }
   },
   "2026-11-13": {
-    "revision": 6,
+    "revision": 7,
     "items": {
       "fe1262bb3ec0": {
         "type": "improved",
@@ -1650,6 +1650,13 @@
         "text": "links in alerts open safely, and links to DEAFCS stay in the app.",
         "status": "published",
         "source": "release:1809e3a245ebb993"
+      },
+      "bc70567c8a36": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "Clutch results load faster.",
+        "status": "published",
+        "source": "release:cd1afbb5b37892e2"
       }
     }
   }

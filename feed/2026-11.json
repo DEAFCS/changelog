@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-13",
-      "revision": 6,
+      "revision": 7,
       "title": "Patch Notes | November 13, 2026",
       "summary": "",
       "sections": {
@@ -24,6 +24,10 @@
           {
             "area": "System Alerts",
             "text": "links in alerts open safely, and links to DEAFCS stay in the app."
+          },
+          {
+            "area": "Matches",
+            "text": "Clutch results load faster."
           }
         ],
         "fixed": [
