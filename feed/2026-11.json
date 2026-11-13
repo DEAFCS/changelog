@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-13",
-      "revision": 7,
+      "revision": 8,
       "title": "Patch Notes | November 13, 2026",
       "summary": "",
       "sections": {
@@ -28,6 +28,18 @@
           {
             "area": "Matches",
             "text": "Clutch results load faster."
+          },
+          {
+            "area": "Profiles",
+            "text": "A new profile banner shows your ranks for all three modes and every team you play for."
+          },
+          {
+            "area": "Profiles",
+            "text": "Your ELO now sits beside your recent matches, and the full match list has its own Matches tab."
+          },
+          {
+            "area": "Profiles",
+            "text": "A Share button copies the profile link, and the Steam ID copies in one click."
           }
         ],
         "fixed": [
@@ -50,6 +62,14 @@
           {
             "area": "Alerts",
             "text": "a system alert you dismissed shows again when staff put it back up."
+          },
+          {
+            "area": "Profiles",
+            "text": "Map totals on a profile no longer count cancelled matches."
+          },
+          {
+            "area": "Profiles",
+            "text": "The match list waits to load before saying a player has no matches."
           }
         ]
       }

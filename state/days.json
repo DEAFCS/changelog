@@ -1586,7 +1586,7 @@
     }
   },
   "2026-11-13": {
-    "revision": 7,
+    "revision": 8,
     "items": {
       "fe1262bb3ec0": {
         "type": "improved",
@@ -1657,6 +1657,41 @@
         "text": "Clutch results load faster.",
         "status": "published",
         "source": "release:cd1afbb5b37892e2"
+      },
+      "621148d4d8c7": {
+        "type": "fixed",
+        "area": "Profiles",
+        "text": "Map totals on a profile no longer count cancelled matches.",
+        "status": "published",
+        "source": "release:90424c5a58cc8dc9"
+      },
+      "0d1a222abd3b": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "A new profile banner shows your ranks for all three modes and every team you play for.",
+        "status": "published",
+        "source": "release:90424c5a58cc8dc9"
+      },
+      "410a475ff5b5": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "Your ELO now sits beside your recent matches, and the full match list has its own Matches tab.",
+        "status": "published",
+        "source": "release:90424c5a58cc8dc9"
+      },
+      "4837d1832afc": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "A Share button copies the profile link, and the Steam ID copies in one click.",
+        "status": "published",
+        "source": "release:90424c5a58cc8dc9"
+      },
+      "1cdda3af57fb": {
+        "type": "fixed",
+        "area": "Profiles",
+        "text": "The match list waits to load before saying a player has no matches.",
+        "status": "published",
+        "source": "release:90424c5a58cc8dc9"
       }
     }
   }
