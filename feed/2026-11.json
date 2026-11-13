@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-13",
-      "revision": 9,
+      "revision": 10,
       "title": "Patch Notes | November 13, 2026",
       "summary": "",
       "sections": {
@@ -11,6 +11,18 @@
           {
             "area": "Leaderboards",
             "text": "ADR and KPR boards can show T side or CT side only."
+          },
+          {
+            "area": "Teams",
+            "text": "A team's Activity tab lists results, roster changes and awards, with filters."
+          },
+          {
+            "area": "Teams",
+            "text": "The team banner shows the league season the team is playing in."
+          },
+          {
+            "area": "Teams",
+            "text": "Share a team's page with the new Share button."
           }
         ],
         "improved": [
@@ -45,6 +57,22 @@
           {
             "area": "Profiles",
             "text": "A Share button copies the profile link, and the Steam ID copies in one click."
+          },
+          {
+            "area": "Teams",
+            "text": "The roster lists players in name order, Admins included."
+          },
+          {
+            "area": "Teams",
+            "text": "A team's matches show the score, result and opponent from that team's side."
+          },
+          {
+            "area": "Teams",
+            "text": "The team overview shows the team's recent matches beside the roster."
+          },
+          {
+            "area": "Teams",
+            "text": "The roster is a team photo; tap a player to see their photo, and League and History sit beside it."
           }
         ],
         "fixed": [
@@ -75,6 +103,10 @@
           {
             "area": "Profiles",
             "text": "The match list waits to load before saying a player has no matches."
+          },
+          {
+            "area": "Teams",
+            "text": "A Grand Final result in the team activity shows the series score with the upper bracket's map head start."
           }
         ]
       }

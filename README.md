@@ -7,6 +7,9 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 ### New
 
 - **Leaderboards:** ADR and KPR boards can show T side or CT side only.
+- **Teams:** A team's Activity tab lists results, roster changes and awards, with filters.
+- **Teams:** The team banner shows the league season the team is playing in.
+- **Teams:** Share a team's page with the new Share button.
 
 ### Improved
 
@@ -18,6 +21,10 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Profiles:** A new profile banner shows your ranks for all three modes and every team you play for.
 - **Profiles:** Your ELO now sits beside your recent matches, and the full match list has its own Matches tab.
 - **Profiles:** A Share button copies the profile link, and the Steam ID copies in one click.
+- **Teams:** The roster lists players in name order, Admins included.
+- **Teams:** A team's matches show the score, result and opponent from that team's side.
+- **Teams:** The team overview shows the team's recent matches beside the roster.
+- **Teams:** The roster is a team photo; tap a player to see their photo, and League and History sit beside it.
 
 ### Fixed
 
@@ -28,6 +35,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Alerts:** a system alert you dismissed shows again when staff put it back up.
 - **Profiles:** Map totals on a profile no longer count cancelled matches.
 - **Profiles:** The match list waits to load before saying a player has no matches.
+- **Teams:** A Grand Final result in the team activity shows the series score with the upper bracket's map head start.
 
 ## Patch Notes | November 12, 2026
 

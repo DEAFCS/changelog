@@ -1586,7 +1586,7 @@
     }
   },
   "2026-11-13": {
-    "revision": 9,
+    "revision": 10,
     "items": {
       "fe1262bb3ec0": {
         "type": "improved",
@@ -1699,6 +1699,62 @@
         "text": "ADR and KPR boards can show T side or CT side only.",
         "status": "published",
         "source": "release:a6cc0d34ac5a4663"
+      },
+      "cb68702e3701": {
+        "type": "improved",
+        "area": "Teams",
+        "text": "The roster lists players in name order, Admins included.",
+        "status": "published",
+        "source": "release:24cef4d64395c14a"
+      },
+      "22c25caa2ef5": {
+        "type": "fixed",
+        "area": "Teams",
+        "text": "A Grand Final result in the team activity shows the series score with the upper bracket's map head start.",
+        "status": "published",
+        "source": "release:24cef4d64395c14a"
+      },
+      "d6a568df6075": {
+        "type": "improved",
+        "area": "Teams",
+        "text": "A team's matches show the score, result and opponent from that team's side.",
+        "status": "published",
+        "source": "release:24cef4d64395c14a"
+      },
+      "a118d3ac5970": {
+        "type": "new",
+        "area": "Teams",
+        "text": "A team's Activity tab lists results, roster changes and awards, with filters.",
+        "status": "published",
+        "source": "release:24cef4d64395c14a"
+      },
+      "d5b8ba9d9e9b": {
+        "type": "improved",
+        "area": "Teams",
+        "text": "The team overview shows the team's recent matches beside the roster.",
+        "status": "published",
+        "source": "release:24cef4d64395c14a"
+      },
+      "1ede7dd3a745": {
+        "type": "improved",
+        "area": "Teams",
+        "text": "The roster is a team photo; tap a player to see their photo, and League and History sit beside it.",
+        "status": "published",
+        "source": "release:24cef4d64395c14a"
+      },
+      "5f51d29be57c": {
+        "type": "new",
+        "area": "Teams",
+        "text": "The team banner shows the league season the team is playing in.",
+        "status": "published",
+        "source": "release:24cef4d64395c14a"
+      },
+      "d057293a61dd": {
+        "type": "new",
+        "area": "Teams",
+        "text": "Share a team's page with the new Share button.",
+        "status": "published",
+        "source": "release:24cef4d64395c14a"
       }
     }
   }
