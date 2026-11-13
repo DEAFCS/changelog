@@ -1586,7 +1586,7 @@
     }
   },
   "2026-11-13": {
-    "revision": 5,
+    "revision": 6,
     "items": {
       "fe1262bb3ec0": {
         "type": "improved",
@@ -1643,6 +1643,13 @@
         "text": "long alert messages wrap on phones and keep their line breaks.",
         "status": "published",
         "source": "release:385753b900a67070"
+      },
+      "45fabdb17d71": {
+        "type": "improved",
+        "area": "System Alerts",
+        "text": "links in alerts open safely, and links to DEAFCS stay in the app.",
+        "status": "published",
+        "source": "release:1809e3a245ebb993"
       }
     }
   }

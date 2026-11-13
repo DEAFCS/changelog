@@ -3,7 +3,7 @@
     {
       "month": "2026-11",
       "days": 13,
-      "hash": "a9a7ae5687666840"
+      "hash": "d45b7cc44a5ca4b5"
     }
   ],
   "areas": [
@@ -36,6 +36,7 @@
     "Steam",
     "Streams",
     "Support",
+    "System Alerts",
     "Teams",
     "Tournaments",
     "Utility",
@@ -43,7 +44,7 @@
   ],
   "latest": {
     "date": "2026-11-13",
-    "revision": 5
+    "revision": 6
   },
   "monitoredOn": "2026-11-13"
 }

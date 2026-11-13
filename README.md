@@ -9,6 +9,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Leaderboard:** Podium and table numbers roll smoothly when you switch category or filters.
 - **Search:** Ctrl+K shows teams first, with an exact tag match at the top.
 - **Alerts:** long alert messages wrap on phones and keep their line breaks.
+- **System Alerts:** links in alerts open safely, and links to DEAFCS stay in the app.
 
 ### Fixed
 
