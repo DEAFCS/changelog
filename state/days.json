@@ -1586,7 +1586,7 @@
     }
   },
   "2026-11-13": {
-    "revision": 11,
+    "revision": 12,
     "items": {
       "fe1262bb3ec0": {
         "type": "improved",
@@ -1762,6 +1762,55 @@
         "text": "Only the team owner, team Admins and members with the Invite role can invite players to a team.",
         "status": "published",
         "source": "release:a31fa4cf83c4e5e2"
+      },
+      "385ca4d610ff": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "The profile tabs and match filters are tidier and fit on one row.",
+        "status": "published",
+        "source": "release:9fb2ef957ea24841"
+      },
+      "d76825ad22cf": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "The profile header shows the player's role and team instead of the rank plates.",
+        "status": "published",
+        "source": "release:9fb2ef957ea24841"
+      },
+      "e7bdd3a03cf5": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "Country, Steam ID, Steam and Twitch links sit in one tidy bar, with a larger flag.",
+        "status": "published",
+        "source": "release:9fb2ef957ea24841"
+      },
+      "068cca98b89d": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "Hover or tap an ELO value to see the next tier and how much ELO it takes.",
+        "status": "published",
+        "source": "release:9fb2ef957ea24841"
+      },
+      "bb45529924ff": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "Recent matches are cleaner and show your ELO after each match and the change.",
+        "status": "published",
+        "source": "release:9fb2ef957ea24841"
+      },
+      "8e35e0da7eaa": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "The Matches tab shows your ELO after each match beside the gain or loss.",
+        "status": "published",
+        "source": "release:9fb2ef957ea24841"
+      },
+      "5e41bfc82374": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "Recent matches has a quick DEAFCS/External switch, and match rows show the date and time on the left.",
+        "status": "published",
+        "source": "release:9fb2ef957ea24841"
       }
     }
   }

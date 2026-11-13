@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-13",
-      "revision": 11,
+      "revision": 12,
       "title": "Patch Notes | November 13, 2026",
       "summary": "",
       "sections": {
@@ -73,6 +73,34 @@
           {
             "area": "Teams",
             "text": "The roster is a team photo; tap a player to see their photo, and League and History sit beside it."
+          },
+          {
+            "area": "Profiles",
+            "text": "The profile tabs and match filters are tidier and fit on one row."
+          },
+          {
+            "area": "Profiles",
+            "text": "The profile header shows the player's role and team instead of the rank plates."
+          },
+          {
+            "area": "Profiles",
+            "text": "Country, Steam ID, Steam and Twitch links sit in one tidy bar, with a larger flag."
+          },
+          {
+            "area": "Profiles",
+            "text": "Hover or tap an ELO value to see the next tier and how much ELO it takes."
+          },
+          {
+            "area": "Profiles",
+            "text": "Recent matches are cleaner and show your ELO after each match and the change."
+          },
+          {
+            "area": "Profiles",
+            "text": "The Matches tab shows your ELO after each match beside the gain or loss."
+          },
+          {
+            "area": "Profiles",
+            "text": "Recent matches has a quick DEAFCS/External switch, and match rows show the date and time on the left."
           }
         ],
         "fixed": [
