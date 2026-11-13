@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-13",
-      "revision": 13,
+      "revision": 14,
       "title": "Patch Notes | November 13, 2026",
       "summary": "",
       "sections": {
@@ -101,6 +101,22 @@
           {
             "area": "Profiles",
             "text": "Recent matches has a quick DEAFCS/External switch, and match rows show the date and time on the left."
+          },
+          {
+            "area": "Profiles",
+            "text": "The source switch and a compact Filters menu now sit right beside the profile tabs, replacing the second filter row."
+          },
+          {
+            "area": "Profiles",
+            "text": "The player's role and full team name are back in the info bar, right after the Steam link."
+          },
+          {
+            "area": "Profiles",
+            "text": "Awards now show as a compact Honors row under the profile header, with every award one click away."
+          },
+          {
+            "area": "Profiles",
+            "text": "The Sanctions button now sits between Message and Friend and matches the other header buttons."
           }
         ],
         "fixed": [

@@ -32,6 +32,10 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Profiles:** Recent matches are cleaner and show your ELO after each match and the change.
 - **Profiles:** The Matches tab shows your ELO after each match beside the gain or loss.
 - **Profiles:** Recent matches has a quick DEAFCS/External switch, and match rows show the date and time on the left.
+- **Profiles:** The source switch and a compact Filters menu now sit right beside the profile tabs, replacing the second filter row.
+- **Profiles:** The player's role and full team name are back in the info bar, right after the Steam link.
+- **Profiles:** Awards now show as a compact Honors row under the profile header, with every award one click away.
+- **Profiles:** The Sanctions button now sits between Message and Friend and matches the other header buttons.
 
 ### Fixed
 
