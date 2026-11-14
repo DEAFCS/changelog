@@ -2,6 +2,26 @@
   "month": "2026-11",
   "days": [
     {
+      "date": "2026-11-14",
+      "revision": 1,
+      "title": "Patch Notes | November 14, 2026",
+      "summary": "",
+      "sections": {
+        "new": [],
+        "improved": [],
+        "fixed": [
+          {
+            "area": "Matches",
+            "text": "Recent matches in the Chat Hub show your ELO and its change on one line."
+          },
+          {
+            "area": "Matches",
+            "text": "The Quick Overview of a reported match no longer overlaps team names and the score."
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-13",
       "revision": 15,
       "title": "Patch Notes | November 13, 2026",

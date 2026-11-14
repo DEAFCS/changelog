@@ -2,6 +2,13 @@
 
 DEAFCS patch notes: new features, improvements and fixes, newest first. They also appear on the DEAFCS Changelog page (Info, then Changelog).
 
+## Patch Notes | November 14, 2026
+
+### Fixed
+
+- **Matches:** Recent matches in the Chat Hub show your ELO and its change on one line.
+- **Matches:** The Quick Overview of a reported match no longer overlaps team names and the score.
+
 ## Patch Notes | November 13, 2026
 
 ### New
