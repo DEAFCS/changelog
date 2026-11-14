@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-14",
-      "revision": 1,
+      "revision": 2,
       "title": "Patch Notes | November 14, 2026",
       "summary": "",
       "sections": {
@@ -17,6 +17,14 @@
           {
             "area": "Matches",
             "text": "The Quick Overview of a reported match no longer overlaps team names and the score."
+          },
+          {
+            "area": "Branding",
+            "text": "The site logo and DEAFCS names now show DEAFCS in every language."
+          },
+          {
+            "area": "Tournaments",
+            "text": "Bracket previews now show the correct best-of for the Grand Final."
           }
         ]
       }

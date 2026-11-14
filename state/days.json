@@ -1871,7 +1871,7 @@
     }
   },
   "2026-11-14": {
-    "revision": 1,
+    "revision": 2,
     "items": {
       "034a898afb81": {
         "type": "fixed",
@@ -1886,6 +1886,20 @@
         "text": "The Quick Overview of a reported match no longer overlaps team names and the score.",
         "status": "published",
         "source": "release:f15d8f45f0be5b7f"
+      },
+      "57c3cfc69287": {
+        "type": "fixed",
+        "area": "Branding",
+        "text": "The site logo and DEAFCS names now show DEAFCS in every language.",
+        "status": "published",
+        "source": "release:1a6cbc379f0f96a9"
+      },
+      "b737d9dfb4bd": {
+        "type": "fixed",
+        "area": "Tournaments",
+        "text": "Bracket previews now show the correct best-of for the Grand Final.",
+        "status": "published",
+        "source": "release:1a6cbc379f0f96a9"
       }
     }
   }

@@ -3,13 +3,14 @@
     {
       "month": "2026-11",
       "days": 14,
-      "hash": "216a4db4b5a3b057"
+      "hash": "8891454cda225574"
     }
   ],
   "areas": [
     "Accounts",
     "Alerts",
     "Awards",
+    "Branding",
     "Changelog",
     "Chat",
     "ELO",
@@ -44,7 +45,7 @@
   ],
   "latest": {
     "date": "2026-11-14",
-    "revision": 1
+    "revision": 2
   },
   "monitoredOn": "2026-11-14"
 }

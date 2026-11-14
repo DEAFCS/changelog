@@ -8,6 +8,8 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 
 - **Matches:** Recent matches in the Chat Hub show your ELO and its change on one line.
 - **Matches:** The Quick Overview of a reported match no longer overlaps team names and the score.
+- **Branding:** The site logo and DEAFCS names now show DEAFCS in every language.
+- **Tournaments:** Bracket previews now show the correct best-of for the Grand Final.
 
 ## Patch Notes | November 13, 2026
 
