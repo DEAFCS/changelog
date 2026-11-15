@@ -14,6 +14,10 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Matches:** Statistics panels show only the players who actually played, including substitutes.
 - **Tournaments:** Only admins and the tournament's organizers can change players during a match.
 
+### Fixed
+
+- **Matches:** The scoreboard shows again during the veto, warmup and live match.
+
 ## Patch Notes | November 14, 2026
 
 ### Fixed

@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-15",
-      "revision": 2,
+      "revision": 3,
       "title": "Patch Notes | November 15, 2026",
       "summary": "",
       "sections": {
@@ -27,7 +27,12 @@
             "text": "Only admins and the tournament's organizers can change players during a match."
           }
         ],
-        "fixed": []
+        "fixed": [
+          {
+            "area": "Matches",
+            "text": "The scoreboard shows again during the veto, warmup and live match."
+          }
+        ]
       }
     },
     {

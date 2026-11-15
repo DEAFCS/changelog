@@ -1904,7 +1904,7 @@
     }
   },
   "2026-11-15": {
-    "revision": 2,
+    "revision": 3,
     "items": {
       "19780e2f6d4d": {
         "type": "new",
@@ -1933,6 +1933,13 @@
         "text": "Only admins and the tournament's organizers can change players during a match.",
         "status": "published",
         "source": "release:9d42cde90cadb073"
+      },
+      "fb74c96b413d": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "The scoreboard shows again during the veto, warmup and live match.",
+        "status": "published",
+        "source": "release:9f3cfff64c9ee3af"
       }
     }
   }
