@@ -1902,5 +1902,17 @@
         "source": "release:1a6cbc379f0f96a9"
       }
     }
+  },
+  "2026-11-15": {
+    "revision": 1,
+    "items": {
+      "19780e2f6d4d": {
+        "type": "new",
+        "area": "Profiles",
+        "text": "Choose which of your teams shows on your profile.",
+        "status": "published",
+        "source": "release:285f981e0def83eb"
+      }
+    }
   }
 }

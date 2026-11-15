@@ -2,6 +2,22 @@
   "month": "2026-11",
   "days": [
     {
+      "date": "2026-11-15",
+      "revision": 1,
+      "title": "Patch Notes | November 15, 2026",
+      "summary": "",
+      "sections": {
+        "new": [
+          {
+            "area": "Profiles",
+            "text": "Choose which of your teams shows on your profile."
+          }
+        ],
+        "improved": [],
+        "fixed": []
+      }
+    },
+    {
       "date": "2026-11-14",
       "revision": 2,
       "title": "Patch Notes | November 14, 2026",

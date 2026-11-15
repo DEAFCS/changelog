@@ -2,6 +2,12 @@
 
 DEAFCS patch notes: new features, improvements and fixes, newest first. They also appear on the DEAFCS Changelog page (Info, then Changelog).
 
+## Patch Notes | November 15, 2026
+
+### New
+
+- **Profiles:** Choose which of your teams shows on your profile.
+
 ## Patch Notes | November 14, 2026
 
 ### Fixed
@@ -348,43 +354,5 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Profiles:** Team kills, suicides and assists on teammates no longer count toward your kills, assists and weapon stats.
 - **Leaderboards:** Kill and K/D boards no longer count team kills or suicides as kills.
 - **Tournaments:** Stats tabs and the standings tiebreaker count kills and deaths the same way as everywhere else.
-
-## Patch Notes | November 1, 2026
-
-Team history on profiles and team pages, a new Changelog page, a new search, and matchmaking by region.
-
-### New
-
-- **Teams:** Player profiles now show current and previous teams, with available membership history.
-- **Teams:** Team pages show a roster history of current and former members.
-- **Teams:** The team activity feed shows when players join, rejoin, leave or are removed.
-- **Changelog:** A new Changelog page under Info shows patch notes by day, with search, filters and a dot for new changes.
-- **Matchmaking:** EU and SA are now separate region groups, and the Play page counts the queue for your region group.
-- **Search:** Press Ctrl+K (Cmd+K on Mac) or use Search in the left menu to find pages, players, FAQ answers and your settings.
-
-### Improved
-
-- **Matchmaking:** Each region group can open or close matchmaking modes on its own, and the Play page shows what is open in your region.
-- **Matchmaking:** If a mode closes while you are in its queue, you leave the queue and get a message.
-- **Profiles:** Choose EU or SA from a dropdown in settings or on your profile. Staff approve the change.
-- **Notifications:** Your notifications, friends and My Matches appear sooner when a page opens.
-- **Performance:** The Teams page, league seasons, tournament bracket previews and the utility library stay quick when many people view them at once.
-- **Matches:** The scoreboard keeps players in ADR order in every view, rows move smoothly when their positions change, and stat numbers roll like an odometer.
-- **Teams:** The team page tabs are one full-width bar under the team header, with the active tab highlighted, and it stays on screen while you scroll.
-- **Leaderboards:** K/D, HS% and rating boards filtered by source or role load much faster.
-- **Matches:** Report details no longer show an empty profile row.
-
-### Fixed
-
-- **Matches:** Stream and demo startup progress now shows the workshop map download in the right order.
-- **Matchmaking:** When a mode is closed, a ready check that fails no longer puts you back in its queue or starts a new one.
-- **Highlights:** A clip you make private leaves the public Highlights and Watch lists right away.
-- **Teams:** Team cards show a space before "vs" in the Next and Last rows.
-- **Accounts:** After your role changes, the site picks up your new permissions right away without a reload.
-- **Matches:** A late duplicate status from a game server no longer ends the next map early or loses a map's result.
-- **Steam:** Steam messages that Steam delays or rate-limits are retried instead of lost, and are never sent twice.
-- **Seasons:** Rebuilding a season's ratings now keeps its tournament matches, so season ELO stays correct.
-- **Matches:** Report a Player opens 5 minutes after the match ends, and the match page shows the time left.
-- **Matches:** Player names show correctly when choosing who to report.
 
 Older days are in [entries](entries).
