@@ -8,6 +8,12 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 
 - **Profiles:** Choose which of your teams shows on your profile.
 
+### Improved
+
+- **Matches:** Scoreboards show every player who actually played, including substitutes.
+- **Matches:** Statistics panels show only the players who actually played, including substitutes.
+- **Tournaments:** Only admins and the tournament's organizers can change players during a match.
+
 ## Patch Notes | November 14, 2026
 
 ### Fixed

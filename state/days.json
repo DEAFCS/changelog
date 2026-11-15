@@ -1904,7 +1904,7 @@
     }
   },
   "2026-11-15": {
-    "revision": 1,
+    "revision": 2,
     "items": {
       "19780e2f6d4d": {
         "type": "new",
@@ -1912,6 +1912,27 @@
         "text": "Choose which of your teams shows on your profile.",
         "status": "published",
         "source": "release:285f981e0def83eb"
+      },
+      "1738cdd1f2c4": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "Scoreboards show every player who actually played, including substitutes.",
+        "status": "published",
+        "source": "release:9d42cde90cadb073"
+      },
+      "4de5b0c86b37": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "Statistics panels show only the players who actually played, including substitutes.",
+        "status": "published",
+        "source": "release:9d42cde90cadb073"
+      },
+      "4c40671c1c53": {
+        "type": "improved",
+        "area": "Tournaments",
+        "text": "Only admins and the tournament's organizers can change players during a match.",
+        "status": "published",
+        "source": "release:9d42cde90cadb073"
       }
     }
   }

@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-15",
-      "revision": 1,
+      "revision": 2,
       "title": "Patch Notes | November 15, 2026",
       "summary": "",
       "sections": {
@@ -13,7 +13,20 @@
             "text": "Choose which of your teams shows on your profile."
           }
         ],
-        "improved": [],
+        "improved": [
+          {
+            "area": "Matches",
+            "text": "Scoreboards show every player who actually played, including substitutes."
+          },
+          {
+            "area": "Matches",
+            "text": "Statistics panels show only the players who actually played, including substitutes."
+          },
+          {
+            "area": "Tournaments",
+            "text": "Only admins and the tournament's organizers can change players during a match."
+          }
+        ],
         "fixed": []
       }
     },
