@@ -5,7 +5,8 @@
   },
   "api": {
     "commit": "dfe555e8f3f0b7f04eeaa4a46b4c759e3a77291b",
-    "since": "2026-11-15T01:11:11.180Z"
+    "since": null,
+    "unusableSince": "2026-11-15T10:31:11.505Z"
   },
   "checkedOn": "2026-11-15"
 }
