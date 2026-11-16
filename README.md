@@ -2,6 +2,16 @@
 
 DEAFCS patch notes: new features, improvements and fixes, newest first. They also appear on the DEAFCS Changelog page (Info, then Changelog).
 
+## Patch Notes | November 16, 2026
+
+### Improved
+
+- **Teams:** The teams list now sorts by rating, highest first, by default.
+
+### Fixed
+
+- **Matchmaking:** All modes, including Pro, now appear together on the Play page.
+
 ## Patch Notes | November 15, 2026
 
 ### New
@@ -351,18 +361,5 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Highlights:** A deleted clip leaves every list and playlist without a reload.
 - **Highlights:** Deleting the first clip of a match group shows the next clip right away instead of the deleted one.
 - **Highlights:** Only a clip's creator and staff can change or delete it, and only its creator can rename it.
-
-## Patch Notes | November 2, 2026
-
-### Improved
-
-- **Matches:** Match pages open faster, and the scoreboard keeps players in a steady ADR order during live matches.
-
-### Fixed
-
-- **Support:** Older player reports show the reported player's profile link again.
-- **Profiles:** Team kills, suicides and assists on teammates no longer count toward your kills, assists and weapon stats.
-- **Leaderboards:** Kill and K/D boards no longer count team kills or suicides as kills.
-- **Tournaments:** Stats tabs and the standings tiebreaker count kills and deaths the same way as everywhere else.
 
 Older days are in [entries](entries).

@@ -2,6 +2,27 @@
   "month": "2026-11",
   "days": [
     {
+      "date": "2026-11-16",
+      "revision": 1,
+      "title": "Patch Notes | November 16, 2026",
+      "summary": "",
+      "sections": {
+        "new": [],
+        "improved": [
+          {
+            "area": "Teams",
+            "text": "The teams list now sorts by rating, highest first, by default."
+          }
+        ],
+        "fixed": [
+          {
+            "area": "Matchmaking",
+            "text": "All modes, including Pro, now appear together on the Play page."
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-15",
       "revision": 3,
       "title": "Patch Notes | November 15, 2026",
