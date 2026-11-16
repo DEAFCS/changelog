@@ -7,6 +7,9 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 ### Improved
 
 - **Teams:** The teams list now sorts by rating, highest first, by default.
+- **Profiles:** Edit Player is more compact and shows your roster image in a team lineup preview.
+- **Profiles:** Account Settings is easier to scan, and you can change your avatar there.
+- **Profiles:** Edit Player explains your avatar and roster image in simple words.
 
 ### Fixed
 

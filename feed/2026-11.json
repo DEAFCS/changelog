@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-16",
-      "revision": 1,
+      "revision": 2,
       "title": "Patch Notes | November 16, 2026",
       "summary": "",
       "sections": {
@@ -12,6 +12,18 @@
           {
             "area": "Teams",
             "text": "The teams list now sorts by rating, highest first, by default."
+          },
+          {
+            "area": "Profiles",
+            "text": "Edit Player is more compact and shows your roster image in a team lineup preview."
+          },
+          {
+            "area": "Profiles",
+            "text": "Account Settings is easier to scan, and you can change your avatar there."
+          },
+          {
+            "area": "Profiles",
+            "text": "Edit Player explains your avatar and roster image in simple words."
           }
         ],
         "fixed": [

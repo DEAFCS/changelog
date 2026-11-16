@@ -1944,7 +1944,7 @@
     }
   },
   "2026-11-16": {
-    "revision": 1,
+    "revision": 2,
     "items": {
       "c32bf8a182ed": {
         "type": "fixed",
@@ -1959,6 +1959,27 @@
         "text": "The teams list now sorts by rating, highest first, by default.",
         "status": "published",
         "source": "release:45bedb5f7d530d3c"
+      },
+      "f918f55ebf64": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "Edit Player is more compact and shows your roster image in a team lineup preview.",
+        "status": "published",
+        "source": "release:2fe8d3ca21423a69"
+      },
+      "3c8eac4cf7e0": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "Account Settings is easier to scan, and you can change your avatar there.",
+        "status": "published",
+        "source": "release:2fe8d3ca21423a69"
+      },
+      "1dd0f3dfe988": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "Edit Player explains your avatar and roster image in simple words.",
+        "status": "published",
+        "source": "release:2fe8d3ca21423a69"
       }
     }
   }
