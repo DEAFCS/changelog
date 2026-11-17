@@ -4,16 +4,23 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 
 ## Patch Notes | November 17, 2026
 
+### New
+
+- **Tournaments:** Teams can look for players, and Free Agents can ask to join a team that is looking.
+
 ### Improved
 
 - **Live streams:** the match page plays the live stream from our Twitch channel.
 - **Live streams:** the broadcast keeps running after a match ends, so staff can move it to the next match.
 - **Live streams:** the match page shows the DEAFCS Twitch stream only while it is live.
+- **Utility:** Map callout names now show by default. You can still switch them off, and your choice is remembered.
+- **Teams:** The Matches tab shows the players who played each match instead of an ELO change.
 
 ### Fixed
 
 - **Live streams:** staff can switch a running broadcast to another live match from the match page.
 - **Highlights:** Best Round highlights show the right number of kills.
+- **Profiles:** The Cancelled badge in Recent matches is no longer cut off.
 
 ## Patch Notes | November 16, 2026
 

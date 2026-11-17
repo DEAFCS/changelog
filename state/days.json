@@ -1984,7 +1984,7 @@
     }
   },
   "2026-11-17": {
-    "revision": 5,
+    "revision": 6,
     "items": {
       "744d1de62ae6": {
         "type": "improved",
@@ -2020,6 +2020,34 @@
         "text": "Best Round highlights show the right number of kills.",
         "status": "published",
         "source": "release:fb8b5bb685cd6ae3"
+      },
+      "8fc741d8a746": {
+        "type": "improved",
+        "area": "Utility",
+        "text": "Map callout names now show by default. You can still switch them off, and your choice is remembered.",
+        "status": "published",
+        "source": "release:afb052763183afee"
+      },
+      "028f42d84b76": {
+        "type": "fixed",
+        "area": "Profiles",
+        "text": "The Cancelled badge in Recent matches is no longer cut off.",
+        "status": "published",
+        "source": "release:afb052763183afee"
+      },
+      "0228eb7e4a27": {
+        "type": "improved",
+        "area": "Teams",
+        "text": "The Matches tab shows the players who played each match instead of an ELO change.",
+        "status": "published",
+        "source": "release:afb052763183afee"
+      },
+      "ab7b14469f04": {
+        "type": "new",
+        "area": "Tournaments",
+        "text": "Teams can look for players, and Free Agents can ask to join a team that is looking.",
+        "status": "published",
+        "source": "release:afb052763183afee"
       }
     }
   }
