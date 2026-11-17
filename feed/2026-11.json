@@ -2,6 +2,22 @@
   "month": "2026-11",
   "days": [
     {
+      "date": "2026-11-18",
+      "revision": 1,
+      "title": "Patch Notes | November 18, 2026",
+      "summary": "",
+      "sections": {
+        "new": [],
+        "improved": [
+          {
+            "area": "Profiles",
+            "text": "Award trophies on player profiles are bigger and easier to see."
+          }
+        ],
+        "fixed": []
+      }
+    },
+    {
       "date": "2026-11-17",
       "revision": 6,
       "title": "Patch Notes | November 17, 2026",

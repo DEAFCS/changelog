@@ -2,6 +2,12 @@
 
 DEAFCS patch notes: new features, improvements and fixes, newest first. They also appear on the DEAFCS Changelog page (Info, then Changelog).
 
+## Patch Notes | November 18, 2026
+
+### Improved
+
+- **Profiles:** Award trophies on player profiles are bigger and easier to see.
+
 ## Patch Notes | November 17, 2026
 
 ### New
@@ -341,18 +347,5 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Matchmaking:** In Duel and Wingman, wins against the same opponent are worth less after three meetings in 7 days. Losses aren't affected.
 - **ELO:** The ELO popup explains leaver and repeat opponent adjustments.
 - **ELO:** Your current ELO and past matches stay as they are. The new rules apply to matches that start from now on.
-
-## Patch Notes | November 4, 2026
-
-### New
-
-- **Tournaments:** Organizers can turn on AIM Rules for a Duel tournament: 3 second freeze time, free Kevlar, no buy time and a 3 second delay between rounds.
-
-### Improved
-
-- **Navigation:** The left sidebar has clearer groups, with Community, Updates and Info sections.
-- **Navigation:** The Info section stays open or closed after a page reload, like the other sections.
-- **Rules:** General, Matchmaking and Tournament Rules are now one Rules page with three tabs.
-- **Navigation:** The Info section is shorter, and the collapsed sidebar shows it as one icon with a menu.
 
 Older days are in [entries](entries).
