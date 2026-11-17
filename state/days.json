@@ -1984,7 +1984,7 @@
     }
   },
   "2026-11-17": {
-    "revision": 2,
+    "revision": 3,
     "items": {
       "744d1de62ae6": {
         "type": "improved",
@@ -1999,6 +1999,13 @@
         "text": "the broadcast keeps running after a match ends, so staff can move it to the next match.",
         "status": "published",
         "source": "release:0a66c42e4f0d821f"
+      },
+      "99db1b0fdb53": {
+        "type": "fixed",
+        "area": "Live streams",
+        "text": "staff can switch a running broadcast to another live match from the match page.",
+        "status": "published",
+        "source": "release:872d58f456429eca"
       }
     }
   }

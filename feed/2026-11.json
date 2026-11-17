@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-17",
-      "revision": 2,
+      "revision": 3,
       "title": "Patch Notes | November 17, 2026",
       "summary": "",
       "sections": {
@@ -18,7 +18,12 @@
             "text": "the broadcast keeps running after a match ends, so staff can move it to the next match."
           }
         ],
-        "fixed": []
+        "fixed": [
+          {
+            "area": "Live streams",
+            "text": "staff can switch a running broadcast to another live match from the match page."
+          }
+        ]
       }
     },
     {
