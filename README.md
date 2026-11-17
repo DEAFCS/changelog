@@ -13,6 +13,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 ### Fixed
 
 - **Live streams:** staff can switch a running broadcast to another live match from the match page.
+- **Highlights:** Best Round highlights show the right number of kills.
 
 ## Patch Notes | November 16, 2026
 
