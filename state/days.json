@@ -1984,7 +1984,7 @@
     }
   },
   "2026-11-17": {
-    "revision": 3,
+    "revision": 4,
     "items": {
       "744d1de62ae6": {
         "type": "improved",
@@ -2006,6 +2006,13 @@
         "text": "staff can switch a running broadcast to another live match from the match page.",
         "status": "published",
         "source": "release:872d58f456429eca"
+      },
+      "251fc39c2e92": {
+        "type": "improved",
+        "area": "Live streams",
+        "text": "the match page shows the DEAFCS Twitch stream only while it is live.",
+        "status": "published",
+        "source": "release:541802c297e13828"
       }
     }
   }

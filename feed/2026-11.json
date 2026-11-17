@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-17",
-      "revision": 3,
+      "revision": 4,
       "title": "Patch Notes | November 17, 2026",
       "summary": "",
       "sections": {
@@ -16,6 +16,10 @@
           {
             "area": "Live streams",
             "text": "the broadcast keeps running after a match ends, so staff can move it to the next match."
+          },
+          {
+            "area": "Live streams",
+            "text": "the match page shows the DEAFCS Twitch stream only while it is live."
           }
         ],
         "fixed": [

@@ -8,6 +8,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 
 - **Live streams:** the match page plays the live stream from our Twitch channel.
 - **Live streams:** the broadcast keeps running after a match ends, so staff can move it to the next match.
+- **Live streams:** the match page shows the DEAFCS Twitch stream only while it is live.
 
 ### Fixed
 
