@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-17",
-      "revision": 1,
+      "revision": 2,
       "title": "Patch Notes | November 17, 2026",
       "summary": "",
       "sections": {
@@ -12,6 +12,10 @@
           {
             "area": "Live streams",
             "text": "the match page plays the live stream from our Twitch channel."
+          },
+          {
+            "area": "Live streams",
+            "text": "the broadcast keeps running after a match ends, so staff can move it to the next match."
           }
         ],
         "fixed": []

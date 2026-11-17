@@ -1984,7 +1984,7 @@
     }
   },
   "2026-11-17": {
-    "revision": 1,
+    "revision": 2,
     "items": {
       "744d1de62ae6": {
         "type": "improved",
@@ -1992,6 +1992,13 @@
         "text": "the match page plays the live stream from our Twitch channel.",
         "status": "published",
         "source": "release:d52b3427c6eebf03"
+      },
+      "5dc6aa2cf50b": {
+        "type": "improved",
+        "area": "Live streams",
+        "text": "the broadcast keeps running after a match ends, so staff can move it to the next match.",
+        "status": "published",
+        "source": "release:0a66c42e4f0d821f"
       }
     }
   }
