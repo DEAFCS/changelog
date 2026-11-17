@@ -2,6 +2,12 @@
 
 DEAFCS patch notes: new features, improvements and fixes, newest first. They also appear on the DEAFCS Changelog page (Info, then Changelog).
 
+## Patch Notes | November 17, 2026
+
+### Improved
+
+- **Live streams:** the match page plays the live stream from our Twitch channel.
+
 ## Patch Notes | November 16, 2026
 
 ### Improved
@@ -334,35 +340,5 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Navigation:** The Info section stays open or closed after a page reload, like the other sections.
 - **Rules:** General, Matchmaking and Tournament Rules are now one Rules page with three tabs.
 - **Navigation:** The Info section is shorter, and the collapsed sidebar shows it as one icon with a menu.
-
-## Patch Notes | November 3, 2026
-
-### New
-
-- **Matches:** Report a player from their row on the scoreboard or the "..." menu next to their name, in a popup with a reason, the map and the round.
-- **Matches:** The scoreboard shows each player's CS2 teammate color.
-- **Tournaments:** Organizers can turn ELO off for a tournament in its settings, before the first match starts.
-- **Practice:** Verified players can open Public Servers in the Practice section, and each server card can show its own picture.
-- **Highlights:** Share on a clip opens Copy link and Download, and a clip's owner and staff can delete it right from the tile.
-
-### Improved
-
-- **Support:** The Contact page shows with pictures how to call support in a match and how to report a player.
-- **Support:** Call for Support now explains where to report a player instead.
-- **Changelog:** Each day's patch notes are grouped by section, with a New, Improved or Fixed tag on every change.
-- **Matches:** Match page highlight clips load with less work for the site.
-- **Servers:** The Public Servers page and the Play page's server card load with less work for the site.
-- **Leaderboards:** Leaderboards show fades and buttons on edges with more columns to scroll to.
-- **Profiles:** Player profiles load with less work for the site and show changes made elsewhere on your next visit.
-
-### Fixed
-
-- **Matchmaking:** Regions with only public servers (Deathmatch, Retake) no longer show up in matchmaking, so you can't queue where no match server can start.
-- **Matches:** Match logs, system logs and RCON command suggestions show player names and plugin text as plain text.
-- **Tournaments:** Removing a category from a tournament works again.
-- **Tournaments:** Free-agent-only tournaments offer "Join as a free agent" instead of "Register" on their cards.
-- **Highlights:** A deleted clip leaves every list and playlist without a reload.
-- **Highlights:** Deleting the first clip of a match group shows the next clip right away instead of the deleted one.
-- **Highlights:** Only a clip's creator and staff can change or delete it, and only its creator can rename it.
 
 Older days are in [entries](entries).

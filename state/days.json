@@ -1982,5 +1982,17 @@
         "source": "release:2fe8d3ca21423a69"
       }
     }
+  },
+  "2026-11-17": {
+    "revision": 1,
+    "items": {
+      "744d1de62ae6": {
+        "type": "improved",
+        "area": "Live streams",
+        "text": "the match page plays the live stream from our Twitch channel.",
+        "status": "published",
+        "source": "release:d52b3427c6eebf03"
+      }
+    }
   }
 }

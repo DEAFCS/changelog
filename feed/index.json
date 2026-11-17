@@ -2,8 +2,8 @@
   "months": [
     {
       "month": "2026-11",
-      "days": 16,
-      "hash": "0b6d9f77b42f5288"
+      "days": 17,
+      "hash": "54f00a50aa8264c7"
     }
   ],
   "areas": [
@@ -19,6 +19,7 @@
     "Highlights",
     "Leaderboard",
     "Leaderboards",
+    "Live streams",
     "Matches",
     "Matchmaking",
     "Navigation",
@@ -44,8 +45,8 @@
     "Watch"
   ],
   "latest": {
-    "date": "2026-11-16",
-    "revision": 2
+    "date": "2026-11-17",
+    "revision": 1
   },
   "monitoredOn": "2026-11-17"
 }
