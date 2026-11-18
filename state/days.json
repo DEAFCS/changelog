@@ -2052,7 +2052,7 @@
     }
   },
   "2026-11-18": {
-    "revision": 1,
+    "revision": 2,
     "items": {
       "c0190f60e8b4": {
         "type": "improved",
@@ -2060,6 +2060,13 @@
         "text": "Award trophies on player profiles are bigger and easier to see.",
         "status": "published",
         "source": "release:db481bd0ae73aa30"
+      },
+      "4b0a9f46d4e0": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "Report This Player now opens 30 minutes after a match ends and stays open for 24 hours.",
+        "status": "published",
+        "source": "release:3b6350c4f660af1c"
       }
     }
   }

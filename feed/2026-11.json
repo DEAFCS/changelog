@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-18",
-      "revision": 1,
+      "revision": 2,
       "title": "Patch Notes | November 18, 2026",
       "summary": "",
       "sections": {
@@ -12,6 +12,10 @@
           {
             "area": "Profiles",
             "text": "Award trophies on player profiles are bigger and easier to see."
+          },
+          {
+            "area": "Matches",
+            "text": "Report This Player now opens 30 minutes after a match ends and stays open for 24 hours."
           }
         ],
         "fixed": []

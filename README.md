@@ -7,6 +7,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 ### Improved
 
 - **Profiles:** Award trophies on player profiles are bigger and easier to see.
+- **Matches:** Report This Player now opens 30 minutes after a match ends and stays open for 24 hours.
 
 ## Patch Notes | November 17, 2026
 
