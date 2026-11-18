@@ -3,14 +3,16 @@
     {
       "month": "2026-11",
       "days": 18,
-      "hash": "fdebc577aed6f13e"
+      "hash": "2fa65041f768010c"
     }
   ],
   "areas": [
     "Accounts",
     "Alerts",
     "Awards",
+    "Badges",
     "Branding",
+    "Career",
     "Changelog",
     "Chat",
     "ELO",
@@ -20,6 +22,8 @@
     "Leaderboard",
     "Leaderboards",
     "Live streams",
+    "Locker",
+    "Maps",
     "Matches",
     "Matchmaking",
     "Navigation",
@@ -46,7 +50,7 @@
   ],
   "latest": {
     "date": "2026-11-18",
-    "revision": 2
+    "revision": 4
   },
   "monitoredOn": "2026-11-18"
 }

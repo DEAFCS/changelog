@@ -2052,7 +2052,7 @@
     }
   },
   "2026-11-18": {
-    "revision": 2,
+    "revision": 4,
     "items": {
       "c0190f60e8b4": {
         "type": "improved",
@@ -2067,6 +2067,48 @@
         "text": "Report This Player now opens 30 minutes after a match ends and stays open for 24 hours.",
         "status": "published",
         "source": "release:3b6350c4f660af1c"
+      },
+      "c916da0eb3ec": {
+        "type": "new",
+        "area": "Career",
+        "text": "The Leveling System is now available! Play matches, earn XP and level up.",
+        "status": "published",
+        "source": "manual"
+      },
+      "301fe79ddeea": {
+        "type": "new",
+        "area": "Career",
+        "text": "Earn Stacks and unlock free level rewards.",
+        "status": "published",
+        "source": "manual"
+      },
+      "fbbe708889a1": {
+        "type": "new",
+        "area": "Locker",
+        "text": "Customize your profile with the Locker.",
+        "status": "published",
+        "source": "manual"
+      },
+      "0ad3efdf41c9": {
+        "type": "new",
+        "area": "Badges",
+        "text": "Collect Badges and unlock special Titles by completing challenges.",
+        "status": "published",
+        "source": "manual"
+      },
+      "faa94dff420b": {
+        "type": "improved",
+        "area": "Career",
+        "text": "Improved Career XP tracking and protection against duplicate rewards.",
+        "status": "published",
+        "source": "manual"
+      },
+      "44d916bf65eb": {
+        "type": "improved",
+        "area": "Maps",
+        "text": "Cobblestone shows its new CS2 picture and patch.",
+        "status": "published",
+        "source": "release:fa4e0703e5e12e41"
       }
     }
   }

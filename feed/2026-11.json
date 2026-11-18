@@ -3,11 +3,28 @@
   "days": [
     {
       "date": "2026-11-18",
-      "revision": 2,
+      "revision": 4,
       "title": "Patch Notes | November 18, 2026",
       "summary": "",
       "sections": {
-        "new": [],
+        "new": [
+          {
+            "area": "Career",
+            "text": "The Leveling System is now available! Play matches, earn XP and level up."
+          },
+          {
+            "area": "Career",
+            "text": "Earn Stacks and unlock free level rewards."
+          },
+          {
+            "area": "Locker",
+            "text": "Customize your profile with the Locker."
+          },
+          {
+            "area": "Badges",
+            "text": "Collect Badges and unlock special Titles by completing challenges."
+          }
+        ],
         "improved": [
           {
             "area": "Profiles",
@@ -16,6 +33,14 @@
           {
             "area": "Matches",
             "text": "Report This Player now opens 30 minutes after a match ends and stays open for 24 hours."
+          },
+          {
+            "area": "Career",
+            "text": "Improved Career XP tracking and protection against duplicate rewards."
+          },
+          {
+            "area": "Maps",
+            "text": "Cobblestone shows its new CS2 picture and patch."
           }
         ],
         "fixed": []
