@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-18",
-      "revision": 4,
+      "revision": 5,
       "title": "Patch Notes | November 18, 2026",
       "summary": "",
       "sections": {
@@ -43,7 +43,12 @@
             "text": "Cobblestone shows its new CS2 picture and patch."
           }
         ],
-        "fixed": []
+        "fixed": [
+          {
+            "area": "Profiles",
+            "text": "The Badges section no longer shows an extra arrow, and is hidden until a player earns a badge."
+          }
+        ]
       }
     },
     {

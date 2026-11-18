@@ -2052,7 +2052,7 @@
     }
   },
   "2026-11-18": {
-    "revision": 4,
+    "revision": 5,
     "items": {
       "c0190f60e8b4": {
         "type": "improved",
@@ -2109,6 +2109,13 @@
         "text": "Cobblestone shows its new CS2 picture and patch.",
         "status": "published",
         "source": "release:fa4e0703e5e12e41"
+      },
+      "d0c6080396c2": {
+        "type": "fixed",
+        "area": "Profiles",
+        "text": "The Badges section no longer shows an extra arrow, and is hidden until a player earns a badge.",
+        "status": "published",
+        "source": "release:affa134e8a45519d"
       }
     }
   }

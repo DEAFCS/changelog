@@ -18,6 +18,10 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Career:** Improved Career XP tracking and protection against duplicate rewards.
 - **Maps:** Cobblestone shows its new CS2 picture and patch.
 
+### Fixed
+
+- **Profiles:** The Badges section no longer shows an extra arrow, and is hidden until a player earns a badge.
+
 ## Patch Notes | November 17, 2026
 
 ### New
