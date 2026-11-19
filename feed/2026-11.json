@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-19",
-      "revision": 8,
+      "revision": 9,
       "title": "Patch Notes | November 19, 2026",
       "summary": "",
       "sections": {
@@ -19,6 +19,10 @@
           {
             "area": "Profiles",
             "text": "Administrators can remove an uploaded avatar that breaks the rules."
+          },
+          {
+            "area": "Profiles",
+            "text": "Kingmaker, Major Ready and Grand Marshal can now be earned."
           }
         ],
         "improved": [

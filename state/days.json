@@ -2120,7 +2120,7 @@
     }
   },
   "2026-11-19": {
-    "revision": 8,
+    "revision": 9,
     "items": {
       "1b2fb900ea10": {
         "type": "fixed",
@@ -2303,6 +2303,13 @@
         "text": "When staff remove a mistaken abandon, that match's Career XP comes back.",
         "status": "published",
         "source": "release:12b2e71b9ef3ce6c"
+      },
+      "7e0423531423": {
+        "type": "new",
+        "area": "Profiles",
+        "text": "Kingmaker, Major Ready and Grand Marshal can now be earned.",
+        "status": "published",
+        "source": "release:a49fcf8a23f33865"
       }
     }
   }
