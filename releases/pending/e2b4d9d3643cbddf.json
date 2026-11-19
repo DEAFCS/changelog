@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "verified": true,
+  "verifiedAt": "2026-11-19T15:14:39Z",
+  "web": {
+    "to": "2d5fabcfad19c21d26f624fed1937d71790cfac5",
+    "image": "sha256:9e42cc4ef95d0c390c45979015e10870f8c6abda70e4977c2f79bee7986a627d"
+  },
+  "api": {
+    "to": "a667d920e982ec7d8757ca7b31c8c530e63a0e00",
+    "image": "sha256:442c85afc3881c9f9ed8ec8577f512bb00e3978fd67d7a9768327823822fab12"
+  },
+  "id": "e2b4d9d3643cbddf"
+}
