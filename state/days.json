@@ -2120,7 +2120,7 @@
     }
   },
   "2026-11-19": {
-    "revision": 6,
+    "revision": 7,
     "items": {
       "1b2fb900ea10": {
         "type": "fixed",
@@ -2282,6 +2282,13 @@
         "text": "The Switch Stream option now simply shows GOTV or LIVE.",
         "status": "published",
         "source": "release:d8c4f79487437b76"
+      },
+      "2c2147d8a0c1": {
+        "type": "fixed",
+        "area": "Matchmaking",
+        "text": "Play loads your regions again, so you can join the queue.",
+        "status": "published",
+        "source": "release:023131f67401d870"
       }
     }
   }

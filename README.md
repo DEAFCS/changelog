@@ -35,6 +35,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Matches:** Closing the demo viewer while a clip is rendering no longer stops you from making new clips.
 - **Matches:** A demo replay no longer stops when your connection drops or reconnects.
 - **Profiles:** Your website language is saved to your account and comes back when you sign in on another device.
+- **Matchmaking:** Play loads your regions again, so you can join the queue.
 
 ## Patch Notes | November 18, 2026
 
