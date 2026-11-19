@@ -2120,7 +2120,7 @@
     }
   },
   "2026-11-19": {
-    "revision": 1,
+    "revision": 2,
     "items": {
       "1b2fb900ea10": {
         "type": "fixed",
@@ -2128,6 +2128,34 @@
         "text": "a DEAFCS broadcast on Twitch shows its real Twitch viewer count instead of 0.",
         "status": "published",
         "source": "release:cb771309a0e748f9"
+      },
+      "18d0a6111364": {
+        "type": "new",
+        "area": "Watch",
+        "text": "the official DEAFCS Twitch channel shows on the Watch page whenever it is live.",
+        "status": "published",
+        "source": "release:4268c396b8f7eb7b"
+      },
+      "77197b46ffca": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "the broadcast now plays on its own Watch page, opened with the orange Watch Broadcast button in the match bar.",
+        "status": "published",
+        "source": "release:4268c396b8f7eb7b"
+      },
+      "14fedd8a38b4": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "the orange Watch Broadcast button opens the match broadcast on Twitch in a new tab.",
+        "status": "published",
+        "source": "release:4268c396b8f7eb7b"
+      },
+      "d604ca4afa64": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "Watch on match lists opens the stream on Twitch, YouTube or Kick in a new tab.",
+        "status": "published",
+        "source": "release:4268c396b8f7eb7b"
       }
     }
   }

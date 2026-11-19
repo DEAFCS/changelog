@@ -3,12 +3,30 @@
   "days": [
     {
       "date": "2026-11-19",
-      "revision": 1,
+      "revision": 2,
       "title": "Patch Notes | November 19, 2026",
       "summary": "",
       "sections": {
-        "new": [],
-        "improved": [],
+        "new": [
+          {
+            "area": "Watch",
+            "text": "the official DEAFCS Twitch channel shows on the Watch page whenever it is live."
+          }
+        ],
+        "improved": [
+          {
+            "area": "Matches",
+            "text": "the broadcast now plays on its own Watch page, opened with the orange Watch Broadcast button in the match bar."
+          },
+          {
+            "area": "Matches",
+            "text": "the orange Watch Broadcast button opens the match broadcast on Twitch in a new tab."
+          },
+          {
+            "area": "Matches",
+            "text": "Watch on match lists opens the stream on Twitch, YouTube or Kick in a new tab."
+          }
+        ],
         "fixed": [
           {
             "area": "Watch",
