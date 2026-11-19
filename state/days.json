@@ -2120,7 +2120,7 @@
     }
   },
   "2026-11-19": {
-    "revision": 3,
+    "revision": 4,
     "items": {
       "1b2fb900ea10": {
         "type": "fixed",
@@ -2205,6 +2205,62 @@
         "text": "Clips show your uploaded avatar instead of a broken image.",
         "status": "published",
         "source": "release:e2b4d9d3643cbddf"
+      },
+      "a5c4c1294f91": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "The 3D replay loads faster and shows props, cars and shadows more accurately.",
+        "status": "published",
+        "source": "release:22d9e55c8d2b5893"
+      },
+      "a5aa5b2a08b0": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "The 2D/3D replay no longer flickers when a panel opens above it.",
+        "status": "published",
+        "source": "release:22d9e55c8d2b5893"
+      },
+      "2fd03c1e356a": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "The replay clock turns red with a bomb icon after the plant.",
+        "status": "published",
+        "source": "release:22d9e55c8d2b5893"
+      },
+      "5abfddd08587": {
+        "type": "fixed",
+        "area": "Settings",
+        "text": "The Reparse All Demos warning describes how reparsing runs correctly.",
+        "status": "published",
+        "source": "release:22d9e55c8d2b5893"
+      },
+      "51c9e924bd1a": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "A demo replay in a tab left in the background for 5 minutes stops and offers Watch again, and a replay opened in a background tab starts when you look at it.",
+        "status": "published",
+        "source": "release:22d9e55c8d2b5893"
+      },
+      "8d0c8e6f5272": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "A match that ends early by forfeit or surrender keeps its demo.",
+        "status": "published",
+        "source": "release:22d9e55c8d2b5893"
+      },
+      "33d49bd558a6": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "Closing the demo viewer while a clip is rendering no longer stops you from making new clips.",
+        "status": "published",
+        "source": "release:22d9e55c8d2b5893"
+      },
+      "38caaffa5cb5": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "A demo replay no longer stops when your connection drops or reconnects.",
+        "status": "published",
+        "source": "release:22d9e55c8d2b5893"
       }
     }
   }

@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-19",
-      "revision": 3,
+      "revision": 4,
       "title": "Patch Notes | November 19, 2026",
       "summary": "",
       "sections": {
@@ -37,6 +37,18 @@
           {
             "area": "Profiles",
             "text": "Uploading a custom avatar now needs a verified account, and photo location data is removed from uploads."
+          },
+          {
+            "area": "Matches",
+            "text": "The 3D replay loads faster and shows props, cars and shadows more accurately."
+          },
+          {
+            "area": "Matches",
+            "text": "The replay clock turns red with a bomb icon after the plant."
+          },
+          {
+            "area": "Matches",
+            "text": "A demo replay in a tab left in the background for 5 minutes stops and offers Watch again, and a replay opened in a background tab starts when you look at it."
           }
         ],
         "fixed": [
@@ -59,6 +71,26 @@
           {
             "area": "Highlights",
             "text": "Clips show your uploaded avatar instead of a broken image."
+          },
+          {
+            "area": "Matches",
+            "text": "The 2D/3D replay no longer flickers when a panel opens above it."
+          },
+          {
+            "area": "Settings",
+            "text": "The Reparse All Demos warning describes how reparsing runs correctly."
+          },
+          {
+            "area": "Matches",
+            "text": "A match that ends early by forfeit or surrender keeps its demo."
+          },
+          {
+            "area": "Matches",
+            "text": "Closing the demo viewer while a clip is rendering no longer stops you from making new clips."
+          },
+          {
+            "area": "Matches",
+            "text": "A demo replay no longer stops when your connection drops or reconnects."
           }
         ]
       }

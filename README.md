@@ -16,6 +16,9 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Matches:** the orange Watch Broadcast button opens the match broadcast on Twitch in a new tab.
 - **Matches:** Watch on match lists opens the stream on Twitch, YouTube or Kick in a new tab.
 - **Profiles:** Uploading a custom avatar now needs a verified account, and photo location data is removed from uploads.
+- **Matches:** The 3D replay loads faster and shows props, cars and shadows more accurately.
+- **Matches:** The replay clock turns red with a bomb icon after the plant.
+- **Matches:** A demo replay in a tab left in the background for 5 minutes stops and offers Watch again, and a replay opened in a background tab starts when you look at it.
 
 ### Fixed
 
@@ -24,6 +27,11 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Matchmaking:** The queue skips regions whose servers are offline and tells you when all of them are.
 - **Matchmaking:** A match still waiting for a server after 30 minutes is canceled, with no penalty for anyone.
 - **Highlights:** Clips show your uploaded avatar instead of a broken image.
+- **Matches:** The 2D/3D replay no longer flickers when a panel opens above it.
+- **Settings:** The Reparse All Demos warning describes how reparsing runs correctly.
+- **Matches:** A match that ends early by forfeit or surrender keeps its demo.
+- **Matches:** Closing the demo viewer while a clip is rendering no longer stops you from making new clips.
+- **Matches:** A demo replay no longer stops when your connection drops or reconnects.
 
 ## Patch Notes | November 18, 2026
 
