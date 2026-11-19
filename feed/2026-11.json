@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-19",
-      "revision": 2,
+      "revision": 3,
       "title": "Patch Notes | November 19, 2026",
       "summary": "",
       "sections": {
@@ -11,6 +11,14 @@
           {
             "area": "Watch",
             "text": "the official DEAFCS Twitch channel shows on the Watch page whenever it is live."
+          },
+          {
+            "area": "Matches",
+            "text": "Organizers can change a map that has not started yet, from the map card or Fix a Problem."
+          },
+          {
+            "area": "Profiles",
+            "text": "Administrators can remove an uploaded avatar that breaks the rules."
           }
         ],
         "improved": [
@@ -25,12 +33,32 @@
           {
             "area": "Matches",
             "text": "Watch on match lists opens the stream on Twitch, YouTube or Kick in a new tab."
+          },
+          {
+            "area": "Profiles",
+            "text": "Uploading a custom avatar now needs a verified account, and photo location data is removed from uploads."
           }
         ],
         "fixed": [
           {
             "area": "Watch",
             "text": "a DEAFCS broadcast on Twitch shows its real Twitch viewer count instead of 0."
+          },
+          {
+            "area": "Matches",
+            "text": "Schedule Match is only shown to people who can schedule matches."
+          },
+          {
+            "area": "Matchmaking",
+            "text": "The queue skips regions whose servers are offline and tells you when all of them are."
+          },
+          {
+            "area": "Matchmaking",
+            "text": "A match still waiting for a server after 30 minutes is canceled, with no penalty for anyone."
+          },
+          {
+            "area": "Highlights",
+            "text": "Clips show your uploaded avatar instead of a broken image."
           }
         ]
       }

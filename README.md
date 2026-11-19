@@ -7,16 +7,23 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 ### New
 
 - **Watch:** the official DEAFCS Twitch channel shows on the Watch page whenever it is live.
+- **Matches:** Organizers can change a map that has not started yet, from the map card or Fix a Problem.
+- **Profiles:** Administrators can remove an uploaded avatar that breaks the rules.
 
 ### Improved
 
 - **Matches:** the broadcast now plays on its own Watch page, opened with the orange Watch Broadcast button in the match bar.
 - **Matches:** the orange Watch Broadcast button opens the match broadcast on Twitch in a new tab.
 - **Matches:** Watch on match lists opens the stream on Twitch, YouTube or Kick in a new tab.
+- **Profiles:** Uploading a custom avatar now needs a verified account, and photo location data is removed from uploads.
 
 ### Fixed
 
 - **Watch:** a DEAFCS broadcast on Twitch shows its real Twitch viewer count instead of 0.
+- **Matches:** Schedule Match is only shown to people who can schedule matches.
+- **Matchmaking:** The queue skips regions whose servers are offline and tells you when all of them are.
+- **Matchmaking:** A match still waiting for a server after 30 minutes is canceled, with no penalty for anyone.
+- **Highlights:** Clips show your uploaded avatar instead of a broken image.
 
 ## Patch Notes | November 18, 2026
 
