@@ -2118,5 +2118,17 @@
         "source": "release:affa134e8a45519d"
       }
     }
+  },
+  "2026-11-19": {
+    "revision": 1,
+    "items": {
+      "1b2fb900ea10": {
+        "type": "fixed",
+        "area": "Watch",
+        "text": "a DEAFCS broadcast on Twitch shows its real Twitch viewer count instead of 0.",
+        "status": "published",
+        "source": "release:cb771309a0e748f9"
+      }
+    }
   }
 }

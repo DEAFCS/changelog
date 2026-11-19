@@ -2,6 +2,22 @@
   "month": "2026-11",
   "days": [
     {
+      "date": "2026-11-19",
+      "revision": 1,
+      "title": "Patch Notes | November 19, 2026",
+      "summary": "",
+      "sections": {
+        "new": [],
+        "improved": [],
+        "fixed": [
+          {
+            "area": "Watch",
+            "text": "a DEAFCS broadcast on Twitch shows its real Twitch viewer count instead of 0."
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-18",
       "revision": 5,
       "title": "Patch Notes | November 18, 2026",

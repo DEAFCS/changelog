@@ -2,6 +2,12 @@
 
 DEAFCS patch notes: new features, improvements and fixes, newest first. They also appear on the DEAFCS Changelog page (Info, then Changelog).
 
+## Patch Notes | November 19, 2026
+
+### Fixed
+
+- **Watch:** a DEAFCS broadcast on Twitch shows its real Twitch viewer count instead of 0.
+
 ## Patch Notes | November 18, 2026
 
 ### New
@@ -345,21 +351,5 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Matches:** The match page shows the upper bracket team's Grand Final map advantage.
 - **Tournaments:** The bracket and match lists show a Grand Final's full series score, including the upper bracket advantage.
 - **Matches:** Setting a map winner in a Grand Final counts the upper bracket team's map advantage.
-
-## Patch Notes | November 5, 2026
-
-### New
-
-- **ELO:** Competitive ELO now depends mostly on the result and the strength of both teams.
-- **ELO:** Your match rating counts for up to 10% of your Competitive ELO change.
-
-### Improved
-
-- **ELO:** Competitive gains and losses get smaller above 10,000 ELO, about ±50 at 20,000.
-- **ELO:** Competitive ELO can't drop below 1,000.
-- **Matchmaking:** Leaving a Competitive, Wingman or Duel match now gives 50% of the gain if your team wins, or twice the loss if your team loses.
-- **Matchmaking:** In Duel and Wingman, wins against the same opponent are worth less after three meetings in 7 days. Losses aren't affected.
-- **ELO:** The ELO popup explains leaver and repeat opponent adjustments.
-- **ELO:** Your current ELO and past matches stay as they are. The new rules apply to matches that start from now on.
 
 Older days are in [entries](entries).
