@@ -20,6 +20,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Matches:** The replay clock turns red with a bomb icon after the plant.
 - **Matches:** A demo replay in a tab left in the background for 5 minutes stops and offers Watch again, and a replay opened in a background tab starts when you look at it.
 - **General:** Russian and Ukrainian now cover matchmaking, matches, tournaments, verification, Career, rules and settings, with fewer English words left.
+- **Matches:** The Switch Stream option now simply shows GOTV or LIVE.
 
 ### Fixed
 

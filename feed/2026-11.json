@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-19",
-      "revision": 5,
+      "revision": 6,
       "title": "Patch Notes | November 19, 2026",
       "summary": "",
       "sections": {
@@ -53,6 +53,10 @@
           {
             "area": "General",
             "text": "Russian and Ukrainian now cover matchmaking, matches, tournaments, verification, Career, rules and settings, with fewer English words left."
+          },
+          {
+            "area": "Matches",
+            "text": "The Switch Stream option now simply shows GOTV or LIVE."
           }
         ],
         "fixed": [

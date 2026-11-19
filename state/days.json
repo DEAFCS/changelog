@@ -2120,7 +2120,7 @@
     }
   },
   "2026-11-19": {
-    "revision": 5,
+    "revision": 6,
     "items": {
       "1b2fb900ea10": {
         "type": "fixed",
@@ -2275,6 +2275,13 @@
         "text": "Russian and Ukrainian now cover matchmaking, matches, tournaments, verification, Career, rules and settings, with fewer English words left.",
         "status": "published",
         "source": "release:e7a4c7feeb727a44"
+      },
+      "96fd471d2f75": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "The Switch Stream option now simply shows GOTV or LIVE.",
+        "status": "published",
+        "source": "release:d8c4f79487437b76"
       }
     }
   }
