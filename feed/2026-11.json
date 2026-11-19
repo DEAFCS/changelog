@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-19",
-      "revision": 7,
+      "revision": 8,
       "title": "Patch Notes | November 19, 2026",
       "summary": "",
       "sections": {
@@ -57,6 +57,10 @@
           {
             "area": "Matches",
             "text": "The Switch Stream option now simply shows GOTV or LIVE."
+          },
+          {
+            "area": "Matches",
+            "text": "The match rewards card shows your rating change, XP breakdown and Stacks."
           }
         ],
         "fixed": [
@@ -107,6 +111,10 @@
           {
             "area": "Matchmaking",
             "text": "Play loads your regions again, so you can join the queue."
+          },
+          {
+            "area": "Matches",
+            "text": "When staff remove a mistaken abandon, that match's Career XP comes back."
           }
         ]
       }

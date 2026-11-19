@@ -2120,7 +2120,7 @@
     }
   },
   "2026-11-19": {
-    "revision": 7,
+    "revision": 8,
     "items": {
       "1b2fb900ea10": {
         "type": "fixed",
@@ -2289,6 +2289,20 @@
         "text": "Play loads your regions again, so you can join the queue.",
         "status": "published",
         "source": "release:023131f67401d870"
+      },
+      "636dcb4271e2": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "The match rewards card shows your rating change, XP breakdown and Stacks.",
+        "status": "published",
+        "source": "release:12b2e71b9ef3ce6c"
+      },
+      "8327b772d4c0": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "When staff remove a mistaken abandon, that match's Career XP comes back.",
+        "status": "published",
+        "source": "release:12b2e71b9ef3ce6c"
       }
     }
   }
