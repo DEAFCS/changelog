@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-19",
-      "revision": 4,
+      "revision": 5,
       "title": "Patch Notes | November 19, 2026",
       "summary": "",
       "sections": {
@@ -49,6 +49,10 @@
           {
             "area": "Matches",
             "text": "A demo replay in a tab left in the background for 5 minutes stops and offers Watch again, and a replay opened in a background tab starts when you look at it."
+          },
+          {
+            "area": "General",
+            "text": "Russian and Ukrainian now cover matchmaking, matches, tournaments, verification, Career, rules and settings, with fewer English words left."
           }
         ],
         "fixed": [
@@ -91,6 +95,10 @@
           {
             "area": "Matches",
             "text": "A demo replay no longer stops when your connection drops or reconnects."
+          },
+          {
+            "area": "Profiles",
+            "text": "Your website language is saved to your account and comes back when you sign in on another device."
           }
         ]
       }

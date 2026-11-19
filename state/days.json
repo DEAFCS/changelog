@@ -2120,7 +2120,7 @@
     }
   },
   "2026-11-19": {
-    "revision": 4,
+    "revision": 5,
     "items": {
       "1b2fb900ea10": {
         "type": "fixed",
@@ -2261,6 +2261,20 @@
         "text": "A demo replay no longer stops when your connection drops or reconnects.",
         "status": "published",
         "source": "release:22d9e55c8d2b5893"
+      },
+      "ccfb5ebe7aa3": {
+        "type": "fixed",
+        "area": "Profiles",
+        "text": "Your website language is saved to your account and comes back when you sign in on another device.",
+        "status": "published",
+        "source": "release:e7a4c7feeb727a44"
+      },
+      "be9da4024bd1": {
+        "type": "improved",
+        "area": "General",
+        "text": "Russian and Ukrainian now cover matchmaking, matches, tournaments, verification, Career, rules and settings, with fewer English words left.",
+        "status": "published",
+        "source": "release:e7a4c7feeb727a44"
       }
     }
   }

@@ -19,6 +19,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Matches:** The 3D replay loads faster and shows props, cars and shadows more accurately.
 - **Matches:** The replay clock turns red with a bomb icon after the plant.
 - **Matches:** A demo replay in a tab left in the background for 5 minutes stops and offers Watch again, and a replay opened in a background tab starts when you look at it.
+- **General:** Russian and Ukrainian now cover matchmaking, matches, tournaments, verification, Career, rules and settings, with fewer English words left.
 
 ### Fixed
 
@@ -32,6 +33,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Matches:** A match that ends early by forfeit or surrender keeps its demo.
 - **Matches:** Closing the demo viewer while a clip is rendering no longer stops you from making new clips.
 - **Matches:** A demo replay no longer stops when your connection drops or reconnects.
+- **Profiles:** Your website language is saved to your account and comes back when you sign in on another device.
 
 ## Patch Notes | November 18, 2026
 
