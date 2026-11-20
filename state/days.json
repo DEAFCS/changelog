@@ -2321,7 +2321,7 @@
     }
   },
   "2026-11-20": {
-    "revision": 2,
+    "revision": 3,
     "items": {
       "808d5cf87eb6": {
         "type": "new",
@@ -2350,6 +2350,20 @@
         "text": "A map whose server restarted mid-game keeps the stats of its most complete demo.",
         "status": "published",
         "source": "release:da9d09b23cab5b44"
+      },
+      "51148cbe9664": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "A map whose server restarted mid-game keeps the aim, utility and accuracy stats of all its demo recordings, on the right rounds.",
+        "status": "published",
+        "source": "release:13c91a61ca4fe80c"
+      },
+      "83d82d1cbf00": {
+        "type": "improved",
+        "area": "Chat",
+        "text": "Photos and videos you send no longer carry your location or camera details.",
+        "status": "published",
+        "source": "release:13c91a61ca4fe80c"
       }
     }
   }

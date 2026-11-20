@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-20",
-      "revision": 2,
+      "revision": 3,
       "title": "Patch Notes | November 20, 2026",
       "summary": "",
       "sections": {
@@ -17,6 +17,10 @@
           {
             "area": "Matches",
             "text": "a Community GOTV broadcast now ends by itself 5 minutes after its match's stats are ready, unless it is moved to another match."
+          },
+          {
+            "area": "Chat",
+            "text": "Photos and videos you send no longer carry your location or camera details."
           }
         ],
         "fixed": [
@@ -27,6 +31,10 @@
           {
             "area": "Matches",
             "text": "A map whose server restarted mid-game keeps the stats of its most complete demo."
+          },
+          {
+            "area": "Matches",
+            "text": "A map whose server restarted mid-game keeps the aim, utility and accuracy stats of all its demo recordings, on the right rounds."
           }
         ]
       }
