@@ -2321,7 +2321,7 @@
     }
   },
   "2026-11-20": {
-    "revision": 3,
+    "revision": 4,
     "items": {
       "808d5cf87eb6": {
         "type": "new",
@@ -2364,6 +2364,13 @@
         "text": "Photos and videos you send no longer carry your location or camera details.",
         "status": "published",
         "source": "release:13c91a61ca4fe80c"
+      },
+      "197963f28d7d": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "Unused utility on death now shows a dash instead of a misleading $0 when there is no data.",
+        "status": "published",
+        "source": "release:d2fd0b7002671035"
       }
     }
   }

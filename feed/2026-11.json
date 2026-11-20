@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-20",
-      "revision": 3,
+      "revision": 4,
       "title": "Patch Notes | November 20, 2026",
       "summary": "",
       "sections": {
@@ -35,6 +35,10 @@
           {
             "area": "Matches",
             "text": "A map whose server restarted mid-game keeps the aim, utility and accuracy stats of all its demo recordings, on the right rounds."
+          },
+          {
+            "area": "Matches",
+            "text": "Unused utility on death now shows a dash instead of a misleading $0 when there is no data."
           }
         ]
       }
