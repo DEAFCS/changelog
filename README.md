@@ -12,6 +12,11 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 
 - **Matches:** a Community GOTV broadcast now ends by itself 5 minutes after its match's stats are ready, unless it is moved to another match.
 
+### Fixed
+
+- **Matches:** Verified Users now see Start Stream and the stream's loading and ready status beside Spectate and GOTV.
+- **Matches:** A map whose server restarted mid-game keeps the stats of its most complete demo.
+
 ## Patch Notes | November 19, 2026
 
 ### New

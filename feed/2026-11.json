@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-20",
-      "revision": 1,
+      "revision": 2,
       "title": "Patch Notes | November 20, 2026",
       "summary": "",
       "sections": {
@@ -19,7 +19,16 @@
             "text": "a Community GOTV broadcast now ends by itself 5 minutes after its match's stats are ready, unless it is moved to another match."
           }
         ],
-        "fixed": []
+        "fixed": [
+          {
+            "area": "Matches",
+            "text": "Verified Users now see Start Stream and the stream's loading and ready status beside Spectate and GOTV."
+          },
+          {
+            "area": "Matches",
+            "text": "A map whose server restarted mid-game keeps the stats of its most complete demo."
+          }
+        ]
       }
     },
     {

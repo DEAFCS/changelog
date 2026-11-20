@@ -2321,7 +2321,7 @@
     }
   },
   "2026-11-20": {
-    "revision": 1,
+    "revision": 2,
     "items": {
       "808d5cf87eb6": {
         "type": "new",
@@ -2336,6 +2336,20 @@
         "text": "a Community GOTV broadcast now ends by itself 5 minutes after its match's stats are ready, unless it is moved to another match.",
         "status": "published",
         "source": "release:5d74e96eb1e176c3"
+      },
+      "05f98b80e26e": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "Verified Users now see Start Stream and the stream's loading and ready status beside Spectate and GOTV.",
+        "status": "published",
+        "source": "release:da9d09b23cab5b44"
+      },
+      "f69783a41bdb": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "A map whose server restarted mid-game keeps the stats of its most complete demo.",
+        "status": "published",
+        "source": "release:da9d09b23cab5b44"
       }
     }
   }
