@@ -2,6 +2,27 @@
   "month": "2026-11",
   "days": [
     {
+      "date": "2026-11-20",
+      "revision": 1,
+      "title": "Patch Notes | November 20, 2026",
+      "summary": "",
+      "sections": {
+        "new": [
+          {
+            "area": "Matches",
+            "text": "Verified Users can start a delayed GOTV broadcast from the match menu and follow its progress next to the Spectate and GOTV buttons."
+          }
+        ],
+        "improved": [
+          {
+            "area": "Matches",
+            "text": "a Community GOTV broadcast now ends by itself 5 minutes after its match's stats are ready, unless it is moved to another match."
+          }
+        ],
+        "fixed": []
+      }
+    },
+    {
       "date": "2026-11-19",
       "revision": 10,
       "title": "Patch Notes | November 19, 2026",

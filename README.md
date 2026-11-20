@@ -2,6 +2,16 @@
 
 DEAFCS patch notes: new features, improvements and fixes, newest first. They also appear on the DEAFCS Changelog page (Info, then Changelog).
 
+## Patch Notes | November 20, 2026
+
+### New
+
+- **Matches:** Verified Users can start a delayed GOTV broadcast from the match menu and follow its progress next to the Spectate and GOTV buttons.
+
+### Improved
+
+- **Matches:** a Community GOTV broadcast now ends by itself 5 minutes after its match's stats are ready, unless it is moved to another match.
+
 ## Patch Notes | November 19, 2026
 
 ### New
@@ -352,37 +362,5 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Utility:** Refreshing the page no longer loses your place in a friend's practice server.
 - **Streams:** Audio stays in sync with the picture on long live streams.
 - **Highlights:** A clip's thumbnail is now saved before the clip is finished, so fewer clips appear without one.
-
-## Patch Notes | November 6, 2026
-
-### New
-
-- **Matchmaking:** DEAFCS Pro is a scheduled solo 5v5 queue with Captain Pick for top-ranked players.
-
-### Improved
-
-- **Tournaments:** Cancelling a tournament or resetting it to Setup now asks for confirmation first.
-- **Matchmaking:** Each mode shows its map pool when you hover or tap its info icon.
-- **Matchmaking:** The Play page shows Competitive, Wingman and Duel in a cleaner layout on every screen size.
-- **Matches:** Maps a Grand Final did not need are muted and marked Not needed.
-- **Tournaments:** Administrators can delete a tournament with rated matches without voiding ELO first.
-- **Tournaments:** Organizers can reset or change a match winner without voiding ELO first.
-
-### Fixed
-
-- **Matches:** Organizers can cancel a match that already has a demo.
-- **Matches:** Canceled matches no longer count toward player statistics or leaderboards.
-- **Matches:** A canceled match keeps its played maps, rounds and stats, even before its demo arrives.
-- **Tournaments:** Changing an earlier result no longer swaps the teams of a canceled match that was already played.
-- **Tournaments:** A tournament can no longer be cancelled or deleted while its matches are being played.
-- **Matches:** A match started again right after a cancel keeps its server.
-- **Matches:** A canceled match that is started again replays the unfinished map from warmup and keeps its finished maps.
-- **Tournaments:** A tournament with played matches can no longer be reset to Setup.
-- **Tournaments:** Organizers can recover an unfinished series without awarding a win, and resetting a match keeps its finished maps.
-- **Tournaments:** Correcting the winner of a final now finishes the tournament again.
-- **Tournaments:** The Grand Final uses its own best-of and map advantage at any bracket size.
-- **Matches:** The match page shows the upper bracket team's Grand Final map advantage.
-- **Tournaments:** The bracket and match lists show a Grand Final's full series score, including the upper bracket advantage.
-- **Matches:** Setting a map winner in a Grand Final counts the upper bracket team's map advantage.
 
 Older days are in [entries](entries).
