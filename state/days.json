@@ -2321,7 +2321,7 @@
     }
   },
   "2026-11-20": {
-    "revision": 6,
+    "revision": 7,
     "items": {
       "808d5cf87eb6": {
         "type": "new",
@@ -2392,6 +2392,13 @@
         "text": "The roster photo viewer stays on the same player when the roster changes.",
         "status": "published",
         "source": "release:47848d093f696746"
+      },
+      "58f2286c7960": {
+        "type": "new",
+        "area": "Matches",
+        "text": "When a match levels you up, the rewards card shows your new level, the Stacks earned and the new Locker items, with Equip.",
+        "status": "published",
+        "source": "release:e0038ab5293a4e26"
       }
     }
   }

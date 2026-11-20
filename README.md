@@ -7,6 +7,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 ### New
 
 - **Matches:** Verified Users can start a delayed GOTV broadcast from the match menu and follow its progress next to the Spectate and GOTV buttons.
+- **Matches:** When a match levels you up, the rewards card shows your new level, the Stacks earned and the new Locker items, with Equip.
 
 ### Improved
 

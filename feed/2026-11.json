@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-20",
-      "revision": 6,
+      "revision": 7,
       "title": "Patch Notes | November 20, 2026",
       "summary": "",
       "sections": {
@@ -11,6 +11,10 @@
           {
             "area": "Matches",
             "text": "Verified Users can start a delayed GOTV broadcast from the match menu and follow its progress next to the Spectate and GOTV buttons."
+          },
+          {
+            "area": "Matches",
+            "text": "When a match levels you up, the rewards card shows your new level, the Stacks earned and the new Locker items, with Equip."
           }
         ],
         "improved": [
