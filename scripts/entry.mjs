@@ -113,10 +113,25 @@ function words(text) {
   );
 }
 
+// Website languages (deafcs-web i18n/locales) and the words notes use for them.
+const LANGUAGES = new Set([
+  "arabic", "danish", "german", "english", "spanish", "french", "italian",
+  "japanese", "korean", "polish", "portuguese", "brazilian", "brazil",
+  "russian", "swedish", "turkish", "ukrainian", "chinese",
+]);
+
+// Notes that each name a language the other does not are different notes
+// (Russian and Ukrainian vs Spanish and Brazilian Portuguese, 2026-11-19),
+// however alike the rest of the wording is.
+function otherLanguages(left, right) {
+  const only = (from, to) => [...from].some((word) => LANGUAGES.has(word) && !to.has(word));
+  return only(left, right) && only(right, left);
+}
+
 export function similar(a, b) {
   const left = words(`${a.area ?? ""} ${a.text}`);
   const right = words(`${b.area ?? ""} ${b.text}`);
-  if (left.size === 0 || right.size === 0) {
+  if (left.size === 0 || right.size === 0 || otherLanguages(left, right)) {
     return false;
   }
   const shared = [...left].filter((word) => right.has(word)).length;
