@@ -2321,7 +2321,7 @@
     }
   },
   "2026-11-20": {
-    "revision": 4,
+    "revision": 5,
     "items": {
       "808d5cf87eb6": {
         "type": "new",
@@ -2371,6 +2371,13 @@
         "text": "Unused utility on death now shows a dash instead of a misleading $0 when there is no data.",
         "status": "published",
         "source": "release:d2fd0b7002671035"
+      },
+      "49252d0117f5": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "Replay and utility radars use Valve's own map calibration, so positions line up more precisely.",
+        "status": "published",
+        "source": "release:4308454989b4ab4c"
       }
     }
   }

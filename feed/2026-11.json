@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-20",
-      "revision": 4,
+      "revision": 5,
       "title": "Patch Notes | November 20, 2026",
       "summary": "",
       "sections": {
@@ -21,6 +21,10 @@
           {
             "area": "Chat",
             "text": "Photos and videos you send no longer carry your location or camera details."
+          },
+          {
+            "area": "Matches",
+            "text": "Replay and utility radars use Valve's own map calibration, so positions line up more precisely."
           }
         ],
         "fixed": [

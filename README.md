@@ -12,6 +12,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 
 - **Matches:** a Community GOTV broadcast now ends by itself 5 minutes after its match's stats are ready, unless it is moved to another match.
 - **Chat:** Photos and videos you send no longer carry your location or camera details.
+- **Matches:** Replay and utility radars use Valve's own map calibration, so positions line up more precisely.
 
 ### Fixed
 
