@@ -2,6 +2,26 @@
   "month": "2026-11",
   "days": [
     {
+      "date": "2026-11-21",
+      "revision": 1,
+      "title": "Patch Notes | November 21, 2026",
+      "summary": "",
+      "sections": {
+        "new": [],
+        "improved": [
+          {
+            "area": "Matches",
+            "text": "Community GOTV shows a short countdown before a newly started match can be streamed, so broadcasts no longer start with a broken view."
+          },
+          {
+            "area": "Matches",
+            "text": "The Community GOTV control in the server bar is shorter, with details behind an info button."
+          }
+        ],
+        "fixed": []
+      }
+    },
+    {
       "date": "2026-11-20",
       "revision": 7,
       "title": "Patch Notes | November 20, 2026",

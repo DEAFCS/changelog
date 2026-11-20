@@ -2,6 +2,13 @@
 
 DEAFCS patch notes: new features, improvements and fixes, newest first. They also appear on the DEAFCS Changelog page (Info, then Changelog).
 
+## Patch Notes | November 21, 2026
+
+### Improved
+
+- **Matches:** Community GOTV shows a short countdown before a newly started match can be streamed, so broadcasts no longer start with a broken view.
+- **Matches:** The Community GOTV control in the server bar is shorter, with details behind an info button.
+
 ## Patch Notes | November 20, 2026
 
 ### New
@@ -351,28 +358,5 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Tournaments:** The Teams tab count now matches the teams shown after check-in, and seeds no longer appear twice.
 - **Profiles:** Open Twitch Widget goes to the new widget address.
 - **Site:** Opening the left sidebar no longer cuts off labels or pushes buttons outside it.
-
-## Patch Notes | November 7, 2026
-
-### New
-
-- **Profiles:** Season awards show their season and game mode.
-- **Awards:** You get a notification when you receive a season medal.
-- **Utility:** Lineups you save on your practice server now appear right away in a This Server group at the top of Mine, numbered in save order.
-- **Matches:** A Utility tab shows every grenade on CT and T maps, checked against the common lineups, with Watch and Save.
-- **Utility:** Lineups with saved bots show a badge on the map, and each bot's spot when you open the lineup.
-
-### Improved
-
-- **Leaderboards:** The Awards board now ranks players by Gold, then Silver, Bronze, MVP and Special.
-- **Leaderboards:** Stat tables can now be sorted with the keyboard and announce their sort order to screen readers.
-- **Streams:** Live streams stay closer to real time when they fall behind.
-
-### Fixed
-
-- **Leaderboards:** A player's Awards rank now matches their place on the board.
-- **Utility:** Refreshing the page no longer loses your place in a friend's practice server.
-- **Streams:** Audio stays in sync with the picture on long live streams.
-- **Highlights:** A clip's thumbnail is now saved before the clip is finished, so fewer clips appear without one.
 
 Older days are in [entries](entries).

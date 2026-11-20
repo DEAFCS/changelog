@@ -2401,5 +2401,24 @@
         "source": "release:e0038ab5293a4e26"
       }
     }
+  },
+  "2026-11-21": {
+    "revision": 1,
+    "items": {
+      "c257eeff9c2b": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "Community GOTV shows a short countdown before a newly started match can be streamed, so broadcasts no longer start with a broken view.",
+        "status": "published",
+        "source": "release:659c056e61f251a0"
+      },
+      "d9b4446aea7e": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "The Community GOTV control in the server bar is shorter, with details behind an info button.",
+        "status": "published",
+        "source": "release:659c056e61f251a0"
+      }
+    }
   }
 }
