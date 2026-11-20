@@ -2120,7 +2120,7 @@
     }
   },
   "2026-11-19": {
-    "revision": 9,
+    "revision": 10,
     "items": {
       "1b2fb900ea10": {
         "type": "fixed",
@@ -2310,6 +2310,13 @@
         "text": "Kingmaker, Major Ready and Grand Marshal can now be earned.",
         "status": "published",
         "source": "release:a49fcf8a23f33865"
+      },
+      "3a20607588f2": {
+        "type": "improved",
+        "area": "General",
+        "text": "Spanish and Brazilian Portuguese now cover matchmaking, matches, tournaments, verification, Career, rules and settings, with fewer English words left.",
+        "status": "published",
+        "source": "manual"
       }
     }
   }
