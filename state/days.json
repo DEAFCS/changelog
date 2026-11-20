@@ -2321,7 +2321,7 @@
     }
   },
   "2026-11-20": {
-    "revision": 5,
+    "revision": 6,
     "items": {
       "808d5cf87eb6": {
         "type": "new",
@@ -2378,6 +2378,20 @@
         "text": "Replay and utility radars use Valve's own map calibration, so positions line up more precisely.",
         "status": "published",
         "source": "release:4308454989b4ab4c"
+      },
+      "d47db740c9db": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "Map Analysis now uses the new map radars, so kill and death markers line up with the 2D replay (Ancient fixed).",
+        "status": "published",
+        "source": "release:47848d093f696746"
+      },
+      "0992c78c2acd": {
+        "type": "fixed",
+        "area": "Teams",
+        "text": "The roster photo viewer stays on the same player when the roster changes.",
+        "status": "published",
+        "source": "release:47848d093f696746"
       }
     }
   }

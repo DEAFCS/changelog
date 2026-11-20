@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-20",
-      "revision": 5,
+      "revision": 6,
       "title": "Patch Notes | November 20, 2026",
       "summary": "",
       "sections": {
@@ -43,6 +43,14 @@
           {
             "area": "Matches",
             "text": "Unused utility on death now shows a dash instead of a misleading $0 when there is no data."
+          },
+          {
+            "area": "Matches",
+            "text": "Map Analysis now uses the new map radars, so kill and death markers line up with the 2D replay (Ancient fixed)."
+          },
+          {
+            "area": "Teams",
+            "text": "The roster photo viewer stays on the same player when the roster changes."
           }
         ]
       }

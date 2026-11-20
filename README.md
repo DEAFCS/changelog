@@ -20,6 +20,8 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Matches:** A map whose server restarted mid-game keeps the stats of its most complete demo.
 - **Matches:** A map whose server restarted mid-game keeps the aim, utility and accuracy stats of all its demo recordings, on the right rounds.
 - **Matches:** Unused utility on death now shows a dash instead of a misleading $0 when there is no data.
+- **Matches:** Map Analysis now uses the new map radars, so kill and death markers line up with the 2D replay (Ancient fixed).
+- **Teams:** The roster photo viewer stays on the same player when the roster changes.
 
 ## Patch Notes | November 19, 2026
 
