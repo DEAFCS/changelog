@@ -3,11 +3,24 @@
   "days": [
     {
       "date": "2026-11-21",
-      "revision": 1,
+      "revision": 2,
       "title": "Patch Notes | November 21, 2026",
       "summary": "",
       "sections": {
-        "new": [],
+        "new": [
+          {
+            "area": "Profiles",
+            "text": "Your awards and badges now share one Trophy Case, and you can arrange them in the order you like."
+          },
+          {
+            "area": "Profiles",
+            "text": "Your awards and badges now share one Trophy Case, and you can choose the three you feature."
+          },
+          {
+            "area": "Profiles",
+            "text": "Every profile shows its Career Level and XP progress, and you can open your own Career History from the XP bar."
+          }
+        ],
         "improved": [
           {
             "area": "Matches",
@@ -16,6 +29,10 @@
           {
             "area": "Matches",
             "text": "The Community GOTV control in the server bar is shorter, with details behind an info button."
+          },
+          {
+            "area": "Profiles",
+            "text": "Performance now shows Maps, Arsenal, Opening Duels, Clutches and Consistency as cards that open their full details."
           }
         ],
         "fixed": []

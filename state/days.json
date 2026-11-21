@@ -2403,7 +2403,7 @@
     }
   },
   "2026-11-21": {
-    "revision": 1,
+    "revision": 2,
     "items": {
       "c257eeff9c2b": {
         "type": "improved",
@@ -2418,6 +2418,34 @@
         "text": "The Community GOTV control in the server bar is shorter, with details behind an info button.",
         "status": "published",
         "source": "release:659c056e61f251a0"
+      },
+      "dc39748be22d": {
+        "type": "new",
+        "area": "Profiles",
+        "text": "Your awards and badges now share one Trophy Case, and you can arrange them in the order you like.",
+        "status": "published",
+        "source": "release:cde1fdc1b764ae4b"
+      },
+      "e53ac2538f22": {
+        "type": "new",
+        "area": "Profiles",
+        "text": "Your awards and badges now share one Trophy Case, and you can choose the three you feature.",
+        "status": "published",
+        "source": "release:cde1fdc1b764ae4b"
+      },
+      "a5fb86938a3b": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "Performance now shows Maps, Arsenal, Opening Duels, Clutches and Consistency as cards that open their full details.",
+        "status": "published",
+        "source": "release:cde1fdc1b764ae4b"
+      },
+      "7346256dabb8": {
+        "type": "new",
+        "area": "Profiles",
+        "text": "Every profile shows its Career Level and XP progress, and you can open your own Career History from the XP bar.",
+        "status": "published",
+        "source": "release:cde1fdc1b764ae4b"
       }
     }
   }

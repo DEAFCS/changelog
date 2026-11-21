@@ -4,10 +4,17 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 
 ## Patch Notes | November 21, 2026
 
+### New
+
+- **Profiles:** Your awards and badges now share one Trophy Case, and you can arrange them in the order you like.
+- **Profiles:** Your awards and badges now share one Trophy Case, and you can choose the three you feature.
+- **Profiles:** Every profile shows its Career Level and XP progress, and you can open your own Career History from the XP bar.
+
 ### Improved
 
 - **Matches:** Community GOTV shows a short countdown before a newly started match can be streamed, so broadcasts no longer start with a broken view.
 - **Matches:** The Community GOTV control in the server bar is shorter, with details behind an info button.
+- **Profiles:** Performance now shows Maps, Arsenal, Opening Duels, Clutches and Consistency as cards that open their full details.
 
 ## Patch Notes | November 20, 2026
 
