@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-21",
-      "revision": 2,
+      "revision": 3,
       "title": "Patch Notes | November 21, 2026",
       "summary": "",
       "sections": {
@@ -33,9 +33,26 @@
           {
             "area": "Profiles",
             "text": "Performance now shows Maps, Arsenal, Opening Duels, Clutches and Consistency as cards that open their full details."
+          },
+          {
+            "area": "Profiles",
+            "text": "Performance matches the new 5Stack layout, with KAST and HS% tier bars and stat tiles that open a match graph."
+          },
+          {
+            "area": "Profiles",
+            "text": "Maps, Opening Duels, Clutches and Arsenal open as compact views inside Performance."
           }
         ],
-        "fixed": []
+        "fixed": [
+          {
+            "area": "Profiles",
+            "text": "Clutch win rates count eliminated-opponent clutch wins; saved clutches remain attempts."
+          },
+          {
+            "area": "Profiles",
+            "text": "The empty 1v1 clutch row is gone from Performance."
+          }
+        ]
       }
     },
     {

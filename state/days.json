@@ -2403,7 +2403,7 @@
     }
   },
   "2026-11-21": {
-    "revision": 2,
+    "revision": 3,
     "items": {
       "c257eeff9c2b": {
         "type": "improved",
@@ -2446,6 +2446,34 @@
         "text": "Every profile shows its Career Level and XP progress, and you can open your own Career History from the XP bar.",
         "status": "published",
         "source": "release:cde1fdc1b764ae4b"
+      },
+      "9a201d88569d": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "Performance matches the new 5Stack layout, with KAST and HS% tier bars and stat tiles that open a match graph.",
+        "status": "published",
+        "source": "release:72508cf9ce690e3a"
+      },
+      "e00284eac735": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "Maps, Opening Duels, Clutches and Arsenal open as compact views inside Performance.",
+        "status": "published",
+        "source": "release:72508cf9ce690e3a"
+      },
+      "997add3f9a21": {
+        "type": "fixed",
+        "area": "Profiles",
+        "text": "Clutch win rates count eliminated-opponent clutch wins; saved clutches remain attempts.",
+        "status": "published",
+        "source": "release:72508cf9ce690e3a"
+      },
+      "42ea09dd2066": {
+        "type": "fixed",
+        "area": "Profiles",
+        "text": "The empty 1v1 clutch row is gone from Performance.",
+        "status": "published",
+        "source": "release:72508cf9ce690e3a"
       }
     }
   }
