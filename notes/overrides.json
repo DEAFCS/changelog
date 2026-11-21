@@ -16,7 +16,7 @@
     "5894f03ba74a6da29dd2ff355589bfb09f7e2875": "skip",
     "862e7b35a3918b95b655bd55b8dd6420e4da9e77": [
       "Changelog-Improved: Profiles: Performance matches the new 5Stack layout, with KAST and HS% tier bars and stat tiles that open a match graph.",
-      "Changelog-Improved: Profiles: Maps, Opening Duels, Clutches and Arsenal open in place without the page jumping."
+      "Changelog-Improved: Profiles: Maps, Opening Duels, Clutches and Arsenal open as compact views inside Performance."
     ]
   }
 }
