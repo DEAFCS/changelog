@@ -17,6 +17,8 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Profiles:** Performance now shows Maps, Arsenal, Opening Duels, Clutches and Consistency as cards that open their full details.
 - **Profiles:** Performance matches the new 5Stack layout, with KAST and HS% tier bars and stat tiles that open a match graph.
 - **Profiles:** Maps, Opening Duels, Clutches and Arsenal open as compact views inside Performance.
+- **Profiles:** Share, Message, Friend and Sanctions now sit in the bottom row of the profile header, next to the Level and XP.
+- **Profiles:** A trophy or badge shown in one of your three showcase boxes is no longer repeated in the small icons.
 
 ### Fixed
 

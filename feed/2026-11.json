@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-21",
-      "revision": 3,
+      "revision": 4,
       "title": "Patch Notes | November 21, 2026",
       "summary": "",
       "sections": {
@@ -41,6 +41,14 @@
           {
             "area": "Profiles",
             "text": "Maps, Opening Duels, Clutches and Arsenal open as compact views inside Performance."
+          },
+          {
+            "area": "Profiles",
+            "text": "Share, Message, Friend and Sanctions now sit in the bottom row of the profile header, next to the Level and XP."
+          },
+          {
+            "area": "Profiles",
+            "text": "A trophy or badge shown in one of your three showcase boxes is no longer repeated in the small icons."
           }
         ],
         "fixed": [
