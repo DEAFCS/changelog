@@ -2,6 +2,27 @@
   "month": "2026-11",
   "days": [
     {
+      "date": "2026-11-22",
+      "revision": 1,
+      "title": "Patch Notes | November 22, 2026",
+      "summary": "",
+      "sections": {
+        "new": [],
+        "improved": [
+          {
+            "area": "Profiles",
+            "text": "Account Settings now has your Roster Image, with a short description of where it shows."
+          }
+        ],
+        "fixed": [
+          {
+            "area": "Profiles",
+            "text": "Roster Image no longer shows your avatar when you have not uploaded one."
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-21",
       "revision": 5,
       "title": "Patch Notes | November 21, 2026",

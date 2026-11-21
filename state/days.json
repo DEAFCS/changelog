@@ -2511,5 +2511,24 @@
         "source": "release:a621460e004a54c9"
       }
     }
+  },
+  "2026-11-22": {
+    "revision": 1,
+    "items": {
+      "7a248968b05e": {
+        "type": "fixed",
+        "area": "Profiles",
+        "text": "Roster Image no longer shows your avatar when you have not uploaded one.",
+        "status": "published",
+        "source": "release:671cf97ee4423578"
+      },
+      "a138c6414bef": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "Account Settings now has your Roster Image, with a short description of where it shows.",
+        "status": "published",
+        "source": "release:671cf97ee4423578"
+      }
+    }
   }
 }

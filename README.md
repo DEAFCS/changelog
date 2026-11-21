@@ -2,6 +2,16 @@
 
 DEAFCS patch notes: new features, improvements and fixes, newest first. They also appear on the DEAFCS Changelog page (Info, then Changelog).
 
+## Patch Notes | November 22, 2026
+
+### Improved
+
+- **Profiles:** Account Settings now has your Roster Image, with a short description of where it shows.
+
+### Fixed
+
+- **Profiles:** Roster Image no longer shows your avatar when you have not uploaded one.
+
 ## Patch Notes | November 21, 2026
 
 ### New
@@ -323,59 +333,5 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Chat:** returning to a DEAFCS tab left open in the background no longer reloads every chat.
 - **Matches:** the match page no longer jumps down when the map veto appears.
 - **General:** pages no longer jump sideways as they finish loading.
-
-## Patch Notes | November 8, 2026
-
-### New
-
-- **Teams:** Teams can pick a country, shown as a flag beside the team name on team pages, match pages and tournament team lists.
-- **Tournaments:** organizers can choose Random or By ELO seeding and whether check-in needs an admin review.
-- **Tournaments:** Organizers can set Freeze Time next to Round Restart Delay.
-- **Tournaments:** organizers can seed a tournament by team ELO instead of at random.
-- **Tournaments:** organizers choose whether check-in needs an admin review; without it the bracket is drawn automatically from the teams that checked in.
-- **Search:** Global search finds teams as well as players.
-
-### Improved
-
-- **Matches:** Restart Map now warns that recorded rounds will be set aside.
-- **Matches:** Only staff can restore rounds or restart a map from the match page.
-- **Tournaments:** the Teams tab shows each team's seed and, before the draw, its projected seed and first opponent.
-- **Tournaments:** seed numbers stay with teams across the bracket, standings and match page, and hovering a team highlights its route.
-- **Tournaments:** Check-in Review explains when a tournament is held for too few teams and what the organizer can do.
-- **Tournaments:** when several tournaments are live, each gets its own tab on the Tournaments page.
-- **Tournaments:** during check-in the panel shows how many teams have checked in, with a link to the Teams tab.
-- **Tournaments:** deleting a tournament first shows its played matches, demos, clips, rated matches and awards, and asks you to confirm.
-- **Tournaments:** AIM Rules is replaced by the Freeze Time and Round Restart Delay settings.
-- **Tournaments:** a tournament with too few eligible teams after check-in now waits for its organizers instead of being cancelled, and admins are told.
-- **Tournaments:** deleting a tournament first shows its played matches, demos, clips, rated matches and awards, and needs them confirmed.
-- **Tournaments:** The bracket's Fit button now switches between fitting the bracket and 100% zoom.
-- **Tournaments:** The tournament chat no longer shows a webcam room button.
-- **Matchmaking:** DEAFCS Pro starts searching right away, without an extra language popup.
-- **Settings:** Webhook addresses are hidden until you press the eye icon.
-- **Site:** Times older than an hour show the exact date and time, including in notifications.
-- **Matchmaking:** The DEAFCS Pro popup simply says "Only English language".
-- **Site:** Opening and closing the left sidebar is smoother, also with the chat open.
-
-### Fixed
-
-- **Teams:** Only the team owner can hand over a team, and the owner can no longer be removed or demoted by others.
-- **Profiles:** The match filters on player profiles fit on one line on more screen sizes.
-- **Teams:** The Save button in the team editor is fully visible again on every screen size.
-- **Matches:** Restoring a round no longer counts kills and damage from the interrupted round twice.
-- **Tournaments:** stages always play the tournament's map pool, and match type and map pool lock once the bracket is drawn.
-- **Teams:** the Team Owner picker shows the player's flag and name, and Save stays visible in the Team Editor.
-- **Tournaments:** a stage with its own settings now keeps the tournament's camera, auto-cancel and server settings, and a refused save no longer saves half of the tournament settings.
-- **Tournaments:** the Check-in Review page shows its headings and labels instead of raw text keys.
-- **Tournaments:** Check-in Review shows the full date and time each team registered.
-- **Tournaments:** Registration counts on tournament cards now show the players actually on each team.
-- **Tournaments:** a tournament's map pool now always reaches its stages and matches, and it can't change once the bracket is drawn.
-- **Tournaments:** an expired tournament match is no longer always awarded to the first team; it goes against the team that didn't show up, or to an admin.
-- **Tournaments:** a tournament that ends before its final has no podium instead of a wrong one, and a final won by a bye gets the right medals.
-- **Matches:** a match whose maps all end level now ends as a tie instead of staying live.
-- **Tournaments:** The Round Restart Delay organizers choose now applies in matches.
-- **Tournaments:** Opening registration for an invite-only tournament no longer notifies every player.
-- **Tournaments:** The Teams tab count now matches the teams shown after check-in, and seeds no longer appear twice.
-- **Profiles:** Open Twitch Widget goes to the new widget address.
-- **Site:** Opening the left sidebar no longer cuts off labels or pushes buttons outside it.
 
 Older days are in [entries](entries).
