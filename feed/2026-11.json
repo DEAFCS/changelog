@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-21",
-      "revision": 4,
+      "revision": 5,
       "title": "Patch Notes | November 21, 2026",
       "summary": "",
       "sections": {
@@ -49,6 +49,18 @@
           {
             "area": "Profiles",
             "text": "A trophy or badge shown in one of your three showcase boxes is no longer repeated in the small icons."
+          },
+          {
+            "area": "Profiles",
+            "text": "Badge tooltips show the Career XP the next Badge level gives."
+          },
+          {
+            "area": "Profiles",
+            "text": "Badge tiers now give more Career XP, up to 310 XP for a full Badge."
+          },
+          {
+            "area": "Profiles",
+            "text": "No Scope, Zeus and Knife Badges give Career XP for 5v5 matches only."
           }
         ],
         "fixed": [

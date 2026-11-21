@@ -2403,7 +2403,7 @@
     }
   },
   "2026-11-21": {
-    "revision": 4,
+    "revision": 5,
     "items": {
       "c257eeff9c2b": {
         "type": "improved",
@@ -2488,6 +2488,27 @@
         "text": "A trophy or badge shown in one of your three showcase boxes is no longer repeated in the small icons.",
         "status": "published",
         "source": "release:d017fedec80d7a21"
+      },
+      "b7be1b6b8192": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "Badge tooltips show the Career XP the next Badge level gives.",
+        "status": "published",
+        "source": "release:a621460e004a54c9"
+      },
+      "e79e1006768c": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "Badge tiers now give more Career XP, up to 310 XP for a full Badge.",
+        "status": "published",
+        "source": "release:a621460e004a54c9"
+      },
+      "e42d8f8b8f52": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "No Scope, Zeus and Knife Badges give Career XP for 5v5 matches only.",
+        "status": "published",
+        "source": "release:a621460e004a54c9"
       }
     }
   }
