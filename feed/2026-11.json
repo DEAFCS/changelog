@@ -3,11 +3,16 @@
   "days": [
     {
       "date": "2026-11-22",
-      "revision": 3,
+      "revision": 4,
       "title": "Patch Notes | November 22, 2026",
       "summary": "",
       "sections": {
-        "new": [],
+        "new": [
+          {
+            "area": "Leaderboard",
+            "text": "The Season ELO Top 3 shows each place's Season reward (Coins, items and Season medal) for every mode."
+          }
+        ],
         "improved": [
           {
             "area": "Profiles",

@@ -4,6 +4,10 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 
 ## Patch Notes | November 22, 2026
 
+### New
+
+- **Leaderboard:** The Season ELO Top 3 shows each place's Season reward (Coins, items and Season medal) for every mode.
+
 ### Improved
 
 - **Profiles:** Account Settings now has your Roster Image, with a short description of where it shows.

@@ -2513,7 +2513,7 @@
     }
   },
   "2026-11-22": {
-    "revision": 3,
+    "revision": 4,
     "items": {
       "7a248968b05e": {
         "type": "fixed",
@@ -2556,6 +2556,13 @@
         "text": "Stacks are now called Coins everywhere on the site.",
         "status": "published",
         "source": "release:4cef51b432b1eafc"
+      },
+      "9d2768902784": {
+        "type": "new",
+        "area": "Leaderboard",
+        "text": "The Season ELO Top 3 shows each place's Season reward (Coins, items and Season medal) for every mode.",
+        "status": "published",
+        "source": "release:75a3fde871088370"
       }
     }
   }
