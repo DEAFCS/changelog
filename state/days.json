@@ -2513,7 +2513,7 @@
     }
   },
   "2026-11-22": {
-    "revision": 2,
+    "revision": 3,
     "items": {
       "7a248968b05e": {
         "type": "fixed",
@@ -2549,6 +2549,13 @@
         "text": "about 1,000 more texts are translated in Arabic, Danish, German, French, Italian, Japanese, Korean, Polish, Swedish, Turkish and Chinese.",
         "status": "published",
         "source": "release:111a74901356ede8"
+      },
+      "74bd8ab9c63b": {
+        "type": "improved",
+        "area": "Career",
+        "text": "Stacks are now called Coins everywhere on the site.",
+        "status": "published",
+        "source": "release:4cef51b432b1eafc"
       }
     }
   }

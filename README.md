@@ -8,6 +8,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 
 - **Profiles:** Account Settings now has your Roster Image, with a short description of where it shows.
 - **Languages:** about 1,000 more texts are translated in Arabic, Danish, German, French, Italian, Japanese, Korean, Polish, Swedish, Turkish and Chinese.
+- **Career:** Stacks are now called Coins everywhere on the site.
 
 ### Fixed
 

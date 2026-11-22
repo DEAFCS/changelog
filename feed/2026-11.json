@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-22",
-      "revision": 2,
+      "revision": 3,
       "title": "Patch Notes | November 22, 2026",
       "summary": "",
       "sections": {
@@ -16,6 +16,10 @@
           {
             "area": "Languages",
             "text": "about 1,000 more texts are translated in Arabic, Danish, German, French, Italian, Japanese, Korean, Polish, Swedish, Turkish and Chinese."
+          },
+          {
+            "area": "Career",
+            "text": "Stacks are now called Coins everywhere on the site."
           }
         ],
         "fixed": [
