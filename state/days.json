@@ -2513,7 +2513,7 @@
     }
   },
   "2026-11-22": {
-    "revision": 4,
+    "revision": 5,
     "items": {
       "7a248968b05e": {
         "type": "fixed",
@@ -2563,6 +2563,27 @@
         "text": "The Season ELO Top 3 shows each place's Season reward (Coins, items and Season medal) for every mode.",
         "status": "published",
         "source": "release:75a3fde871088370"
+      },
+      "f35012855796": {
+        "type": "fixed",
+        "area": "Leaderboard",
+        "text": "The side panel moves under the leaderboard on narrower windows or when zoomed in, and back when there is room.",
+        "status": "published",
+        "source": "release:0a712966508c536d"
+      },
+      "902d0821f138": {
+        "type": "fixed",
+        "area": "Leaderboard",
+        "text": "Top 3 player names stay readable on smaller windows and when zoomed in.",
+        "status": "published",
+        "source": "release:0a712966508c536d"
+      },
+      "497d32d11960": {
+        "type": "improved",
+        "area": "Leaderboard",
+        "text": "Wingman and Duel Season rewards show their illustrated 2v2 and 1v1 medals.",
+        "status": "published",
+        "source": "release:0a712966508c536d"
       }
     }
   }

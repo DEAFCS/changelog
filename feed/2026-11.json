@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-22",
-      "revision": 4,
+      "revision": 5,
       "title": "Patch Notes | November 22, 2026",
       "summary": "",
       "sections": {
@@ -25,6 +25,10 @@
           {
             "area": "Career",
             "text": "Stacks are now called Coins everywhere on the site."
+          },
+          {
+            "area": "Leaderboard",
+            "text": "Wingman and Duel Season rewards show their illustrated 2v2 and 1v1 medals."
           }
         ],
         "fixed": [
@@ -39,6 +43,14 @@
           {
             "area": "Languages",
             "text": "party size, party seats and server update times show their numbers in every language, and broken award texts are repaired."
+          },
+          {
+            "area": "Leaderboard",
+            "text": "The side panel moves under the leaderboard on narrower windows or when zoomed in, and back when there is room."
+          },
+          {
+            "area": "Leaderboard",
+            "text": "Top 3 player names stay readable on smaller windows and when zoomed in."
           }
         ]
       }
