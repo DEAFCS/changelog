@@ -14,6 +14,8 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Languages:** about 1,000 more texts are translated in Arabic, Danish, German, French, Italian, Japanese, Korean, Polish, Swedish, Turkish and Chinese.
 - **Career:** Stacks are now called Coins everywhere on the site.
 - **Leaderboard:** Wingman and Duel Season rewards show their illustrated 2v2 and 1v1 medals.
+- **Leaderboard:** Every ranking shows the same Top 3 cards, with the player and the stat on one row.
+- **Leaderboard:** On phones the Top 3 are three full-width rows, first place on top.
 
 ### Fixed
 
@@ -22,6 +24,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Languages:** party size, party seats and server update times show their numbers in every language, and broken award texts are repaired.
 - **Leaderboard:** The side panel moves under the leaderboard on narrower windows or when zoomed in, and back when there is room.
 - **Leaderboard:** Top 3 player names stay readable on smaller windows and when zoomed in.
+- **Leaderboard:** Season Top 3 cards show ELO next to the player name whenever the card has room.
 
 ## Patch Notes | November 21, 2026
 

@@ -2513,7 +2513,7 @@
     }
   },
   "2026-11-22": {
-    "revision": 5,
+    "revision": 6,
     "items": {
       "7a248968b05e": {
         "type": "fixed",
@@ -2584,6 +2584,27 @@
         "text": "Wingman and Duel Season rewards show their illustrated 2v2 and 1v1 medals.",
         "status": "published",
         "source": "release:0a712966508c536d"
+      },
+      "1e91381a724b": {
+        "type": "fixed",
+        "area": "Leaderboard",
+        "text": "Season Top 3 cards show ELO next to the player name whenever the card has room.",
+        "status": "published",
+        "source": "release:f5043def00a3d0df"
+      },
+      "45f9bf348d9d": {
+        "type": "improved",
+        "area": "Leaderboard",
+        "text": "Every ranking shows the same Top 3 cards, with the player and the stat on one row.",
+        "status": "published",
+        "source": "release:f5043def00a3d0df"
+      },
+      "9572f773762e": {
+        "type": "improved",
+        "area": "Leaderboard",
+        "text": "On phones the Top 3 are three full-width rows, first place on top.",
+        "status": "published",
+        "source": "release:f5043def00a3d0df"
       }
     }
   }

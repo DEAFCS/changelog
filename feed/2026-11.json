@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-22",
-      "revision": 5,
+      "revision": 6,
       "title": "Patch Notes | November 22, 2026",
       "summary": "",
       "sections": {
@@ -29,6 +29,14 @@
           {
             "area": "Leaderboard",
             "text": "Wingman and Duel Season rewards show their illustrated 2v2 and 1v1 medals."
+          },
+          {
+            "area": "Leaderboard",
+            "text": "Every ranking shows the same Top 3 cards, with the player and the stat on one row."
+          },
+          {
+            "area": "Leaderboard",
+            "text": "On phones the Top 3 are three full-width rows, first place on top."
           }
         ],
         "fixed": [
@@ -51,6 +59,10 @@
           {
             "area": "Leaderboard",
             "text": "Top 3 player names stay readable on smaller windows and when zoomed in."
+          },
+          {
+            "area": "Leaderboard",
+            "text": "Season Top 3 cards show ELO next to the player name whenever the card has room."
           }
         ]
       }
