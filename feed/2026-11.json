@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-22",
-      "revision": 1,
+      "revision": 2,
       "title": "Patch Notes | November 22, 2026",
       "summary": "",
       "sections": {
@@ -12,12 +12,24 @@
           {
             "area": "Profiles",
             "text": "Account Settings now has your Roster Image, with a short description of where it shows."
+          },
+          {
+            "area": "Languages",
+            "text": "about 1,000 more texts are translated in Arabic, Danish, German, French, Italian, Japanese, Korean, Polish, Swedish, Turkish and Chinese."
           }
         ],
         "fixed": [
           {
             "area": "Profiles",
             "text": "Roster Image no longer shows your avatar when you have not uploaded one."
+          },
+          {
+            "area": "Career",
+            "text": "Titles you own still show how you earned them in the Locker."
+          },
+          {
+            "area": "Languages",
+            "text": "party size, party seats and server update times show their numbers in every language, and broken award texts are repaired."
           }
         ]
       }

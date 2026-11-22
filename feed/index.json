@@ -3,7 +3,7 @@
     {
       "month": "2026-11",
       "days": 22,
-      "hash": "dfc6a59105c0d59d"
+      "hash": "04c7b203e73046df"
     }
   ],
   "areas": [
@@ -19,6 +19,7 @@
     "FAQ",
     "General",
     "Highlights",
+    "Languages",
     "Leaderboard",
     "Leaderboards",
     "Live streams",
@@ -50,7 +51,7 @@
   ],
   "latest": {
     "date": "2026-11-22",
-    "revision": 1
+    "revision": 2
   },
   "monitoredOn": "2026-11-22"
 }

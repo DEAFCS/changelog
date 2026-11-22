@@ -2513,7 +2513,7 @@
     }
   },
   "2026-11-22": {
-    "revision": 1,
+    "revision": 2,
     "items": {
       "7a248968b05e": {
         "type": "fixed",
@@ -2528,6 +2528,27 @@
         "text": "Account Settings now has your Roster Image, with a short description of where it shows.",
         "status": "published",
         "source": "release:671cf97ee4423578"
+      },
+      "22c545165a98": {
+        "type": "fixed",
+        "area": "Career",
+        "text": "Titles you own still show how you earned them in the Locker.",
+        "status": "published",
+        "source": "release:111a74901356ede8"
+      },
+      "0f0881c5d3dd": {
+        "type": "fixed",
+        "area": "Languages",
+        "text": "party size, party seats and server update times show their numbers in every language, and broken award texts are repaired.",
+        "status": "published",
+        "source": "release:111a74901356ede8"
+      },
+      "931c2c442f21": {
+        "type": "improved",
+        "area": "Languages",
+        "text": "about 1,000 more texts are translated in Arabic, Danish, German, French, Italian, Japanese, Korean, Polish, Swedish, Turkish and Chinese.",
+        "status": "published",
+        "source": "release:111a74901356ede8"
       }
     }
   }
