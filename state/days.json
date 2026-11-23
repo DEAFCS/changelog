@@ -2609,7 +2609,7 @@
     }
   },
   "2026-11-23": {
-    "revision": 5,
+    "revision": 6,
     "items": {
       "ae8ec4537605": {
         "type": "fixed",
@@ -2687,6 +2687,13 @@
         "text": "Players who already held KZ titles receive the same Career XP and Coins once.",
         "status": "published",
         "source": "release:20b7e555b0cf82eb"
+      },
+      "e4f5d070b79b": {
+        "type": "fixed",
+        "area": "Leaderboard",
+        "text": "A first visit on a slow connection no longer jumps back to All Time after a reload.",
+        "status": "published",
+        "source": "release:7ff1e03eabd9563f"
       }
     }
   }

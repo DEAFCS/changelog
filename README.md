@@ -23,6 +23,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Awards:** Automatic leaver and no-show bans no longer stop a player from becoming Player of the Month.
 - **Matches:** A finished match shows its end time once instead of twice.
 - **Leaderboard:** A first visit opens on the current Season and Competitive 5v5, and the heading always names the Season shown.
+- **Leaderboard:** A first visit on a slow connection no longer jumps back to All Time after a reload.
 
 ## Patch Notes | November 22, 2026
 

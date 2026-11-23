@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-23",
-      "revision": 5,
+      "revision": 6,
       "title": "Patch Notes | November 23, 2026",
       "summary": "",
       "sections": {
@@ -55,6 +55,10 @@
           {
             "area": "Leaderboard",
             "text": "A first visit opens on the current Season and Competitive 5v5, and the heading always names the Season shown."
+          },
+          {
+            "area": "Leaderboard",
+            "text": "A first visit on a slow connection no longer jumps back to All Time after a reload."
           }
         ]
       }
