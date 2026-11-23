@@ -3,12 +3,17 @@
   "days": [
     {
       "date": "2026-11-23",
-      "revision": 1,
+      "revision": 2,
       "title": "Patch Notes | November 23, 2026",
       "summary": "",
       "sections": {
         "new": [],
-        "improved": [],
+        "improved": [
+          {
+            "area": "Leaderboard",
+            "text": "An info icon on Player of the Month explains how the winner is chosen."
+          }
+        ],
         "fixed": [
           {
             "area": "Awards",

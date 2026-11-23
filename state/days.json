@@ -2609,7 +2609,7 @@
     }
   },
   "2026-11-23": {
-    "revision": 1,
+    "revision": 2,
     "items": {
       "ae8ec4537605": {
         "type": "fixed",
@@ -2617,6 +2617,13 @@
         "text": "Automatic leaver and no-show bans no longer stop a player from becoming Player of the Month.",
         "status": "published",
         "source": "release:282fecc2d6757e04"
+      },
+      "fd77f2892168": {
+        "type": "improved",
+        "area": "Leaderboard",
+        "text": "An info icon on Player of the Month explains how the winner is chosen.",
+        "status": "published",
+        "source": "release:b80a81429812adfa"
       }
     }
   }

@@ -4,6 +4,10 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 
 ## Patch Notes | November 23, 2026
 
+### Improved
+
+- **Leaderboard:** An info icon on Player of the Month explains how the winner is chosen.
+
 ### Fixed
 
 - **Awards:** Automatic leaver and no-show bans no longer stop a player from becoming Player of the Month.
