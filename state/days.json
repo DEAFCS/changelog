@@ -2609,7 +2609,7 @@
     }
   },
   "2026-11-23": {
-    "revision": 2,
+    "revision": 3,
     "items": {
       "ae8ec4537605": {
         "type": "fixed",
@@ -2624,6 +2624,20 @@
         "text": "An info icon on Player of the Month explains how the winner is chosen.",
         "status": "published",
         "source": "release:b80a81429812adfa"
+      },
+      "f643973405fb": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "Community GOTV waits 30 seconds after the last match's stats are ready before switching to another match.",
+        "status": "published",
+        "source": "release:c362d769a2dbef5e"
+      },
+      "0f5d90e848c3": {
+        "type": "improved",
+        "area": "Highlights",
+        "text": "Administrators can set a daily window for rendering highlight clips in App Settings, so live matches and streams keep the GPU. It is off by default.",
+        "status": "published",
+        "source": "release:c362d769a2dbef5e"
       }
     }
   }

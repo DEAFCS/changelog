@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-23",
-      "revision": 2,
+      "revision": 3,
       "title": "Patch Notes | November 23, 2026",
       "summary": "",
       "sections": {
@@ -12,6 +12,14 @@
           {
             "area": "Leaderboard",
             "text": "An info icon on Player of the Month explains how the winner is chosen."
+          },
+          {
+            "area": "Matches",
+            "text": "Community GOTV waits 30 seconds after the last match's stats are ready before switching to another match."
+          },
+          {
+            "area": "Highlights",
+            "text": "Administrators can set a daily window for rendering highlight clips in App Settings, so live matches and streams keep the GPU. It is off by default."
           }
         ],
         "fixed": [
