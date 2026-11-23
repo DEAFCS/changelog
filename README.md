@@ -7,6 +7,9 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 ### New
 
 - **Matches:** A finished 5v5 match shows its MVP under the score.
+- **Players:** A sortable Level column shows each player's Career level.
+- **Career:** KZ Legend, KZ Master, KZ Expert and KZ Challenger now pay Career XP and Coins (100 to 400 Coins per title, 550 XP and 1,000 Coins for all four, once per player per title).
+- **Career:** Players who already held KZ titles receive the same Career XP and Coins once.
 
 ### Improved
 
@@ -19,6 +22,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 
 - **Awards:** Automatic leaver and no-show bans no longer stop a player from becoming Player of the Month.
 - **Matches:** A finished match shows its end time once instead of twice.
+- **Leaderboard:** A first visit opens on the current Season and Competitive 5v5, and the heading always names the Season shown.
 
 ## Patch Notes | November 22, 2026
 

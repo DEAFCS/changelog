@@ -2609,7 +2609,7 @@
     }
   },
   "2026-11-23": {
-    "revision": 4,
+    "revision": 5,
     "items": {
       "ae8ec4537605": {
         "type": "fixed",
@@ -2659,6 +2659,34 @@
         "text": "Community GOTV buttons explain their status on hover, keyboard focus or tap, without a separate info icon.",
         "status": "published",
         "source": "release:d685f87f34a13d45"
+      },
+      "1aca8688aeff": {
+        "type": "fixed",
+        "area": "Leaderboard",
+        "text": "A first visit opens on the current Season and Competitive 5v5, and the heading always names the Season shown.",
+        "status": "published",
+        "source": "release:20b7e555b0cf82eb"
+      },
+      "44a56bc0476d": {
+        "type": "new",
+        "area": "Players",
+        "text": "A sortable Level column shows each player's Career level.",
+        "status": "published",
+        "source": "release:20b7e555b0cf82eb"
+      },
+      "6c745c4428b1": {
+        "type": "new",
+        "area": "Career",
+        "text": "KZ Legend, KZ Master, KZ Expert and KZ Challenger now pay Career XP and Coins (100 to 400 Coins per title, 550 XP and 1,000 Coins for all four, once per player per title).",
+        "status": "published",
+        "source": "release:20b7e555b0cf82eb"
+      },
+      "c2352b1c32b3": {
+        "type": "new",
+        "area": "Career",
+        "text": "Players who already held KZ titles receive the same Career XP and Coins once.",
+        "status": "published",
+        "source": "release:20b7e555b0cf82eb"
       }
     }
   }

@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-23",
-      "revision": 4,
+      "revision": 5,
       "title": "Patch Notes | November 23, 2026",
       "summary": "",
       "sections": {
@@ -11,6 +11,18 @@
           {
             "area": "Matches",
             "text": "A finished 5v5 match shows its MVP under the score."
+          },
+          {
+            "area": "Players",
+            "text": "A sortable Level column shows each player's Career level."
+          },
+          {
+            "area": "Career",
+            "text": "KZ Legend, KZ Master, KZ Expert and KZ Challenger now pay Career XP and Coins (100 to 400 Coins per title, 550 XP and 1,000 Coins for all four, once per player per title)."
+          },
+          {
+            "area": "Career",
+            "text": "Players who already held KZ titles receive the same Career XP and Coins once."
           }
         ],
         "improved": [
@@ -39,6 +51,10 @@
           {
             "area": "Matches",
             "text": "A finished match shows its end time once instead of twice."
+          },
+          {
+            "area": "Leaderboard",
+            "text": "A first visit opens on the current Season and Competitive 5v5, and the heading always names the Season shown."
           }
         ]
       }
