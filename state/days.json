@@ -2609,7 +2609,7 @@
     }
   },
   "2026-11-23": {
-    "revision": 3,
+    "revision": 4,
     "items": {
       "ae8ec4537605": {
         "type": "fixed",
@@ -2638,6 +2638,27 @@
         "text": "Administrators can set a daily window for rendering highlight clips in App Settings, so live matches and streams keep the GPU. It is off by default.",
         "status": "published",
         "source": "release:c362d769a2dbef5e"
+      },
+      "2841a63ef47c": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "A finished match shows its end time once instead of twice.",
+        "status": "published",
+        "source": "release:d685f87f34a13d45"
+      },
+      "04cebc8d5602": {
+        "type": "new",
+        "area": "Matches",
+        "text": "A finished 5v5 match shows its MVP under the score.",
+        "status": "published",
+        "source": "release:d685f87f34a13d45"
+      },
+      "b280abec0c94": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "Community GOTV buttons explain their status on hover, keyboard focus or tap, without a separate info icon.",
+        "status": "published",
+        "source": "release:d685f87f34a13d45"
       }
     }
   }
