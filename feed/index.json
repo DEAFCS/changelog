@@ -2,8 +2,8 @@
   "months": [
     {
       "month": "2026-11",
-      "days": 22,
-      "hash": "0974d1b6f69661fc"
+      "days": 23,
+      "hash": "95be8ab29de7a8d5"
     }
   ],
   "areas": [
@@ -50,8 +50,8 @@
     "Watch"
   ],
   "latest": {
-    "date": "2026-11-22",
-    "revision": 6
+    "date": "2026-11-23",
+    "revision": 1
   },
   "monitoredOn": "2026-11-23"
 }
