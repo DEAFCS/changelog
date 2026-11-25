@@ -1,8 +1,7 @@
 {
   "web": {
-    "commit": "b0ce7499051467fe4c01a09b9c04571b26fe60c7",
-    "since": null,
-    "unusableSince": "2026-11-25T18:31:12.199Z"
+    "commit": "9df59e48d917d4f5af983fe839a7d88e57cac440",
+    "since": "2026-11-25T18:41:16.476Z"
   },
   "api": {
     "commit": "d3673b0d6a471ce017870ca55c5c846048b073ea",
