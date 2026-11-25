@@ -13,6 +13,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 
 - **Navigation:** The sidebar has one row for FAQ, Rules, Steam, Instagram and Install App, and About and Contact open the Welcome page.
 - **Matches:** Call for Support sits next to Join Server while the match is being played and disappears once the match has ended.
+- **Matchmaking:** Draft Rooms have a compact header with seats, status, access and Start Match in one row, and a clearer settings drawer.
 
 ### Fixed
 
@@ -20,6 +21,9 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Welcome:** The section links on the homepage scroll to their section instead of showing a blank page.
 - **Welcome:** The match preview no longer shows a database error.
 - **Welcome:** The latest highlight now plays automatically, muted and looping.
+- **Matchmaking:** The Draft Room settings now open on the room's real match type (a Duel no longer shows Competitive).
+- **Matchmaking:** Changing a Draft Room's match type updates the player slots, and never removes players already in the room.
+- **Matchmaking:** Changing a Draft Room's match type now resizes the lobby, and never removes players already in it.
 
 ## Patch Notes | November 23, 2026
 

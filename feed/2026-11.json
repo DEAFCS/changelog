@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-25",
-      "revision": 2,
+      "revision": 3,
       "title": "Patch Notes | November 25, 2026",
       "summary": "",
       "sections": {
@@ -25,6 +25,10 @@
           {
             "area": "Matches",
             "text": "Call for Support sits next to Join Server while the match is being played and disappears once the match has ended."
+          },
+          {
+            "area": "Matchmaking",
+            "text": "Draft Rooms have a compact header with seats, status, access and Start Match in one row, and a clearer settings drawer."
           }
         ],
         "fixed": [
@@ -43,6 +47,18 @@
           {
             "area": "Welcome",
             "text": "The latest highlight now plays automatically, muted and looping."
+          },
+          {
+            "area": "Matchmaking",
+            "text": "The Draft Room settings now open on the room's real match type (a Duel no longer shows Competitive)."
+          },
+          {
+            "area": "Matchmaking",
+            "text": "Changing a Draft Room's match type updates the player slots, and never removes players already in the room."
+          },
+          {
+            "area": "Matchmaking",
+            "text": "Changing a Draft Room's match type now resizes the lobby, and never removes players already in it."
           }
         ]
       }

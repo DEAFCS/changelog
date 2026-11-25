@@ -2698,7 +2698,7 @@
     }
   },
   "2026-11-25": {
-    "revision": 2,
+    "revision": 3,
     "items": {
       "ea9c275fd3a8": {
         "type": "new",
@@ -2755,6 +2755,34 @@
         "text": "The latest highlight now plays automatically, muted and looping.",
         "status": "published",
         "source": "release:9dd05374fe65e933"
+      },
+      "8597bad6d1ae": {
+        "type": "improved",
+        "area": "Matchmaking",
+        "text": "Draft Rooms have a compact header with seats, status, access and Start Match in one row, and a clearer settings drawer.",
+        "status": "published",
+        "source": "release:b7f39a42ab4bf206"
+      },
+      "f806254c665a": {
+        "type": "fixed",
+        "area": "Matchmaking",
+        "text": "The Draft Room settings now open on the room's real match type (a Duel no longer shows Competitive).",
+        "status": "published",
+        "source": "release:b7f39a42ab4bf206"
+      },
+      "1bf88d4ab4d9": {
+        "type": "fixed",
+        "area": "Matchmaking",
+        "text": "Changing a Draft Room's match type updates the player slots, and never removes players already in the room.",
+        "status": "published",
+        "source": "release:b7f39a42ab4bf206"
+      },
+      "ca0d907cf0af": {
+        "type": "fixed",
+        "area": "Matchmaking",
+        "text": "Changing a Draft Room's match type now resizes the lobby, and never removes players already in it.",
+        "status": "published",
+        "source": "release:b7f39a42ab4bf206"
       }
     }
   }
