@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-25",
-      "revision": 1,
+      "revision": 2,
       "title": "Patch Notes | November 25, 2026",
       "summary": "",
       "sections": {
@@ -31,6 +31,18 @@
           {
             "area": "Matches",
             "text": "Call for Support can no longer be sent for a match that has already ended."
+          },
+          {
+            "area": "Welcome",
+            "text": "The section links on the homepage scroll to their section instead of showing a blank page."
+          },
+          {
+            "area": "Welcome",
+            "text": "The match preview no longer shows a database error."
+          },
+          {
+            "area": "Welcome",
+            "text": "The latest highlight now plays automatically, muted and looping."
           }
         ]
       }

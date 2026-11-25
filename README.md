@@ -17,6 +17,9 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 ### Fixed
 
 - **Matches:** Call for Support can no longer be sent for a match that has already ended.
+- **Welcome:** The section links on the homepage scroll to their section instead of showing a blank page.
+- **Welcome:** The match preview no longer shows a database error.
+- **Welcome:** The latest highlight now plays automatically, muted and looping.
 
 ## Patch Notes | November 23, 2026
 

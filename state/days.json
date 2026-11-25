@@ -2698,7 +2698,7 @@
     }
   },
   "2026-11-25": {
-    "revision": 1,
+    "revision": 2,
     "items": {
       "ea9c275fd3a8": {
         "type": "new",
@@ -2734,6 +2734,27 @@
         "text": "Call for Support can no longer be sent for a match that has already ended.",
         "status": "published",
         "source": "release:5f5eb05f1d243901"
+      },
+      "1c53a684be76": {
+        "type": "fixed",
+        "area": "Welcome",
+        "text": "The section links on the homepage scroll to their section instead of showing a blank page.",
+        "status": "published",
+        "source": "release:9dd05374fe65e933"
+      },
+      "e366d8cb0007": {
+        "type": "fixed",
+        "area": "Welcome",
+        "text": "The match preview no longer shows a database error.",
+        "status": "published",
+        "source": "release:9dd05374fe65e933"
+      },
+      "2b88337c23bf": {
+        "type": "fixed",
+        "area": "Welcome",
+        "text": "The latest highlight now plays automatically, muted and looping.",
+        "status": "published",
+        "source": "release:9dd05374fe65e933"
       }
     }
   }
