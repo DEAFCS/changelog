@@ -2696,5 +2696,45 @@
         "source": "release:7ff1e03eabd9563f"
       }
     }
+  },
+  "2026-11-25": {
+    "revision": 1,
+    "items": {
+      "ea9c275fd3a8": {
+        "type": "new",
+        "area": "Welcome",
+        "text": "A new DEAFCS homepage shows live matches, highlights, game modes, tournaments, broadcasts, replays and our story.",
+        "status": "published",
+        "source": "release:5f5eb05f1d243901"
+      },
+      "a188241918c2": {
+        "type": "new",
+        "area": "Welcome",
+        "text": "Contact DEAFCS directly from the Welcome page by email form or email address.",
+        "status": "published",
+        "source": "release:5f5eb05f1d243901"
+      },
+      "5cf667166c88": {
+        "type": "improved",
+        "area": "Navigation",
+        "text": "The sidebar has one row for FAQ, Rules, Steam, Instagram and Install App, and About and Contact open the Welcome page.",
+        "status": "published",
+        "source": "release:5f5eb05f1d243901"
+      },
+      "63f825d29b99": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "Call for Support sits next to Join Server while the match is being played and disappears once the match has ended.",
+        "status": "published",
+        "source": "release:5f5eb05f1d243901"
+      },
+      "40e93246c097": {
+        "type": "fixed",
+        "area": "Matches",
+        "text": "Call for Support can no longer be sent for a match that has already ended.",
+        "status": "published",
+        "source": "release:5f5eb05f1d243901"
+      }
+    }
   }
 }

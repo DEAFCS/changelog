@@ -2,6 +2,22 @@
 
 DEAFCS patch notes: new features, improvements and fixes, newest first. They also appear on the DEAFCS Changelog page (Info, then Changelog).
 
+## Patch Notes | November 25, 2026
+
+### New
+
+- **Welcome:** A new DEAFCS homepage shows live matches, highlights, game modes, tournaments, broadcasts, replays and our story.
+- **Welcome:** Contact DEAFCS directly from the Welcome page by email form or email address.
+
+### Improved
+
+- **Navigation:** The sidebar has one row for FAQ, Rules, Steam, Instagram and Install App, and About and Contact open the Welcome page.
+- **Matches:** Call for Support sits next to Join Server while the match is being played and disappears once the match has ended.
+
+### Fixed
+
+- **Matches:** Call for Support can no longer be sent for a match that has already ended.
+
 ## Patch Notes | November 23, 2026
 
 ### New
@@ -307,40 +323,5 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Matches:** The live stream scoreboard shows workshop maps by their name, such as Mini Dust 2, instead of a number.
 - **Servers:** Connect on Public Servers now opens CS2 straight away, without the connection guide.
 - **Servers:** Connect on Public Servers now only opens CS2; copying the address stays on the Copy button.
-
-## Patch Notes | November 10, 2026
-
-### New
-
-- **Leaderboard:** click a player to see their ranks and stats beside the board, with Player of the Month shown by default.
-- **Support:** you can paste a screenshot with Ctrl+V when writing a support request or reply.
-- **Teams:** teams can choose Europe as their country.
-- **Tournaments:** organizers can add a Twitch channel, shown as a Twitch button on the tournament page once it starts.
-- **News:** new articles can be announced automatically in the DEAFCS Discord.
-- **Servers:** a Connect button joins a public server in one click, on the Public Servers page and on Play.
-- **Matches:** staff can show a Twitch channel as the match's main broadcast or as a Twitch button in the match bar.
-
-### Improved
-
-- **News:** Community Polls are now at the top of the News page.
-- **Watch:** players live on Twitch are now shown on the Watch page.
-- **Changelog:** patch notes are grouped into fewer, clearer sections.
-- **Profiles:** when you are signed in, DEAFCS opens on your profile stats.
-- **Leaderboards:** the Last 7 Days records are now on the Leaderboard, under Player of the Month.
-- **Matchmaking:** Your Schedule on Play now shows your later matches, solo and free-agent sign-ups, and a Show more button.
-- **Profiles:** Twitch channels are now linked by signing in with Twitch, so only the real owner can add one.
-- **Profiles:** the stream delay notice before linking Twitch is now shorter and easier to read.
-- **Servers:** public servers are shown as compact rows with a map picture, mode, Full status and player count, on the Public Servers page and on Play.
-- **Profiles:** warnings now expire after 21 days. Old warnings stay in the history.
-- **Servers:** the Public Servers page is back to the large server cards, sorted by players.
-- **Servers:** Connect explains how to join with the CS2 console if the game does not open, with a Copy button.
-- **Watch:** live match cards count each stream once.
-- **Watch:** players streaming their live DEAFCS match show on Watch whatever they stream.
-
-### Fixed
-
-- **Matchmaking:** Your Schedule on Play now shows your tournament check-in status instead of always saying Registered.
-- **Watch:** sections on the Watch and Play pages are separated by a thin line again.
-- **Streams:** only administrators get direct GOTV access; streamers and tournament organizers broadcast delayed TV within their matches.
 
 Older days are in [entries](entries).

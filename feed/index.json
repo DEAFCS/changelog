@@ -2,8 +2,8 @@
   "months": [
     {
       "month": "2026-11",
-      "days": 23,
-      "hash": "26369adc0b059b52"
+      "days": 24,
+      "hash": "3fd9fa335958dff1"
     }
   ],
   "areas": [
@@ -48,11 +48,12 @@
     "Teams",
     "Tournaments",
     "Utility",
-    "Watch"
+    "Watch",
+    "Welcome"
   ],
   "latest": {
-    "date": "2026-11-23",
-    "revision": 6
+    "date": "2026-11-25",
+    "revision": 1
   },
   "monitoredOn": "2026-11-25"
 }
