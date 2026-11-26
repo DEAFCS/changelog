@@ -1,13 +1,11 @@
 {
   "web": {
     "commit": "479c9f948f424d2a34a50355d16c5ec7bbc379bf",
-    "since": null,
-    "unusableSince": "2026-11-26T16:01:11.496Z"
+    "since": "2026-11-26T16:11:20.215Z"
   },
   "api": {
     "commit": "53d26bf37691910725d1f73788954234ff472f36",
-    "since": null,
-    "unusableSince": "2026-11-26T16:01:11.496Z"
+    "since": "2026-11-26T16:11:20.215Z"
   },
   "checkedOn": "2026-11-26"
 }
