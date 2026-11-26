@@ -1,11 +1,11 @@
 {
   "web": {
-    "commit": "4b89f8396c609061d1eb29fc6bb78aed2f7f6ef0",
-    "since": "2026-11-26T13:41:13.502Z"
+    "commit": "f0a37536f7db3fd3396615947ee2b66cfc5055d8",
+    "since": "2026-11-26T13:51:12.035Z"
   },
   "api": {
-    "commit": "b7c0ad47ec2dd08810fdb67bf2b2a720beedbe87",
-    "since": "2026-11-26T13:41:13.502Z"
+    "commit": "53d26bf37691910725d1f73788954234ff472f36",
+    "since": "2026-11-26T13:51:12.035Z"
   },
   "checkedOn": "2026-11-26"
 }
