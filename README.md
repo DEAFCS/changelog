@@ -2,6 +2,16 @@
 
 DEAFCS patch notes: new features, improvements and fixes, newest first. They also appear on the DEAFCS Changelog page (Info, then Changelog).
 
+## Patch Notes | November 27, 2026
+
+### Improved
+
+- **Profiles:** Supporters now show a heart on their avatar in player lists, leaderboards and matches.
+
+### Fixed
+
+- **Leaderboards:** Career levels show on player avatars again in player lists and leaderboards.
+
 ## Patch Notes | November 25, 2026
 
 ### New
@@ -310,25 +320,5 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Matches:** In a best-of-3 or best-of-5, picking a map in a player's stats now shows that map's numbers instead of the whole series.
 - **Matches:** In a best-of-3 or best-of-5, the Utility tab now shows the map you picked.
 - **Matches:** Buy types now use the money a team started the round with.
-
-## Patch Notes | November 11, 2026
-
-### New
-
-- **Matches:** Watch lists live main broadcasts first, with both teams.
-
-### Improved
-
-- **Matches:** Extra stream links are now buttons with the platform icon in the match bar.
-- **Matches:** Players and coaches can watch their match's delayed TV broadcast and Twitch main broadcast.
-- **Matches:** Watch now updates matches, streams and viewer counts by itself, no refresh needed.
-- **Matches:** Player Twitch streams now show as POV links in the match bar, and the big video area is only used for the official broadcast.
-
-### Fixed
-
-- **Matches:** The GOTV delay can no longer be changed by non-admins while a match is running.
-- **Matches:** The live stream scoreboard shows workshop maps by their name, such as Mini Dust 2, instead of a number.
-- **Servers:** Connect on Public Servers now opens CS2 straight away, without the connection guide.
-- **Servers:** Connect on Public Servers now only opens CS2; copying the address stays on the Copy button.
 
 Older days are in [entries](entries).

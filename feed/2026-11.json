@@ -2,6 +2,27 @@
   "month": "2026-11",
   "days": [
     {
+      "date": "2026-11-27",
+      "revision": 1,
+      "title": "Patch Notes | November 27, 2026",
+      "summary": "",
+      "sections": {
+        "new": [],
+        "improved": [
+          {
+            "area": "Profiles",
+            "text": "Supporters now show a heart on their avatar in player lists, leaderboards and matches."
+          }
+        ],
+        "fixed": [
+          {
+            "area": "Leaderboards",
+            "text": "Career levels show on player avatars again in player lists and leaderboards."
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-25",
       "revision": 3,
       "title": "Patch Notes | November 25, 2026",

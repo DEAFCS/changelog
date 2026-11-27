@@ -2785,5 +2785,24 @@
         "source": "release:b7f39a42ab4bf206"
       }
     }
+  },
+  "2026-11-27": {
+    "revision": 1,
+    "items": {
+      "fe9b2bbf06f8": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "Supporters now show a heart on their avatar in player lists, leaderboards and matches.",
+        "status": "published",
+        "source": "release:33917c9b24fe81ef"
+      },
+      "0afc6382d525": {
+        "type": "fixed",
+        "area": "Leaderboards",
+        "text": "Career levels show on player avatars again in player lists and leaderboards.",
+        "status": "published",
+        "source": "release:33917c9b24fe81ef"
+      }
+    }
   }
 }
