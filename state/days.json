@@ -2787,7 +2787,7 @@
     }
   },
   "2026-11-27": {
-    "revision": 2,
+    "revision": 3,
     "items": {
       "fe9b2bbf06f8": {
         "type": "improved",
@@ -2830,6 +2830,13 @@
         "text": "Supporters now have a rose hexagon heart badge that matches the Career level badge.",
         "status": "published",
         "source": "release:54bda925f17d202e"
+      },
+      "bae2cec265be": {
+        "type": "fixed",
+        "area": "Leaderboards",
+        "text": "Career levels no longer go missing on some leaderboard rows after the page loads.",
+        "status": "published",
+        "source": "release:fe515286a40a3462"
       }
     }
   }

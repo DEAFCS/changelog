@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-27",
-      "revision": 2,
+      "revision": 3,
       "title": "Patch Notes | November 27, 2026",
       "summary": "",
       "sections": {
@@ -34,6 +34,10 @@
           {
             "area": "Leaderboards",
             "text": "Career level badges now sit on the corner of the player's avatar."
+          },
+          {
+            "area": "Leaderboards",
+            "text": "Career levels no longer go missing on some leaderboard rows after the page loads."
           }
         ]
       }
