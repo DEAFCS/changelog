@@ -8,6 +8,8 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 
 - **Matches:** Report a player now sits next to the scoreboard tabs.
 - **Support:** A dot on your profile menu shows when staff have replied to your support request.
+- **Chat:** Pin private conversations to the top of the chat bar and put them in your own order.
+- **Chat:** Pop out now opens the whole Chat Hub in its own window.
 
 ### Improved
 
@@ -15,6 +17,10 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Profiles:** Career levels and Supporter hearts now sit on the same avatar corners everywhere, including party seats and match lineups on phones.
 - **Matches:** the captain crown has a little more room at the avatar's corner again.
 - **Profiles:** Supporters now have a rose hexagon heart badge that matches the Career level badge.
+- **Plus:** The DEAFCS Plus menu item shows how many days are left before a cancelled membership ends.
+- **Profiles:** Hovering a player's Title explains how it is earned.
+- **Career:** Shortened Locker texts show the full text in a tooltip.
+- **Chat:** The Chat Hub has more room for conversations, with every chat on the right-hand bar.
 
 ### Fixed
 

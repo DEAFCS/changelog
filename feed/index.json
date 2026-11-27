@@ -3,7 +3,7 @@
     {
       "month": "2026-11",
       "days": 25,
-      "hash": "e52e158c1cd66f5c"
+      "hash": "e7865594410719bb"
     }
   ],
   "areas": [
@@ -32,6 +32,7 @@
     "Notifications",
     "Performance",
     "Players",
+    "Plus",
     "Practice",
     "Profiles",
     "Public Servers",
@@ -54,7 +55,7 @@
   ],
   "latest": {
     "date": "2026-11-27",
-    "revision": 6
+    "revision": 7
   },
   "monitoredOn": "2026-11-27"
 }

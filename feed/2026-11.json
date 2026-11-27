@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-27",
-      "revision": 6,
+      "revision": 7,
       "title": "Patch Notes | November 27, 2026",
       "summary": "",
       "sections": {
@@ -15,6 +15,14 @@
           {
             "area": "Support",
             "text": "A dot on your profile menu shows when staff have replied to your support request."
+          },
+          {
+            "area": "Chat",
+            "text": "Pin private conversations to the top of the chat bar and put them in your own order."
+          },
+          {
+            "area": "Chat",
+            "text": "Pop out now opens the whole Chat Hub in its own window."
           }
         ],
         "improved": [
@@ -33,6 +41,22 @@
           {
             "area": "Profiles",
             "text": "Supporters now have a rose hexagon heart badge that matches the Career level badge."
+          },
+          {
+            "area": "Plus",
+            "text": "The DEAFCS Plus menu item shows how many days are left before a cancelled membership ends."
+          },
+          {
+            "area": "Profiles",
+            "text": "Hovering a player's Title explains how it is earned."
+          },
+          {
+            "area": "Career",
+            "text": "Shortened Locker texts show the full text in a tooltip."
+          },
+          {
+            "area": "Chat",
+            "text": "The Chat Hub has more room for conversations, with every chat on the right-hand bar."
           }
         ],
         "fixed": [
