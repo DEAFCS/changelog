@@ -3,11 +3,20 @@
   "days": [
     {
       "date": "2026-11-27",
-      "revision": 5,
+      "revision": 6,
       "title": "Patch Notes | November 27, 2026",
       "summary": "",
       "sections": {
-        "new": [],
+        "new": [
+          {
+            "area": "Matches",
+            "text": "Report a player now sits next to the scoreboard tabs."
+          },
+          {
+            "area": "Support",
+            "text": "A dot on your profile menu shows when staff have replied to your support request."
+          }
+        ],
         "improved": [
           {
             "area": "Profiles",
@@ -46,6 +55,10 @@
           {
             "area": "Utility Library",
             "text": "only verified players can join a practice server"
+          },
+          {
+            "area": "Profiles",
+            "text": "Your pinned Career stat shows at the top right of your profile again."
           }
         ]
       }

@@ -2787,7 +2787,7 @@
     }
   },
   "2026-11-27": {
-    "revision": 5,
+    "revision": 6,
     "items": {
       "fe9b2bbf06f8": {
         "type": "improved",
@@ -2851,6 +2851,27 @@
         "text": "only verified players can join a practice server",
         "status": "published",
         "source": "release:76fa0283fe0a0543"
+      },
+      "b6d8b92780c2": {
+        "type": "new",
+        "area": "Matches",
+        "text": "Report a player now sits next to the scoreboard tabs.",
+        "status": "published",
+        "source": "release:375fd73831b5bc04"
+      },
+      "a2cb7ad22c24": {
+        "type": "fixed",
+        "area": "Profiles",
+        "text": "Your pinned Career stat shows at the top right of your profile again.",
+        "status": "published",
+        "source": "release:375fd73831b5bc04"
+      },
+      "0fff1170e9bb": {
+        "type": "new",
+        "area": "Support",
+        "text": "A dot on your profile menu shows when staff have replied to your support request.",
+        "status": "published",
+        "source": "release:375fd73831b5bc04"
       }
     }
   }

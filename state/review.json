@@ -242,6 +242,25 @@
       "held": 2,
       "issue": 21,
       "issuedAt": "2026-11-26T14:51:22Z"
+    },
+    "375fd73831b5bc04": {
+      "date": "2026-11-27",
+      "verifiedAt": "2026-11-27T13:11:10Z",
+      "ranges": [
+        {
+          "side": "web",
+          "from": "c1f3becbc1148a8e9a8eb590beb59b0c15081be2",
+          "to": "cf55fb5feddd9c6bbfc126f606050c339166dd39"
+        },
+        {
+          "side": "api",
+          "from": "a4c9a2af55e63d026e30c3dbf5f3851bcb900c0f",
+          "to": "74a5ff60303340e4542c04af3d1709804f40f321"
+        }
+      ],
+      "held": 6,
+      "issue": 22,
+      "issuedAt": "2026-11-27T13:11:17Z"
     }
   }
 }

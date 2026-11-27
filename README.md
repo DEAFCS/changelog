@@ -4,6 +4,11 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 
 ## Patch Notes | November 27, 2026
 
+### New
+
+- **Matches:** Report a player now sits next to the scoreboard tabs.
+- **Support:** A dot on your profile menu shows when staff have replied to your support request.
+
 ### Improved
 
 - **Profiles:** Supporters now show a heart on their avatar in player lists, leaderboards and matches.
@@ -18,6 +23,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Leaderboards:** Career levels no longer go missing on some leaderboard rows after the page loads.
 - **Utility Library:** no error message on the practice server panel for players who cannot start a server
 - **Utility Library:** only verified players can join a practice server
+- **Profiles:** Your pinned Career stat shows at the top right of your profile again.
 
 ## Patch Notes | November 25, 2026
 
