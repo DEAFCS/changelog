@@ -2787,7 +2787,7 @@
     }
   },
   "2026-11-27": {
-    "revision": 3,
+    "revision": 4,
     "items": {
       "fe9b2bbf06f8": {
         "type": "improved",
@@ -2837,6 +2837,13 @@
         "text": "Career levels no longer go missing on some leaderboard rows after the page loads.",
         "status": "published",
         "source": "release:fe515286a40a3462"
+      },
+      "8fafc7fd9fac": {
+        "type": "fixed",
+        "area": "Utility Library",
+        "text": "no error message on the practice server panel for players who cannot start a server",
+        "status": "published",
+        "source": "release:518349919c69863c"
       }
     }
   }

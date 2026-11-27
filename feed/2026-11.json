@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-27",
-      "revision": 3,
+      "revision": 4,
       "title": "Patch Notes | November 27, 2026",
       "summary": "",
       "sections": {
@@ -38,6 +38,10 @@
           {
             "area": "Leaderboards",
             "text": "Career levels no longer go missing on some leaderboard rows after the page loads."
+          },
+          {
+            "area": "Utility Library",
+            "text": "no error message on the practice server panel for players who cannot start a server"
           }
         ]
       }
