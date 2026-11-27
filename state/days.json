@@ -2787,7 +2787,7 @@
     }
   },
   "2026-11-27": {
-    "revision": 1,
+    "revision": 2,
     "items": {
       "fe9b2bbf06f8": {
         "type": "improved",
@@ -2802,6 +2802,34 @@
         "text": "Career levels show on player avatars again in player lists and leaderboards.",
         "status": "published",
         "source": "release:33917c9b24fe81ef"
+      },
+      "597ba3a12709": {
+        "type": "fixed",
+        "area": "Leaderboards",
+        "text": "Career level badges now sit on the corner of the player's avatar.",
+        "status": "published",
+        "source": "release:54bda925f17d202e"
+      },
+      "34de363752f3": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "Career levels and Supporter hearts now sit on the same avatar corners everywhere, including party seats and match lineups on phones.",
+        "status": "published",
+        "source": "release:54bda925f17d202e"
+      },
+      "156105ef7aed": {
+        "type": "improved",
+        "area": "Matches",
+        "text": "the captain crown has a little more room at the avatar's corner again.",
+        "status": "published",
+        "source": "release:54bda925f17d202e"
+      },
+      "1ec7a4d8f78d": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "Supporters now have a rose hexagon heart badge that matches the Career level badge.",
+        "status": "published",
+        "source": "release:54bda925f17d202e"
       }
     }
   }

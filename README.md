@@ -7,10 +7,14 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 ### Improved
 
 - **Profiles:** Supporters now show a heart on their avatar in player lists, leaderboards and matches.
+- **Profiles:** Career levels and Supporter hearts now sit on the same avatar corners everywhere, including party seats and match lineups on phones.
+- **Matches:** the captain crown has a little more room at the avatar's corner again.
+- **Profiles:** Supporters now have a rose hexagon heart badge that matches the Career level badge.
 
 ### Fixed
 
 - **Leaderboards:** Career levels show on player avatars again in player lists and leaderboards.
+- **Leaderboards:** Career level badges now sit on the corner of the player's avatar.
 
 ## Patch Notes | November 25, 2026
 
