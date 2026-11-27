@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-27",
-      "revision": 4,
+      "revision": 5,
       "title": "Patch Notes | November 27, 2026",
       "summary": "",
       "sections": {
@@ -42,6 +42,10 @@
           {
             "area": "Utility Library",
             "text": "no error message on the practice server panel for players who cannot start a server"
+          },
+          {
+            "area": "Utility Library",
+            "text": "only verified players can join a practice server"
           }
         ]
       }

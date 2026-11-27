@@ -2787,7 +2787,7 @@
     }
   },
   "2026-11-27": {
-    "revision": 4,
+    "revision": 5,
     "items": {
       "fe9b2bbf06f8": {
         "type": "improved",
@@ -2844,6 +2844,13 @@
         "text": "no error message on the practice server panel for players who cannot start a server",
         "status": "published",
         "source": "release:518349919c69863c"
+      },
+      "c6019794b60e": {
+        "type": "fixed",
+        "area": "Utility Library",
+        "text": "only verified players can join a practice server",
+        "status": "published",
+        "source": "release:76fa0283fe0a0543"
       }
     }
   }

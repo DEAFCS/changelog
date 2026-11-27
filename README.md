@@ -17,6 +17,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Leaderboards:** Career level badges now sit on the corner of the player's avatar.
 - **Leaderboards:** Career levels no longer go missing on some leaderboard rows after the page loads.
 - **Utility Library:** no error message on the practice server panel for players who cannot start a server
+- **Utility Library:** only verified players can join a practice server
 
 ## Patch Notes | November 25, 2026
 
