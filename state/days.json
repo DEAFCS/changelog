@@ -2787,7 +2787,7 @@
     }
   },
   "2026-11-27": {
-    "revision": 7,
+    "revision": 8,
     "items": {
       "fe9b2bbf06f8": {
         "type": "improved",
@@ -2914,6 +2914,34 @@
         "text": "Pop out now opens the whole Chat Hub in its own window.",
         "status": "published",
         "source": "release:fe2c114e98f88ffa"
+      },
+      "57107e346070": {
+        "type": "improved",
+        "area": "Chat",
+        "text": "Click the open chat again on the right-hand bar to fold the Chat Hub.",
+        "status": "published",
+        "source": "release:071f6b6808ef538c"
+      },
+      "7cf895d84392": {
+        "type": "new",
+        "area": "Chat",
+        "text": "Right-click a private conversation to view the player's profile, or Team Chat to go to the team page.",
+        "status": "published",
+        "source": "release:071f6b6808ef538c"
+      },
+      "af923f46f65a": {
+        "type": "fixed",
+        "area": "Chat",
+        "text": "Opening a conversation from the right-hand bar no longer jumps to another room with unread messages.",
+        "status": "published",
+        "source": "release:071f6b6808ef538c"
+      },
+      "b390b74637d4": {
+        "type": "improved",
+        "area": "Chat",
+        "text": "The chat you have open is highlighted on the right-hand bar, in orange while the Chat Hub is pinned.",
+        "status": "published",
+        "source": "release:071f6b6808ef538c"
       }
     }
   }

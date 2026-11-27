@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-27",
-      "revision": 7,
+      "revision": 8,
       "title": "Patch Notes | November 27, 2026",
       "summary": "",
       "sections": {
@@ -23,6 +23,10 @@
           {
             "area": "Chat",
             "text": "Pop out now opens the whole Chat Hub in its own window."
+          },
+          {
+            "area": "Chat",
+            "text": "Right-click a private conversation to view the player's profile, or Team Chat to go to the team page."
           }
         ],
         "improved": [
@@ -57,6 +61,14 @@
           {
             "area": "Chat",
             "text": "The Chat Hub has more room for conversations, with every chat on the right-hand bar."
+          },
+          {
+            "area": "Chat",
+            "text": "Click the open chat again on the right-hand bar to fold the Chat Hub."
+          },
+          {
+            "area": "Chat",
+            "text": "The chat you have open is highlighted on the right-hand bar, in orange while the Chat Hub is pinned."
           }
         ],
         "fixed": [
@@ -83,6 +95,10 @@
           {
             "area": "Profiles",
             "text": "Your pinned Career stat shows at the top right of your profile again."
+          },
+          {
+            "area": "Chat",
+            "text": "Opening a conversation from the right-hand bar no longer jumps to another room with unread messages."
           }
         ]
       }

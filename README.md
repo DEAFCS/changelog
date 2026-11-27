@@ -10,6 +10,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Support:** A dot on your profile menu shows when staff have replied to your support request.
 - **Chat:** Pin private conversations to the top of the chat bar and put them in your own order.
 - **Chat:** Pop out now opens the whole Chat Hub in its own window.
+- **Chat:** Right-click a private conversation to view the player's profile, or Team Chat to go to the team page.
 
 ### Improved
 
@@ -21,6 +22,8 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Profiles:** Hovering a player's Title explains how it is earned.
 - **Career:** Shortened Locker texts show the full text in a tooltip.
 - **Chat:** The Chat Hub has more room for conversations, with every chat on the right-hand bar.
+- **Chat:** Click the open chat again on the right-hand bar to fold the Chat Hub.
+- **Chat:** The chat you have open is highlighted on the right-hand bar, in orange while the Chat Hub is pinned.
 
 ### Fixed
 
@@ -30,6 +33,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Utility Library:** no error message on the practice server panel for players who cannot start a server
 - **Utility Library:** only verified players can join a practice server
 - **Profiles:** Your pinned Career stat shows at the top right of your profile again.
+- **Chat:** Opening a conversation from the right-hand bar no longer jumps to another room with unread messages.
 
 ## Patch Notes | November 25, 2026
 
