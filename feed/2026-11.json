@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-28",
-      "revision": 2,
+      "revision": 3,
       "title": "Patch Notes | November 28, 2026",
       "summary": "",
       "sections": {
@@ -12,6 +12,10 @@
           {
             "area": "Profiles",
             "text": "Opening duel stats load faster."
+          },
+          {
+            "area": "Tournaments",
+            "text": "Tournament pages load faster."
           }
         ],
         "fixed": [

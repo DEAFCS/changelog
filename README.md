@@ -7,6 +7,7 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 ### Improved
 
 - **Profiles:** Opening duel stats load faster.
+- **Tournaments:** Tournament pages load faster.
 
 ### Fixed
 

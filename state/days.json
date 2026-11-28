@@ -2946,7 +2946,7 @@
     }
   },
   "2026-11-28": {
-    "revision": 2,
+    "revision": 3,
     "items": {
       "fb6a79464a74": {
         "type": "improved",
@@ -2961,6 +2961,13 @@
         "text": "An expired login now signs you out cleanly instead of leaving notifications, friends and lobbies quietly failing.",
         "status": "published",
         "source": "release:c2c0d7781c7cd6c8"
+      },
+      "98732637a131": {
+        "type": "improved",
+        "area": "Tournaments",
+        "text": "Tournament pages load faster.",
+        "status": "published",
+        "source": "release:91a7e95c8dc33a4c"
       }
     }
   }
