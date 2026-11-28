@@ -2946,7 +2946,7 @@
     }
   },
   "2026-11-28": {
-    "revision": 1,
+    "revision": 2,
     "items": {
       "fb6a79464a74": {
         "type": "improved",
@@ -2954,6 +2954,13 @@
         "text": "Opening duel stats load faster.",
         "status": "published",
         "source": "release:9dd0395cde00daf9"
+      },
+      "8fe0f6a931f5": {
+        "type": "fixed",
+        "area": "Accounts",
+        "text": "An expired login now signs you out cleanly instead of leaving notifications, friends and lobbies quietly failing.",
+        "status": "published",
+        "source": "release:c2c0d7781c7cd6c8"
       }
     }
   }

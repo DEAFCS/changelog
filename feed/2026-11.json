@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-11-28",
-      "revision": 1,
+      "revision": 2,
       "title": "Patch Notes | November 28, 2026",
       "summary": "",
       "sections": {
@@ -14,7 +14,12 @@
             "text": "Opening duel stats load faster."
           }
         ],
-        "fixed": []
+        "fixed": [
+          {
+            "area": "Accounts",
+            "text": "An expired login now signs you out cleanly instead of leaving notifications, friends and lobbies quietly failing."
+          }
+        ]
       }
     },
     {

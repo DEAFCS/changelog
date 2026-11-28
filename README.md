@@ -8,6 +8,10 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 
 - **Profiles:** Opening duel stats load faster.
 
+### Fixed
+
+- **Accounts:** An expired login now signs you out cleanly instead of leaving notifications, friends and lobbies quietly failing.
+
 ## Patch Notes | November 27, 2026
 
 ### New
