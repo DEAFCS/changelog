@@ -2944,5 +2944,17 @@
         "source": "release:071f6b6808ef538c"
       }
     }
+  },
+  "2026-11-28": {
+    "revision": 1,
+    "items": {
+      "fb6a79464a74": {
+        "type": "improved",
+        "area": "Profiles",
+        "text": "Opening duel stats load faster.",
+        "status": "published",
+        "source": "release:9dd0395cde00daf9"
+      }
+    }
   }
 }

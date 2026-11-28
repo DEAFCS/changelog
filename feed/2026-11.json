@@ -2,6 +2,22 @@
   "month": "2026-11",
   "days": [
     {
+      "date": "2026-11-28",
+      "revision": 1,
+      "title": "Patch Notes | November 28, 2026",
+      "summary": "",
+      "sections": {
+        "new": [],
+        "improved": [
+          {
+            "area": "Profiles",
+            "text": "Opening duel stats load faster."
+          }
+        ],
+        "fixed": []
+      }
+    },
+    {
       "date": "2026-11-27",
       "revision": 8,
       "title": "Patch Notes | November 27, 2026",

@@ -2,6 +2,12 @@
 
 DEAFCS patch notes: new features, improvements and fixes, newest first. They also appear on the DEAFCS Changelog page (Info, then Changelog).
 
+## Patch Notes | November 28, 2026
+
+### Improved
+
+- **Profiles:** Opening duel stats load faster.
+
 ## Patch Notes | November 27, 2026
 
 ### New
@@ -320,28 +326,5 @@ DEAFCS patch notes: new features, improvements and fixes, newest first. They als
 - **Teams:** A Grand Final result in the team activity shows the series score with the upper bracket's map head start.
 - **Teams:** Only the team owner, team Admins and members with the Invite role can invite players to a team.
 - **Matches:** Clutch results in rounds with kills in the same moment match the original calculation again.
-
-## Patch Notes | November 12, 2026
-
-### Improved
-
-- **Leaderboard:** Player of the Month, Last 7 Days and the selected player now sit in a sidebar on the right, and the board keeps its full width.
-- **Leaderboard:** A selected player's rank on every board shows right away, without an extra click.
-- **Leaderboard:** The Role filter is gone from leaderboards; roles still show on profiles and match pages.
-- **Leaderboard:** A player's rank on every board shows almost at once, and the rank bars grow in when they load.
-- **Leaderboard:** Switching between players in the side panel now animates smoothly.
-- **Matchmaking:** Changing your region between EU and SA now asks you to confirm first.
-- **Matches:** Pages with many stats, like match pages and the leaderboard, open faster.
-- **Matches:** Match pages load their round history faster.
-- **Leaderboard:** Switching between categories is smooth, without the board blanking or loading twice.
-
-### Fixed
-
-- **Seasons:** A season whose medals were awarded keeps its dates, and a season with rated matches can't be deleted by mistake.
-- **Leaderboard:** A player's rank on every board now follows the Min. matches filter, so it matches the leaderboard.
-- **Leaderboard:** Tied players now show the same rank in the side panel as on the leaderboard.
-- **Matches:** In a best-of-3 or best-of-5, picking a map in a player's stats now shows that map's numbers instead of the whole series.
-- **Matches:** In a best-of-3 or best-of-5, the Utility tab now shows the map you picked.
-- **Matches:** Buy types now use the money a team started the round with.
 
 Older days are in [entries](entries).

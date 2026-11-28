@@ -2,8 +2,8 @@
   "months": [
     {
       "month": "2026-11",
-      "days": 25,
-      "hash": "e5e3d78da2df3e5d"
+      "days": 26,
+      "hash": "faa67629283d209b"
     }
   ],
   "areas": [
@@ -54,8 +54,8 @@
     "Welcome"
   ],
   "latest": {
-    "date": "2026-11-27",
-    "revision": 8
+    "date": "2026-11-28",
+    "revision": 1
   },
   "monitoredOn": "2026-11-28"
 }
